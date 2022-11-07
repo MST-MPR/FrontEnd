@@ -5,13 +5,13 @@ import Footer from "./components/Footer.vue";
 </script>
 
 <template>
-  <div>
+  <div class="sticky top-0">
     <Navbar />
   </div>
-  <main>
+  <main class="bg-mst_construction">
     <RouterView />
   </main>
-  <div class="sticky bottom-0">
+  <div>
     <Footer />
   </div>
 </template>

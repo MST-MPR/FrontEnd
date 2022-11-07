@@ -1,17 +1,15 @@
 <template>
-  <div class="v-full h-full bg-mst_orange flex items-center justify-center">
-    
+  <div>
     <Construction />
   </div>
 </template>
 
 <script setup>
-import Construction from '@/components/Construction.vue' 
+import Construction from "@/components/Construction.vue";
 
 components: {
-  Construction
+  Construction;
 }
-
 </script>
 
 

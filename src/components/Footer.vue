@@ -6,7 +6,7 @@
       </div>
 
       <p
-        class="mx-auto mt-6 max-w-md text-center leading-relaxed text-mst_white italic"
+        class="mx-auto mt-6 max-w-md text-center leading-relaxed text-mst_white font-semibold italic"
       >
         "Wir sind ein Unternehmen, das seine Tätigkeit im Dienstleistungssektor
         entwickelt, wir widmen uns hauptsächlich der Gestaltung und Produktion
@@ -19,7 +19,7 @@
       <nav aria-label="Footer Nav" class="mt-12">
         <ul class="flex flex-wrap justify-center gap-6 md:gap-8 lg:gap-12">
           <li>
-            <a class="text-mst_white transition hover:text-mst_orange" href="/">
+            <a class="text-mst_white transition hover:text-mst_orange font-semibold" href="/">
               About
             </a>
           </li>
@@ -92,5 +92,9 @@
         </li>
       </ul>
     </div>
+    <div class="text-center p-6 bg-mst_white">
+    <span>© 2021 Copyright:</span>
+    <a class="text-mst_black font-semibold" href="https://tailwind-elements.com/">Tailwind Elements</a>
+  </div>
   </footer>
 </template>
