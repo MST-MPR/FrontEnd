@@ -6,7 +6,7 @@ const showMobileMenu = ref(true);
 
 
 <template>
-  <nav>
+  <nav class="sticky top-0">
     <!--desktop menu-->
     <div class="bg-mst_black">
       <div class="max-w-1xl mx-auto">
