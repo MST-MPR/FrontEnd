@@ -1,9 +1,9 @@
-<script setup>
+<script>
 </script>
 
 <template>
-<div>
+  <div>
     <p>Hola mundo</p>
-</div>
+  </div>
 </template>
 

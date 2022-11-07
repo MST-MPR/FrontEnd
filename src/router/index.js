@@ -9,8 +9,8 @@ const router = createRouter({
             component: UnderConstruction
         },*/
         {
-            path: '/UnderConstruction',
-            name: 'UnderConstruction',
+            path: '/',
+            name: 'under-construction',
             component: () => import('../views/default/UnderConstruction.vue') 
         }
     ]
