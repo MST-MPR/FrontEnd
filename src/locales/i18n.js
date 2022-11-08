@@ -9,13 +9,17 @@ const i18n = createI18n({
             kontakt: "Kontakt",
             impressum: "Impressum",
             cookieRichtline: "Cookie Richtline (EU)",
+            coomingSoon: "Demnächst",
+            working: "Wir arbeiten an unserer Website. Bleiben Sie dran für einige aufregende Updates."
         },
         en: {
             verkauf: "Sale",
             vermietung: "Rental",
             kontakt: "Contact",
             impressum: "Imprint",
-            cookieRichtline: "Cookie Policy (EU)"
+            cookieRichtline: "Cookie Policy (EU)",
+            coomingSoon: "Cooming soon",
+            working: "We are working on our website. Stay stuned for some exciting updates."
         }
     }
 })

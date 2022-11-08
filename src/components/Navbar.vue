@@ -75,7 +75,7 @@ const showMobileMenu = ref(true);
                     py-5
                     px-2
                   "
-                  >Vermietung</a
+                  >{{ $t("vermietung") }}</a
                 >
                 <a
                   href="/"
@@ -114,7 +114,7 @@ const showMobileMenu = ref(true);
                     py-5
                     px-2
                   "
-                  >Kontakt</a
+                  >{{ $t("kontakt") }}</a
                 >
                 <a
                   href="/"
@@ -127,7 +127,7 @@ const showMobileMenu = ref(true);
                     py-5
                     px-2
                   "
-                  >Impressum</a
+                  >{{ $t("impressum") }}</a
                 >
                 <a
                   href="/"
@@ -140,7 +140,7 @@ const showMobileMenu = ref(true);
                     py-5
                     px-2
                   "
-                  >Cookie-richtline (EU)</a
+                  >{{ $t("cookieRichtline") }}</a
                 >
               </div>
             </div>
@@ -215,7 +215,7 @@ const showMobileMenu = ref(true);
             duration-300
             hover:text-mst_orange
           "
-          >Verkauf</a
+          >{{ $t("verkauf") }}</a
         >
         <a
           href="/"
@@ -229,7 +229,7 @@ const showMobileMenu = ref(true);
             duration-300
             hover:text-mst_orange
           "
-          >Vermietung</a
+          >{{ $t("vermietung") }}</a
         >
         <a
           href="/"
@@ -271,7 +271,7 @@ const showMobileMenu = ref(true);
             duration-300
             hover:text-mst_orange
           "
-          >Kontakt</a
+          >{{ $t("kontakt") }}</a
         >
         <a
           href="/"
@@ -285,7 +285,7 @@ const showMobileMenu = ref(true);
             duration-300
             hover:text-mst_orange
           "
-          >Impressum</a
+          >{{ $t("impressum") }}</a
         >
         <a
           href="/"
@@ -299,7 +299,7 @@ const showMobileMenu = ref(true);
             duration-300
             hover:text-mst_orange
           "
-          >Cookie-richtline (EU)</a
+          >{{ $t("cookieRichtline") }}</a
         >
       </div>
     </div>
