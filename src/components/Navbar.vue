@@ -25,7 +25,6 @@ const showMobileMenu = ref(true);
               <!--menu-->
               <div class="hidden md:flex items-center space-x-1">
                 <a
-
                   href="/"
                   class="
                     text-mst_white
@@ -63,7 +62,7 @@ const showMobileMenu = ref(true);
                     py-5
                     px-2
                   "
-                  >Verkauf</a
+                  >{{ $t("verkauf") }}</a
                 >
                 <a
                   href="/"
