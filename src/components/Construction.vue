@@ -11,7 +11,13 @@
       <h3 class="mr-56 text-xl italic text-white_dark">
         We are working on our website. Stay stuned for some exciting updates.
       </h3>
+      <iframe src="https://giphy.com/embed/toXKzaJP3WIgM" class="mt-24 ml-40" />
     </div>
   </div>
 </template>
 
+<style>
+ h1, h3{
+  text-shadow: 2px 2px black
+ }
+</style>

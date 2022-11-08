@@ -93,8 +93,8 @@
       </ul>
     </div>
     <div class="text-center p-6 bg-mst_white">
-    <span>© 2021 Copyright:</span>
-    <a class="text-mst_black font-semibold" href="https://tailwind-elements.com/">Tailwind Elements</a>
+    <span>© 2022 Copyright:</span>
+    <a class="text-mst_black font-semibold" href="/"> MedienSystemtechnik</a>
   </div>
   </footer>
 </template>
