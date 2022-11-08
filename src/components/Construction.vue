@@ -4,7 +4,7 @@
 <template>
   <div class="flex flex-wrap justify-center md:gap-8 lg:gap-12 bg-mst_construction">
     <div class="pt-4 pb-4 ml-24">
-      <img src="@/assets/images/thanks-kut.jpg" class="w-8/12 h-full shadow-2xl	" />
+      <img src="@/assets/images/thanks.jpg" class="w-8/12 h-full shadow-2xl	" />
     </div>
     <div class="mt-48">
       <h1 class="pt-20 pb-20 pr-20 mr-48 text-center text-6xl italic text-white_dark">{{ $t("coomingSoon") }}</h1>
