@@ -142,6 +142,33 @@ const showMobileMenu = ref(true);
                   "
                   >{{ $t("cookieRichtline") }}</a
                 >
+                <div>
+                  <select
+                    v-model="$i18n.locale"
+                    class="
+                      relative
+                      inline-flex
+                      items-center
+                      justify-center
+                      p-1
+                      overflow-hidden
+                      font-medium
+                      bg-mst_black
+                      text-mst_white
+                      border-2
+                      border-mst_orange
+                      rounded-full
+                    "
+                  >
+                    <option
+                      v-for="locale in $i18n.availableLocales"
+                      :key="`locale-${locale}`"
+                      :value="locale"
+                    >
+                      {{ locale }}
+                    </option>
+                  </select>
+                </div>
               </div>
             </div>
             <!--show mobile menu-->
@@ -301,6 +328,37 @@ const showMobileMenu = ref(true);
           "
           >{{ $t("cookieRichtline") }}</a
         >
+        <div
+          class="
+            relative
+            inline-flex
+            items-center
+            justify-center
+            p-4
+            px-6
+            py-3
+            overflow-hidden
+            font-medium
+            text-indigo-600
+            transition
+            duration-300
+            ease-out
+            border-2 border-purple-500
+            rounded-full
+            shadow-md
+            group
+          "
+        >
+          <select v-model="$i18n.locale">
+            <option
+              v-for="locale in $i18n.availableLocales"
+              :key="`locale-${locale}`"
+              :value="locale"
+            >
+              {{ locale }}
+            </option>
+          </select>
+        </div>
       </div>
     </div>
   </nav>

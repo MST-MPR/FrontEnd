@@ -1,9 +1,9 @@
 import { createI18n } from 'vue-i18n';
 
 const i18n = createI18n({
-    locale: "de",
+    locale: "Deutsch",
     messages: {
-        de: {
+        Deutsch: {
             verkauf: "Verkauf",
             vermietung: "Vermietung",
             kontakt: "Kontakt",
@@ -12,7 +12,7 @@ const i18n = createI18n({
             coomingSoon: "Demnächst",
             working: "Wir arbeiten an unserer Website. Bleiben Sie dran für einige aufregende Updates."
         },
-        en: {
+        English: {
             verkauf: "Sale",
             vermietung: "Rental",
             kontakt: "Contact",
