@@ -19,27 +19,27 @@
       <nav aria-label="Footer Nav" class="mt-12">
         <ul class="flex flex-wrap justify-center gap-6 md:gap-8 lg:gap-12">
           <li>
-            <a class="text-mst_white transition hover:text-mst_orange font-semibold" href="/">
-              About
-            </a>
+            <router-link to="/fullService" class="text-mst_white transition hover:text-mst_orange">
+              Full Service
+            </router-link>
           </li>
 
           <li>
-            <a class="text-mst_white transition hover:text-mst_orange" href="/">
-              Careers
-            </a>
+            <router-link to="/verkauf" class="text-mst_white transition hover:text-mst_orange ">
+              {{ $t("verkauf") }}
+            </router-link>
           </li>
 
           <li>
-            <a class="text-mst_white transition hover:text-mst_orange" href="/">
-              History
-            </a>
+            <router-link to="/smartHome" class="text-mst_white transition hover:text-mst_orange">
+              Smart Home
+            </router-link>
           </li>
 
           <li>
-            <a class="text-mst_white transition hover:text-mst_orange" href="/">
-              Services
-            </a>
+            <router-link to="/kontakt" class="text-mst_white transition hover:text-mst_orange">
+              {{ $t("kontakt") }}
+            </router-link>
           </li>
         </ul>
       </nav>

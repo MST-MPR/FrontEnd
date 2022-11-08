@@ -8,7 +8,7 @@ import Footer from "./components/Footer.vue";
   <div class="sticky top-0">
     <Navbar />
   </div>
-  <main class="bg-mst_construction">
+  <main>
     <RouterView />
   </main>
   <div>

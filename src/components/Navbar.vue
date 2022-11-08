@@ -4,10 +4,9 @@ import { ref } from "vue";
 const showMobileMenu = ref(true);
 </script>
 
-
 <template>
-  <nav>
-    <div class="sticky top-0">
+  <div>
+    <div>
       <!--desktop menu-->
       <div class="bg-mst_black">
         <div class="max-w-1xl mx-auto">
@@ -15,17 +14,20 @@ const showMobileMenu = ref(true);
             <!--menu-->
             <div class="flex space-x-4">
               <!--logo-->
-              <a href="" class="flex items-center space-x-2 py-5 px-2">
+              <router-link
+                to="/home"
+                class="flex items-center space-x-2 py-5 px-2"
+              >
                 <img src="../assets/images/logo.svg" class="h-20 w-20" />
                 <span class="italic text-2xl text-mst_white"
                   >medien <br />SYSTEMTECHNIK</span
                 >
-              </a>
+              </router-link>
               <div class="w-40"></div>
               <!--menu-->
               <div class="hidden md:flex items-center space-x-1">
-                <a
-                  href="/"
+                <router-link
+                  to="/home"
                   class="
                     text-mst_white
                     text-bold
@@ -36,10 +38,10 @@ const showMobileMenu = ref(true);
                     py-5
                     px-2
                   "
-                  >Home</a
+                  >Home</router-link
                 >
-                <a
-                  href="/"
+                <router-link
+                  to="/fullService"
                   class="
                     text-mst_white
                     transform
@@ -49,10 +51,10 @@ const showMobileMenu = ref(true);
                     py-5
                     px-2
                   "
-                  >Full service</a
+                  >Full service</router-link
                 >
-                <a
-                  href="/"
+                <router-link
+                  to="/verkauf"
                   class="
                     text-mst_white
                     transform
@@ -62,10 +64,10 @@ const showMobileMenu = ref(true);
                     py-5
                     px-2
                   "
-                  >{{ $t("verkauf") }}</a
+                  >{{ $t("verkauf") }}</router-link
                 >
-                <a
-                  href="/"
+                <router-link
+                  to="/vermietung"
                   class="
                     text-mst_white
                     transform
@@ -75,10 +77,10 @@ const showMobileMenu = ref(true);
                     py-5
                     px-2
                   "
-                  >{{ $t("vermietung") }}</a
+                  >{{ $t("vermietung") }}</router-link
                 >
-                <a
-                  href="/"
+                <router-link
+                  to="/smartHome"
                   class="
                     text-mst_white
                     transform
@@ -88,10 +90,10 @@ const showMobileMenu = ref(true);
                     py-5
                     px-2
                   "
-                  >Smart home</a
+                  >Smart home</router-link
                 >
-                <a
-                  href="/"
+                <router-link
+                  to="/streaming"
                   class="
                     text-mst_white
                     transform
@@ -101,10 +103,10 @@ const showMobileMenu = ref(true);
                     py-5
                     px-2
                   "
-                  >Streaming</a
+                  >Streaming</router-link
                 >
-                <a
-                  href="/"
+                <router-link
+                  to="/kontakt"
                   class="
                     text-mst_white
                     transform
@@ -114,10 +116,10 @@ const showMobileMenu = ref(true);
                     py-5
                     px-2
                   "
-                  >{{ $t("kontakt") }}</a
+                  >{{ $t("kontakt") }}</router-link
                 >
-                <a
-                  href="/"
+                <router-link
+                  to="/impressum"
                   class="
                     text-mst_white
                     transform
@@ -127,10 +129,10 @@ const showMobileMenu = ref(true);
                     py-5
                     px-2
                   "
-                  >{{ $t("impressum") }}</a
+                  >{{ $t("impressum") }}</router-link
                 >
-                <a
-                  href="/"
+                <router-link
+                  to="/cookieRichtline"
                   class="
                     text-mst_white
                     transform
@@ -140,7 +142,7 @@ const showMobileMenu = ref(true);
                     py-5
                     px-2
                   "
-                  >{{ $t("cookieRichtline") }}</a
+                  >{{ $t("cookieRichtline") }}</router-link
                 >
                 <div>
                   <select
@@ -202,8 +204,8 @@ const showMobileMenu = ref(true);
         class="md:hidden w-40 bg-mst_black absolute inset-y-30 right-0"
         :class="{ hidden: showMobileMenu }"
       >
-        <a
-          href="/"
+        <router-link
+          to="/home"
           class="
             block
             py-2
@@ -214,10 +216,10 @@ const showMobileMenu = ref(true);
             duration-300
             hover:text-mst_orange
           "
-          >Home</a
+          >Home</router-link
         >
-        <a
-          href="/"
+        <router-link
+          to="/fullService"
           class="
             block
             py-2
@@ -228,10 +230,10 @@ const showMobileMenu = ref(true);
             duration-300
             hover:text-mst_orange
           "
-          >Full service</a
+          >Full service</router-link
         >
-        <a
-          href="/"
+        <router-link
+          to="/verkauf"
           class="
             block
             py-2
@@ -242,10 +244,10 @@ const showMobileMenu = ref(true);
             duration-300
             hover:text-mst_orange
           "
-          >{{ $t("verkauf") }}</a
+          >{{ $t("verkauf") }}</router-link
         >
-        <a
-          href="/"
+        <router-link
+          to="/vermietung"
           class="
             block
             py-2
@@ -256,10 +258,10 @@ const showMobileMenu = ref(true);
             duration-300
             hover:text-mst_orange
           "
-          >{{ $t("vermietung") }}</a
+          >{{ $t("vermietung") }}</router-link
         >
-        <a
-          href="/"
+        <router-link
+          to="/smartHome"
           class="
             block
             py-2
@@ -270,10 +272,10 @@ const showMobileMenu = ref(true);
             duration-300
             hover:text-mst_orange
           "
-          >Smart home</a
+          >Smart home</router-link
         >
-        <a
-          href="/"
+        <router-link
+          to="/streaming"
           class="
             block
             py-2
@@ -284,10 +286,10 @@ const showMobileMenu = ref(true);
             duration-300
             hover:text-mst_orange
           "
-          >Streaming</a
+          >Streaming</router-link
         >
-        <a
-          href="/"
+        <router-link
+          to="kontakt"
           class="
             block
             py-2
@@ -298,10 +300,10 @@ const showMobileMenu = ref(true);
             duration-300
             hover:text-mst_orange
           "
-          >{{ $t("kontakt") }}</a
+          >{{ $t("kontakt") }}</router-link
         >
-        <a
-          href="/"
+        <router-link
+          to="/impressum"
           class="
             block
             py-2
@@ -312,10 +314,10 @@ const showMobileMenu = ref(true);
             duration-300
             hover:text-mst_orange
           "
-          >{{ $t("impressum") }}</a
+          >{{ $t("impressum") }}</router-link
         >
-        <a
-          href="/"
+        <router-link
+          to="/cookieRichtline"
           class="
             block
             py-2
@@ -326,7 +328,7 @@ const showMobileMenu = ref(true);
             duration-300
             hover:text-mst_orange
           "
-          >{{ $t("cookieRichtline") }}</a
+          >{{ $t("cookieRichtline") }}</router-link
         >
         <div
           class="
@@ -361,5 +363,5 @@ const showMobileMenu = ref(true);
         </div>
       </div>
     </div>
-  </nav>
+  </div>
 </template>
