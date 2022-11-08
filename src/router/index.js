@@ -52,6 +52,11 @@ const router = createRouter({
             path: '/cookieRichtline',
             name: 'cookieRichtline',
             component: () => import('../views/CookieRichtline.vue') 
+        },
+        {
+            path: '/:pathMatch(.*)*',
+            name: 'notFound',
+            component: () => import('../views/404.vue') 
         }
         
     ]
