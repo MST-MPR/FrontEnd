@@ -4,6 +4,7 @@
   <div class="h-screen w-screen bg-mst_gray flex items-center">
     <div
       class="
+        ml-56
         container
         flex flex-col
         md:flex-row
