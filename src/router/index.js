@@ -1,4 +1,15 @@
 import { createRouter, createWebHistory } from "vue-router";
+import Default from "../views/Default/UnderConstructionIndexView.vue" 
+import HomeView from "../views/Home/HomeIndexView.vue";
+import FullService from "../views/FullService/FullServiceIndexView.vue";
+import Sale from "../views/Sale/SaleIndexView.vue";
+import Rental from "../views/Rental/RentalIndexView.vue";
+import SmartHome from "../views/SmartHome/SmartHomeIndexView.vue";
+import Streaming from "../views/Streaming/StreamingIndexView.vue";
+import Contact from "../views/FullService/FullServiceIndexView.vue";
+import Imprint from "../views/Imprint/ImprintIndexView.vue";
+import CookiePolicy from "../views/CookiePolicy/CookiePolicyIndexView.vue";
+import Error from "../views/Error/ErrorIndexView.vue";
 
 const router = createRouter({
     history: createWebHistory(import.meta.env.BASE_URL),
@@ -6,57 +17,57 @@ const router = createRouter({
         {
             path: '/',
             name: 'under-construction',
-            component: () => import('../views/default/UnderConstruction.vue') 
+            component: Default
         },
         {
             path: '/home',
             name: 'home',
-            component: () => import('../views/Home.vue') 
+            component: HomeView
         },
         {
             path: '/fullService',
             name: 'fullService',
-            component: () => import('../views/FullService.vue') 
+            component: FullService 
         },
         {
-            path: '/verkauf',
-            name: 'verkauf',
-            component: () => import('../views/Verkauf.vue') 
+            path: '/sale',
+            name: 'sale',
+            component: Sale
         },
         {
-            path: '/vermietung',
-            name: 'vermietung',
-            component: () => import('../views/Vermietung.vue') 
+            path: '/rental',
+            name: 'rental',
+            component: Rental 
         },
         {
             path: '/smartHome',
             name: 'smartHome',
-            component: () => import('../views/SmartHome.vue') 
+            component: SmartHome 
         },
         {
             path: '/streaming',
             name: 'streaming',
-            component: () => import('../views/Streaming.vue') 
+            component: Streaming
         },
         {
-            path: '/kontakt',
-            name: 'kontakt',
-            component: () => import('../views/Kontakt.vue') 
+            path: '/contact',
+            name: 'contact',
+            component: Contact 
         },
         {
-            path: '/impressum',
-            name: 'impressum',
-            component: () => import('../views/Impressum.vue') 
+            path: '/imprint',
+            name: 'imprint',
+            component: Imprint 
         },
         {
-            path: '/cookieRichtline',
-            name: 'cookieRichtline',
-            component: () => import('../views/CookieRichtline.vue') 
+            path: '/cookiePolicy',
+            name: 'cookiePolicy',
+            component: CookiePolicy 
         },
         {
             path: '/:pathMatch(.*)*',
             name: 'notFound',
-            component: () => import('../views/404.vue') 
+            component: Error 
         }
         
     ]

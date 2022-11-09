@@ -18,7 +18,7 @@ const showMobileMenu = ref(true);
                 to="/home"
                 class="flex items-center space-x-2 py-5 px-2"
               >
-                <img src="../assets/images/logo.svg" class="h-20 w-20" />
+                <img src="../../assets/images/logo.svg" class="h-20 w-20" />
                 <span class="italic text-2xl text-mst_white"
                   >medien <br />SYSTEMTECHNIK</span
                 >
@@ -52,7 +52,7 @@ const showMobileMenu = ref(true);
                   "
                   >Full service</router-link
                 >
-                <router-link to="/verkauf"
+                <router-link to="/sale"
                   class="
                     text-mst_white
                     transform
@@ -64,7 +64,7 @@ const showMobileMenu = ref(true);
                   "
                   >{{ $t("verkauf") }}</router-link
                 >
-                <router-link to="/vermietung"
+                <router-link to="/rental"
                   class="
                     text-mst_white
                     transform
@@ -100,7 +100,7 @@ const showMobileMenu = ref(true);
                   "
                   >Streaming</router-link
                 >
-                <router-link to="/kontakt"
+                <router-link to="/contact"
                   class="
                     text-mst_white
                     transform
@@ -112,7 +112,7 @@ const showMobileMenu = ref(true);
                   "
                   >{{ $t("kontakt") }}</router-link
                 >
-                <router-link to="/impressum"
+                <router-link to="/imprint"
                   class="
                     text-mst_white
                     transform
@@ -124,7 +124,7 @@ const showMobileMenu = ref(true);
                   "
                   >{{ $t("impressum") }}</router-link
                 >
-                <router-link to="/cookieRichtline"
+                <router-link to="/cookiePolicy"
                   class="
                     text-mst_white
                     transform
@@ -222,7 +222,7 @@ const showMobileMenu = ref(true);
           "
           >Full service</router-link
         >
-        <router-link to="/verkauf"
+        <router-link to="/sale"
           class="
             block
             py-2
@@ -235,7 +235,7 @@ const showMobileMenu = ref(true);
           "
           >{{ $t("verkauf") }}</router-link
         >
-        <router-link to="/vermietung"
+        <router-link to="/rental"
           class="
             block
             py-2
@@ -274,7 +274,7 @@ const showMobileMenu = ref(true);
           "
           >Streaming</router-link
         >
-        <router-link to="kontakt"
+        <router-link to="contact"
           class="
             block
             py-2
@@ -287,7 +287,7 @@ const showMobileMenu = ref(true);
           "
           >{{ $t("kontakt") }}</router-link
         >
-        <router-link to="/impressum"
+        <router-link to="/imprint"
           class="
             block
             py-2
@@ -300,7 +300,7 @@ const showMobileMenu = ref(true);
           "
           >{{ $t("impressum") }}</router-link
         >
-        <router-link to="/cookieRichtline"
+        <router-link to="/cookiePolicy"
           class="
             block
             py-2

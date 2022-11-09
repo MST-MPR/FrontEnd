@@ -1,6 +1,3 @@
-<script>
-</script>
-
 <template>
   <div class="flex flex-wrap justify-center md:gap-8 lg:gap-12 bg-mst_construction">
     <div class="pt-4 pb-4 ml-24">

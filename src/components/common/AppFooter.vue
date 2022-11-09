@@ -2,7 +2,7 @@
   <footer class="bg-mst_black">
     <div class="mx-auto max-w-5xl px-4 py-16 sm:px-6 lg:px-8">
       <div class="hero container max-w-screen-lg mx-auto w-12">
-        <img src="../assets/images/logo_black.png" />
+        <img src="../../assets/images/logo_black.png" />
       </div>
 
       <p
