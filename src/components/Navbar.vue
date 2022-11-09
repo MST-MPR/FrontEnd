@@ -40,8 +40,7 @@ const showMobileMenu = ref(true);
                   "
                   >Home</router-link
                 >
-                <router-link
-                  to="/fullService"
+                <router-link to="/fullService"
                   class="
                     text-mst_white
                     transform
@@ -53,8 +52,7 @@ const showMobileMenu = ref(true);
                   "
                   >Full service</router-link
                 >
-                <router-link
-                  to="/verkauf"
+                <router-link to="/verkauf"
                   class="
                     text-mst_white
                     transform
@@ -66,8 +64,7 @@ const showMobileMenu = ref(true);
                   "
                   >{{ $t("verkauf") }}</router-link
                 >
-                <router-link
-                  to="/vermietung"
+                <router-link to="/vermietung"
                   class="
                     text-mst_white
                     transform
@@ -79,8 +76,7 @@ const showMobileMenu = ref(true);
                   "
                   >{{ $t("vermietung") }}</router-link
                 >
-                <router-link
-                  to="/smartHome"
+                <router-link to="/smartHome"
                   class="
                     text-mst_white
                     transform
@@ -92,8 +88,7 @@ const showMobileMenu = ref(true);
                   "
                   >Smart home</router-link
                 >
-                <router-link
-                  to="/streaming"
+                <router-link to="/streaming"
                   class="
                     text-mst_white
                     transform
@@ -105,8 +100,7 @@ const showMobileMenu = ref(true);
                   "
                   >Streaming</router-link
                 >
-                <router-link
-                  to="/kontakt"
+                <router-link to="/kontakt"
                   class="
                     text-mst_white
                     transform
@@ -118,8 +112,7 @@ const showMobileMenu = ref(true);
                   "
                   >{{ $t("kontakt") }}</router-link
                 >
-                <router-link
-                  to="/impressum"
+                <router-link to="/impressum"
                   class="
                     text-mst_white
                     transform
@@ -131,8 +124,7 @@ const showMobileMenu = ref(true);
                   "
                   >{{ $t("impressum") }}</router-link
                 >
-                <router-link
-                  to="/cookieRichtline"
+                <router-link to="/cookieRichtline"
                   class="
                     text-mst_white
                     transform
@@ -204,8 +196,7 @@ const showMobileMenu = ref(true);
         class="md:hidden w-40 bg-mst_black absolute inset-y-30 right-0"
         :class="{ hidden: showMobileMenu }"
       >
-        <router-link
-          to="/home"
+        <router-link to="/home"
           class="
             block
             py-2
@@ -218,8 +209,7 @@ const showMobileMenu = ref(true);
           "
           >Home</router-link
         >
-        <router-link
-          to="/fullService"
+        <router-link to="/fullService"
           class="
             block
             py-2
@@ -232,8 +222,7 @@ const showMobileMenu = ref(true);
           "
           >Full service</router-link
         >
-        <router-link
-          to="/verkauf"
+        <router-link to="/verkauf"
           class="
             block
             py-2
@@ -246,8 +235,7 @@ const showMobileMenu = ref(true);
           "
           >{{ $t("verkauf") }}</router-link
         >
-        <router-link
-          to="/vermietung"
+        <router-link to="/vermietung"
           class="
             block
             py-2
@@ -260,8 +248,7 @@ const showMobileMenu = ref(true);
           "
           >{{ $t("vermietung") }}</router-link
         >
-        <router-link
-          to="/smartHome"
+        <router-link to="/smartHome"
           class="
             block
             py-2
@@ -274,8 +261,7 @@ const showMobileMenu = ref(true);
           "
           >Smart home</router-link
         >
-        <router-link
-          to="/streaming"
+        <router-link to="/streaming"
           class="
             block
             py-2
@@ -288,8 +274,7 @@ const showMobileMenu = ref(true);
           "
           >Streaming</router-link
         >
-        <router-link
-          to="kontakt"
+        <router-link to="kontakt"
           class="
             block
             py-2
@@ -302,8 +287,7 @@ const showMobileMenu = ref(true);
           "
           >{{ $t("kontakt") }}</router-link
         >
-        <router-link
-          to="/impressum"
+        <router-link to="/impressum"
           class="
             block
             py-2
@@ -316,8 +300,7 @@ const showMobileMenu = ref(true);
           "
           >{{ $t("impressum") }}</router-link
         >
-        <router-link
-          to="/cookieRichtline"
+        <router-link to="/cookieRichtline"
           class="
             block
             py-2

@@ -8,12 +8,7 @@
       <p
         class="mx-auto mt-6 max-w-md text-center leading-relaxed text-mst_white font-semibold italic"
       >
-        "Wir sind ein Unternehmen, das seine Tätigkeit im Dienstleistungssektor
-        entwickelt, wir widmen uns hauptsächlich der Gestaltung und Produktion
-        von Szenen, audiovisuellen Produkten, Musik und Veranstaltungen, bei
-        denen eine Vielzahl menschlicher und technologischer Faktoren beteiligt
-        sind, die effizient kombiniert werden müssen erhalten Sie ein Produkt
-        von ausgezeichneter Qualität."
+        {{ $t("philosophy") }}
       </p>
 
       <nav aria-label="Footer Nav" class="mt-12">
