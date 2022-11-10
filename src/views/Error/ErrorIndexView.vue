@@ -22,7 +22,8 @@
           {{ $t("worry") }}
         </p>
 
-        <router-link to="/home"
+        <router-link
+          to="/home"
           class="
             px-4
             inline
@@ -205,7 +206,7 @@
   </div>
 </template>
 
-<style>
+<style setup>
 .cls-1 {
   fill: #d6b49a;
 }

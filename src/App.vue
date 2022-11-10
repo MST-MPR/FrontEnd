@@ -5,13 +5,15 @@ import Footer from "./components/common/AppFooter.vue";
 </script>
 
 <template>
-  <div class="sticky top-0">
-    <Navbar />
-  </div>
-  <main>
-    <RouterView />
-  </main>
-  <div>
-    <Footer />
+  <div class="overflow-x-hidden">
+    <div class="sticky top-0">
+      <Navbar />
+    </div>
+    <main>
+      <RouterView />
+    </main>
+    <div>
+      <Footer />
+    </div>
   </div>
 </template>

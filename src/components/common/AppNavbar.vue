@@ -18,8 +18,8 @@ const showMobileMenu = ref(true);
                 to="/home"
                 class="flex items-center space-x-2 py-5 px-2"
               >
-                <img src="../../assets/images/logo.svg" class="h-20 w-20" />
-                <span class="italic text-2xl text-mst_white"
+                <img src="../../assets/images/logo.svg" class="h-20 w-20 ml-4 md:block" />
+                <span class="italic text-2xl text-mst_white text-sm md:block"
                   >medien <br />SYSTEMTECHNIK</span
                 >
               </router-link>
@@ -169,7 +169,7 @@ const showMobileMenu = ref(true);
             <div class="md:hidden flex items-center">
               <button
                 @click="showMobileMenu = !showMobileMenu"
-                class="py-10 px-5"
+                class="mr-12"
               >
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -319,16 +319,13 @@ const showMobileMenu = ref(true);
             inline-flex
             items-center
             justify-center
-            p-4
+            p-2
             px-6
             py-3
             overflow-hidden
-            font-medium
-            text-indigo-600
             transition
             duration-300
             ease-out
-            border-2 border-purple-500
             rounded-full
             shadow-md
             group

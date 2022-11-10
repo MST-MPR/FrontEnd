@@ -1,12 +1,21 @@
 <template>
   <footer class="bg-mst_black">
-    <div class="mx-auto max-w-5xl px-4 py-16 sm:px-6 lg:px-8">
-      <div class="hero container max-w-screen-lg mx-auto w-12">
+    <div class="container mx-auto max-w-5xl px-4 py-16 sm:px-6 lg:px-8">
+      <div class="container max-w-screen-lg mx-auto w-12">
         <img src="../../assets/images/logo_black.png" />
       </div>
 
       <p
-        class="mx-auto mt-6 max-w-md text-center leading-relaxed text-mst_white font-semibold italic"
+        class="
+          mx-auto
+          mt-6
+          max-w-md
+          text-center
+          leading-relaxed
+          text-mst_white
+          font-semibold
+          italic
+        "
       >
         {{ $t("philosophy") }}
       </p>
@@ -14,25 +23,37 @@
       <nav aria-label="Footer Nav" class="mt-12">
         <ul class="flex flex-wrap justify-center gap-6 md:gap-8 lg:gap-12">
           <li>
-            <router-link to="/fullService" class="text-mst_white transition hover:text-mst_orange">
+            <router-link
+              to="/fullService"
+              class="text-mst_white transition hover:text-mst_orange"
+            >
               Full Service
             </router-link>
           </li>
 
           <li>
-            <router-link to="/verkauf" class="text-mst_white transition hover:text-mst_orange ">
+            <router-link
+              to="/sale"
+              class="text-mst_white transition hover:text-mst_orange"
+            >
               {{ $t("verkauf") }}
             </router-link>
           </li>
 
           <li>
-            <router-link to="/smartHome" class="text-mst_white transition hover:text-mst_orange">
+            <router-link
+              to="/smartHome"
+              class="text-mst_white transition hover:text-mst_orange"
+            >
               Smart Home
             </router-link>
           </li>
 
           <li>
-            <router-link to="/kontakt" class="text-mst_white transition hover:text-mst_orange">
+            <router-link
+              to="/contact"
+              class="text-mst_white transition hover:text-mst_orange"
+            >
               {{ $t("kontakt") }}
             </router-link>
           </li>
@@ -88,8 +109,8 @@
       </ul>
     </div>
     <div class="text-center p-6 bg-mst_white">
-    <span>© 2022 Copyright:</span>
-    <a class="text-mst_black font-semibold" href="/"> MedienSystemtechnik</a>
-  </div>
+      <span>© 2022 Copyright:</span>
+      <a class="text-mst_black font-semibold" href="/"> MedienSystemtechnik</a>
+    </div>
   </footer>
 </template>

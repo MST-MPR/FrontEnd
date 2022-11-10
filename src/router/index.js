@@ -1,12 +1,12 @@
 import { createRouter, createWebHistory } from "vue-router";
-import Default from "../views/Default/UnderConstructionIndexView.vue" 
+import Default from "../views/Default/UnderConstructionIndexView.vue"
 import HomeView from "../views/Home/HomeIndexView.vue";
 import FullService from "../views/FullService/FullServiceIndexView.vue";
 import Sale from "../views/Sale/SaleIndexView.vue";
 import Rental from "../views/Rental/RentalIndexView.vue";
 import SmartHome from "../views/SmartHome/SmartHomeIndexView.vue";
 import Streaming from "../views/Streaming/StreamingIndexView.vue";
-import Contact from "../views/FullService/FullServiceIndexView.vue";
+import Contact from "../views/Contact/ContactIndexView.vue";
 import Imprint from "../views/Imprint/ImprintIndexView.vue";
 import CookiePolicy from "../views/CookiePolicy/CookiePolicyIndexView.vue";
 import Error from "../views/Error/ErrorIndexView.vue";
@@ -27,7 +27,7 @@ const router = createRouter({
         {
             path: '/fullService',
             name: 'fullService',
-            component: FullService 
+            component: FullService
         },
         {
             path: '/sale',
@@ -37,12 +37,12 @@ const router = createRouter({
         {
             path: '/rental',
             name: 'rental',
-            component: Rental 
+            component: Rental
         },
         {
             path: '/smartHome',
             name: 'smartHome',
-            component: SmartHome 
+            component: SmartHome
         },
         {
             path: '/streaming',
@@ -52,24 +52,24 @@ const router = createRouter({
         {
             path: '/contact',
             name: 'contact',
-            component: Contact 
+            component: Contact
         },
         {
             path: '/imprint',
             name: 'imprint',
-            component: Imprint 
+            component: Imprint
         },
         {
             path: '/cookiePolicy',
             name: 'cookiePolicy',
-            component: CookiePolicy 
+            component: CookiePolicy
         },
         {
             path: '/:pathMatch(.*)*',
             name: 'notFound',
-            component: Error 
+            component: Error
         }
-        
+
     ]
 })
 
