@@ -1,7 +1,7 @@
 <template>
   <!-- component -->
   <!-- This is an example component -->
-  <div class="h-screen w-screen bg-mst_gray flex items-center">
+  <div class="h-[950px] w-screen bg-mst_gray flex items-center">
     <div
       class="
         ml-56
