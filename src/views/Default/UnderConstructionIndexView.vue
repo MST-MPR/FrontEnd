@@ -27,7 +27,6 @@
       >
         {{ $t("working") }}
       </h3>
-      <iframe src="https://giphy.com/embed/toXKzaJP3WIgM" class="mt-24 ml-40" />
     </div>
   </div>
 </template>

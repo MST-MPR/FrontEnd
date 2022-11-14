@@ -18,8 +18,8 @@ const showMobileMenu = ref(true);
                 to="/home"
                 class="flex items-center space-x-2 py-5 px-2"
               >
-                <img src="../../assets/images/logo.svg" class="h-20 w-20 ml-4 md:block" />
-                <span class="italic text-2xl text-mst_white text-sm md:block"
+                <img src="../../assets/images/logo.svg" class="h-20 w-20 ml-6 sm:h-16 w-16 md:block" />
+                <span class="italic text-mst_white text-sm sm:text-2xl"
                   >medien <br />SYSTEMTECHNIK</span
                 >
               </router-link>
