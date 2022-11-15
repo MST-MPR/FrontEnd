@@ -1,5 +1,5 @@
 <template>
-  <div class="w-full h-full bg-mst_bg">
+  <div class="bg-mst_bg">
     <div class="basis-1/2 visible lg:hidden">
       <img
         class="saturate-50 brightness-50 rounded-bl-[100px]"
