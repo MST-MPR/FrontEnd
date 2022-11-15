@@ -19,9 +19,6 @@ const i18n = createI18n({
             working: "Wir arbeiten an unserer Website. Bleiben Sie dran für einige aufregende Updates.",
 
             /* 404 */
-            sorry: "Entschuldigung, wir konnten diese Seite nicht finden.",
-            worry: "Aber keine Sorge, auf unserer Homepage finden Sie noch viel mehr.",
-            back: "Zurück zur Startseite",
         },
         English: {
             /* Navbar */
@@ -39,9 +36,6 @@ const i18n = createI18n({
             working: "We are working on our website. Stay stuned for some exciting updates.",
 
             /* 404 */
-            sorry: "Sorry, we couldn't find this page.",
-            worry: "But dont worry, you can find plenty of other things on our homepage.",
-            back: "Back to homepage",
         }
     }
 })

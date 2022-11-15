@@ -5,7 +5,7 @@ import Footer from "./components/common/AppFooter.vue";
 </script>
 
 <template>
-  <div class="overflow-x-hidden">
+  <div>
     <div class="sticky top-0">
       <Navbar />
     </div>
