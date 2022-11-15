@@ -6,10 +6,10 @@ import Footer from "./components/common/AppFooter.vue";
 
 <template>
   <div>
-    <div class="sticky top-0">
+    <div class="sticky top-0 z-50">
       <Navbar />
     </div>
-    <div>
+    <div class="relative">
       <RouterView />
     </div>
     <div>
