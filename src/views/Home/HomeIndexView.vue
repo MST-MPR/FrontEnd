@@ -1,5 +1,4 @@
 <script setup>
-import Carousel from "@/components/app/AppCarousel.vue";
 </script>
 
 <template>
@@ -51,9 +50,6 @@ import Carousel from "@/components/app/AppCarousel.vue";
           />
         </div>
       </div>
-    </div>
-    <div>
-      <Carousel />
     </div>
   </div>
 </template>
