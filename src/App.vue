@@ -9,7 +9,7 @@ import Footer from "./components/common/AppFooter.vue";
     <div class="sticky top-0 z-50">
       <Navbar />
     </div>
-    <div class="relative">
+    <div>
       <RouterView />
     </div>
     <div>

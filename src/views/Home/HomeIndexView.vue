@@ -2,13 +2,13 @@
 </script>
 
 <template>
-  <div class="object-fit-cover">
+  <div class="object-fit">
     <!--PRINCIPAL-->
     <div class="bg-mst_bg h-screen">
       <div class="basis-1/2 visible lg:hidden">
         <img
           class="saturate-50 brightness-50 rounded-bl-[100px]"
-          src="@/assets/images/kameras.jpg"
+          src="../../assets/images/kameras.jpg"
           alt="kameras-medien-systemtechnik"
         />
       </div>
@@ -584,6 +584,44 @@
         >
           {{ $t("überUns2") }}
         </p>
+      </div>
+    </div>
+    <!--SPONSORS-->
+
+    <div class="h-screen sm:h-[900px] mt-2 mb-2">
+      <div class="h-full relative">
+        <img
+          src="../../assets/images/esc.jpg"
+          class="
+            w-full
+            h-full
+            object-cover
+            absolute
+            mix-blend-overlay
+            object-left-bottom
+            brightness-50
+            blur-sm
+            sm:object-center
+          "
+        />
+        <h1
+          class="
+            text-mst_white
+            text-center
+            font-extrabold
+            text-5xl
+            p-4
+            font-mono
+            italic
+            sm:text-7xl
+          "
+        >
+          Sponsoring
+        </h1>
+        <div class="flex flex-col ml-[20%] sm:space-x-52 sm:flex sm:flex-row">
+          <div class="w-52 mt-6 sm:w-[500px]"><img src="../../assets/images/sponsor1.png" alt="" /></div>
+          <div class="w-52 mt-6 sm:w-[504px]"><img src="../../assets/images/sponsor2.png" alt="" /></div>
+        </div>
       </div>
     </div>
   </div>
