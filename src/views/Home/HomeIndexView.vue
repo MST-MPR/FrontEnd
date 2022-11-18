@@ -2,7 +2,8 @@
 </script>
 
 <template>
-  <div>
+  <div class="object-fit-cover">
+    <!--PRINCIPAL-->
     <div class="bg-mst_bg h-screen">
       <div class="basis-1/2 visible lg:hidden">
         <img
@@ -49,7 +50,7 @@
         </div>
       </div>
     </div>
-
+    <!--GRID-->
     <div class="container mx-auto">
       <div
         class="
@@ -130,7 +131,7 @@
                 </p>
               </div>
             </div>
-            <div class="ml-2 mt-5 sm:ml-16">
+            <div class="ml-2 mt-5 sm:ml-20">
               <router-link
                 to="/fullService"
                 type="button"
@@ -225,7 +226,7 @@
                 </p>
               </div>
             </div>
-            <div class="ml-2 mt-5 sm:ml-16">
+            <div class="ml-2 mt-5 sm:ml-20">
               <router-link
                 to="/sale"
                 type="button"
@@ -321,7 +322,7 @@
                 </p>
               </div>
             </div>
-            <div class="ml-2 mt-5 sm:ml-16">
+            <div class="ml-2 mt-5 sm:ml-20">
               <router-link
                 to="/rental"
                 type="button"
@@ -417,7 +418,7 @@
                 </p>
               </div>
             </div>
-            <div class="ml-2 mt-5 sm:ml-16">
+            <div class="ml-2 mt-5 sm:ml-20">
               <router-link
                 to="/streaming"
                 type="button"
@@ -512,7 +513,7 @@
                 </p>
               </div>
             </div>
-            <div class="ml-2 mt-5 sm:ml-16">
+            <div class="ml-2 mt-5 sm:ml-20">
               <router-link
                 to="/smarthome"
                 type="button"
@@ -539,7 +540,51 @@
         </div>
       </div>
     </div>
+    <!--UBER UNS-->
+    <div class="h-fit mt-2">
+      <div class="h-full w-full relative">
+        <img
+          src="../../assets/images/esc.jpg"
+          class="
+            w-full
+            h-full
+            object-cover
+            absolute
+            mix-blend-overlay
+            object-left-bottom
+            brightness-50
+            blur-sm
+            sm:object-center
+          "
+        />
+        <h1
+          class="
+            text-mst_white
+            text-center
+            font-extrabold
+            text-5xl
+            p-4
+            font-mono
+            italic
+            sm:text-7xl
+          "
+        >
+          {{ $t("überUns1") }}
+        </h1>
+        <p
+          class="
+            text-mst_white
+            text-center text-base
+            p-4
+            font-serif
+            tracking-wider
+            leading-relaxed
+            sm:p-40 sm:text-2xl
+          "
+        >
+          {{ $t("überUns2") }}
+        </p>
+      </div>
+    </div>
   </div>
 </template>
-
-

@@ -2,7 +2,11 @@
 module.exports = {
   content: ["./index.html", "./src/**/*.{vue,js,ts,jsx,tsx}"],
   theme: {
-    extend: {},
+    extend: {
+      backgroundImage: {
+        überUns: "url('./src/assets/images/esc.jpg')"
+      }
+    },
     colors: {
       mst_orange: '#ef7c04',
       mst_black: '#000000',
