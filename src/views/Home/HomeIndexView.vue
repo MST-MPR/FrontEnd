@@ -5,7 +5,7 @@
       <div class="basis-1/2 visible sm:hidden">
         <img
           class="saturate-50 brightness-50 rounded-bl-[100px]"
-          src="../../assets/images/kameras.jpg"
+          src="../../assets/images/General/kameras.jpg"
           alt="kameras-medien-systemtechnik"
         />
       </div>
@@ -41,7 +41,7 @@
         <div class="basis-1/2 hidden sm:block">
           <img
             class="saturate-50 brightness-50 rounded-bl-[1200px]"
-            src="@/assets/images/kameras.jpg"
+            src="../../assets/images/General/kameras.jpg"
             alt="kameras-medien-systemtechnik"
           />
         </div>
@@ -541,7 +541,7 @@
     <div class="h-fit mt-2">
       <div class="h-full w-full relative">
         <img
-          src="../../assets/images/esc.jpg"
+          src="../../assets/images/General/esc.jpg"
           class="
             w-full
             h-full
@@ -738,7 +738,7 @@
         </div>
         <div class="item w-56 h-[350px] shadow-2xl shadow-mst_black">
           <img
-            src="../../assets/images/logo_black.png"
+            src="../../assets/images/General/logo_black.png"
             class="
               p-2
               h-44
@@ -821,7 +821,7 @@
           <h2 class="text-center mt-4 text-lg">{{ $t("techniker") }}</h2>
         </div>
         <div class="item w-52 h-[330px] shadow-2xl shadow-mst_black">
-          <img src="../../assets/images/logo_black.png" class="p-2 h-40 ml-6" />
+          <img src="../../assets/images/General/logo_black.png" class="p-2 h-40 ml-6" />
           <h1 class="text-center font-bold tracking-wide italic text-2xl mt-3">
             {{ $t("hier") }}
           </h1>
@@ -835,7 +835,7 @@
     <div class="h-screen sm:h-[900px] mt-2 mb-2">
       <div class="h-full relative">
         <img
-          src="../../assets/images/kirche.jpg"
+          src="../../assets/images/General/kirche.jpg"
           class="
             w-full
             h-full
@@ -864,10 +864,10 @@
         </h1>
         <div class="flex flex-col ml-[20%] sm:space-x-52 sm:flex sm:flex-row">
           <div class="w-52 mt-6 sm:w-[500px]">
-            <img src="../../assets/images/sponsor1.png" alt="" />
+            <img src="../../assets/images/General/sponsor1.png" alt="" />
           </div>
           <div class="w-52 mt-6 sm:w-[504px]">
-            <img src="../../assets/images/sponsor2.png" alt="" />
+            <img src="../../assets/images/General/sponsor2.png" alt="" />
           </div>
         </div>
       </div>

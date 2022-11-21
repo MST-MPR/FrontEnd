@@ -4,7 +4,7 @@ module.exports = {
   theme: {
     extend: {
       backgroundImage: {
-        partners: "url('./src/assets/images/klaviatur-dark.jpg')",
+        partners: "url('./src/assets/images/General/klaviatur-dark.jpg')",
       }
     },
     colors: {
