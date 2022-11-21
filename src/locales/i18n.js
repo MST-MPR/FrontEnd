@@ -23,7 +23,7 @@ const i18n = createI18n({
             techniker: "Veranstaltungstechnik",
             bewird: "Bewirb dich jetzt: ",
             hier: "Hier könntest du stehen!",
-            
+            partners: "Unsere Partner",
 
             /* BUTTONS */
             verkauf: "Verkauf",
@@ -60,6 +60,7 @@ const i18n = createI18n({
             techniker: "Event technology",
             bewird: "Apply now: ",
             hier: "You could stand here!",
+            partners: "Our partners",
 
              /* BUTTONS & HEADERS*/
             verkauf: "Sale",

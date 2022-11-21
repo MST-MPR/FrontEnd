@@ -4,8 +4,7 @@ module.exports = {
   theme: {
     extend: {
       backgroundImage: {
-        überUns: "url('./src/assets/images/esc.jpg')",
-        marco: "'(../../assets/images/Team/marco.jpg)'"
+        partners: "url('./src/assets/images/klaviatur-dark.jpg')",
       }
     },
     colors: {
