@@ -19,7 +19,7 @@ const showMobileMenu = ref(true);
             >
               <img
                 src="../../assets/images/logo.svg"
-                class="h-20 w-20 ml-6 md:block"
+                class="h-20 w-20 ml-8 md:block"
               />
               <span class="italic text-mst_white text-sm sm:text-2xl"
                 >medien <br />SYSTEMTECHNIK</span

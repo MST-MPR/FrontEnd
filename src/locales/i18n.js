@@ -15,7 +15,15 @@ const i18n = createI18n({
             prof3: "Wir bieten nicht nur Planung und Betreuung von Veranstaltungen an, sondern vermieten und/oder verkaufen auch das notwendige Equipment dafür. Auch hierbei stehen wir Ihnen gern beratend zur Seite und bieten hochwertige Technik zu fairen Preisen.",
             überUns1: "Über uns",
             überUns2: "Egal ob Sie klassische audiovisuelle Präsentationsformen wählen oder modernste EDV-Technik einsetzen möchten, wir beraten Sie partnerschaftlich und finden die beste Lösung für Ihre Veranstaltung. Uns ist vor allem wichtig, Ihre Vorstellungen kreativ, flexibel, zuverlässig und zur gleichen Zeit budgetgerecht umzusetzen. Neben der technischen Ausstattung für Veranstaltungen bieten wir Ihnen selbstverständlich auch die Umsetzung von Festinstallationen im privaten oder geschäftlichen Bereich. Von der einfachen Präsentationswand mit Beamer und Laptop richten wir Ihnen auch komplette Dolby-Kinos, optional auch mit 3D-Technik ein, ganz nach Ihren Vorstellungen und Wünschen. Natürlich gleich so, dass Sie einfach loslegen können. Keine Probleme mehr mit der Technik – versprochen! Sprechen Sie uns an und lassen Sie sich unverbindlich beraten. Ob Licht, Ton oder Technik – wir finden für Sie gemeinsam die optimale Lösung.",
-
+            team: "Triff unser Team",
+            franz: "Geschäftsführer",
+            marco: "Projektleitung / Videotechnik",
+            philipp: "Projektleitung / Live und Hybrid",
+            sekretärin: "Sachbearbeitung",
+            techniker: "Veranstaltungstechnik",
+            bewird: "Bewirb dich jetzt: ",
+            hier: "Hier könntest du stehen!",
+            
 
             /* BUTTONS */
             verkauf: "Verkauf",
@@ -44,7 +52,15 @@ const i18n = createI18n({
             prof3: "We not only offer planning and supervision of events, but also rent and/or sell the necessary equipment therefore. Here, too, we are happy to advise you offer high-quality technology at fair prices.",
             überUns1: "About us",
             überUns2: "Regardless of whether you choose classic audiovisual forms of presentation or want to use the latest IT technology, we will advise you as a partner and find the best solution for your event. Above all, it is important to us to implement your ideas creatively, flexibly, reliably and at the same time within budget. In addition to the technical equipment for events, we also offer you the implementation of permanent installations in the private or business sector. From the simple presentation wall with beamer and laptop, we can also set up complete Dolby cinemas, optionally with 3D technology, according to your ideas and wishes. Of course, so that you can just get started. No more problems with the technology – we promise! Talk to us and let us advise you without obligation. Whether light, sound or technology - together we will find the optimal solution for you.",
-            
+            team: "Meet Our Team",
+            franz: "General Manager",
+            marco: "Project management / video technology",
+            philipp: "Project management / live and hybrid",
+            sekretärin: "Processing",
+            techniker: "Event technology",
+            bewird: "Apply now: ",
+            hier: "You could stand here!",
+
              /* BUTTONS & HEADERS*/
             verkauf: "Sale",
             vermietung: "Rental",

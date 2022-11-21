@@ -5,7 +5,7 @@
   <div class="object-fit">
     <!--PRINCIPAL-->
     <div class="bg-mst_bg h-screen">
-      <div class="basis-1/2 visible lg:hidden">
+      <div class="basis-1/2 visible sm:hidden">
         <img
           class="saturate-50 brightness-50 rounded-bl-[100px]"
           src="../../assets/images/kameras.jpg"
@@ -41,7 +41,7 @@
             {{ $t("prof3") }}
           </h3>
         </div>
-        <div class="basis-1/2 hidden lg:block">
+        <div class="basis-1/2 hidden sm:block">
           <img
             class="saturate-50 brightness-50 rounded-bl-[1200px]"
             src="@/assets/images/kameras.jpg"
@@ -586,8 +586,151 @@
         </p>
       </div>
     </div>
-    <!--SPONSORS-->
+    <!--TEAM-->
+    <div class="p-4">
+      <h1
+        class="
+          mt-10
+          text-mst_black
+          text-center
+          font-extrabold
+          text-5xl
+          font-mono
+          italic
+          sm:text-7xl
+        "
+      >
+        {{ $t("team") }}
+      </h1>
+      <div
+        class="
+          hidden
+          sm:flex
+          flex-wrap
+          justify-center
+          items-end
+          space-x-10 space-y-10
+          p-40
+        "
+      >
+        <div class="item w-56 h-[350px] shadow-2xl shadow-mst_black">
+          <img src="../../assets/images/Team/franz.png" class="p-2 h-52 ml-2" />
+          <h1 class="text-center font-bold tracking-wide italic text-2xl mt-3">
+            Ralf-Peter Franz
+          </h1>
+          <h2 class="text-center mt-4 text-lg">{{ $t("franz") }}</h2>
+        </div>
+        <div class="item w-56 h-[350px] shadow-2xl shadow-mst_black">
+          <img src="../../assets/images/Team/marco.jpg" class="p-2 h-52 ml-3" />
+          <h1 class="text-center font-bold tracking-wide italic text-2xl mt-3">
+            Marco Elsner
+          </h1>
+          <h2 class="text-center mt-4 text-lg">{{ $t("marco") }}</h2>
+        </div>
+        <div class="item w-56 h-[350px] shadow-2xl shadow-mst_black">
+          <img src="../../assets/images/Team/philipp.jpg" class="p-2 h-52 object-cover" />
+          <h1 class="text-center font-bold tracking-wide italic text-2xl mt-3">
+            Philipp Voss
+          </h1>
+          <h2 class="text-center mt-4 text-lg">{{ $t("philipp") }}</h2>
+        </div>
+        <div class="item w-56 h-[350px] shadow-2xl shadow-mst_black">
+          <img src="../../assets/images/Team/dagmar.jpg" class="p-2 h-52 object-cover" />
+          <h1 class="text-center font-bold tracking-wide italic text-2xl mt-3">
+            Dagmar Stewener
+          </h1>
+          <h2 class="text-center mt-4 text-lg">{{ $t("sekretärin") }}</h2>
+        </div>
+        <div class="item w-56 h-[350px] shadow-2xl shadow-mst_black">
+          <img src="../../assets/images/Team/sophia.jpg" class="p-2 h-52 object-cover" />
+          <h1 class="text-center font-bold tracking-wide italic text-2xl mt-3">
+            Sophia Krutsch
+          </h1>
+          <h2 class="text-center mt-4 text-lg">{{ $t("sekretärin") }}</h2>
+        </div>
+        <div class="item w-56 h-[350px] shadow-2xl shadow-mst_black">
+          <img src="../../assets/images/Team/jan.png" class="p-2 h-52 ml-3" />
+          <h1 class="text-center font-bold tracking-wide italic text-2xl mt-3">
+            Jan Michalowski
+          </h1>
+          <h2 class="text-center mt-4 text-lg">{{ $t("techniker") }}</h2>
+        </div>
+        <div class="item w-56 h-[350px] shadow-2xl shadow-mst_black">
+          <img src="../../assets/images/Team/andreas.jpg" class="p-2 h-52 ml-11" />
+          <h1 class="text-center font-bold tracking-wide italic text-2xl mt-3">
+            Andreas Garms
+          </h1>
+          <h2 class="text-center mt-4 text-lg">{{ $t("techniker") }}</h2>
+        </div>
+        <div class="item w-56 h-[350px] shadow-2xl shadow-mst_black">
+          <img src="../../assets/images/logo_black.png" class="p-2 h-44 ml-6" />
+          <h1 class="text-center font-bold tracking-wide italic text-2xl mt-3">
+            {{ $t("hier") }}
+          </h1>
+          <h2 class="text-center mt-4 text-lg">{{ $t("bewird") }} jobs@mst-extra.net</h2>
+        </div>
+      </div>
 
+      <div class="flex flex-col items-center space-y-6 mt-16 visible sm:hidden">
+        <div class="item w-52 h-[330px] p-2 shadow-2xl shadow-mst_black">
+          <img src="../../assets/images/Team/franz.png" class="h-48" />
+          <h1 class="text-center font-bold tracking-wide italic text-2xl mt-3">
+            Ralf-Peter Franz
+          </h1>
+          <h2 class="text-center mt-4 text-lg">{{ $t("franz") }}</h2>
+        </div>
+        <div class="item w-52 h-[330px] shadow-2xl shadow-mst_black">
+          <img src="../../assets/images/Team/marco.jpg" class="p-2 h-48 ml-4" />
+          <h1 class="text-center font-bold tracking-wide italic text-2xl mt-3">
+            Marco Elsner
+          </h1>
+          <h2 class="text-center mt-4 text-lg">{{ $t("marco") }}</h2>
+        </div>
+        <div class="item w-52 h-[330px] shadow-2xl shadow-mst_black">
+          <img src="../../assets/images/Team/philipp.jpg" class="p-2 h-48 object-cover" />
+          <h1 class="text-center font-bold tracking-wide italic text-2xl mt-3">
+            Philipp Voss
+          </h1>
+          <h2 class="text-center mt-4 text-lg">{{ $t("philipp") }}</h2>
+        </div>
+        <div class="item w-52 h-[330px] shadow-2xl shadow-mst_black">
+          <img src="../../assets/images/Team/dagmar.jpg" class="p-2 h-48 object-cover" />
+          <h1 class="text-center font-bold tracking-wide italic text-2xl mt-3">
+            Dagmar Stewener
+          </h1>
+          <h2 class="text-center mt-4 text-lg">{{ $t("sekretärin") }}</h2>
+        </div>
+        <div class="item w-52 h-[330px] shadow-2xl shadow-mst_black">
+          <img src="../../assets/images/Team/sophia.jpg" class="p-2 h-48 object-cover" />
+          <h1 class="text-center font-bold tracking-wide italic text-2xl mt-3">
+            Sophia Krutsch
+          </h1>
+          <h2 class="text-center mt-4 text-lg">{{ $t("sekretärin") }}</h2>
+        </div>
+        <div class="item w-52 h-[330px] shadow-2xl shadow-mst_black">
+          <img src="../../assets/images/Team/jan.png" class="p-2 h-52 ml-2" />
+          <h1 class="text-center font-bold tracking-wide italic text-2xl mt-3">
+            Jan Michalowski
+          </h1>
+          <h2 class="text-center mt-4 text-lg">{{ $t("techniker") }}</h2>
+        </div>
+        <div class="item w-52 h-[330px] shadow-2xl shadow-mst_black">
+          <img src="../../assets/images/Team/andreas.jpg" class="p-2 h-52 ml-8" />
+          <h1 class="text-center font-bold tracking-wide italic text-2xl mt-3">
+            Andreas Garms
+          </h1>
+          <h2 class="text-center mt-4 text-lg">{{ $t("techniker") }}</h2>
+        </div>
+        <div class="item w-52 h-[330px] shadow-2xl shadow-mst_black">
+          <img src="../../assets/images/logo_black.png" class="p-2 h-40 ml-6" />
+          <h1 class="text-center font-bold tracking-wide italic text-2xl mt-3">
+            {{ $t("hier") }}
+          </h1>
+          <h2 class="text-center mt-4 text-lg">{{ $t("bewird") }} jobs@mst-extra.net</h2>
+        </div>
+      </div>
+    </div>
+    <!--SPONSORS-->
     <div class="h-screen sm:h-[900px] mt-2 mb-2">
       <div class="h-full relative">
         <img
@@ -619,8 +762,12 @@
           Sponsoring
         </h1>
         <div class="flex flex-col ml-[20%] sm:space-x-52 sm:flex sm:flex-row">
-          <div class="w-52 mt-6 sm:w-[500px]"><img src="../../assets/images/sponsor1.png" alt="" /></div>
-          <div class="w-52 mt-6 sm:w-[504px]"><img src="../../assets/images/sponsor2.png" alt="" /></div>
+          <div class="w-52 mt-6 sm:w-[500px]">
+            <img src="../../assets/images/sponsor1.png" alt="" />
+          </div>
+          <div class="w-52 mt-6 sm:w-[504px]">
+            <img src="../../assets/images/sponsor2.png" alt="" />
+          </div>
         </div>
       </div>
     </div>
