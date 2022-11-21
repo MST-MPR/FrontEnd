@@ -24,6 +24,9 @@ const i18n = createI18n({
             bewird: "Bewirb dich jetzt: ",
             hier: "Hier könntest du stehen!",
             partners: "Unsere Partner",
+            email: "Ihre E-Mail",
+            message: "Ihre Nachricht",
+            send: "Schicken",
 
             /* BUTTONS */
             verkauf: "Verkauf",
@@ -61,6 +64,9 @@ const i18n = createI18n({
             bewird: "Apply now: ",
             hier: "You could stand here!",
             partners: "Our partners",
+            email: "Your E-mail",
+            message: "Your message",
+            send: "Send",
 
              /* BUTTONS & HEADERS*/
             verkauf: "Sale",
