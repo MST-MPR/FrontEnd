@@ -745,7 +745,7 @@
             class="
               p-2
               h-44
-              ml-6
+              ml-7
               grayscale
               transition
               duration-300
@@ -875,6 +875,11 @@
         </div>
       </div>
     </div>
+
+    <!--CONTACT-->
+      <div>
+
+      </div>
     <!--PARTNERS-->
     <div class="hidden sm:block h-fit text-center bg-partners">
       <h1
@@ -903,40 +908,40 @@
         "
       >
         <div class="w-72 p-8 ml-28">
-          <img src="../../assets/images/Partners/bbh.png" alt="" />
+          <a href="https://www.bremerbuehnenhaus.de/" target="_blank"><img src="../../assets/images/Partners/bbh.png" /></a>
         </div>
         <div class="w-72 p-8 ml-28">
-          <img src="../../assets/images/Partners/bose.png" alt="" />
+          <a href="https://www.bose.de" target="_blank"><img src="../../assets/images/Partners/bose.png" alt="" /></a>
         </div>
         <div class="w-72 p-8 ml-28">
-          <img src="../../assets/images/Partners/elko.png" alt="" />
+          <a href="https://elko.de/" target="_blank"><img src="../../assets/images/Partners/elko.png" alt="" /></a>
         </div>
         <div class="w-72 p-8 ml-28">
-          <img src="../../assets/images/Partners/gotaque.png" alt="" />
+          <a href="https://www.gotaque.de/" target="_blank"><img src="../../assets/images/Partners/gotaque.png" alt="" /></a>
         </div>
         <div class="w-72 p-8 ml-28">
-          <img src="../../assets/images/Partners/highlite.png" alt="" />
+          <a href="https://www.highlite.com/de/" target="_blank"><img src="../../assets/images/Partners/highlite.png" alt="" /></a>
         </div>
         <div class="w-72 p-8 ml-28">
-          <img src="../../assets/images/Partners/loxone.png" alt="" />
+          <a href="https://www.loxone.com/" target="_blank"><img src="../../assets/images/Partners/loxone.png" alt="" /></a>
         </div>
         <div class="w-72 p-8 ml-28">
-          <img src="../../assets/images/Partners/nec.png" alt="" />
+          <a href="https://de.nec.com/" target="_blank"><img src="../../assets/images/Partners/nec.png" alt="" /></a>
         </div>
         <div class="w-72 p-8 ml-28">
-          <img src="../../assets/images/Partners/neets.png" alt="" />
+          <a href="https://www.biamp.com/" target="_blank"><img src="../../assets/images/Partners/neets.png" alt="" /></a>
         </div>
         <div class="w-72 p-8 ml-28">
-          <img src="../../assets/images/Partners/optoma.png" alt="" />
+          <a href="https://www.optoma.de/" target="_blank"><img src="../../assets/images/Partners/optoma.png" alt="" /></a>
         </div>
         <div class="w-72 p-8 ml-28">
-          <img src="../../assets/images/Partners/relens.png" alt="" />
+          <a href="https://www.relens.de/" target="_blank"><img src="../../assets/images/Partners/relens.png" alt="" /></a>
         </div>
         <div class="w-72 p-8 ml-28">
-          <img src="../../assets/images/Partners/sennheiser.png" alt="" />
+          <a href="https://de-de.sennheiser.com/" target="_blank"><img src="../../assets/images/Partners/sennheiser.png" alt="" /></a>
         </div>
         <div class="w-72 p-8 ml-28">
-          <img src="../../assets/images/Partners/sony.png" alt="" />
+          <a href="https://www.sony.de/" target="_blank"><img src="../../assets/images/Partners/sony.png" alt="" /></a>
         </div>
       </div>
     </div>
