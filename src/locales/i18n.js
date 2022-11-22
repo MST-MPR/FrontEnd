@@ -28,6 +28,10 @@ const i18n = createI18n({
             message: "Ihre Nachricht",
             send: "Schicken",
 
+            /* FULL SERVICE */
+            konferenz: "KONFERENZ- UND PRÄSENTATIONSTECHNIK",
+            konferenzP: "Wir verstehen uns als Fullservice-Dienstleister, d.h. wir stellen nicht nur jegliche notwendige technische Geräte zur Verfügung, sondern sorgen auch dafür, dass sie perfekt für den jeweiligen Anlass installiert sind.",
+
             /* BUTTONS */
             verkauf: "Verkauf",
             vermietung: "Vermietung",
@@ -42,14 +46,14 @@ const i18n = createI18n({
             coomingSoon: "Demnächst",
             working: "Wir arbeiten an unserer Website. Bleiben Sie dran für einige aufregende Updates.",
 
-            },
+        },
         English: {
             /* HOME*/
             fullServiceGrid: "We see ourselves as a full-service provider, i.e. we not only provide the necessary technical equipment, but also ensure that it is perfectly installed for the respective occasion.",
             verkaufGrid: "Use our free non-binding needs analysis on site. We create your individual solution and give you a good price. Do you prefer an up-to-the-minute new device or would a well-kept used one also do?",
             vermietungGrid: "Rest assured that the equipment you rent is always in perfect condition. All rental items are serviced regularly. The rental prices do not include statutory VAT, ex our warehouse.",
             streamingGrid: "We develop and design your individual portal with log-in certification and other technical refinements for a problem-free, attractive stream of your event.",
-            smartHomeGrid: "We automate your private or office building from the central lighting control to a completely smart building. We primarily rely on LOXONE – Home Server and the corresponding peripheral devices.",        
+            smartHomeGrid: "We automate your private or office building from the central lighting control to a completely smart building. We primarily rely on LOXONE – Home Server and the corresponding peripheral devices.",
             prof1: "Professional event...",
             prof2: "professionally streamed...",
             prof3: "We not only offer planning and supervision of events, but also rent and/or sell the necessary equipment therefore. Here, too, we are happy to advise you offer high-quality technology at fair prices.",
@@ -68,7 +72,12 @@ const i18n = createI18n({
             message: "Your message",
             send: "Send",
 
-             /* BUTTONS & HEADERS*/
+            /* FULL SERVICE */
+            konferenz: "CONFERENCE AND PRESENTATION TECHNOLOGY",
+            konferenzP: "We see ourselves as a full-service provider, i.e. we not only provide all the necessary technical equipment, but also ensure that it is perfectly installed for the respective occasion.",
+
+
+            /* BUTTONS & HEADERS*/
             verkauf: "Sale",
             vermietung: "Rental",
             kontakt: "Contact",
@@ -82,7 +91,7 @@ const i18n = createI18n({
             coomingSoon: "Cooming soon",
             working: "We are working on our website. Stay stuned for some exciting updates.",
 
-           }
+        }
     }
 })
 

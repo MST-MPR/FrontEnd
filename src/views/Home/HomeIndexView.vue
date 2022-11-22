@@ -72,7 +72,7 @@
             sm:w-[300px] sm:h-[500px]
           "
         >
-          <div class="grid overflow-hidden">
+          <div class="grid overflow-hidden cursor-pointer">
             <div class="box">
               <div class="place-content-center">
                 <svg
