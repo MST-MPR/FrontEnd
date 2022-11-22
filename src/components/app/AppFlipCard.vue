@@ -7,7 +7,7 @@ defineProps(['title', 'paragraph'])
 <template>
   <div class="flip-card bg-transparent w-[300px] h-[300px]">
     <div
-      class="flip-card-inner relative w-full h-full text-center duration-700"
+      class="flip-card-inner relative w-full h-full text-center duration-[1300ms]"
     >
       <div class="flip-card-front absolute w-full h-full">
         <img
