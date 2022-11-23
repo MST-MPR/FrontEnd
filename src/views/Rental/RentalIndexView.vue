@@ -1,5 +1,5 @@
 <template>
-  <div class="h-[1800px]">
+  <div class="h-[1500px] sm:h-[1800px]">
     <div class="h-full w-full relative">
       <img
         src="../../assets/images/General/cam.jpg"

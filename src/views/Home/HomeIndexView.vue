@@ -1,7 +1,7 @@
 <template>
   <div class="object-fit">
     <!--PRINCIPAL-->
-    <div class="bg-mst_bg h-screen">
+    <div class="bg-mst_construction h-screen">
       <div class="basis-1/2 visible sm:hidden">
         <img
           class="saturate-50 brightness-50 rounded-bl-[100px]"

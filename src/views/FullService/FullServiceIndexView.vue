@@ -3,10 +3,10 @@ import AppFlipCard from "../../components/app/AppFlipCard.vue";
 </script>
 
 <template>
-  <div class="h-[1000px]">
+  <div class="h-[2300px] sm:h-[1000px]">
     <div class="h-full w-full relative">
       <img
-        src="../../assets/images/General/beamer.jpg"
+        src="../../assets/images/General/veranstaltung.jpg"
         class="
           w-full
           h-full
@@ -34,8 +34,8 @@ import AppFlipCard from "../../components/app/AppFlipCard.vue";
         Full Service
       </h1>
 
-      <div class="p-24 -mt-20 m-auto w-[1300px] h-[800px]">
-        <div class="grid overflow-hidden grid-cols-3 gap-10 w-full">
+      <div class="p-7 mt-0 sm:p-24 sm:-mt-20 m-auto w-[1300px] sm:h-[800px]">
+        <div class="grid overflow-hidden grid-row sm:grid-cols-3 gap-10 w-full">
           <div class="box">
             <AppFlipCard
               title="KONFERENZ UND PRÄSENTATIONSTECHNIK"
