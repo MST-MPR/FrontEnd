@@ -38,38 +38,38 @@ import AppFlipCard from "../../components/app/AppFlipCard.vue";
         <div class="grid overflow-hidden grid-cols-3 gap-10 w-full">
           <div class="box">
             <AppFlipCard
-              title="KONFERENZ- UND PRÄSENTATIONSTECHNIK"
+              title="KONFERENZ UND PRÄSENTATIONSTECHNIK"
               paragraph="Wir verstehen uns als Fullservice-Dienstleister, d.h. wir stellen nicht nur jegliche notwendige technische Geräte zur Verfügung, sondern sorgen auch dafür, dass sie perfekt für den jeweiligen Anlass installiert sind."
               
             />
           </div>
           <div class="box">
             <AppFlipCard
-              title="KONFERENZ- UND PRÄSENTATIONSTECHNIK"
+              title="KONFERENZ UND PRÄSENTATIONSTECHNIK"
               paragraph="Wir verstehen uns als Fullservice-Dienstleister, d.h. wir stellen nicht nur jegliche notwendige technische Geräte zur Verfügung, sondern sorgen auch dafür, dass sie perfekt für den jeweiligen Anlass installiert sind."
             />
           </div>
           <div class="box">
             <AppFlipCard
-              title="KONFERENZ- UND PRÄSENTATIONSTECHNIK"
+              title="KONFERENZ UND PRÄSENTATIONSTECHNIK"
               paragraph="Wir verstehen uns als Fullservice-Dienstleister, d.h. wir stellen nicht nur jegliche notwendige technische Geräte zur Verfügung, sondern sorgen auch dafür, dass sie perfekt für den jeweiligen Anlass installiert sind."
             />
           </div>
           <div class="box">
             <AppFlipCard
-              title="KONFERENZ- UND PRÄSENTATIONSTECHNIK"
+              title="KONFERENZ UND PRÄSENTATIONSTECHNIK"
               paragraph="Wir verstehen uns als Fullservice-Dienstleister, d.h. wir stellen nicht nur jegliche notwendige technische Geräte zur Verfügung, sondern sorgen auch dafür, dass sie perfekt für den jeweiligen Anlass installiert sind."
             />
           </div>
           <div class="box">
             <AppFlipCard
-              title="KONFERENZ- UND PRÄSENTATIONSTECHNIK"
+              title="KONFERENZ UND PRÄSENTATIONSTECHNIK"
               paragraph="Wir verstehen uns als Fullservice-Dienstleister, d.h. wir stellen nicht nur jegliche notwendige technische Geräte zur Verfügung, sondern sorgen auch dafür, dass sie perfekt für den jeweiligen Anlass installiert sind."
             />
           </div>
           <div class="box">
             <AppFlipCard
-              title="KONFERENZ- UND PRÄSENTATIONSTECHNIK"
+              title="KONFERENZ UND PRÄSENTATIONSTECHNIK"
               paragraph="Wir verstehen uns als Fullservice-Dienstleister, d.h. wir stellen nicht nur jegliche notwendige technische Geräte zur Verfügung, sondern sorgen auch dafür, dass sie perfekt für den jeweiligen Anlass installiert sind."
             />
           </div>

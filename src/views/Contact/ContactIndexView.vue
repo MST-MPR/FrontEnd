@@ -1,12 +1,8 @@
-<script setup>
-import AppFlipCard from "../../components/app/AppFlipCard.vue";
-</script>
-
 <template>
-  <div class="h-screen">
+  <div class="h-[1200px] sm:h-screen">
     <div class="h-full w-full relative">
       <img
-        src="../../assets/images/General/beamer.jpg"
+        src="../../assets/images/General/contact.jpg"
         class="
           w-full
           h-full
@@ -21,6 +17,7 @@ import AppFlipCard from "../../components/app/AppFlipCard.vue";
       />
       <h1
         class="
+          -mb-28
           text-mst_white
           text-center
           font-extrabold

@@ -1,32 +1,45 @@
 <template>
-  <div
-    class="flex flex-wrap justify-center md:gap-8 lg:gap-12 bg-mst_construction"
-  >
-    <div class="pt-4 pb-4 ml-24">
-      <img src="@/assets/images/General/thanks.jpg" class="w-8/12 h-full shadow-2xl" />
-    </div>
-    <div class="mt-48">
-      <h1
+  <div class="h-[750px] sm:h-[900px] bg-mst_construction">
+    <div
+      class="
+        grid
+        overflow-hidden
+        grid-row-2
+        sm:grid-cols-2 sm:w-full sm:h-[800px]
+      "
+    >
+      <div
         class="
-          pt-20
-          pb-20
-          pr-20
-          mr-48
-          text-center text-6xl
-          italic
-          text-mst_white
-          text-shadow:
-          2px 2px
-          black
+          w-80
+          h-96
+          mt-5
+          sm:mt-28
+          ml-5
+          sm:ml-[450px] sm:w-[450px] sm:h-[700px]
         "
       >
-        {{ $t("coomingSoon") }}
-      </h1>
-      <h3
-        class="mr-56 text-lg italic text-mst_white text-shadow: 2px 2px black"
-      >
-        {{ $t("working") }}
-      </h3>
+        <img src="../../assets/images/General/time.jpg" />
+      </div>
+      <div class="w-80 ml-2 p-8 mt-5 sm:mt-64 sm:w-[600px] sm:h-[650px]">
+        <h1
+          class="
+            mt-24
+            mb-5
+            text-5xl
+            tracking-tight
+            font-extrabold
+            text-center
+            text-mst_white
+            dark:text-white
+          "
+        >
+          {{ $t("coomingSoon") }}
+        </h1>
+        <p class="font-light text-mst_white text-center ml-6 sm:text-xl">
+          {{ $t("working") }}
+        </p>
+      </div>
     </div>
   </div>
 </template>
+

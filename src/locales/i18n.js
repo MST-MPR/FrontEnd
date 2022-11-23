@@ -32,7 +32,25 @@ const i18n = createI18n({
             konferenz: "KONFERENZ- UND PRÄSENTATIONSTECHNIK",
             konferenzP: "Wir verstehen uns als Fullservice-Dienstleister, d.h. wir stellen nicht nur jegliche notwendige technische Geräte zur Verfügung, sondern sorgen auch dafür, dass sie perfekt für den jeweiligen Anlass installiert sind.",
 
-            /* BUTTONS */
+            /**VERKAUF*/
+            verkaufView: "Nutzen Sie unsere kostenlose, unverbindliche Bedarfsanalyse vor Ort. Wir erstellen Ihnen Ihre individuelle Lösung und machen Ihnen einen guten Preis. Bevorzugen Sie ein superaktuelles Neugerät oder tut es auch ein gepflegtes Gebrauchtes? Diese auch aus den Messe- und Demopools von Lenovo und HP mit voller Herstellergarantie und optionalen vor Ort-Service. Wir bieten ebenso Gebraucht- und Demogeräte von Kundengeräte in Kommision an.",
+
+            /* VERMIETUNG */
+            vermietungView: "Seien Sie gewiß, dass die zu leihenden Geräte immer in einwandfreiem Zustand sind. Alle Mietgegenstände werden regelmäßig gewartet.",
+            vermietungView2: "Die Mietpreise verstehen sich zzgl. der gesetzlichen Mehrwertsteuer, ab unserem Lager. Sehen Sie hierzu auch unsere AGB.",
+            vermietungView3: "Sie sind sich nicht sicher, was Sie für einen Event benötigen? Kontaktieren Sie uns, wir beraten Sie gern.",
+            vermietungView4: "Wir haben nachfolgend bereits einige Punkte zusammengetragen, die Ihnen eine Mietanfrage bei uns erleichtern: Wann findet die Veranstaltung statt (Datum und Uhrzeit von Beginn und Ende)?",
+            vermietungView5: "Um was für eine Art Veranstaltung handelt es sich? – (Konferenz / Tagung, Messe / Ausstellung, Konzert / Theater, Feier)",
+            vermietungView6: "Wo findet die Veranstaltung statt? - (Drinnen / Draußen, Größe des Raumes (Anzahl der Besucher?)",
+            vermietungView7: "Was wird für die Veranstaltung benötigt? - (Licht / Ton / Musik / Mobiliar)",
+            vermietungView8: "Wie soll Anfahrt und Abtransport der Mietgegenstände erfolgen? - (Selbstabholung / durch uns; Wird Hilfe bei Transport/ Auf-/ Abbau/ Installation benötigt?)",
+            vermietungView9: "Wann werden die Mietgegenstände benötigt (Mietbeginn und -rückgabe)?",
+
+            /* SMART HOME */
+            smartHomeView: "Wir automatisieren ihr privat- oder Bürogebäude von der zentralen Lichtsteuerung bis hin zum voll smart aufgebautem Gebäude.",
+            smartHomeView2: "Hierbei setzen wir primär auf LOXONE – Home Server und entsprechende Peripheriegeräte.",
+
+            /* BUTTONS & HEADERS*/
             verkauf: "Verkauf",
             vermietung: "Vermietung",
             kontakt: "Kontakt",
@@ -76,6 +94,23 @@ const i18n = createI18n({
             konferenz: "CONFERENCE AND PRESENTATION TECHNOLOGY",
             konferenzP: "We see ourselves as a full-service provider, i.e. we not only provide all the necessary technical equipment, but also ensure that it is perfectly installed for the respective occasion.",
 
+            /*VERKAUF*/
+            verkaufView: "Take advantage of our free, no-obligation on-site needs analysis. We will create your individual solution and give you a good price. Do you prefer a brand new device or a well-maintained used one? These are also available from the Lenovo and HP trade fair and demo pools with full manufacturer's warranty and optional on-site service. We also offer used and demo devices from customer devices in commission.",
+
+            /* VERMIETUNG */
+            vermietungView: "Be assured that the equipment to be rented is always in perfect condition. All rental items are serviced regularly.",
+            vermietungView2: "The rental prices are exclusive of VAT, ex our warehouse. See also our terms and conditions.",
+            vermietungView3: "You are not sure what you need for an event? Contact us, we will be happy to advise you.",
+            vermietungView4: "We have already compiled some points below that will make it easier for you to make a rental request with us: When will the event take place (date and time of start and end)?",
+            vermietungView5: "What kind of event is it? - (Conference / meeting, fair / exhibition, concert / theater, celebration)",
+            vermietungView6: "Where will the event take place? - (Indoors / outdoors, size of the room (number of visitors?)",
+            vermietungView7: "What is needed for the event? - (Light / sound / music / furniture)",
+            vermietungView8: "How should the rental items be transported to and from the event? - (Self-collection / by us; Is help needed with transport / set-up / dismantling / installation?)",
+            vermietungView9: "When are the rental items needed (rental start and return)?",
+
+            /* SMART HOME */
+            smartHomeView: "We automate your private or office building from the central lighting control to the fully smart building.",
+            smartHomeView2: "Here we primarily rely on LOXONE - Home Server and corresponding peripheral devices.",
 
             /* BUTTONS & HEADERS*/
             verkauf: "Sale",
