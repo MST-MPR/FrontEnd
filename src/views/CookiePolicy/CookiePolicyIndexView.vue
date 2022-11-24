@@ -18,42 +18,42 @@
         {{ $t("cookieRichtline") }}
       </h1>
     </div>
-    <div class="p-10">
-      <div class="ml-20 tracking-wider leading-loose">
+    <div class="p-8 sm:p-10">
+      <div class="sm:ml-20 tracking-wider leading-normal sm:leading-loose">
         <p class="italic mb-10 font-semibold text-center">
           {{ $t("oktober") }}
         </p>
         <ul class="list-decimal">
-          <li class="w-[700px] mt-8 mb-8">
+          <li class="w-80 sm:w-[700px] mt-8 mb-8">
             <h2 class="text-2xl italic font-semibold text-mst_orange">
               {{ $t("einfürung") }}
             </h2>
             <p>{{ $t("einfürung2") }}</p>
           </li>
-          <li class="w-[700px] mt-8 mb-8">
+          <li class="w-80 sm:w-[700px]  mt-8 mb-8">
             <h2 class="text-2xl italic font-semibold text-mst_orange">
               {{ $t("was") }}
             </h2>
             <p>{{ $t("was2") }}</p>
           </li>
-          <li class="w-[700px] mt-8 mb-8">
+          <li class="w-80 sm:w-[700px]  mt-8 mb-8">
             <h2 class="text-2xl italic font-semibold text-mst_orange">
               {{ $t("skripte") }}
             </h2>
             <p>{{ $t("skripte2") }}</p>
           </li>
-          <li class="w-[700px] mt-8 mb-8">
+          <li class="w-80 sm:w-[700px]  mt-8 mb-8">
             <h2 class="text-2xl italic font-semibold text-mst_orange">
               Cookies
             </h2>
             <p>{{ $t("cookies") }}</p>
           </li>
-          <li class="w-[700px] mt-8 mb-8">
+          <li class="w-80 sm:w-[700px]  mt-8 mb-8">
             <h2 class="text-2xl italic font-semibold text-mst_orange">
               {{ $t("platzierte") }}
             </h2>
           </li>
-          <li class="w-[700px] mt-8 mb-8">
+          <li class="w-80 sm:w-[700px]  mt-8 mb-8">
             <h2 class="text-2xl italic font-semibold text-mst_orange">
               {{ $t("zustimmung") }}
             </h2>
@@ -61,14 +61,14 @@
             <br />
             <p>{{ $t("zustimmung3") }}</p>
           </li>
-          <li class="w-[700px] mt-8 mb-">
+          <li class="w-80 sm:w-[700px]  mt-8 mb-">
             <h2 class="text-2xl italic font-semibold text-mst_orange">
               {{ $t("aktivierung") }}
             </h2>
             <p>{{ $t("aktivierung2") }}</p>
             <p>{{ $t("aktivierung3") }}</p>
           </li>
-          <li class="w-[700px] mt-8 mb-8">
+          <li class="w-80 sm:w-[700px]  mt-8 mb-8">
             <h2 class="text-2xl italic font-semibold text-mst_orange">
               {{ $t("rechte") }}
             </h2>
@@ -96,7 +96,7 @@
             <br />
             <p>{{ $t("rechte9") }}</p>
           </li>
-          <li class="w-[700px] mt-8 mb-8">
+          <li class="w-80 sm:w-[700px]  mt-8 mb-8">
             <h2 class="text-2xl italic font-semibold text-mst_orange">
               {{ $t("kontakt") }}
             </h2>
