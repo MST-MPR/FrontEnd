@@ -65,7 +65,7 @@
             <p>Ralf-Peter Franz</p>
           </li>
           <li class="mb-8">
-            <h2 class="text-xl sm:text-xl sm:text-2xl italic font-semibold text-mst_orange">
+            <h2 class="text-xl sm:text-2xl italic font-semibold text-mst_orange">
               {{ $t("umsatzsteuer") }}:
             </h2>
             <p>DE 2914 55354</p>

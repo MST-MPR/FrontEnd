@@ -8,6 +8,8 @@ module.exports = {
     extend: {
       backgroundImage: {
         imprint: "url('./src/assets/images/General/imprint.jpg')",
+        partners: "url('./src/assets/images/General/klaviatur-dark.jpg')",
+        contact: "url('./src/assets/images/General/contact.jpg')"
       }
     },
     colors: {
