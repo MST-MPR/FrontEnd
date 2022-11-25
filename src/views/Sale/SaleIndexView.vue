@@ -23,10 +23,7 @@
           text-5xl
           p-12
           mb-2
-          sm:mb-20
-          font-mono
-          italic
-          sm:text-7xl
+          sm:mb-20 sm:text-7xl
         "
       >
         {{ $t("verkauf") }}
@@ -37,7 +34,7 @@
           border-4
           border-mst_bg
           w-full
-          sm:w-[700px]
+          sm:w-[650px]
           h-[470px]
           sm:h-[430px]
           drop-shadow-2xl
@@ -53,7 +50,6 @@
             text-lg
             sm:text-2xl
             text-mst_white
-            italic
           "
         >
           {{ $t("verkaufView") }}

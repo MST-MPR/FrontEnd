@@ -1,3 +1,30 @@
+<script>
+export default {
+  name: "ContactIndexView",
+  components: {},
+  data() {
+    return {
+      task: {
+        name: "",
+        email: "",
+        message: "",
+      },
+    };
+  },
+  methods: {
+    processForm() {
+      console.log(this.task);
+
+      //Delete data
+      this.task = {
+        name: "",
+        email: "",
+        message: "",
+      };
+    },
+  },
+};
+</script>
 <template>
   <div class="bg-contact bg-cover">
     <div
@@ -24,7 +51,8 @@
               text-4xl
               tracking-tight
               font-extrabold
-              text-center text-mst_white
+              text-center
+              text-mst_white
             "
           >
             MST Medien- Systemtechnik GmbH
@@ -35,14 +63,19 @@
             event@mst-extra.net <br />
             +49 421 20 77 3 0
           </p>
-          <form action="#" class="space-y-4 mt-5">
+
+          <!--FORM-->
+          <form @submit.prevent="processForm" class="space-y-4 mt-5">
             <div>
-              <label for="email" class="block mb-2 text-sm font-medium text-mst_white"
+              <label
+                for="email"
+                class="block mb-2 text-sm font-medium text-mst_white"
                 >Name</label
               >
               <input
-                type="email"
-                id="email"
+                type="text"
+                id="name"
+                v-model.trim="task.name"
                 class="
                   shadow-2xl
                   border
@@ -59,18 +92,13 @@
             <div>
               <label
                 for="subject"
-                class="
-                  block
-                  mb-2
-                  text-sm
-                  font-medium
-                  text-mst_white
-                "
+                class="block mb-2 text-sm font-medium text-mst_white"
                 >{{ $t("email") }}</label
               >
               <input
                 type="text"
-                id="subject"
+                id="email"
+                v-model.trim="task.email"
                 class="
                   block
                   p-3
@@ -88,32 +116,28 @@
             <div class="sm:col-span-2">
               <label
                 for="message"
-                class="
-                  block
-                  mb-2
-                  text-sm
-                  font-medium
-                  text-mst_white
-                "
+                class="block mb-2 text-sm font-medium text-mst_white"
                 >{{ $t("message") }}</label
               >
               <textarea
+                type="text"
                 id="message"
+                v-model.trim="task.message"
                 rows="6"
                 class="
                   block
                   p-2.5
                   w-72
                   sm:w-full
-                  text-sm text-gray-900
+                  text-sm
                   bg-gray-50
                   rounded-lg
                   shadow-sm
                 "
-              ></textarea>
+              />
             </div>
             <button
-              type="button"
+              type="submit"
               class="
                 w-36
                 text-mst_white

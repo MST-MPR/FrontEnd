@@ -25,7 +25,6 @@
           mb-2
           sm:mb-20
           font-mono
-          italic
           sm:text-7xl
         "
       >
@@ -44,9 +43,23 @@
           m-auto
         "
       >
-        <ul class="list-none p-6 sm:p-12 text-lg sm:text-2xl text-mst_white italic text-center">
-          <li class="leading-normal tracking-wider mb-6">{{ $t("smartHomeView") }} </li>
-          <li class="leading-normal tracking-wider mb-6 ">{{ $t("smartHomeView2") }} </li>
+        <ul
+          class="
+            list-none
+            p-6
+            sm:p-12
+            text-lg
+            sm:text-2xl
+            text-mst_white
+            text-center
+          "
+        >
+          <li class="leading-normal tracking-wider mb-6">
+            {{ $t("smartHomeView") }}
+          </li>
+          <li class="leading-normal tracking-wider mb-6">
+            {{ $t("smartHomeView2") }}
+          </li>
         </ul>
       </div>
     </div>

@@ -25,7 +25,6 @@
           mb-2
           sm:mb-20
           font-mono
-          italic
           sm:text-7xl
         "
       >
@@ -37,22 +36,40 @@
           border-4
           border-mst_bg
           w-full
-          sm:w-[700px]
+          sm:w-[650px]
           h-[1300px]
           drop-shadow-2xl
           m-auto
         "
       >
-        <ul class="list-disc p-6 sm:p-12 text-lg sm:text-2xl text-mst_white italic">
-          <li class="leading-normal tracking-wider mb-6">{{ $t("vermietungView") }} </li>
-          <li class="leading-normal tracking-wider mb-6">{{ $t("vermietungView2") }} </li>
-          <li class="leading-normal tracking-wider mb-6">{{ $t("vermietungView3") }} </li>
-          <li class="leading-normal tracking-wider mb-6">{{ $t("vermietungView4") }} </li>
-          <li class="leading-normal tracking-wider mb-6">{{ $t("vermietungView5") }} </li>
-          <li class="leading-normal tracking-wider mb-6">{{ $t("vermietungView6") }} </li>
-          <li class="leading-normal tracking-wider mb-6">{{ $t("vermietungView7") }} </li>
-          <li class="leading-normal tracking-wider mb-6">{{ $t("vermietungView8") }} </li>
-          <li class="leading-normal tracking-wider mb-6">{{ $t("vermietungView9") }} </li>
+        <ul class="list-disc p-6 sm:p-12 text-lg sm:text-2xl text-mst_white">
+          <li class="leading-normal tracking-wider mb-6">
+            {{ $t("vermietungView") }}
+          </li>
+          <li class="leading-normal tracking-wider mb-6">
+            {{ $t("vermietungView2") }}
+          </li>
+          <li class="leading-normal tracking-wider mb-6">
+            {{ $t("vermietungView3") }}
+          </li>
+          <li class="leading-normal tracking-wider mb-6">
+            {{ $t("vermietungView4") }}
+          </li>
+          <li class="leading-normal tracking-wider mb-6">
+            {{ $t("vermietungView5") }}
+          </li>
+          <li class="leading-normal tracking-wider mb-6">
+            {{ $t("vermietungView6") }}
+          </li>
+          <li class="leading-normal tracking-wider mb-6">
+            {{ $t("vermietungView7") }}
+          </li>
+          <li class="leading-normal tracking-wider mb-6">
+            {{ $t("vermietungView8") }}
+          </li>
+          <li class="leading-normal tracking-wider mb-6">
+            {{ $t("vermietungView9") }}
+          </li>
         </ul>
       </div>
     </div>

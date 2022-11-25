@@ -1,3 +1,31 @@
+<script>
+export default {
+  name: "ContactIndexView",
+  components: {},
+  data() {
+    return {
+      task: {
+        name: "",
+        email: "",
+        message: "",
+      },
+    };
+  },
+  methods: {
+    processForm() {
+      console.log(this.task);
+
+      //Delete data
+      this.task = {
+        name: "",
+        email: "",
+        message: "",
+      };
+    },
+  },
+};
+</script>
+
 <template>
   <div class="object-fit">
     <!--PRINCIPAL-->
@@ -18,11 +46,10 @@
           text-mst_white
         "
       >
-        <div class="basis-1/2 flex flex-col font-sans tracking-wider">
+        <div class="basis-1/2 flex flex-col tracking-wider">
           <h1
             class="
               text-center
-              italic
               font-bold
               text-3xl
               mt-10
@@ -34,7 +61,7 @@
             {{ $t("prof1") }} <br />
             {{ $t("prof2") }}
           </h1>
-          <h3 class="basis-1/2 ml-15 italic text-xl sm:text-2xl p-5">
+          <h3 class="basis-1/2 ml-15 text-xl sm:text-2xl p-5">
             {{ $t("prof3") }}
           </h3>
         </div>
@@ -100,7 +127,6 @@
                     text-center
                     font-normal
                     tracking-wide
-                    italic
                     text-4xl
                     hidden
                     lg:block
@@ -195,7 +221,6 @@
                     text-center
                     font-normal
                     tracking-wide
-                    italic
                     text-4xl
                     hidden
                     lg:block
@@ -291,7 +316,6 @@
                     text-center
                     font-normal
                     tracking-wide
-                    italic
                     text-4xl
                     hidden
                     lg:block
@@ -387,7 +411,6 @@
                     text-center
                     font-normal
                     tracking-wide
-                    italic
                     text-4xl
                     hidden
                     lg:block
@@ -482,7 +505,6 @@
                     text-center
                     font-normal
                     tracking-wide
-                    italic
                     text-4xl
                     hidden
                     lg:block
@@ -561,8 +583,6 @@
             font-extrabold
             text-5xl
             p-4
-            font-mono
-            italic
             sm:text-7xl
           "
         >
@@ -573,7 +593,6 @@
             text-mst_white
             text-center text-base
             p-4
-            font-serif
             tracking-wider
             leading-relaxed
             sm:p-40 sm:text-2xl
@@ -592,8 +611,6 @@
           text-center
           font-extrabold
           text-5xl
-          font-mono
-          italic
           sm:text-7xl
         "
       >
@@ -623,7 +640,7 @@
               hover:grayscale-0
             "
           />
-          <h1 class="text-center font-bold tracking-wide italic text-2xl mt-3">
+          <h1 class="text-center font-bold tracking-wide text-2xl mt-3">
             Ralf-Peter Franz
           </h1>
           <h2 class="text-center mt-4 text-lg">{{ $t("franz") }}</h2>
@@ -641,7 +658,7 @@
               hover:grayscale-0
             "
           />
-          <h1 class="text-center font-bold tracking-wide italic text-2xl mt-3">
+          <h1 class="text-center font-bold tracking-wide text-2xl mt-3">
             Marco Elsner
           </h1>
           <h2 class="text-center mt-4 text-lg">{{ $t("marco") }}</h2>
@@ -659,7 +676,7 @@
               hover:grayscale-0
             "
           />
-          <h1 class="text-center font-bold tracking-wide italic text-2xl mt-3">
+          <h1 class="text-center font-bold tracking-wide text-2xl mt-3">
             Philipp Voss
           </h1>
           <h2 class="text-center mt-4 text-lg">{{ $t("philipp") }}</h2>
@@ -677,7 +694,7 @@
               hover:grayscale-0
             "
           />
-          <h1 class="text-center font-bold tracking-wide italic text-2xl mt-3">
+          <h1 class="text-center font-bold tracking-wide text-2xl mt-3">
             Dagmar Stewener
           </h1>
           <h2 class="text-center mt-4 text-lg">{{ $t("sekretärin") }}</h2>
@@ -695,7 +712,7 @@
               hover:grayscale-0
             "
           />
-          <h1 class="text-center font-bold tracking-wide italic text-2xl mt-3">
+          <h1 class="text-center font-bold tracking-wide text-2xl mt-3">
             Sophia Krutsch
           </h1>
           <h2 class="text-center mt-4 text-lg">{{ $t("sekretärin") }}</h2>
@@ -713,7 +730,7 @@
               hover:grayscale-0
             "
           />
-          <h1 class="text-center font-bold tracking-wide italic text-2xl mt-3">
+          <h1 class="text-center font-bold tracking-wide text-2xl mt-3">
             Jan Michalowski
           </h1>
           <h2 class="text-center mt-4 text-lg">{{ $t("techniker") }}</h2>
@@ -731,7 +748,7 @@
               hover:grayscale-0
             "
           />
-          <h1 class="text-center font-bold tracking-wide italic text-2xl mt-3">
+          <h1 class="text-center font-bold tracking-wide text-2xl mt-3">
             Andreas Garms
           </h1>
           <h2 class="text-center mt-4 text-lg">{{ $t("techniker") }}</h2>
@@ -749,7 +766,7 @@
               hover:grayscale-0
             "
           />
-          <h1 class="text-center font-bold tracking-wide italic text-2xl mt-3">
+          <h1 class="text-center font-bold tracking-wide text-2xl mt-3">
             {{ $t("hier") }}
           </h1>
           <h2 class="text-center mt-4 text-lg">
@@ -761,14 +778,14 @@
       <div class="flex flex-col items-center space-y-6 mt-16 visible sm:hidden">
         <div class="item w-52 h-[330px] p-2 shadow-2xl shadow-mst_black">
           <img src="../../assets/images/Team/franz.png" class="h-48" />
-          <h1 class="text-center font-bold tracking-wide italic text-2xl mt-3">
+          <h1 class="text-center font-bold tracking-wide text-2xl mt-3">
             Ralf-Peter Franz
           </h1>
           <h2 class="text-center mt-4 text-lg">{{ $t("franz") }}</h2>
         </div>
         <div class="item w-52 h-[330px] shadow-2xl shadow-mst_black">
           <img src="../../assets/images/Team/marco.jpg" class="p-2 h-48 ml-4" />
-          <h1 class="text-center font-bold tracking-wide italic text-2xl mt-3">
+          <h1 class="text-center font-bold tracking-wide text-2xl mt-3">
             Marco Elsner
           </h1>
           <h2 class="text-center mt-4 text-lg">{{ $t("marco") }}</h2>
@@ -778,7 +795,7 @@
             src="../../assets/images/Team/philipp.jpg"
             class="p-2 h-48 object-cover"
           />
-          <h1 class="text-center font-bold tracking-wide italic text-2xl mt-3">
+          <h1 class="text-center font-bold tracking-wide text-2xl mt-3">
             Philipp Voss
           </h1>
           <h2 class="text-center mt-4 text-lg">{{ $t("philipp") }}</h2>
@@ -788,7 +805,7 @@
             src="../../assets/images/Team/dagmar.jpg"
             class="p-2 h-48 object-cover"
           />
-          <h1 class="text-center font-bold tracking-wide italic text-2xl mt-3">
+          <h1 class="text-center font-bold tracking-wide text-2xl mt-3">
             Dagmar Stewener
           </h1>
           <h2 class="text-center mt-4 text-lg">{{ $t("sekretärin") }}</h2>
@@ -798,14 +815,14 @@
             src="../../assets/images/Team/sophia.jpg"
             class="p-2 h-48 object-cover"
           />
-          <h1 class="text-center font-bold tracking-wide italic text-2xl mt-3">
+          <h1 class="text-center font-bold tracking-wide text-2xl mt-3">
             Sophia Krutsch
           </h1>
           <h2 class="text-center mt-4 text-lg">{{ $t("sekretärin") }}</h2>
         </div>
         <div class="item w-52 h-[330px] shadow-2xl shadow-mst_black">
           <img src="../../assets/images/Team/jan.png" class="p-2 h-52 ml-2" />
-          <h1 class="text-center font-bold tracking-wide italic text-2xl mt-3">
+          <h1 class="text-center font-bold tracking-wide text-2xl mt-3">
             Jan Michalowski
           </h1>
           <h2 class="text-center mt-4 text-lg">{{ $t("techniker") }}</h2>
@@ -815,14 +832,17 @@
             src="../../assets/images/Team/andreas.jpg"
             class="p-2 h-52 ml-8"
           />
-          <h1 class="text-center font-bold tracking-wide italic text-2xl mt-3">
+          <h1 class="text-center font-bold tracking-wide text-2xl mt-3">
             Andreas Garms
           </h1>
           <h2 class="text-center mt-4 text-lg">{{ $t("techniker") }}</h2>
         </div>
         <div class="item w-52 h-[330px] shadow-2xl shadow-mst_black">
-          <img src="../../assets/images/General/logo_black.png" class="p-2 h-40 ml-6" />
-          <h1 class="text-center font-bold tracking-wide italic text-2xl mt-3">
+          <img
+            src="../../assets/images/General/logo_black.png"
+            class="p-2 h-40 ml-6"
+          />
+          <h1 class="text-center font-bold tracking-wide text-2xl mt-3">
             {{ $t("hier") }}
           </h1>
           <h2 class="text-center mt-4 text-lg">
@@ -855,8 +875,6 @@
             font-extrabold
             text-5xl
             p-4
-            font-mono
-            italic
             sm:text-7xl
           "
         >
@@ -910,125 +928,106 @@
               event@mst-extra.net <br />
               +49 421 20 77 3 0
             </p>
-            <form action="#" class="space-y-4 mt-5">
-              <div>
-                <label for="email" class="block mb-2 text-sm font-medium"
-                  >Name</label
-                >
-                <input
-                  type="email"
-                  id="email"
-                  class="
-                    shadow-sm
-                    border
-                    text-sm
-                    rounded-lg
-                    focus:ring-primary-500 focus:border-primary-500
-                    block
-                    w-72
-                    sm:w-full
-                    p-2.5
-                  "
-                  required
-                />
-              </div>
-              <div>
-                <label
-                  for="subject"
-                  class="
-                    block
-                    mb-2
-                    text-sm
-                    font-medium
-                    text-gray-900
-                    dark:text-gray-300
-                  "
-                  >{{ $t("email") }}</label
-                >
-                <input
-                  type="text"
-                  id="subject"
-                  class="
-                    block
-                    p-3
-                    w-72
-                    sm:w-full
-                    text-sm text-gray-900
-                    bg-gray-50
-                    rounded-lg
-                    border border-gray-300
-                    shadow-sm
-                  "
-                  required
-                />
-              </div>
-              <div class="sm:col-span-2">
-                <label
-                  for="message"
-                  class="
-                    block
-                    mb-2
-                    text-sm
-                    font-medium
-                    text-gray-900
-                    dark:text-gray-400
-                  "
-                  >{{ $t("message") }}</label
-                >
-                <textarea
-                  id="message"
-                  rows="6"
-                  class="
-                    block
-                    p-2.5
-                    w-72
-                    sm:w-full
-                    text-sm text-gray-900
-                    bg-gray-50
-                    rounded-lg
-                    shadow-sm
-                    border border-gray-300
-                  "
-                ></textarea>
-              </div>
-              <button
-                type="button"
-                class="
-                  w-36
-                  text-mst_white
-                  bg-gradient-to-br
-                  from-mst_gray
-                  to-mst_orange
-                  hover:bg-gradient-to-bl
-                  focus:ring-2 focus:outline-none focus:ring-mst_orange
-                  font-medium
-                  rounded-lg
-                  text-sm
-                  px-5
-                  py-2.5
-                  text-center
-                "
+            <form @submit.prevent="processForm" class="space-y-4 mt-5">
+            <div>
+              <label
+                for="email"
+                class="block mb-2 text-sm font-bold text-mst_black"
+                >Name</label
               >
-                {{ $t("send") }}
-              </button>
-            </form>
+              <input
+                type="text"
+                id="name"
+                v-model.trim="task.name"
+                class="
+                  shadow-2xl
+                  border
+                  text-sm
+                  rounded-lg
+                  block
+                  w-72
+                  sm:w-full
+                  p-2.5
+                "
+                required
+              />
+            </div>
+            <div>
+              <label
+                for="subject"
+                class="block mb-2 text-sm font-bold text-mst_black"
+                >{{ $t("email") }}</label
+              >
+              <input
+                type="text"
+                id="email"
+                v-model.trim="task.email"
+                class="
+                  block
+                  p-3
+                  w-72
+                  sm:w-full
+                  text-sm text-gray-900
+                  bg-gray-50
+                  rounded-lg
+                  border border-gray-300
+                  shadow-sm
+                "
+                required
+              />
+            </div>
+            <div class="sm:col-span-2">
+              <label
+                for="message"
+                class="block mb-2 text-sm font-bold text-mst_black"
+                >{{ $t("message") }}</label
+              >
+              <textarea
+                type="text"
+                id="message"
+                v-model.trim="task.message"
+                rows="6"
+                class="
+                  block
+                  p-2.5
+                  w-72
+                  sm:w-full
+                  text-sm text-mst_black
+                  bg-gray-50
+                  rounded-lg
+                  border border-gray-300
+                  shadow-sm
+                "
+              />
+            </div>
+            <button
+              type="submit"
+              class="
+                w-36
+                text-mst_white
+                bg-gradient-to-br
+                from-mst_gray
+                to-mst_orange
+                hover:bg-gradient-to-bl
+                focus:ring-2 focus:outline-none focus:ring-mst_orange
+                font-medium
+                rounded-lg
+                text-sm
+                px-5
+                py-2.5
+                text-center
+              "
+            >
+              {{ $t("send") }}
+            </button>
+          </form>
           </div>
         </div>
       </div>
     </div>
     <!--PARTNERS-->
     <div class="hidden sm:block text-center bg-partners">
-      <h1
-        class="
-          text-mst_white
-          text-center
-          font-extrabold
-          text-7xl
-          p-4
-          font-mono
-          italic
-        "
-      >
+      <h1 class="text-mst_white text-center font-extrabold text-7xl p-4">
         {{ $t("partners") }}
       </h1>
       <div

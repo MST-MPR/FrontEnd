@@ -26,8 +26,6 @@ import AppFlipCard from "../../components/app/AppFlipCard.vue";
           font-extrabold
           text-5xl
           p-12
-          font-mono
-          italic
           sm:text-7xl
         "
       >
@@ -40,7 +38,6 @@ import AppFlipCard from "../../components/app/AppFlipCard.vue";
             <AppFlipCard
               title="KONFERENZ UND PRÄSENTATIONSTECHNIK"
               paragraph="Wir verstehen uns als Fullservice-Dienstleister, d.h. wir stellen nicht nur jegliche notwendige technische Geräte zur Verfügung, sondern sorgen auch dafür, dass sie perfekt für den jeweiligen Anlass installiert sind."
-              
             />
           </div>
           <div class="box">

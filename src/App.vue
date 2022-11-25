@@ -17,3 +17,11 @@ import Footer from "./components/common/AppFooter.vue";
     </div>
   </div>
 </template>
+
+<style>
+@import './assets/font-family/fonts.css';
+
+  html, body, #app{
+    font-family: Frutiger;
+  }
+</style>
