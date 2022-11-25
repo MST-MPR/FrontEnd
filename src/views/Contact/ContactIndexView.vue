@@ -1,10 +1,17 @@
 <script>
+import Input from "../../components/inputs/Input.vue"
+import {mapActions} from "vuex"
+import { nanoid } from 'nanoid'
+
 export default {
   name: "ContactIndexView",
-  components: {},
+  components: {
+    Input
+  },
   data() {
     return {
       task: {
+        id: "",
         name: "",
         email: "",
         message: "",
@@ -12,9 +19,15 @@ export default {
     };
   },
   methods: {
+    //Recive an array
+    ...mapActions(["setTasks"]),
+
     processForm() {
       console.log(this.task);
 
+      //Generate random id
+        this.task.id = nanoid()
+        
       //Delete data
       this.task = {
         name: "",
@@ -66,96 +79,7 @@ export default {
 
           <!--FORM-->
           <form @submit.prevent="processForm" class="space-y-4 mt-5">
-            <div>
-              <label
-                for="email"
-                class="block mb-2 text-sm font-medium text-mst_white"
-                >Name</label
-              >
-              <input
-                type="text"
-                id="name"
-                v-model.trim="task.name"
-                class="
-                  shadow-2xl
-                  border
-                  text-sm
-                  rounded-lg
-                  block
-                  w-72
-                  sm:w-full
-                  p-2.5
-                "
-                required
-              />
-            </div>
-            <div>
-              <label
-                for="subject"
-                class="block mb-2 text-sm font-medium text-mst_white"
-                >{{ $t("email") }}</label
-              >
-              <input
-                type="text"
-                id="email"
-                v-model.trim="task.email"
-                class="
-                  block
-                  p-3
-                  w-72
-                  sm:w-full
-                  text-sm text-gray-900
-                  bg-gray-50
-                  rounded-lg
-                  border border-gray-300
-                  shadow-sm
-                "
-                required
-              />
-            </div>
-            <div class="sm:col-span-2">
-              <label
-                for="message"
-                class="block mb-2 text-sm font-medium text-mst_white"
-                >{{ $t("message") }}</label
-              >
-              <textarea
-                type="text"
-                id="message"
-                v-model.trim="task.message"
-                rows="6"
-                class="
-                  block
-                  p-2.5
-                  w-72
-                  sm:w-full
-                  text-sm
-                  bg-gray-50
-                  rounded-lg
-                  shadow-sm
-                "
-              />
-            </div>
-            <button
-              type="submit"
-              class="
-                w-36
-                text-mst_white
-                bg-gradient-to-br
-                from-mst_gray
-                to-mst_orange
-                hover:bg-gradient-to-bl
-                focus:ring-2 focus:outline-none focus:ring-mst_orange
-                font-medium
-                rounded-lg
-                text-sm
-                px-5
-                py-2.5
-                text-center
-              "
-            >
-              {{ $t("send") }}
-            </button>
+            <Input :task="task" />
           </form>
         </div>
       </div>

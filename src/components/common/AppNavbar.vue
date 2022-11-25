@@ -21,7 +21,7 @@ const showMobileMenu = ref(true);
                 src="../../assets/images/General/logo.svg"
                 class="h-20 w-20 ml-8 md:block"
               />
-              <span class="italic text-mst_white text-sm sm:text-2xl"
+              <span class="text-mst_white text-sm sm:text-2xl"
                 >medien <br />SYSTEMTECHNIK</span
               >
             </router-link>

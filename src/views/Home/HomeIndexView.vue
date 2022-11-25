@@ -1,7 +1,10 @@
 <script>
+import { VueRecaptcha } from "vue-recaptcha";
+
 export default {
-  name: "ContactIndexView",
-  components: {},
+  components: {
+    VueRecaptcha,
+  },
   data() {
     return {
       task: {
@@ -14,13 +17,15 @@ export default {
   methods: {
     processForm() {
       console.log(this.task);
-
       //Delete data
       this.task = {
         name: "",
         email: "",
         message: "",
       };
+    },
+    reset() {
+      this.$refs.recaptcha.reset();
     },
   },
 };
@@ -851,42 +856,82 @@ export default {
         </div>
       </div>
     </div>
-    <!--SPONSORING-->
-    <div class="h-screen sm:h-[900px] mt-2 mb-2">
-      <div class="h-full relative">
-        <img
-          src="../../assets/images/General/kirche.jpg"
-          class="
-            w-full
-            h-full
-            object-cover
-            absolute
-            mix-blend-overlay
-            object-left-bottom
-            brightness-50
-            blur-sm
-            sm:object-center
-          "
-        />
-        <h1
-          class="
-            text-mst_white
-            text-center
-            font-extrabold
-            text-5xl
-            p-4
-            sm:text-7xl
-          "
-        >
-          Sponsoring
-        </h1>
-        <div class="flex flex-col ml-[20%] sm:space-x-52 sm:flex sm:flex-row">
-          <div class="w-52 mt-6 sm:w-[500px]">
-            <img src="../../assets/images/General/sponsor1.png" alt="" />
-          </div>
-          <div class="w-52 mt-6 sm:w-[504px]">
-            <img src="../../assets/images/General/sponsor2.png" alt="" />
-          </div>
+    <!--PARTNERS-->
+    <div class="hidden sm:block text-center bg-partners">
+      <h1 class="text-mst_white text-center font-extrabold text-7xl p-4">
+        {{ $t("partners") }}
+      </h1>
+      <div
+        class="
+          grid
+          mt-10
+          overflow-hidden
+          grid-cols-4
+          gap-x-10 gap-y-5
+          w-full
+          h-full
+          items-center
+        "
+      >
+        <div class="w-72 p-8 ml-28">
+          <a href="https://www.bremerbuehnenhaus.de/" target="_blank"
+            ><img src="../../assets/images/Partners/bbh.png"
+          /></a>
+        </div>
+        <div class="w-72 p-8 ml-28">
+          <a href="https://www.bose.de" target="_blank"
+            ><img src="../../assets/images/Partners/bose.png" 
+          /></a>
+        </div>
+        <div class="w-72 p-8 ml-28">
+          <a href="https://elko.de/" target="_blank"
+            ><img src="../../assets/images/Partners/elko.png" 
+          /></a>
+        </div>
+        <div class="w-72 p-8 ml-28">
+          <a href="https://www.gotaque.de/" target="_blank"
+            ><img src="../../assets/images/Partners/gotaque.png" 
+          /></a>
+        </div>
+        <div class="w-72 p-8 ml-28">
+          <a href="https://www.highlite.com/de/" target="_blank"
+            ><img src="../../assets/images/Partners/highlite.png" 
+          /></a>
+        </div>
+        <div class="w-72 p-8 ml-28">
+          <a href="https://www.loxone.com/" target="_blank"
+            ><img src="../../assets/images/Partners/loxone.png" 
+          /></a>
+        </div>
+        <div class="w-72 p-8 ml-28">
+          <a href="https://de.nec.com/" target="_blank"
+            ><img src="../../assets/images/Partners/nec.png" 
+          /></a>
+        </div>
+        <div class="w-72 p-8 ml-28">
+          <a href="https://www.biamp.com/" target="_blank"
+            ><img src="../../assets/images/Partners/neets.png" 
+          /></a>
+        </div>
+        <div class="w-72 p-8 ml-28">
+          <a href="https://www.optoma.de/" target="_blank"
+            ><img src="../../assets/images/Partners/optoma.png" 
+          /></a>
+        </div>
+        <div class="w-72 p-8 ml-28">
+          <a href="https://www.relens.de/" target="_blank"
+            ><img src="../../assets/images/Partners/relens.png" 
+          /></a>
+        </div>
+        <div class="w-72 p-8 ml-28">
+          <a href="https://de-de.sennheiser.com/" target="_blank"
+            ><img src="../../assets/images/Partners/sennheiser.png" 
+          /></a>
+        </div>
+        <div class="w-72 p-8 ml-28">
+          <a href="https://www.sony.de/" target="_blank"
+            ><img src="../../assets/images/Partners/sony.png" 
+          /></a>
         </div>
       </div>
     </div>
@@ -929,178 +974,160 @@ export default {
               +49 421 20 77 3 0
             </p>
             <form @submit.prevent="processForm" class="space-y-4 mt-5">
-            <div>
-              <label
-                for="email"
-                class="block mb-2 text-sm font-bold text-mst_black"
-                >Name</label
-              >
-              <input
-                type="text"
-                id="name"
-                v-model.trim="task.name"
+              <div>
+                <label
+                  for="email"
+                  class="block mb-2 text-sm font-bold text-mst_black"
+                  >Name</label
+                >
+                <input
+                  type="text"
+                  id="name"
+                  v-model.trim="task.name"
+                  class="
+                    shadow-2xl
+                    border
+                    text-sm
+                    rounded-lg
+                    block
+                    w-72
+                    sm:w-full
+                    p-2.5
+                  "
+                  required
+                />
+              </div>
+              <div>
+                <label
+                  for="subject"
+                  class="block mb-2 text-sm font-bold text-mst_black"
+                  >{{ $t("email") }}</label
+                >
+                <input
+                  type="text"
+                  id="email"
+                  v-model.trim="task.email"
+                  class="
+                    block
+                    p-3
+                    w-72
+                    sm:w-full
+                    text-sm text-gray-900
+                    bg-gray-50
+                    rounded-lg
+                    border border-gray-300
+                    shadow-sm
+                  "
+                  required
+                />
+              </div>
+              <div class="sm:col-span-2">
+                <label
+                  for="message"
+                  class="block mb-2 text-sm font-bold text-mst_black"
+                  >{{ $t("message") }}</label
+                >
+                <textarea
+                  type="text"
+                  id="message"
+                  v-model.trim="task.message"
+                  rows="6"
+                  class="
+                    block
+                    p-2.5
+                    w-72
+                    sm:w-full
+                    text-sm
+                    text-mst_black
+                    bg-gray-50
+                    rounded-lg
+                    border border-gray-300
+                    shadow-sm
+                  "
+                />
+              </div>
+              <div>
+                <vue-recaptcha
+                  ref="recaptcha"
+                  sitekey="6Lem_TIjAAAAAOmTwiskZDAWnkE81t8Y_jsXe_jG"
+                />
+              </div>
+              <button
+                @click="reset"
+                type="submit"
                 class="
-                  shadow-2xl
-                  border
+                  w-36
+                  text-mst_white
+                  bg-gradient-to-br
+                  from-mst_gray
+                  to-mst_orange
+                  hover:bg-gradient-to-bl
+                  focus:ring-2 focus:outline-none focus:ring-mst_orange
+                  font-medium
+                  rounded-lg
                   text-sm
-                  rounded-lg
-                  block
-                  w-72
-                  sm:w-full
-                  p-2.5
+                  px-5
+                  py-2.5
+                  text-center
                 "
-                required
-              />
-            </div>
-            <div>
-              <label
-                for="subject"
-                class="block mb-2 text-sm font-bold text-mst_black"
-                >{{ $t("email") }}</label
               >
-              <input
-                type="text"
-                id="email"
-                v-model.trim="task.email"
-                class="
-                  block
-                  p-3
-                  w-72
-                  sm:w-full
-                  text-sm text-gray-900
-                  bg-gray-50
-                  rounded-lg
-                  border border-gray-300
-                  shadow-sm
-                "
-                required
-              />
-            </div>
-            <div class="sm:col-span-2">
-              <label
-                for="message"
-                class="block mb-2 text-sm font-bold text-mst_black"
-                >{{ $t("message") }}</label
-              >
-              <textarea
-                type="text"
-                id="message"
-                v-model.trim="task.message"
-                rows="6"
-                class="
-                  block
-                  p-2.5
-                  w-72
-                  sm:w-full
-                  text-sm text-mst_black
-                  bg-gray-50
-                  rounded-lg
-                  border border-gray-300
-                  shadow-sm
-                "
-              />
-            </div>
-            <button
-              type="submit"
-              class="
-                w-36
-                text-mst_white
-                bg-gradient-to-br
-                from-mst_gray
-                to-mst_orange
-                hover:bg-gradient-to-bl
-                focus:ring-2 focus:outline-none focus:ring-mst_orange
-                font-medium
-                rounded-lg
-                text-sm
-                px-5
-                py-2.5
-                text-center
-              "
-            >
-              {{ $t("send") }}
-            </button>
-          </form>
+                {{ $t("send") }}
+              </button>
+            </form>
           </div>
         </div>
       </div>
     </div>
-    <!--PARTNERS-->
-    <div class="hidden sm:block text-center bg-partners">
-      <h1 class="text-mst_white text-center font-extrabold text-7xl p-4">
-        {{ $t("partners") }}
-      </h1>
-      <div
-        class="
-          grid
-          mt-10
-          overflow-hidden
-          grid-cols-4
-          gap-x-10 gap-y-5
-          w-full
-          h-full
-          items-center
-        "
-      >
-        <div class="w-72 p-8 ml-28">
-          <a href="https://www.bremerbuehnenhaus.de/" target="_blank"
-            ><img src="../../assets/images/Partners/bbh.png"
-          /></a>
-        </div>
-        <div class="w-72 p-8 ml-28">
-          <a href="https://www.bose.de" target="_blank"
-            ><img src="../../assets/images/Partners/bose.png" alt=""
-          /></a>
-        </div>
-        <div class="w-72 p-8 ml-28">
-          <a href="https://elko.de/" target="_blank"
-            ><img src="../../assets/images/Partners/elko.png" alt=""
-          /></a>
-        </div>
-        <div class="w-72 p-8 ml-28">
-          <a href="https://www.gotaque.de/" target="_blank"
-            ><img src="../../assets/images/Partners/gotaque.png" alt=""
-          /></a>
-        </div>
-        <div class="w-72 p-8 ml-28">
-          <a href="https://www.highlite.com/de/" target="_blank"
-            ><img src="../../assets/images/Partners/highlite.png" alt=""
-          /></a>
-        </div>
-        <div class="w-72 p-8 ml-28">
-          <a href="https://www.loxone.com/" target="_blank"
-            ><img src="../../assets/images/Partners/loxone.png" alt=""
-          /></a>
-        </div>
-        <div class="w-72 p-8 ml-28">
-          <a href="https://de.nec.com/" target="_blank"
-            ><img src="../../assets/images/Partners/nec.png" alt=""
-          /></a>
-        </div>
-        <div class="w-72 p-8 ml-28">
-          <a href="https://www.biamp.com/" target="_blank"
-            ><img src="../../assets/images/Partners/neets.png" alt=""
-          /></a>
-        </div>
-        <div class="w-72 p-8 ml-28">
-          <a href="https://www.optoma.de/" target="_blank"
-            ><img src="../../assets/images/Partners/optoma.png" alt=""
-          /></a>
-        </div>
-        <div class="w-72 p-8 ml-28">
-          <a href="https://www.relens.de/" target="_blank"
-            ><img src="../../assets/images/Partners/relens.png" alt=""
-          /></a>
-        </div>
-        <div class="w-72 p-8 ml-28">
-          <a href="https://de-de.sennheiser.com/" target="_blank"
-            ><img src="../../assets/images/Partners/sennheiser.png" alt=""
-          /></a>
-        </div>
-        <div class="w-72 p-8 ml-28">
-          <a href="https://www.sony.de/" target="_blank"
-            ><img src="../../assets/images/Partners/sony.png" alt=""
-          /></a>
+
+    <!--SPONSORING-->
+    <div class="h-[950px] sm:h-[700px] mt-2 mb-2">
+      <div class="h-full relative">
+        <img
+          src="../../assets/images/General/kirche.jpg"
+          class="
+            w-full
+            h-full
+            object-cover
+            absolute
+            mix-blend-overlay
+            brightness-50
+            blur-sm
+            sm:object-center
+          "
+        />
+        <h1
+          class="
+            text-mst_white
+            text-center
+            font-extrabold
+            text-5xl
+            p-4
+            sm:text-7xl
+          "
+        >
+          Sponsoring
+        </h1>
+        <div
+          class="
+            flex flex-col
+            ml-11
+            sm:ml-[24%]
+            space-y-5
+            sm:space-x-52 sm:flex sm:flex-row
+          "
+        >
+          <div class="mt-6 sm:w-[500px]">
+            <img
+              src="../../assets/images/General/sponsor1.png"
+              class="h-96 sm:h-[500px]"
+            />
+          </div>
+          <div class="mt-6 sm:w-[500px]">
+            <img
+              src="../../assets/images/General/sponsor2.png"
+              class="h-96 sm:h-[500px]"
+            />
+          </div>
         </div>
       </div>
     </div>
