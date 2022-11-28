@@ -48,7 +48,7 @@ export default {
         sm:grid-cols-3 sm:ml-[550px] sm:w-fit sm:h-[800px]
       "
     >
-      <div class="w-80 h-96 mt-5 ml-5 sm:w-[450px] sm:h-[700px]">
+      <div class="w-80 h-96 mt-5 ml-5 sm:w-[450px] sm:h-[740px]">
         <iframe
           src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d4800.1731102126205!2d8.789679!3d53.01880700000001!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x26d0285757006942!2sMST%20Medien-%20Systemtechnik%20GmbH!5e0!3m2!1ses!2sus!4v1669030223678!5m2!1ses!2sus"
           class="w-full h-full"
@@ -56,12 +56,12 @@ export default {
       </div>
       <div class="w-96 sm:w-[450px] sm:h-[650px]">
         <div class="p-8 m-auto">
-          <h2
+          <h1
             class="
               mb-4
               mr-4
               sm:mr-0
-              text-4xl
+              text-2xl
               tracking-tight
               font-extrabold
               text-center
@@ -69,8 +69,8 @@ export default {
             "
           >
             MST Medien- Systemtechnik GmbH
-          </h2>
-          <p class="text-mst_white mb-1 font-light sm:text-xl">
+          </h1>
+          <p class="text-mst_white mb-1 font-light sm:text-lg">
             Bremer Straße 63 <br />
             28816 Stuhr <br />
             event@mst-extra.net <br />

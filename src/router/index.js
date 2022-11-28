@@ -70,7 +70,11 @@ const router = createRouter({
             component: Error
         }
 
-    ]
+    ],
+    //Scroll to the top
+    scrollBehavior() {
+        document.getElementById('app').scrollIntoView({ behavior: 'smooth' });
+    }
 })
 
 export default router

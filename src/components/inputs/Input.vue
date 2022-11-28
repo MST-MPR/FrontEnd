@@ -59,7 +59,7 @@ export default {
       class="block mb-2 text-sm font-medium text-mst_white"
       >{{ $t("message") }}</label
     >
-    <input
+    <textarea
       type="text"
       id="message"
       v-model.trim="task.message"

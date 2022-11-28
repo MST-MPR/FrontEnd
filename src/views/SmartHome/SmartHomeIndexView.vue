@@ -34,7 +34,7 @@
       <div
         class="
           border-4
-          border-mst_bg
+          border-mst_construction
           sm:mt-32
           w-full
           sm:w-[700px]

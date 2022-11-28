@@ -1,5 +1,5 @@
 <template>
-  <div class="h-screen">
+  <div class="h-[900px]">
     <div class="h-full w-full relative">
       <img
         src="../../assets/images/General/micro.jpg"
@@ -32,7 +32,7 @@
       <div
         class="
           border-4
-          border-mst_bg
+          border-mst_construction
           w-full
           sm:w-[650px]
           h-[470px]

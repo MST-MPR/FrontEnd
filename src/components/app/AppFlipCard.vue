@@ -3,7 +3,7 @@ defineProps(["title", "paragraph"]);
 </script>
 
 <template>
-  <div class="flip-card bg-transparent w-[300px] h-[300px]">
+  <div class="flip-card bg-transparent w-[380px] h-[340px]">
     <div
       class="
         flip-card-inner
@@ -14,28 +14,27 @@ defineProps(["title", "paragraph"]);
         duration-[1300ms]
       "
     >
-      <div class="flip-card-front absolute w-full h-full">
+      <div class="flip-card-front absolute w-[380px] h-72 sm:w-[380px] sm:h-[340px] ">
         <img
           src="../../assets/images/General/kameras.jpg"
-          class="w-[300px] h-[300px]"
+          class="w-full h-full"
         />
       </div>
       <div
         class="
           flip-card-back
           absolute
-          w-full
+          w-[300px]
           h-full
+          sm:w-full
           p-2
           text-mst_white
           border-4
           border-mst_bg
-          drop-shadow-2xl
-          shadow-mst_white
         "
       >
-        <h1 class="text-xl font-semibold mt-6 mb-5">{{ title }}</h1>
-        <p>{{ paragraph }}</p>
+        <h1 class="text-lg sm:text-xl text-center font-semibold mt-6 mb-5">{{ $t(title) }}</h1>
+        <p class="text-base align-text-middle sm:text-lg">{{ $t(paragraph) }}</p>
       </div>
     </div>
   </div>

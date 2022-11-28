@@ -31,6 +31,16 @@ const i18n = createI18n({
             /* FULL SERVICE */
             konferenz: "KONFERENZ- UND PRÄSENTATIONSTECHNIK",
             konferenzP: "Wir verstehen uns als Fullservice-Dienstleister, d.h. wir stellen nicht nur jegliche notwendige technische Geräte zur Verfügung, sondern sorgen auch dafür, dass sie perfekt für den jeweiligen Anlass installiert sind.",
+            beleuchtung: "BELEUCHTUNG",
+            beleuchtungP: "Ob für eine spektakuläre Show, für Messestände oder um Architektur prominent in Szene zu setzen, wir haben die passende Beleuchtung.",
+            beschallung: "BESCHALLUNG",
+            beschallungP:"Wir sorgen dafür, dass Sie in Konferenzräumen, Außenanlagen oder Arenen den richtigen Ton treffen. Uns ist es wichtig, dass etwas weder zu laut noch zu leise ist, denn nur ein perfekt akustisch ausgerichteter Raum, kann die Zuhörer fesseln.",
+            edv: "EDV",
+            edvP: "Wir kennen uns mit den neusten technischen Standards bestens aus, beraten und installieren, was benötigt wird. AV-EDITING / POST-PRODUKTION auch nach Beendigung einer Veranstaltung gibt es noch viel zu tun: Audio-Video-Aufbereitung sowie sämtliche Schritte der Film-Nachbearbeitung gehören zu unseren Dienstleistungen.", 
+            dokumentation: "DOKUMENTATION",
+            dokumentationP: "Die Veranstaltung war perfekt, doch keiner hat auch nur ein Foto oder eine Videoaufzeichnung davon gemacht? Damit das nicht passiert, bieten wir eine komplette Dokumentation an.",
+            möblierung: "VERANSTALATUNGSMÖBLIERUNG",
+            möblierungP: "Als Fullservice-Dienstleister sorgen wir auch für den richtigen Sitz! Sie brauchen Tische, Stühle, Pulte oder ähnliches? Auch der Aufbau und/oder Verleih von passendem Mobiliar erfolgt durch uns.",
 
             /**VERKAUF*/
             verkaufView: "Nutzen Sie unsere kostenlose, unverbindliche Bedarfsanalyse vor Ort. Wir erstellen Ihnen Ihre individuelle Lösung und machen Ihnen einen guten Preis. Bevorzugen Sie ein superaktuelles Neugerät oder tut es auch ein gepflegtes Gebrauchtes? Diese auch aus den Messe- und Demopools von Lenovo und HP mit voller Herstellergarantie und optionalen vor Ort-Service. Wir bieten ebenso Gebraucht- und Demogeräte von Kundengeräte in Kommision an.",
@@ -141,6 +151,16 @@ const i18n = createI18n({
             /* FULL SERVICE */
             konferenz: "CONFERENCE AND PRESENTATION TECHNOLOGY",
             konferenzP: "We see ourselves as a full-service provider, i.e. we not only provide all the necessary technical equipment, but also ensure that it is perfectly installed for the respective occasion.",
+            beleuchtung: "LIGHTING",
+            beleuchtungP: "Whether for a spectacular show, for trade fair stands or to prominently showcase architecture, we have the right lighting.",
+            beschallung: "SOUND",
+            beschallungP: "We make sure that you hit the right note in conference rooms, outdoor facilities or arenas. It is important to us that something is neither too loud nor too quiet, because only a perfectly acoustically aligned room, can captivate the audience.",
+            edv: "IT",
+            edvP: "We are very familiar with the latest technical standards, advise and install what is needed. AV-EDITING / POST-PRODUCTION even after the end of an event there is still a lot to do: Audio-video processing as well as all steps of film post-production are part of our services.",
+            dokumentation: "DOCUMENTATION",
+            dokumentationP: "The event was perfect, but no one even took a photo or video recording of it? So that this does not happen, we offer a complete documentation.",
+            möblierung: "EVENT FURNITURE",
+            möblierungP: "As a full-service provider, we also ensure the right seat! You need tables, chairs, desks or similar? We also take care of the assembly and/or rental of suitable furniture.",
 
             /*VERKAUF*/
             verkaufView: "Take advantage of our free, no-obligation on-site needs analysis. We will create your individual solution and give you a good price. Do you prefer a brand new device or a well-maintained used one? These are also available from the Lenovo and HP trade fair and demo pools with full manufacturer's warranty and optional on-site service. We also offer used and demo devices from customer devices in commission.",

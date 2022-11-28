@@ -650,7 +650,7 @@ export default {
         "
       >
         <div
-          class="item w-56 shadow-inner shadow-mst_black rounded-2xl  sm:shadow-2xl sm:shadow-mst_black cursor-pointer cursor-pointer"
+          class="item w-56 shadow-inner shadow-mst_black rounded-2xl  sm:shadow-2xl sm:shadow-mst_black cursor-pointer"
           @click="select('franz')"
           :class="[selected == 'franz' ? 'h-[400px]' : 'h-[350px]']"
         >

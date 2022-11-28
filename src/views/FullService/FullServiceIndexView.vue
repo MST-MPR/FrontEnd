@@ -3,7 +3,7 @@ import AppFlipCard from "../../components/app/AppFlipCard.vue";
 </script>
 
 <template>
-  <div class="h-[2300px] sm:h-[1000px]">
+  <div class="h-[2450px] sm:h-[1000px]">
     <div class="h-full w-full relative">
       <img
         src="../../assets/images/General/veranstaltung.jpg"
@@ -15,7 +15,7 @@ import AppFlipCard from "../../components/app/AppFlipCard.vue";
           mix-blend-overlay
           object-left-bottom
           brightness-50
-          blur-sm
+          blur
           sm:object-center
         "
       />
@@ -32,42 +32,48 @@ import AppFlipCard from "../../components/app/AppFlipCard.vue";
         Full Service
       </h1>
 
-      <div class="p-7 mt-0 sm:p-24 sm:-mt-20 m-auto w-[1300px] sm:h-[800px]">
+      <div class="p-7 mt-0 sm:p-24 sm:-mt-20 m-auto w-full sm:w-[1500px] sm:h-[800px]">
         <div class="grid overflow-hidden grid-row sm:grid-cols-3 gap-10 w-full">
           <div class="box">
             <AppFlipCard
-              title="KONFERENZ UND PRÄSENTATIONSTECHNIK"
-              paragraph="Wir verstehen uns als Fullservice-Dienstleister, d.h. wir stellen nicht nur jegliche notwendige technische Geräte zur Verfügung, sondern sorgen auch dafür, dass sie perfekt für den jeweiligen Anlass installiert sind."
+              title="konferenz"
+              paragraph="konferenzP"
+              class="-ml-20 sm:ml-0"
             />
           </div>
           <div class="box">
             <AppFlipCard
-              title="KONFERENZ UND PRÄSENTATIONSTECHNIK"
-              paragraph="Wir verstehen uns als Fullservice-Dienstleister, d.h. wir stellen nicht nur jegliche notwendige technische Geräte zur Verfügung, sondern sorgen auch dafür, dass sie perfekt für den jeweiligen Anlass installiert sind."
+              title="beleuchtung"
+              paragraph="beleuchtungP"
+              class="-ml-20 sm:ml-0"
             />
           </div>
           <div class="box">
             <AppFlipCard
-              title="KONFERENZ UND PRÄSENTATIONSTECHNIK"
-              paragraph="Wir verstehen uns als Fullservice-Dienstleister, d.h. wir stellen nicht nur jegliche notwendige technische Geräte zur Verfügung, sondern sorgen auch dafür, dass sie perfekt für den jeweiligen Anlass installiert sind."
+              title="beschallung"
+              paragraph="beschallungP" 
+              class="-ml-20 sm:ml-0"
             />
           </div>
           <div class="box">
             <AppFlipCard
-              title="KONFERENZ UND PRÄSENTATIONSTECHNIK"
-              paragraph="Wir verstehen uns als Fullservice-Dienstleister, d.h. wir stellen nicht nur jegliche notwendige technische Geräte zur Verfügung, sondern sorgen auch dafür, dass sie perfekt für den jeweiligen Anlass installiert sind."
+              title="edv"
+              paragraph="edvP"
+              class="-ml-20 sm:ml-0"
             />
           </div>
           <div class="box">
             <AppFlipCard
-              title="KONFERENZ UND PRÄSENTATIONSTECHNIK"
-              paragraph="Wir verstehen uns als Fullservice-Dienstleister, d.h. wir stellen nicht nur jegliche notwendige technische Geräte zur Verfügung, sondern sorgen auch dafür, dass sie perfekt für den jeweiligen Anlass installiert sind."
+              title="dokumentation"
+              paragraph="dokumentationP"
+              class="-ml-20 sm:ml-0"
             />
           </div>
           <div class="box">
             <AppFlipCard
-              title="KONFERENZ UND PRÄSENTATIONSTECHNIK"
-              paragraph="Wir verstehen uns als Fullservice-Dienstleister, d.h. wir stellen nicht nur jegliche notwendige technische Geräte zur Verfügung, sondern sorgen auch dafür, dass sie perfekt für den jeweiligen Anlass installiert sind."
+              title="möblierung"
+              paragraph="möblierungP"
+              class="-ml-20 sm:ml-0"
             />
           </div>
         </div>
