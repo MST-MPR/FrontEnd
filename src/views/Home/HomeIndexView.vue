@@ -1,9 +1,10 @@
 <script>
 import { VueRecaptcha } from "vue-recaptcha";
-
+//import Slider from "../../components/Slider.vue"
 export default {
   components: {
     VueRecaptcha,
+    //Slider
   },
   data() {
     return {
@@ -12,6 +13,7 @@ export default {
         email: "",
         message: "",
       },
+      selected: "",
     };
   },
   methods: {
@@ -26,6 +28,13 @@ export default {
     },
     reset() {
       this.$refs.recaptcha.reset();
+    },
+    select(name) {
+      if (this.selected == name) {
+        this.selected = "";
+      } else {
+        this.selected = name;
+      }
     },
   },
 };
@@ -608,7 +617,7 @@ export default {
       </div>
     </div>
     <!--TEAM-->
-    <div class="h-[4400px] sm:h-[1400px]">
+    <div class="h-[4850px] sm:h-[1400px]">
       <h1
         class="
           mt-10
@@ -623,19 +632,28 @@ export default {
       </h1>
       <div
         class="
-          hidden
-          sm:grid
+          grid
           overflow-hidden
-          grid-cols-4
-          mt-18
-          mb-10
-          ml-80
-          p-20
-          h-full
-          w-[1500px]
+          grid-rows
+          space-y-10
+          sm:space-y-0
+          sm:grid-cols-4
+          mt-8
+          sm:mt-18
+          mb-20
+          sm:mb-10
+          ml-16
+          sm:ml-80
+          sm:p-20
+          sm:h-full
+          sm:w-[1500px]
         "
       >
-        <div class="item w-56 h-[350px] shadow-2xl shadow-mst_black">
+        <div
+          class="item w-56 shadow-inner shadow-mst_black rounded-2xl  sm:shadow-2xl sm:shadow-mst_black cursor-pointer cursor-pointer"
+          @click="select('franz')"
+          :class="[selected == 'franz' ? 'h-[400px]' : 'h-[350px]']"
+        >
           <img
             src="../../assets/images/Team/franz.png"
             class="
@@ -652,8 +670,31 @@ export default {
             Ralf-Peter Franz
           </h1>
           <h2 class="text-center mt-4 text-lg">{{ $t("franz") }}</h2>
+          <div class="text-center mt-4" v-if="selected == 'franz'">
+            <div
+              class="
+                relative
+                flex
+                items-center
+                w-16
+                mb-4
+                ml-20
+              "
+            >
+              <div class="flex-grow border-2 border-mst_orange"></div>
+            </div>
+            <p>
+              <strong>{{ $t("telefon") }}</strong
+              >: 654654654
+            </p>
+            <p><strong>Email:</strong> example@gmail.com</p>
+          </div>
         </div>
-        <div class="item w-56 h-[350px] shadow-2xl shadow-mst_black">
+        <div
+          class="item w-56 shadow-inner shadow-mst_black rounded-2xl  sm:shadow-2xl sm:shadow-mst_black cursor-pointer"
+          @click="select('marco')"
+          :class="[selected == 'marco' ? 'h-[430px]' : 'h-[350px]']"
+        >
           <img
             src="../../assets/images/Team/marco.jpg"
             class="
@@ -669,9 +710,32 @@ export default {
           <h1 class="text-center font-bold tracking-wide text-2xl mt-3">
             Marco Elsner
           </h1>
-          <h2 class="text-center mt-4 text-lg">{{ $t("marco") }}</h2>
+          <h2 class="text-center mt-2 p-2 text-lg">{{ $t("marco") }}</h2>
+          <div class="text-center mt-2" v-if="selected == 'marco'">
+            <div
+              class="
+                relative
+                flex
+                items-center
+                w-16
+                mb-4
+                ml-20
+              "
+            >
+              <div class="flex-grow border-2 border-mst_orange"></div>
+            </div>
+            <p>
+              <strong>{{ $t("telefon") }}</strong
+              >: 654654654
+            </p>
+            <p><strong>Email:</strong> example@gmail.com</p>
+          </div>
         </div>
-        <div class="item w-56 h-[350px] shadow-2xl shadow-mst_black">
+        <div
+          class="item w-56 shadow-inner shadow-mst_black rounded-2xl  sm:shadow-2xl sm:shadow-mst_black cursor-pointer"
+          @click="select('philipp')"
+          :class="[selected == 'philipp' ? 'h-[430px]' : 'h-[350px]']"
+        >
           <img
             src="../../assets/images/Team/philipp.jpg"
             class="
@@ -688,8 +752,31 @@ export default {
             Philipp Voss
           </h1>
           <h2 class="text-center mt-4 text-lg">{{ $t("philipp") }}</h2>
+          <div class="text-center mt-2" v-if="selected == 'philipp'">
+            <div
+              class="
+                relative
+                flex
+                items-center
+                w-16
+                mb-4
+                ml-20
+              "
+            >
+              <div class="flex-grow border-2 border-mst_orange"></div>
+            </div>
+            <p>
+              <strong>{{ $t("telefon") }}</strong
+              >: 654654654
+            </p>
+            <p><strong>Email:</strong> example@gmail.com</p>
+          </div>
         </div>
-        <div class="item w-56 h-[350px] shadow-2xl shadow-mst_black">
+        <div
+          class="item w-56 shadow-inner shadow-mst_black rounded-2xl  sm:shadow-2xl sm:shadow-mst_black cursor-pointer"
+          @click="select('dagmar')"
+          :class="[selected == 'dagmar' ? 'h-[400px]' : 'h-[350px]']"
+        >
           <img
             src="../../assets/images/Team/dagmar.jpg"
             class="
@@ -706,8 +793,31 @@ export default {
             Dagmar Stewener
           </h1>
           <h2 class="text-center mt-4 text-lg">{{ $t("sekretärin") }}</h2>
+          <div class="text-center mt-4" v-if="selected == 'dagmar'">
+            <div
+              class="
+                relative
+                flex
+                items-center
+                w-16
+                mb-4
+                ml-20
+              "
+            >
+              <div class="flex-grow border-2 border-mst_orange"></div>
+            </div>
+            <p>
+              <strong>{{ $t("telefon") }}</strong
+              >: 654654654
+            </p>
+            <p><strong>Email:</strong> example@gmail.com</p>
+          </div>
         </div>
-        <div class="item w-56 h-[350px] shadow-2xl shadow-mst_black">
+        <div
+          class="item w-56 shadow-inner shadow-mst_black rounded-2xl  sm:shadow-2xl sm:shadow-mst_black cursor-pointer"
+          @click="select('sophia')"
+          :class="[selected == 'sophia' ? 'h-[400px]' : 'h-[350px]']"
+        >
           <img
             src="../../assets/images/Team/sophia.jpg"
             class="
@@ -724,8 +834,31 @@ export default {
             Sophia Krutsch
           </h1>
           <h2 class="text-center mt-4 text-lg">{{ $t("sekretärin") }}</h2>
+          <div class="text-center mt-4" v-if="selected == 'sophia'">
+            <div
+              class="
+                relative
+                flex
+                items-center
+                w-16
+                mb-4
+                ml-20
+              "
+            >
+              <div class="flex-grow border-2 border-mst_orange"></div>
+            </div>
+            <p>
+              <strong>{{ $t("telefon") }}</strong
+              >: 654654654
+            </p>
+            <p><strong>Email:</strong> example@gmail.com</p>
+          </div>
         </div>
-        <div class="item w-56 h-[350px] shadow-2xl shadow-mst_black">
+        <div
+          class="item w-56 shadow-inner shadow-mst_black rounded-2xl  sm:shadow-2xl sm:shadow-mst_black cursor-pointer"
+          @click="select('jan')"
+          :class="[selected == 'jan' ? 'h-[400px]' : 'h-[350px]']"
+        >
           <img
             src="../../assets/images/Team/jan.png"
             class="
@@ -742,8 +875,31 @@ export default {
             Jan Michalowski
           </h1>
           <h2 class="text-center mt-4 text-lg">{{ $t("techniker") }}</h2>
+          <div class="text-center mt-4" v-if="selected == 'jan'">
+            <div
+              class="
+                relative
+                flex
+                items-center
+                w-16
+                mb-4
+                ml-20
+              "
+            >
+              <div class="flex-grow border-2 border-mst_orange"></div>
+            </div>
+            <p>
+              <strong>{{ $t("telefon") }}</strong
+              >: 654654654
+            </p>
+            <p><strong>Email:</strong> example@gmail.com</p>
+          </div>
         </div>
-        <div class="item w-56 h-[350px] shadow-2xl shadow-mst_black">
+        <div
+          class="item w-56 shadow-inner shadow-mst_black rounded-2xl  sm:shadow-2xl sm:shadow-mst_black cursor-pointer"
+          @click="select('andreas')"
+          :class="[selected == 'andreas' ? 'h-[400px]' : 'h-[350px]']"
+        >
           <img
             src="../../assets/images/Team/andreas.jpg"
             class="
@@ -760,8 +916,27 @@ export default {
             Andreas Garms
           </h1>
           <h2 class="text-center mt-4 text-lg">{{ $t("techniker") }}</h2>
+          <div class="text-center mt-4" v-if="selected == 'andreas'">
+            <div
+              class="
+                relative
+                flex
+                items-center
+                w-16
+                mb-4
+                ml-20
+              "
+            >
+              <div class="flex-grow border-2 border-mst_orange"></div>
+            </div>
+            <p>
+              <strong>{{ $t("telefon") }}</strong
+              >: 654654654
+            </p>
+            <p><strong>Email:</strong> example@gmail.com</p>
+          </div>
         </div>
-        <div class="item w-56 h-[350px] shadow-2xl shadow-mst_black">
+        <div class="item w-56 h-[350px] shadow-inner shadow-mst_black rounded-2xl  sm:shadow-2xl sm:shadow-mst_black">
           <img
             src="../../assets/images/General/logo_black.png"
             class="
@@ -781,7 +956,11 @@ export default {
             {{ $t("bewird") }} jobs@mst-extra.net
           </h2>
         </div>
-        <div class="item w-56 h-[350px] shadow-2xl shadow-mst_black">
+        <div
+          class="item w-56 shadow-inner shadow-mst_black rounded-2xl  sm:shadow-2xl sm:shadow-mst_black cursor-pointer"
+          @click="select('sophia')"
+          :class="[selected == 'sophia' ? 'h-[400px]' : 'h-[350px]']"
+        >
           <img
             src="../../assets/images/Team/sophia.jpg"
             class="
@@ -798,8 +977,31 @@ export default {
             Sophia Krutsch
           </h1>
           <h2 class="text-center mt-4 text-lg">{{ $t("sekretärin") }}</h2>
+          <div class="text-center mt-4" v-if="selected == 'sophia'">
+            <div
+              class="
+                relative
+                flex
+                items-center
+                w-16
+                mb-4
+                ml-20
+              "
+            >
+              <div class="flex-grow border-2 border-mst_orange"></div>
+            </div>
+            <p>
+              <strong>{{ $t("telefon") }}</strong
+              >: 654654654
+            </p>
+            <p><strong>Email:</strong> example@gmail.com</p>
+          </div>
         </div>
-        <div class="item w-56 h-[350px] shadow-2xl shadow-mst_black">
+        <div
+          class="item w-56 shadow-inner shadow-mst_black rounded-2xl  sm:shadow-2xl sm:shadow-mst_black cursor-pointer"
+          @click="select('jan')"
+          :class="[selected == 'jan' ? 'h-[400px]' : 'h-[350px]']"
+        >
           <img
             src="../../assets/images/Team/jan.png"
             class="
@@ -816,8 +1018,31 @@ export default {
             Jan Michalowski
           </h1>
           <h2 class="text-center mt-4 text-lg">{{ $t("techniker") }}</h2>
+          <div class="text-center mt-4" v-if="selected == 'jan'">
+            <div
+              class="
+                relative
+                flex
+                items-center
+                w-16
+                mb-4
+                ml-20
+              "
+            >
+              <div class="flex-grow border-2 border-mst_orange"></div>
+            </div>
+            <p>
+              <strong>{{ $t("telefon") }}</strong
+              >: 654654654
+            </p>
+            <p><strong>Email:</strong> example@gmail.com</p>
+          </div>
         </div>
-        <div class="item w-56 h-[350px] shadow-2xl shadow-mst_black">
+        <div
+          class="item w-56 shadow-inner shadow-mst_black rounded-2xl  sm:shadow-2xl sm:shadow-mst_black cursor-pointer"
+          @click="select('andreas')"
+          :class="[selected == 'andreas' ? 'h-[400px]' : 'h-[350px]']"
+        >
           <img
             src="../../assets/images/Team/andreas.jpg"
             class="
@@ -834,8 +1059,27 @@ export default {
             Andreas Garms
           </h1>
           <h2 class="text-center mt-4 text-lg">{{ $t("techniker") }}</h2>
+          <div class="text-center mt-4" v-if="selected == 'andreas'">
+            <div
+              class="
+                relative
+                flex
+                items-center
+                w-16
+                mb-4
+                ml-20
+              "
+            >
+              <div class="flex-grow border-2 border-mst_orange"></div>
+            </div>
+            <p>
+              <strong>{{ $t("telefon") }}</strong
+              >: 654654654
+            </p>
+            <p><strong>Email:</strong> example@gmail.com</p>
+          </div>
         </div>
-        <div class="item w-56 h-[350px] shadow-2xl shadow-mst_black">
+        <div class="item w-56 h-[350px] shadow-inner shadow-mst_black rounded-2xl  sm:shadow-2xl sm:shadow-mst_black">
           <img
             src="../../assets/images/General/logo_black.png"
             class="
@@ -857,220 +1101,7 @@ export default {
         </div>
       </div>
       <!--TEAM MOBILE-->
-      <div class="flex flex-col items-center space-y-6 mt-16 visible sm:hidden">
-        <div class="item w-52 h-[330px] p-2 shadow-2xl shadow-mst_black">
-          <img
-            src="../../assets/images/Team/franz.png"
-            class="h-48 grayscale transition duration-300 hover:grayscale-0"
-          />
-          <h1 class="text-center font-bold tracking-wide text-2xl mt-3">
-            Ralf-Peter Franz
-          </h1>
-          <h2 class="text-center mt-4 text-lg">{{ $t("franz") }}</h2>
-        </div>
-        <div class="item w-52 h-[330px] shadow-2xl shadow-mst_black">
-          <img
-            src="../../assets/images/Team/marco.jpg"
-            class="
-              p-2
-              h-48
-              ml-4
-              grayscale
-              transition
-              duration-300
-              hover:grayscale-0
-            "
-          />
-          <h1 class="text-center font-bold tracking-wide text-2xl mt-3">
-            Marco Elsner
-          </h1>
-          <h2 class="text-center mt-4 text-lg">{{ $t("marco") }}</h2>
-        </div>
-        <div class="item w-52 h-[330px] shadow-2xl shadow-mst_black">
-          <img
-            src="../../assets/images/Team/philipp.jpg"
-            class="
-              p-2
-              h-48
-              object-cover
-              grayscale
-              transition
-              duration-300
-              hover:grayscale-0
-            "
-          />
-          <h1 class="text-center font-bold tracking-wide text-2xl mt-3">
-            Philipp Voss
-          </h1>
-          <h2 class="text-center mt-4 text-lg">{{ $t("philipp") }}</h2>
-        </div>
-        <div class="item w-52 h-[330px] shadow-2xl shadow-mst_black">
-          <img
-            src="../../assets/images/Team/dagmar.jpg"
-            class="
-              p-2
-              h-48
-              object-cover
-              grayscale
-              transition
-              duration-300
-              hover:grayscale-0
-            "
-          />
-          <h1 class="text-center font-bold tracking-wide text-2xl mt-3">
-            Dagmar Stewener
-          </h1>
-          <h2 class="text-center mt-4 text-lg">{{ $t("sekretärin") }}</h2>
-        </div>
-        <div class="item w-52 h-[330px] shadow-2xl shadow-mst_black">
-          <img
-            src="../../assets/images/Team/sophia.jpg"
-            class="
-              p-2
-              h-48
-              object-cover
-              grayscale
-              transition
-              duration-300
-              hover:grayscale-0
-            "
-          />
-          <h1 class="text-center font-bold tracking-wide text-2xl mt-3">
-            Sophia Krutsch
-          </h1>
-          <h2 class="text-center mt-4 text-lg">{{ $t("sekretärin") }}</h2>
-        </div>
-        <div class="item w-52 h-[330px] shadow-2xl shadow-mst_black">
-          <img
-            src="../../assets/images/Team/jan.png"
-            class="
-              p-2
-              h-52
-              ml-2
-              grayscale
-              transition
-              duration-300
-              hover:grayscale-0
-            "
-          />
-          <h1 class="text-center font-bold tracking-wide text-2xl mt-3">
-            Jan Michalowski
-          </h1>
-          <h2 class="text-center mt-4 text-lg">{{ $t("techniker") }}</h2>
-        </div>
-        <div class="item w-52 h-[330px] shadow-2xl shadow-mst_black">
-          <img
-            src="../../assets/images/Team/andreas.jpg"
-            class="
-              p-2
-              h-52
-              ml-8
-              grayscale
-              transition
-              duration-300
-              hover:grayscale-0
-            "
-          />
-          <h1 class="text-center font-bold tracking-wide text-2xl mt-3">
-            Andreas Garms
-          </h1>
-          <h2 class="text-center mt-4 text-lg">{{ $t("techniker") }}</h2>
-        </div>
-        <div class="item w-52 h-[330px] shadow-2xl shadow-mst_black">
-          <img
-            src="../../assets/images/General/logo_black.png"
-            class="
-              p-2
-              h-40
-              ml-6
-              grayscale
-              transition
-              duration-300
-              hover:grayscale-0
-            "
-          />
-          <h1 class="text-center font-bold tracking-wide text-2xl mt-3">
-            {{ $t("hier") }}
-          </h1>
-          <h2 class="text-center mt-4 text-lg">
-            {{ $t("bewird") }} jobs@mst-extra.net
-          </h2>
-        </div>
-        <div class="item w-52 h-[330px] shadow-2xl shadow-mst_black">
-          <img
-            src="../../assets/images/Team/sophia.jpg"
-            class="
-              p-2
-              h-48
-              object-cover
-              grayscale
-              transition
-              duration-300
-              hover:grayscale-0
-            "
-          />
-          <h1 class="text-center font-bold tracking-wide text-2xl mt-3">
-            Sophia Krutsch
-          </h1>
-          <h2 class="text-center mt-4 text-lg">{{ $t("sekretärin") }}</h2>
-        </div>
-        <div class="item w-52 h-[330px] shadow-2xl shadow-mst_black">
-          <img
-            src="../../assets/images/Team/jan.png"
-            class="
-              p-2
-              h-52
-              ml-2
-              grayscale
-              transition
-              duration-300
-              hover:grayscale-0
-            "
-          />
-          <h1 class="text-center font-bold tracking-wide text-2xl mt-3">
-            Jan Michalowski
-          </h1>
-          <h2 class="text-center mt-4 text-lg">{{ $t("techniker") }}</h2>
-        </div>
-        <div class="item w-52 h-[330px] shadow-2xl shadow-mst_black">
-          <img
-            src="../../assets/images/Team/andreas.jpg"
-            class="
-              p-2
-              h-52
-              ml-8
-              grayscale
-              transition
-              duration-300
-              hover:grayscale-0
-            "
-          />
-          <h1 class="text-center font-bold tracking-wide text-2xl mt-3">
-            Andreas Garms
-          </h1>
-          <h2 class="text-center mt-4 text-lg">{{ $t("techniker") }}</h2>
-        </div>
-        <div class="item w-52 h-[330px] shadow-2xl shadow-mst_black">
-          <img
-            src="../../assets/images/General/logo_black.png"
-            class="
-              p-2
-              h-40
-              ml-6
-              grayscale
-              transition
-              duration-300
-              hover:grayscale-0
-            "
-          />
-          <h1 class="text-center font-bold tracking-wide text-2xl mt-3">
-            {{ $t("hier") }}
-          </h1>
-          <h2 class="text-center mt-4 text-lg">
-            {{ $t("bewird") }} jobs@mst-extra.net
-          </h2>
-        </div>
-      </div>
+
     </div>
     <!--PARTNERS-->
     <div class="hidden sm:block text-center bg-partners">
