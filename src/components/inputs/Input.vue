@@ -9,9 +9,9 @@ export default {
     VueRecaptcha,
   },
   methods: {
-    reset(){
+    reset() {
       this.$refs.recaptcha.reset();
-    }
+    },
   },
 };
 </script>
@@ -77,7 +77,7 @@ export default {
       required
     />
   </div>
-  <div>
+  <div class="pt-3 pb-3">
     <vue-recaptcha
       ref="recaptcha"
       sitekey="6Lem_TIjAAAAAOmTwiskZDAWnkE81t8Y_jsXe_jG"

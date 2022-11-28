@@ -18,7 +18,6 @@ module.exports = {
       mst_white: '#ffffff',
       mst_construction: '#cd7221',
       mst_gray: '#f7fafc',
-      mst_bg: '#eca36e',
     },
   },
 }

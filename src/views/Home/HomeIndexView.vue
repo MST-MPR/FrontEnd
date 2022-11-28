@@ -608,7 +608,7 @@ export default {
       </div>
     </div>
     <!--TEAM-->
-    <div class="p-4">
+    <div class="h-[4400px] sm:h-[1400px]">
       <h1
         class="
           mt-10
@@ -624,12 +624,15 @@ export default {
       <div
         class="
           hidden
-          sm:flex
-          flex-wrap
-          justify-center
-          items-end
-          space-x-10 space-y-10
-          p-40
+          sm:grid
+          overflow-hidden
+          grid-cols-4
+          mt-18
+          mb-10
+          ml-80
+          p-20
+          h-full
+          w-[1500px]
         "
       >
         <div class="item w-56 h-[350px] shadow-2xl shadow-mst_black">
@@ -748,7 +751,81 @@ export default {
               h-52
               ml-11
               grayscale
+              transitionF
+              duration-300
+              hover:grayscale-0
+            "
+          />
+          <h1 class="text-center font-bold tracking-wide text-2xl mt-3">
+            Andreas Garms
+          </h1>
+          <h2 class="text-center mt-4 text-lg">{{ $t("techniker") }}</h2>
+        </div>
+        <div class="item w-56 h-[350px] shadow-2xl shadow-mst_black">
+          <img
+            src="../../assets/images/General/logo_black.png"
+            class="
+              p-2
+              h-44
+              ml-7
+              grayscale
               transition
+              duration-300
+              hover:grayscale-0
+            "
+          />
+          <h1 class="text-center font-bold tracking-wide text-2xl mt-3">
+            {{ $t("hier") }}
+          </h1>
+          <h2 class="text-center mt-4 text-lg">
+            {{ $t("bewird") }} jobs@mst-extra.net
+          </h2>
+        </div>
+        <div class="item w-56 h-[350px] shadow-2xl shadow-mst_black">
+          <img
+            src="../../assets/images/Team/sophia.jpg"
+            class="
+              p-2
+              h-52
+              object-cover
+              grayscale
+              transition
+              duration-300
+              hover:grayscale-0
+            "
+          />
+          <h1 class="text-center font-bold tracking-wide text-2xl mt-3">
+            Sophia Krutsch
+          </h1>
+          <h2 class="text-center mt-4 text-lg">{{ $t("sekretärin") }}</h2>
+        </div>
+        <div class="item w-56 h-[350px] shadow-2xl shadow-mst_black">
+          <img
+            src="../../assets/images/Team/jan.png"
+            class="
+              p-2
+              h-52
+              ml-3
+              grayscale
+              transition
+              duration-300
+              hover:grayscale-0
+            "
+          />
+          <h1 class="text-center font-bold tracking-wide text-2xl mt-3">
+            Jan Michalowski
+          </h1>
+          <h2 class="text-center mt-4 text-lg">{{ $t("techniker") }}</h2>
+        </div>
+        <div class="item w-56 h-[350px] shadow-2xl shadow-mst_black">
+          <img
+            src="../../assets/images/Team/andreas.jpg"
+            class="
+              p-2
+              h-52
+              ml-11
+              grayscale
+              transitionF
               duration-300
               hover:grayscale-0
             "
@@ -779,17 +856,31 @@ export default {
           </h2>
         </div>
       </div>
-
+      <!--TEAM MOBILE-->
       <div class="flex flex-col items-center space-y-6 mt-16 visible sm:hidden">
         <div class="item w-52 h-[330px] p-2 shadow-2xl shadow-mst_black">
-          <img src="../../assets/images/Team/franz.png" class="h-48" />
+          <img
+            src="../../assets/images/Team/franz.png"
+            class="h-48 grayscale transition duration-300 hover:grayscale-0"
+          />
           <h1 class="text-center font-bold tracking-wide text-2xl mt-3">
             Ralf-Peter Franz
           </h1>
           <h2 class="text-center mt-4 text-lg">{{ $t("franz") }}</h2>
         </div>
         <div class="item w-52 h-[330px] shadow-2xl shadow-mst_black">
-          <img src="../../assets/images/Team/marco.jpg" class="p-2 h-48 ml-4" />
+          <img
+            src="../../assets/images/Team/marco.jpg"
+            class="
+              p-2
+              h-48
+              ml-4
+              grayscale
+              transition
+              duration-300
+              hover:grayscale-0
+            "
+          />
           <h1 class="text-center font-bold tracking-wide text-2xl mt-3">
             Marco Elsner
           </h1>
@@ -798,7 +889,15 @@ export default {
         <div class="item w-52 h-[330px] shadow-2xl shadow-mst_black">
           <img
             src="../../assets/images/Team/philipp.jpg"
-            class="p-2 h-48 object-cover"
+            class="
+              p-2
+              h-48
+              object-cover
+              grayscale
+              transition
+              duration-300
+              hover:grayscale-0
+            "
           />
           <h1 class="text-center font-bold tracking-wide text-2xl mt-3">
             Philipp Voss
@@ -808,7 +907,15 @@ export default {
         <div class="item w-52 h-[330px] shadow-2xl shadow-mst_black">
           <img
             src="../../assets/images/Team/dagmar.jpg"
-            class="p-2 h-48 object-cover"
+            class="
+              p-2
+              h-48
+              object-cover
+              grayscale
+              transition
+              duration-300
+              hover:grayscale-0
+            "
           />
           <h1 class="text-center font-bold tracking-wide text-2xl mt-3">
             Dagmar Stewener
@@ -818,7 +925,15 @@ export default {
         <div class="item w-52 h-[330px] shadow-2xl shadow-mst_black">
           <img
             src="../../assets/images/Team/sophia.jpg"
-            class="p-2 h-48 object-cover"
+            class="
+              p-2
+              h-48
+              object-cover
+              grayscale
+              transition
+              duration-300
+              hover:grayscale-0
+            "
           />
           <h1 class="text-center font-bold tracking-wide text-2xl mt-3">
             Sophia Krutsch
@@ -826,7 +941,18 @@ export default {
           <h2 class="text-center mt-4 text-lg">{{ $t("sekretärin") }}</h2>
         </div>
         <div class="item w-52 h-[330px] shadow-2xl shadow-mst_black">
-          <img src="../../assets/images/Team/jan.png" class="p-2 h-52 ml-2" />
+          <img
+            src="../../assets/images/Team/jan.png"
+            class="
+              p-2
+              h-52
+              ml-2
+              grayscale
+              transition
+              duration-300
+              hover:grayscale-0
+            "
+          />
           <h1 class="text-center font-bold tracking-wide text-2xl mt-3">
             Jan Michalowski
           </h1>
@@ -835,7 +961,15 @@ export default {
         <div class="item w-52 h-[330px] shadow-2xl shadow-mst_black">
           <img
             src="../../assets/images/Team/andreas.jpg"
-            class="p-2 h-52 ml-8"
+            class="
+              p-2
+              h-52
+              ml-8
+              grayscale
+              transition
+              duration-300
+              hover:grayscale-0
+            "
           />
           <h1 class="text-center font-bold tracking-wide text-2xl mt-3">
             Andreas Garms
@@ -845,7 +979,89 @@ export default {
         <div class="item w-52 h-[330px] shadow-2xl shadow-mst_black">
           <img
             src="../../assets/images/General/logo_black.png"
-            class="p-2 h-40 ml-6"
+            class="
+              p-2
+              h-40
+              ml-6
+              grayscale
+              transition
+              duration-300
+              hover:grayscale-0
+            "
+          />
+          <h1 class="text-center font-bold tracking-wide text-2xl mt-3">
+            {{ $t("hier") }}
+          </h1>
+          <h2 class="text-center mt-4 text-lg">
+            {{ $t("bewird") }} jobs@mst-extra.net
+          </h2>
+        </div>
+        <div class="item w-52 h-[330px] shadow-2xl shadow-mst_black">
+          <img
+            src="../../assets/images/Team/sophia.jpg"
+            class="
+              p-2
+              h-48
+              object-cover
+              grayscale
+              transition
+              duration-300
+              hover:grayscale-0
+            "
+          />
+          <h1 class="text-center font-bold tracking-wide text-2xl mt-3">
+            Sophia Krutsch
+          </h1>
+          <h2 class="text-center mt-4 text-lg">{{ $t("sekretärin") }}</h2>
+        </div>
+        <div class="item w-52 h-[330px] shadow-2xl shadow-mst_black">
+          <img
+            src="../../assets/images/Team/jan.png"
+            class="
+              p-2
+              h-52
+              ml-2
+              grayscale
+              transition
+              duration-300
+              hover:grayscale-0
+            "
+          />
+          <h1 class="text-center font-bold tracking-wide text-2xl mt-3">
+            Jan Michalowski
+          </h1>
+          <h2 class="text-center mt-4 text-lg">{{ $t("techniker") }}</h2>
+        </div>
+        <div class="item w-52 h-[330px] shadow-2xl shadow-mst_black">
+          <img
+            src="../../assets/images/Team/andreas.jpg"
+            class="
+              p-2
+              h-52
+              ml-8
+              grayscale
+              transition
+              duration-300
+              hover:grayscale-0
+            "
+          />
+          <h1 class="text-center font-bold tracking-wide text-2xl mt-3">
+            Andreas Garms
+          </h1>
+          <h2 class="text-center mt-4 text-lg">{{ $t("techniker") }}</h2>
+        </div>
+        <div class="item w-52 h-[330px] shadow-2xl shadow-mst_black">
+          <img
+            src="../../assets/images/General/logo_black.png"
+            class="
+              p-2
+              h-40
+              ml-6
+              grayscale
+              transition
+              duration-300
+              hover:grayscale-0
+            "
           />
           <h1 class="text-center font-bold tracking-wide text-2xl mt-3">
             {{ $t("hier") }}
@@ -880,57 +1096,57 @@ export default {
         </div>
         <div class="w-72 p-8 ml-28">
           <a href="https://www.bose.de" target="_blank"
-            ><img src="../../assets/images/Partners/bose.png" 
+            ><img src="../../assets/images/Partners/bose.png"
           /></a>
         </div>
         <div class="w-72 p-8 ml-28">
           <a href="https://elko.de/" target="_blank"
-            ><img src="../../assets/images/Partners/elko.png" 
+            ><img src="../../assets/images/Partners/elko.png"
           /></a>
         </div>
         <div class="w-72 p-8 ml-28">
           <a href="https://www.gotaque.de/" target="_blank"
-            ><img src="../../assets/images/Partners/gotaque.png" 
+            ><img src="../../assets/images/Partners/gotaque.png"
           /></a>
         </div>
         <div class="w-72 p-8 ml-28">
           <a href="https://www.highlite.com/de/" target="_blank"
-            ><img src="../../assets/images/Partners/highlite.png" 
+            ><img src="../../assets/images/Partners/highlite.png"
           /></a>
         </div>
         <div class="w-72 p-8 ml-28">
           <a href="https://www.loxone.com/" target="_blank"
-            ><img src="../../assets/images/Partners/loxone.png" 
+            ><img src="../../assets/images/Partners/loxone.png"
           /></a>
         </div>
         <div class="w-72 p-8 ml-28">
           <a href="https://de.nec.com/" target="_blank"
-            ><img src="../../assets/images/Partners/nec.png" 
+            ><img src="../../assets/images/Partners/nec.png"
           /></a>
         </div>
         <div class="w-72 p-8 ml-28">
           <a href="https://www.biamp.com/" target="_blank"
-            ><img src="../../assets/images/Partners/neets.png" 
+            ><img src="../../assets/images/Partners/neets.png"
           /></a>
         </div>
         <div class="w-72 p-8 ml-28">
           <a href="https://www.optoma.de/" target="_blank"
-            ><img src="../../assets/images/Partners/optoma.png" 
+            ><img src="../../assets/images/Partners/optoma.png"
           /></a>
         </div>
         <div class="w-72 p-8 ml-28">
           <a href="https://www.relens.de/" target="_blank"
-            ><img src="../../assets/images/Partners/relens.png" 
+            ><img src="../../assets/images/Partners/relens.png"
           /></a>
         </div>
         <div class="w-72 p-8 ml-28">
           <a href="https://de-de.sennheiser.com/" target="_blank"
-            ><img src="../../assets/images/Partners/sennheiser.png" 
+            ><img src="../../assets/images/Partners/sennheiser.png"
           /></a>
         </div>
         <div class="w-72 p-8 ml-28">
           <a href="https://www.sony.de/" target="_blank"
-            ><img src="../../assets/images/Partners/sony.png" 
+            ><img src="../../assets/images/Partners/sony.png"
           /></a>
         </div>
       </div>
@@ -1078,7 +1294,6 @@ export default {
         </div>
       </div>
     </div>
-
     <!--SPONSORING-->
     <div class="h-[950px] sm:h-[700px] mt-2 mb-2">
       <div class="h-full relative">

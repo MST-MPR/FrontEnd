@@ -14,7 +14,6 @@
           leading-relaxed
           text-mst_white
           font-semibold
-          italic
         "
       >
         {{ $t("philosophy") }}
@@ -109,8 +108,10 @@
       </ul>
     </div>
     <div class="text-center p-6 bg-mst_white">
-      <span>© 2022 Copyright:</span>
-      <a class="text-mst_black font-semibold" href="/"> MedienSystemtechnik</a>
+      <span>© 2022 Copyright: </span>
+      <a class="text-mst_black font-semibold" href="/"
+        >MST Medien - Systemtechnik GmbH</a
+      >
     </div>
   </footer>
 </template>
