@@ -122,6 +122,9 @@ const i18n = createI18n({
             coomingSoon: "Demnächst",
             working: "Wir arbeiten an unserer Website. Bleiben Sie dran für einige aufregende Updates.",
 
+            /* 404 */
+            error: "Fehler 404 - Die Seite wurde nicht gefunden",
+            errorB: "Zurück nach Home",
         },
         English: {
             /* HOME*/
@@ -202,7 +205,7 @@ const i18n = createI18n({
             urheberrecht3: "Soweit die Inhalte auf dieser Seite nicht vom Betreiber erstellt wurden, werden die Urheberrechte Dritter beachtet. Insbesondere werden Inhalte Dritter als solche gekennzeichnet. Sollten Sie trotzdem auf eine Urheberrechtsverletzung aufmerksam werden, bitten wir um einen entsprechenden Hinweis. Bei Bekanntwerden von Rechtsverletzungen werden wir derartige Inhalte umgehgend entfernen.",
 
             /*COOKIES*/
-            oktober: "This Cookie Policy was last updated on 2 de October de 2022 and applies to citizens and permanent residents of the European Economic Area and Switzerland",
+            oktober: "''This Cookie Policy was last updated on 2 de October de 2022 and applies to citizens and permanent residents of the European Economic Area and Switzerland''",
             einfürung: "Introduction",
             einfürung2: "Our website, https://mst-extra.net (hereinafter:''The Website'') uses cookies and similar technologies (for convenience, all of these are collectively referred to as ''cookies''). Cookies are also placed by third parties contracted by us. In the document below we inform you about the use of cookies on our website.",
             was: "What are cookies?",
@@ -241,6 +244,10 @@ const i18n = createI18n({
             /* UNDER CONSTRUCTION */
             coomingSoon: "Cooming soon",
             working: "We are working on our website. Stay stuned for some exciting updates.",
+
+            /* 404 */
+            error: "Error 404 - The page was not found",
+            errorB: "Back to the Home",
 
         }
     }

@@ -45,7 +45,7 @@ export default {
         grid
         overflow-hidden
         grid-row-2
-        sm:grid-cols-3 sm:ml-[550px] sm:w-fit sm:h-[800px]
+        sm:grid-cols-3 h-[1350px] sm:ml-[550px] sm:w-fit sm:h-[800px]
       "
     >
       <div class="w-80 h-96 mt-5 ml-5 sm:w-[450px] sm:h-[740px]">

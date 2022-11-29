@@ -99,6 +99,8 @@ export default {
       text-sm
       px-5
       py-2.5
+      ml-[75px]
+      sm:ml-0
       text-center
     "
   >

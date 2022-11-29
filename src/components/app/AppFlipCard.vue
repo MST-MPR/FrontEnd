@@ -14,7 +14,15 @@ defineProps(["title", "paragraph"]);
         duration-[1300ms]
       "
     >
-      <div class="flip-card-front absolute w-[380px] h-72 sm:w-[380px] sm:h-[340px] ">
+      <div
+        class="
+          flip-card-front
+          absolute
+          w-[380px]
+          h-72
+          sm:w-[380px] sm:h-[340px]
+        "
+      >
         <img
           src="../../assets/images/General/kameras.jpg"
           class="w-full h-full"
@@ -33,8 +41,12 @@ defineProps(["title", "paragraph"]);
           border-mst_bg
         "
       >
-        <h1 class="text-lg sm:text-xl text-center font-semibold mt-6 mb-5">{{ $t(title) }}</h1>
-        <p class="text-base align-text-middle sm:text-lg">{{ $t(paragraph) }}</p>
+        <h1 class="text-lg sm:text-xl text-center font-semibold mt-6 mb-5">
+          {{ $t(title) }}
+        </h1>
+        <p class="text-base align-text-middle sm:text-lg">
+          {{ $t(paragraph) }}
+        </p>
       </div>
     </div>
   </div>

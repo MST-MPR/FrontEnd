@@ -1205,7 +1205,8 @@ export default {
                 mb-4
                 mr-4
                 sm:mr-0
-                text-4xl
+                text-xl
+                sm:text-2xl
                 tracking-tight
                 font-extrabold
                 text-center text-gray-900
@@ -1214,7 +1215,7 @@ export default {
             >
               MST Medien- Systemtechnik GmbH
             </h2>
-            <p class="mb-1 font-light sm:text-xl">
+            <p class="mb-1 font-light text-base sm:text-lg">
               Bremer Straße 63 <br />
               28816 Stuhr <br />
               event@mst-extra.net <br />
@@ -1316,6 +1317,8 @@ export default {
                   px-5
                   py-2.5
                   text-center
+                  ml-[70px]
+                  sm:ml-0
                 "
               >
                 {{ $t("send") }}
