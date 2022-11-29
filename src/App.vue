@@ -2,6 +2,7 @@
 import { RouterLink, RouterView } from "vue-router";
 import Navbar from "./components/common/AppNavbar.vue";
 import Footer from "./components/common/AppFooter.vue";
+import TopButton from "./components/common/TopButton.vue";
 </script>
 
 <template>
@@ -14,6 +15,9 @@ import Footer from "./components/common/AppFooter.vue";
     </div>
     <div>
       <Footer />
+    </div>
+    <div class="sticky bottom-[60px] mr-16 collapse sm:visible">
+      <TopButton />
     </div>
   </div>
 </template>

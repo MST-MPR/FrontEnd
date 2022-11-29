@@ -4,7 +4,6 @@
       <div class="container max-w-screen-lg mx-auto w-12">
         <img src="../../assets/images/General/logo_black.png" />
       </div>
-
       <p
         class="
           mx-auto
@@ -107,8 +106,8 @@
         </li>
       </ul>
     </div>
-    <div class="text-center p-6 bg-mst_white">
-      <span>© 2022 Copyright: </span>
+    <div class="text-center sm:-mb-16 p-5 bg-mst_white">
+      <span class="">© 2022 Copyright: </span>
       <a class="text-mst_black font-semibold" href="/"
         >MST Medien - Systemtechnik GmbH</a
       >

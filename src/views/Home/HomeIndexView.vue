@@ -958,15 +958,15 @@ export default {
         </div>
         <div
           class="item w-56 shadow-inner shadow-mst_black rounded-2xl  sm:shadow-2xl sm:shadow-mst_black cursor-pointer"
-          @click="select('sophia')"
-          :class="[selected == 'sophia' ? 'h-[400px]' : 'h-[350px]']"
+          @click="select('franz')"
+          :class="[selected == 'franz' ? 'h-[400px]' : 'h-[350px]']"
         >
           <img
-            src="../../assets/images/Team/sophia.jpg"
+            src="../../assets/images/Team/franz.png"
             class="
               p-2
               h-52
-              object-cover
+              ml-2
               grayscale
               transition
               duration-300
@@ -974,10 +974,10 @@ export default {
             "
           />
           <h1 class="text-center font-bold tracking-wide text-2xl mt-3">
-            Sophia Krutsch
+            Ralf-Peter Franz
           </h1>
-          <h2 class="text-center mt-4 text-lg">{{ $t("sekretärin") }}</h2>
-          <div class="text-center mt-4" v-if="selected == 'sophia'">
+          <h2 class="text-center mt-4 text-lg">{{ $t("franz") }}</h2>
+          <div class="text-center mt-4" v-if="selected == 'franz'">
             <div
               class="
                 relative
@@ -999,11 +999,11 @@ export default {
         </div>
         <div
           class="item w-56 shadow-inner shadow-mst_black rounded-2xl  sm:shadow-2xl sm:shadow-mst_black cursor-pointer"
-          @click="select('jan')"
-          :class="[selected == 'jan' ? 'h-[400px]' : 'h-[350px]']"
+          @click="select('marco')"
+          :class="[selected == 'marco' ? 'h-[430px]' : 'h-[350px]']"
         >
           <img
-            src="../../assets/images/Team/jan.png"
+            src="../../assets/images/Team/marco.jpg"
             class="
               p-2
               h-52
@@ -1015,10 +1015,10 @@ export default {
             "
           />
           <h1 class="text-center font-bold tracking-wide text-2xl mt-3">
-            Jan Michalowski
+            Marco Elsner
           </h1>
-          <h2 class="text-center mt-4 text-lg">{{ $t("techniker") }}</h2>
-          <div class="text-center mt-4" v-if="selected == 'jan'">
+          <h2 class="text-center mt-2 p-2 text-lg">{{ $t("marco") }}</h2>
+          <div class="text-center mt-2" v-if="selected == 'marco'">
             <div
               class="
                 relative
@@ -1040,26 +1040,26 @@ export default {
         </div>
         <div
           class="item w-56 shadow-inner shadow-mst_black rounded-2xl  sm:shadow-2xl sm:shadow-mst_black cursor-pointer"
-          @click="select('andreas')"
-          :class="[selected == 'andreas' ? 'h-[400px]' : 'h-[350px]']"
+          @click="select('philipp')"
+          :class="[selected == 'philipp' ? 'h-[430px]' : 'h-[350px]']"
         >
           <img
-            src="../../assets/images/Team/andreas.jpg"
+            src="../../assets/images/Team/philipp.jpg"
             class="
               p-2
               h-52
-              ml-11
+              object-cover
               grayscale
-              transitionF
+              transition
               duration-300
               hover:grayscale-0
             "
           />
           <h1 class="text-center font-bold tracking-wide text-2xl mt-3">
-            Andreas Garms
+            Philipp Voss
           </h1>
-          <h2 class="text-center mt-4 text-lg">{{ $t("techniker") }}</h2>
-          <div class="text-center mt-4" v-if="selected == 'andreas'">
+          <h2 class="text-center mt-4 text-lg">{{ $t("philipp") }}</h2>
+          <div class="text-center mt-2" v-if="selected == 'philipp'">
             <div
               class="
                 relative
@@ -1079,13 +1079,17 @@ export default {
             <p><strong>Email:</strong> example@gmail.com</p>
           </div>
         </div>
-        <div class="item w-56 h-[350px] shadow-inner shadow-mst_black rounded-2xl  sm:shadow-2xl sm:shadow-mst_black">
+        <div
+          class="item w-56 shadow-inner shadow-mst_black rounded-2xl  sm:shadow-2xl sm:shadow-mst_black cursor-pointer"
+          @click="select('dagmar')"
+          :class="[selected == 'dagmar' ? 'h-[400px]' : 'h-[350px]']"
+        >
           <img
-            src="../../assets/images/General/logo_black.png"
+            src="../../assets/images/Team/dagmar.jpg"
             class="
               p-2
-              h-44
-              ml-7
+              h-52
+              object-cover
               grayscale
               transition
               duration-300
@@ -1093,11 +1097,28 @@ export default {
             "
           />
           <h1 class="text-center font-bold tracking-wide text-2xl mt-3">
-            {{ $t("hier") }}
+            Dagmar Stewener
           </h1>
-          <h2 class="text-center mt-4 text-lg">
-            {{ $t("bewird") }} jobs@mst-extra.net
-          </h2>
+          <h2 class="text-center mt-4 text-lg">{{ $t("sekretärin") }}</h2>
+          <div class="text-center mt-4" v-if="selected == 'dagmar'">
+            <div
+              class="
+                relative
+                flex
+                items-center
+                w-16
+                mb-4
+                ml-20
+              "
+            >
+              <div class="flex-grow border-2 border-mst_orange"></div>
+            </div>
+            <p>
+              <strong>{{ $t("telefon") }}</strong
+              >: 654654654
+            </p>
+            <p><strong>Email:</strong> example@gmail.com</p>
+          </div>
         </div>
       </div>
       <!--TEAM MOBILE-->
