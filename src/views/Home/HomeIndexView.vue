@@ -1,10 +1,11 @@
 <script>
 import { VueRecaptcha } from "vue-recaptcha";
-//import Slider from "../../components/Slider.vue"
+import Slider from "../../components/app/Slider.vue";
+
 export default {
   components: {
     VueRecaptcha,
-    //Slider
+    Slider,
   },
   data() {
     return {
@@ -87,6 +88,10 @@ export default {
           />
         </div>
       </div>
+    </div>
+    <!--SLIDER-->
+    <div>
+    <Slider />
     </div>
     <!--GRID-->
     <div class="container mx-auto">
@@ -699,7 +704,10 @@ export default {
           <h1 class="text-center font-bold tracking-wide text-2xl mt-3">
             Marco Elsner
           </h1>
-          <h2 class="text-center mt-2 p-2 text-lg">{{ $t("marco") }} <br> {{ $t("marco2") }}</h2>
+          <h2 class="text-center mt-2 p-2 text-lg">
+            {{ $t("marco") }} <br />
+            {{ $t("marco2") }}
+          </h2>
           <div class="text-center mt-2" v-if="selected == 'marco'">
             <div class="relative flex items-center w-16 mb-4 ml-20">
               <div class="flex-grow border-2 border-mst_orange"></div>
@@ -735,7 +743,10 @@ export default {
           <h1 class="text-center font-bold tracking-wide text-2xl mt-3">
             Philipp Voss
           </h1>
-          <h2 class="text-center mt-4 text-lg">{{ $t("philipp") }} <br> {{ $t("philipp2") }}</h2>
+          <h2 class="text-center mt-4 text-lg">
+            {{ $t("philipp") }} <br />
+            {{ $t("philipp2") }}
+          </h2>
           <div class="text-center mt-2" v-if="selected == 'philipp'">
             <div class="relative flex items-center w-16 mb-4 ml-20">
               <div class="flex-grow border-2 border-mst_orange"></div>
@@ -1055,8 +1066,12 @@ export default {
             <div class="relative flex items-center w-16 mb-4 ml-20">
               <div class="flex-grow border-2 border-mst_orange"></div>
             </div>
-            <p class="text-lg">{{ $t("freuen") }} <strong>jobs@mst-extra.net</strong></p>
-            <p class="text-lg">{{ $t("oder") }} <br /><strong>+49 421 20 77 30</strong></p>
+            <p class="text-lg">
+              {{ $t("freuen") }} <strong>jobs@mst-extra.net</strong>
+            </p>
+            <p class="text-lg">
+              {{ $t("oder") }} <br /><strong>+49 421 20 77 30</strong>
+            </p>
           </div>
         </div>
       </div>
