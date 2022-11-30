@@ -617,7 +617,7 @@ export default {
       </div>
     </div>
     <!--TEAM-->
-    <div class="h-[4850px] sm:h-[1400px]">
+    <div class="h-[4850px] sm:h-[1500px]">
       <h1
         class="
           mt-10
@@ -636,493 +636,430 @@ export default {
           overflow-hidden
           grid-rows
           space-y-10
-          sm:space-y-0
-          sm:grid-cols-4
+          sm:space-y-0 sm:grid-cols-4
           mt-8
           sm:mt-18
           mb-20
           sm:mb-10
           ml-16
-          sm:ml-80
-          sm:p-20
-          sm:h-full
-          sm:w-[1500px]
+          sm:ml-80 sm:p-20 sm:h-full sm:w-[1500px]
         "
       >
         <div
-          class="item w-56 shadow-inner shadow-mst_black rounded-2xl  sm:shadow-2xl sm:shadow-mst_black cursor-pointer"
+          class="
+            item
+            w-56
+            shadow-inner
+            shadow-mst_black
+            rounded-2xl
+            sm:shadow-2xl sm:shadow-mst_black
+            grayscale
+            transition
+            duration-300
+            hover:grayscale-0
+            cursor-pointer
+          "
           @click="select('franz')"
           :class="[selected == 'franz' ? 'h-[400px]' : 'h-[350px]']"
         >
-          <img
-            src="../../assets/images/Team/franz.png"
-            class="
-              p-2
-              h-52
-              ml-2
-              grayscale
-              transition
-              duration-300
-              hover:grayscale-0
-            "
-          />
+          <img src="../../assets/images/Team/franz.png" class="p-2 h-52 ml-2" />
           <h1 class="text-center font-bold tracking-wide text-2xl mt-3">
             Ralf-Peter Franz
           </h1>
           <h2 class="text-center mt-4 text-lg">{{ $t("franz") }}</h2>
           <div class="text-center mt-4" v-if="selected == 'franz'">
-            <div
-              class="
-                relative
-                flex
-                items-center
-                w-16
-                mb-4
-                ml-20
-              "
-            >
+            <div class="relative flex items-center w-16 mb-4 ml-20">
               <div class="flex-grow border-2 border-mst_orange"></div>
             </div>
             <p>
               <strong>{{ $t("telefon") }}</strong
-              >: 654654654
+              >: +49 421 20 77 3 – 30
             </p>
-            <p><strong>Email:</strong> example@gmail.com</p>
+            <p><strong>Email:</strong> rpfranz@mst-extra.net</p>
           </div>
         </div>
         <div
-          class="item w-56 shadow-inner shadow-mst_black rounded-2xl  sm:shadow-2xl sm:shadow-mst_black cursor-pointer"
+          class="
+            item
+            w-56
+            shadow-inner
+            shadow-mst_black
+            rounded-2xl
+            sm:shadow-2xl sm:shadow-mst_black
+            grayscale
+            transition
+            duration-300
+            hover:grayscale-0
+            cursor-pointer
+          "
           @click="select('marco')"
           :class="[selected == 'marco' ? 'h-[430px]' : 'h-[350px]']"
         >
-          <img
-            src="../../assets/images/Team/marco.jpg"
-            class="
-              p-2
-              h-52
-              ml-3
-              grayscale
-              transition
-              duration-300
-              hover:grayscale-0
-            "
-          />
+          <img src="../../assets/images/Team/marco.jpg" class="p-2 h-52 ml-3" />
           <h1 class="text-center font-bold tracking-wide text-2xl mt-3">
             Marco Elsner
           </h1>
-          <h2 class="text-center mt-2 p-2 text-lg">{{ $t("marco") }}</h2>
+          <h2 class="text-center mt-2 p-2 text-lg">{{ $t("marco") }} <br> {{ $t("marco2") }}</h2>
           <div class="text-center mt-2" v-if="selected == 'marco'">
-            <div
-              class="
-                relative
-                flex
-                items-center
-                w-16
-                mb-4
-                ml-20
-              "
-            >
+            <div class="relative flex items-center w-16 mb-4 ml-20">
               <div class="flex-grow border-2 border-mst_orange"></div>
             </div>
             <p>
               <strong>{{ $t("telefon") }}</strong
-              >: 654654654
+              >: +49 421 20 77 3 – 36
             </p>
-            <p><strong>Email:</strong> example@gmail.com</p>
+            <p><strong>Email:</strong> melsner@mst-extra.net</p>
           </div>
         </div>
         <div
-          class="item w-56 shadow-inner shadow-mst_black rounded-2xl  sm:shadow-2xl sm:shadow-mst_black cursor-pointer"
+          class="
+            item
+            w-56
+            shadow-inner
+            shadow-mst_black
+            rounded-2xl
+            sm:shadow-2xl sm:shadow-mst_black
+            grayscale
+            transition
+            duration-300
+            hover:grayscale-0
+            cursor-pointer
+          "
           @click="select('philipp')"
           :class="[selected == 'philipp' ? 'h-[430px]' : 'h-[350px]']"
         >
           <img
             src="../../assets/images/Team/philipp.jpg"
-            class="
-              p-2
-              h-52
-              object-cover
-              grayscale
-              transition
-              duration-300
-              hover:grayscale-0
-            "
+            class="p-2 h-52 object-cover"
           />
           <h1 class="text-center font-bold tracking-wide text-2xl mt-3">
             Philipp Voss
           </h1>
-          <h2 class="text-center mt-4 text-lg">{{ $t("philipp") }}</h2>
+          <h2 class="text-center mt-4 text-lg">{{ $t("philipp") }} <br> {{ $t("philipp2") }}</h2>
           <div class="text-center mt-2" v-if="selected == 'philipp'">
-            <div
-              class="
-                relative
-                flex
-                items-center
-                w-16
-                mb-4
-                ml-20
-              "
-            >
+            <div class="relative flex items-center w-16 mb-4 ml-20">
               <div class="flex-grow border-2 border-mst_orange"></div>
             </div>
             <p>
               <strong>{{ $t("telefon") }}</strong
-              >: 654654654
+              >: +49 421 20 77 3 – 32
             </p>
-            <p><strong>Email:</strong> example@gmail.com</p>
+            <p><strong>Email:</strong> pvoss@mst-extra.net</p>
           </div>
         </div>
         <div
-          class="item w-56 shadow-inner shadow-mst_black rounded-2xl  sm:shadow-2xl sm:shadow-mst_black cursor-pointer"
+          class="
+            item
+            w-56
+            shadow-inner
+            shadow-mst_black
+            rounded-2xl
+            sm:shadow-2xl sm:shadow-mst_black
+            grayscale
+            transition
+            duration-300
+            hover:grayscale-0
+            cursor-pointer
+          "
           @click="select('dagmar')"
           :class="[selected == 'dagmar' ? 'h-[400px]' : 'h-[350px]']"
         >
           <img
             src="../../assets/images/Team/dagmar.jpg"
-            class="
-              p-2
-              h-52
-              object-cover
-              grayscale
-              transition
-              duration-300
-              hover:grayscale-0
-            "
+            class="p-2 h-52 object-cover"
           />
           <h1 class="text-center font-bold tracking-wide text-2xl mt-3">
             Dagmar Stewener
           </h1>
           <h2 class="text-center mt-4 text-lg">{{ $t("sekretärin") }}</h2>
           <div class="text-center mt-4" v-if="selected == 'dagmar'">
-            <div
-              class="
-                relative
-                flex
-                items-center
-                w-16
-                mb-4
-                ml-20
-              "
-            >
+            <div class="relative flex items-center w-16 mb-4 ml-20">
               <div class="flex-grow border-2 border-mst_orange"></div>
             </div>
             <p>
               <strong>{{ $t("telefon") }}</strong
-              >: 654654654
+              >: +49 421 20 77 3 – 61
             </p>
-            <p><strong>Email:</strong> example@gmail.com</p>
+            <p><strong>Email:</strong> dstewener@mst-extra.net</p>
           </div>
         </div>
         <div
-          class="item w-56 shadow-inner shadow-mst_black rounded-2xl  sm:shadow-2xl sm:shadow-mst_black cursor-pointer"
+          class="
+            item
+            w-56
+            shadow-inner
+            shadow-mst_black
+            rounded-2xl
+            sm:shadow-2xl sm:shadow-mst_black
+            grayscale
+            transition
+            duration-300
+            hover:grayscale-0
+            cursor-pointer
+          "
           @click="select('sophia')"
           :class="[selected == 'sophia' ? 'h-[400px]' : 'h-[350px]']"
         >
           <img
             src="../../assets/images/Team/sophia.jpg"
-            class="
-              p-2
-              h-52
-              object-cover
-              grayscale
-              transition
-              duration-300
-              hover:grayscale-0
-            "
+            class="p-2 h-52 object-cover"
           />
           <h1 class="text-center font-bold tracking-wide text-2xl mt-3">
             Sophia Krutsch
           </h1>
           <h2 class="text-center mt-4 text-lg">{{ $t("sekretärin") }}</h2>
           <div class="text-center mt-4" v-if="selected == 'sophia'">
-            <div
-              class="
-                relative
-                flex
-                items-center
-                w-16
-                mb-4
-                ml-20
-              "
-            >
+            <div class="relative flex items-center w-16 mb-4 ml-20">
               <div class="flex-grow border-2 border-mst_orange"></div>
             </div>
             <p>
               <strong>{{ $t("telefon") }}</strong
-              >: 654654654
+              >: +49 421 20 77 3 – 60
             </p>
-            <p><strong>Email:</strong> example@gmail.com</p>
+            <p><strong>Email:</strong> skrutsch@mst-extra.net</p>
           </div>
         </div>
         <div
-          class="item w-56 shadow-inner shadow-mst_black rounded-2xl  sm:shadow-2xl sm:shadow-mst_black cursor-pointer"
+          class="
+            item
+            w-56
+            shadow-inner
+            shadow-mst_black
+            rounded-2xl
+            sm:shadow-2xl sm:shadow-mst_black
+            grayscale
+            transition
+            duration-300
+            hover:grayscale-0
+            cursor-pointer
+          "
           @click="select('jan')"
           :class="[selected == 'jan' ? 'h-[400px]' : 'h-[350px]']"
         >
-          <img
-            src="../../assets/images/Team/jan.png"
-            class="
-              p-2
-              h-52
-              ml-3
-              grayscale
-              transition
-              duration-300
-              hover:grayscale-0
-            "
-          />
+          <img src="../../assets/images/Team/jan.png" class="p-2 h-52 ml-3" />
           <h1 class="text-center font-bold tracking-wide text-2xl mt-3">
             Jan Michalowski
           </h1>
           <h2 class="text-center mt-4 text-lg">{{ $t("techniker") }}</h2>
           <div class="text-center mt-4" v-if="selected == 'jan'">
-            <div
-              class="
-                relative
-                flex
-                items-center
-                w-16
-                mb-4
-                ml-20
-              "
-            >
+            <div class="relative flex items-center w-16 mb-4 ml-20">
               <div class="flex-grow border-2 border-mst_orange"></div>
             </div>
             <p>
               <strong>{{ $t("telefon") }}</strong
-              >: 654654654
+              >: +49 421 20 77 3 – 0
             </p>
-            <p><strong>Email:</strong> example@gmail.com</p>
+            <p><strong>Email:</strong> jmichalowski@mst-extra.net</p>
           </div>
         </div>
         <div
-          class="item w-56 shadow-inner shadow-mst_black rounded-2xl  sm:shadow-2xl sm:shadow-mst_black cursor-pointer"
+          class="
+            item
+            w-56
+            shadow-inner
+            shadow-mst_black
+            rounded-2xl
+            sm:shadow-2xl sm:shadow-mst_black
+            grayscale
+            transition
+            duration-300
+            hover:grayscale-0
+            cursor-pointer
+          "
           @click="select('andreas')"
           :class="[selected == 'andreas' ? 'h-[400px]' : 'h-[350px]']"
         >
           <img
             src="../../assets/images/Team/andreas.jpg"
-            class="
-              p-2
-              h-52
-              ml-11
-              grayscale
-              transitionF
-              duration-300
-              hover:grayscale-0
-            "
+            class="p-2 h-52 ml-11"
           />
           <h1 class="text-center font-bold tracking-wide text-2xl mt-3">
             Andreas Garms
           </h1>
           <h2 class="text-center mt-4 text-lg">{{ $t("techniker") }}</h2>
           <div class="text-center mt-4" v-if="selected == 'andreas'">
-            <div
-              class="
-                relative
-                flex
-                items-center
-                w-16
-                mb-4
-                ml-20
-              "
-            >
+            <div class="relative flex items-center w-16 mb-4 ml-20">
               <div class="flex-grow border-2 border-mst_orange"></div>
             </div>
             <p>
               <strong>{{ $t("telefon") }}</strong
-              >: 654654654
+              >: +49 421 20 77 3 – 0
             </p>
-            <p><strong>Email:</strong> example@gmail.com</p>
+            <p><strong>Email:</strong> agarms@mst-extra.net</p>
           </div>
         </div>
-        <div class="item w-56 h-[350px] shadow-inner shadow-mst_black rounded-2xl  sm:shadow-2xl sm:shadow-mst_black">
-          <img
-            src="../../assets/images/General/logo_black.png"
-            class="
-              p-2
-              h-44
-              ml-7
-              grayscale
-              transition
-              duration-300
-              hover:grayscale-0
-            "
-          />
-          <h1 class="text-center font-bold tracking-wide text-2xl mt-3">
-            {{ $t("hier") }}
-          </h1>
-          <h2 class="text-center mt-4 text-lg">
-            {{ $t("bewird") }} jobs@mst-extra.net
-          </h2>
-        </div>
         <div
-          class="item w-56 shadow-inner shadow-mst_black rounded-2xl  sm:shadow-2xl sm:shadow-mst_black cursor-pointer"
-          @click="select('franz')"
-          :class="[selected == 'franz' ? 'h-[400px]' : 'h-[350px]']"
+          class="
+            item
+            w-56
+            shadow-inner
+            shadow-mst_black
+            rounded-2xl
+            sm:shadow-2xl sm:shadow-mst_black
+            grayscale
+            transition
+            duration-300
+            hover:grayscale-0
+            cursor-pointer
+          "
+          @click="select('mika')"
+          :class="[selected == 'mika' ? 'h-[400px]' : 'h-[350px]']"
         >
-          <img
-            src="../../assets/images/Team/franz.png"
-            class="
-              p-2
-              h-52
-              ml-2
-              grayscale
-              transition
-              duration-300
-              hover:grayscale-0
-            "
-          />
+          <img src="../../assets/images/Team/franz.png" class="p-2 h-52 ml-2" />
           <h1 class="text-center font-bold tracking-wide text-2xl mt-3">
-            Ralf-Peter Franz
+            Mika Kind
           </h1>
-          <h2 class="text-center mt-4 text-lg">{{ $t("franz") }}</h2>
-          <div class="text-center mt-4" v-if="selected == 'franz'">
-            <div
-              class="
-                relative
-                flex
-                items-center
-                w-16
-                mb-4
-                ml-20
-              "
-            >
+          <h2 class="text-center mt-4 text-lg">{{ $t("mika") }}</h2>
+          <div class="text-center mt-4" v-if="selected == 'mika'">
+            <div class="relative flex items-center w-16 mb-4 ml-20">
               <div class="flex-grow border-2 border-mst_orange"></div>
             </div>
             <p>
               <strong>{{ $t("telefon") }}</strong
-              >: 654654654
+              >: +49 421 20 77 3 – 0
             </p>
-            <p><strong>Email:</strong> example@gmail.com</p>
+            <p><strong>Email:</strong> mkind@mst-extra.net</p>
           </div>
         </div>
         <div
-          class="item w-56 shadow-inner shadow-mst_black rounded-2xl  sm:shadow-2xl sm:shadow-mst_black cursor-pointer"
-          @click="select('marco')"
-          :class="[selected == 'marco' ? 'h-[430px]' : 'h-[350px]']"
+          class="
+            item
+            w-56
+            shadow-inner
+            shadow-mst_black
+            rounded-2xl
+            sm:shadow-2xl sm:shadow-mst_black
+            grayscale
+            transition
+            duration-300
+            hover:grayscale-0
+            cursor-pointer
+          "
+          @click="select('brüuggemann')"
+          :class="[selected == 'brüuggemann' ? 'h-[430px]' : 'h-[350px]']"
         >
-          <img
-            src="../../assets/images/Team/marco.jpg"
-            class="
-              p-2
-              h-52
-              ml-3
-              grayscale
-              transition
-              duration-300
-              hover:grayscale-0
-            "
-          />
+          <img src="../../assets/images/Team/marco.jpg" class="p-2 h-52 ml-3" />
           <h1 class="text-center font-bold tracking-wide text-2xl mt-3">
-            Marco Elsner
+            M. Brüuggemann
           </h1>
-          <h2 class="text-center mt-2 p-2 text-lg">{{ $t("marco") }}</h2>
-          <div class="text-center mt-2" v-if="selected == 'marco'">
-            <div
-              class="
-                relative
-                flex
-                items-center
-                w-16
-                mb-4
-                ml-20
-              "
-            >
+          <h2 class="text-center mt-2 p-2 text-lg">{{ $t("brüuggemann") }}</h2>
+          <div class="text-center mt-2" v-if="selected == 'brüuggemann'">
+            <div class="relative flex items-center w-16 mb-4 ml-20">
               <div class="flex-grow border-2 border-mst_orange"></div>
             </div>
             <p>
               <strong>{{ $t("telefon") }}</strong
-              >: 654654654
+              >: +49 421 20 77 3 – 0
             </p>
-            <p><strong>Email:</strong> example@gmail.com</p>
+            <p><strong>Email:</strong> mbrüggemann@mst-extra.net</p>
           </div>
         </div>
         <div
-          class="item w-56 shadow-inner shadow-mst_black rounded-2xl  sm:shadow-2xl sm:shadow-mst_black cursor-pointer"
-          @click="select('philipp')"
-          :class="[selected == 'philipp' ? 'h-[430px]' : 'h-[350px]']"
+          class="
+            item
+            w-56
+            shadow-inner
+            shadow-mst_black
+            rounded-2xl
+            sm:shadow-2xl sm:shadow-mst_black
+            grayscale
+            transition
+            duration-300
+            hover:grayscale-0
+            cursor-pointer
+          "
+          @click="select('fabian')"
+          :class="[selected == 'fabian' ? 'h-[430px]' : 'h-[350px]']"
         >
           <img
             src="../../assets/images/Team/philipp.jpg"
-            class="
-              p-2
-              h-52
-              object-cover
-              grayscale
-              transition
-              duration-300
-              hover:grayscale-0
-            "
+            class="p-2 h-52 object-cover"
           />
           <h1 class="text-center font-bold tracking-wide text-2xl mt-3">
-            Philipp Voss
+            Fabian Witt
           </h1>
-          <h2 class="text-center mt-4 text-lg">{{ $t("philipp") }}</h2>
-          <div class="text-center mt-2" v-if="selected == 'philipp'">
-            <div
-              class="
-                relative
-                flex
-                items-center
-                w-16
-                mb-4
-                ml-20
-              "
-            >
+          <h2 class="text-center mt-4 text-lg">{{ $t("fabian") }}</h2>
+          <div class="text-center mt-2" v-if="selected == 'fabian'">
+            <div class="relative flex items-center w-16 mb-4 ml-20">
               <div class="flex-grow border-2 border-mst_orange"></div>
             </div>
             <p>
               <strong>{{ $t("telefon") }}</strong
-              >: 654654654
+              >: +49 421 20 77 3 – 0
             </p>
-            <p><strong>Email:</strong> example@gmail.com</p>
+            <p><strong>Email:</strong> fwitt@mst-extra.net</p>
           </div>
         </div>
         <div
-          class="item w-56 shadow-inner shadow-mst_black rounded-2xl  sm:shadow-2xl sm:shadow-mst_black cursor-pointer"
-          @click="select('dagmar')"
-          :class="[selected == 'dagmar' ? 'h-[400px]' : 'h-[350px]']"
+          class="
+            item
+            w-56
+            shadow-inner
+            shadow-mst_black
+            rounded-2xl
+            sm:shadow-2xl sm:shadow-mst_black
+            grayscale
+            transition
+            duration-300
+            hover:grayscale-0
+            cursor-pointer
+          "
+          @click="select('miguel')"
+          :class="[selected == 'miguel' ? 'h-[400px]' : 'h-[350px]']"
         >
           <img
             src="../../assets/images/Team/dagmar.jpg"
-            class="
-              p-2
-              h-52
-              object-cover
-              grayscale
-              transition
-              duration-300
-              hover:grayscale-0
-            "
+            class="p-2 h-52 object-cover"
           />
           <h1 class="text-center font-bold tracking-wide text-2xl mt-3">
-            Dagmar Stewener
+            Miguel Portero
           </h1>
           <h2 class="text-center mt-4 text-lg">{{ $t("sekretärin") }}</h2>
-          <div class="text-center mt-4" v-if="selected == 'dagmar'">
-            <div
-              class="
-                relative
-                flex
-                items-center
-                w-16
-                mb-4
-                ml-20
-              "
-            >
+          <div class="text-center mt-4" v-if="selected == 'miguel'">
+            <div class="relative flex items-center w-16 mb-4 ml-20">
               <div class="flex-grow border-2 border-mst_orange"></div>
             </div>
             <p>
               <strong>{{ $t("telefon") }}</strong
-              >: 654654654
+              >: +49 421 20 77 3 – 0
             </p>
-            <p><strong>Email:</strong> example@gmail.com</p>
+            <p><strong>Email:</strong> mportero@mst-extra.net</p>
+          </div>
+        </div>
+        <div
+          class="
+            item
+            w-56
+            shadow-inner
+            shadow-mst_black
+            rounded-2xl
+            sm:shadow-2xl sm:shadow-mst_black
+            grayscale
+            transition
+            duration-300
+            hover:grayscale-0
+            cursor-pointer
+          "
+          @click="select('hier')"
+          :class="[selected == 'hier' ? 'h-[440px]' : 'h-[350px]']"
+        >
+          <img
+            src="../../assets/images/General/logo_black.png"
+            class="p-2 ml-4 mt-4 h-48 object-cover"
+          />
+          <h1 class="text-center font-bold tracking-wide text-2xl mt-3">
+            {{ $t("bewird") }}
+          </h1>
+          <h2 class="text-center mt-4 text-lg"></h2>
+          <div class="text-center mt-4" v-if="selected == 'hier'">
+            <div class="relative flex items-center w-16 mb-4 ml-20">
+              <div class="flex-grow border-2 border-mst_orange"></div>
+            </div>
+            <p class="text-lg">{{ $t("freuen") }} <strong>jobs@mst-extra.net</strong></p>
+            <p class="text-lg">{{ $t("oder") }} <br /><strong>+49 421 20 77 30</strong></p>
           </div>
         </div>
       </div>
-      <!--TEAM MOBILE-->
-
     </div>
     <!--PARTNERS-->
     <div class="hidden sm:block text-center bg-partners">
@@ -1230,7 +1167,7 @@ export default {
                 sm:text-2xl
                 tracking-tight
                 font-extrabold
-                text-center text-gray-900
+                text-left text-gray-900
                 dark:text-white
               "
             >

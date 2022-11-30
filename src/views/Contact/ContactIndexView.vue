@@ -64,7 +64,7 @@ export default {
               text-2xl
               tracking-tight
               font-extrabold
-              text-center
+              text-left
               text-mst_white
             "
           >
