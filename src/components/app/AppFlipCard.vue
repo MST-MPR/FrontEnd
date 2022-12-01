@@ -1,5 +1,5 @@
 <script setup>
-defineProps(["title", "paragraph"]);
+defineProps(["title", "paragraph", "img"]);
 </script>
 
 <template>
@@ -24,7 +24,7 @@ defineProps(["title", "paragraph"]);
         "
       >
         <img
-          src="../../assets/images/General/kameras.jpg"
+          :src="img"
           class="w-full h-full"
         />
       </div>
