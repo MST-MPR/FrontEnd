@@ -2,6 +2,7 @@
 import Input from "../../components/inputs/Input.vue"
 import {mapActions} from "vuex"
 import { nanoid } from 'nanoid'
+import axios from 'axios';
 
 export default {
   name: "ContactIndexView",
@@ -23,7 +24,6 @@ export default {
     ...mapActions(["setTasks"]),
 
     processForm() {
-      console.log(this.task);
 
       //Generate random id
         this.task.id = nanoid()
@@ -35,6 +35,15 @@ export default {
         message: "",
       };
     },
+    async submitForm(){
+      try{
+        const response = await axios.post('http://127.0.0.1:8000/contact-us-store', this.task);
+        console.log(response.data);
+      } catch (error){
+        console.log(error);
+      }
+    }
+
   },
 };
 </script>
@@ -78,7 +87,7 @@ export default {
           </p>
 
           <!--FORM-->
-          <form @submit.prevent="processForm" class="space-y-4 mt-5">
+          <form @submit.prevent="processForm" method="POST" action="http://127.0.0.1:8000/contact-us/store" class="space-y-4 mt-5">
             <Input :task="task" />
           </form>
         </div>
