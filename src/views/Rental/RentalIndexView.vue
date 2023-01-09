@@ -1,5 +1,5 @@
 <template>
-  <div class="h-[1500px] sm:h-[1800px]">
+  <div class="h-[1500px] md:h-[1800px]">
     <div class="h-full w-full relative">
       <img
         src="../../assets/images/General/cam.jpg"
@@ -12,7 +12,7 @@
           object-left-bottom
           brightness-50
           blur-sm
-          sm:object-center
+          md:object-center
         "
       />
       <h1
@@ -23,9 +23,9 @@
           text-5xl
           p-12
           mb-2
-          sm:mb-20
+  	      md:mb-5 
           font-mono
-          sm:text-7xl
+          md:text-7xl
         "
       >
         {{ $t("vermietung") }}
@@ -36,13 +36,13 @@
           border-4
           border-mst_construction
           w-full
-          sm:w-[650px]
+          md:w-[650px]
           h-[1300px]
           drop-shadow-2xl
           m-auto
         "
       >
-        <ul class="list-disc p-6 sm:p-12 text-lg sm:text-2xl text-mst_white">
+        <ul class="list-disc p-6 md:p-12 text-lg md:text-2xl text-mst_white">
           <li class="leading-normal tracking-wider mb-6">
             {{ $t("vermietungView") }}
           </li>

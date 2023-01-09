@@ -21,6 +21,8 @@ const i18n = createI18n({
             marco2: "Videotechnik",
             philipp: "Projektleitung",
             philipp2: "Live und Hybrid",
+            miguel: "Programmierer",
+            fabian: "Lagerist",
             sekretärin: "Sachbearbeitung",
             techniker: "Veranstaltungstechnik",
             bewird: "Bewirb dich jetzt!",
@@ -39,7 +41,7 @@ const i18n = createI18n({
             beschallung: "BESCHALLUNG",
             beschallungP:"Wir sorgen dafür, dass Sie in Konferenzräumen, Außenanlagen oder Arenen den richtigen Ton treffen. Uns ist es wichtig, dass etwas weder zu laut noch zu leise ist, denn nur ein perfekt akustisch ausgerichteter Raum, kann die Zuhörer fesseln.",
             edv: "EDV",
-            edvP: "Wir kennen uns mit den neusten technischen Standards bestens aus, beraten und installieren, was benötigt wird. AV-EDITING / POST-PRODUKTION auch nach Beendigung einer Veranstaltung gibt es noch viel zu tun: Audio-Video-Aufbereitung sowie sämtliche Schritte der Film-Nachbearbeitung gehören zu unseren Dienstleistungen.", 
+            edvP: "Wir sind mit den neuesten technischen Standards bestens vertraut, beraten und installieren, was benötigt wird. Audio-Video-Bearbeitung sowie alle Schritte der Film-Postproduktion gehören zu unseren Dienstleistungen.", 
             dokumentation: "DOKUMENTATION",
             dokumentationP: "Die Veranstaltung war perfekt, doch keiner hat auch nur ein Foto oder eine Videoaufzeichnung davon gemacht? Damit das nicht passiert, bieten wir eine komplette Dokumentation an.",
             möblierung: "VERANSTALATUNGSMÖBLIERUNG",
@@ -111,12 +113,16 @@ const i18n = createI18n({
             rechte9: "Um diese Rechte auszuüben kontaktiere uns bitte. Bitte beziehe dich auf die Kontaktdaten am Ende dieser Cookie-Erklärung. Wenn du eine Beschwerde darüber hast, wie wir deine Daten behandeln, würden wir diese gerne hören, aber du hast auch das Recht diese an die Aufsichtsbehörde (der Datenschutzbehörde) zu richten.",
             cookieKontaktdaten: "Für Fragen und/oder Kommentare über unsere Cookie-Richtlinien und diese Aussage kontaktiere uns bitte mittels der folgenden Kontaktdaten:",
 
-            /* BUTTONS & HEADERS*/
-            verkauf: "Verkauf",
-            vermietung: "Vermietung",
-            kontakt: "Kontakt",
-            impressum: "Impressum",
-            cookieRichtline: "Cookie Richtline (EU)",
+            /* BUTTONS*/
+            verkauf: "VERKAUF",
+            vermietung: "VERMIETUNG",
+            kontakt: "KONTAKT",
+            impressum: "IMPRESSUM",
+            cookieRichtline: "COOKIE RICHTLINE (EU)",
+
+            /* HEADERS */
+            verkaufH: "Verkauf",
+            vermietungH: "Vermietung",
 
             /* FOOTER */
             philosophy: ' "Wir sind ein Unternehmen, das seine Tätigkeit im Dienstleistungssektor entwickelt, wir widmen uns hauptsächlich der Gestaltung und Produktion von Szenen, audiovisuellen Produkten, Musik und Veranstaltungen, bei denen eine Vielzahl menschlicher und technologischer Faktoren beteiligt sind, die effizient kombiniert werden müssen erhalten Sie ein Produkt von ausgezeichneter Qualität." ',
@@ -147,6 +153,8 @@ const i18n = createI18n({
             marco2: "Video technology",
             philipp: "Project management",
             philipp2: "Live and hybrid",
+            miguel: "Programmer",
+            fabian: "Storekeeper",
             sekretärin: "Processing",
             techniker: "Event technology",
             bewird: "Apply now!",
@@ -165,7 +173,7 @@ const i18n = createI18n({
             beschallung: "SOUND",
             beschallungP: "We make sure that you hit the right note in conference rooms, outdoor facilities or arenas. It is important to us that something is neither too loud nor too quiet, because only a perfectly acoustically aligned room, can captivate the audience.",
             edv: "IT",
-            edvP: "We are very familiar with the latest technical standards, advise and install what is needed. AV-EDITING / POST-PRODUCTION even after the end of an event there is still a lot to do: Audio-video processing as well as all steps of film post-production are part of our services.",
+            edvP: "We are very familiar with the latest technical standards, advise and install what is needed. Audio-video processing as well as all steps of film post-production are part of our services.",
             dokumentation: "DOCUMENTATION",
             dokumentationP: "The event was perfect, but no one even took a photo or video recording of it? So that this does not happen, we offer a complete documentation.",
             möblierung: "EVENT FURNITURE",
@@ -237,12 +245,16 @@ const i18n = createI18n({
             rechte9: "To exercise these rights, please contact us. Please refer to the contact details at the end of this Cookie Policy. If you have a complaint about how we handle your data, we would like to hear it, but you also have the right to address it to the supervisory authority (the Data Protection Authority).",
             cookieKontaktdaten: "For questions and/or comments about our cookie policy and this statement, please contact us using the contact information below:",
 
-            /* BUTTONS & HEADERS*/
-            verkauf: "Sale",
-            vermietung: "Rental",
-            kontakt: "Contact",
-            impressum: "Imprint",
-            cookieRichtline: "Cookie Policy (EU)",
+            /* BUTTONS */
+            verkauf: "SALE",
+            vermietung: "RENTAL",
+            kontakt: "CONTACT",
+            impressum: "IMPRINT",
+            cookieRichtline: "COOKIE POLICY (EU)",
+
+            /* HEADERS */
+            verkaufH: "Sale",
+            vermietungH: "Rental",
 
             /* FOOTER */
             philosophy: ' "We are a company that develops its activity in the service sector, we are mainly dedicated to the design and production of scenes, audiovisual products, music and events that involve a multitude of human and technological factors that must be combined efficiently to obtain a product of excellent quality."',

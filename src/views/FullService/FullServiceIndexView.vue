@@ -3,7 +3,7 @@ import AppFlipCard from "../../components/app/AppFlipCard.vue";
 </script>
 
 <template>
-  <div class="h-[2450px] sm:h-[1000px]">
+  <div class="h-full">
     <div class="h-full w-full relative">
       <img
         src="../../assets/images/General/veranstaltung.jpg"
@@ -16,7 +16,7 @@ import AppFlipCard from "../../components/app/AppFlipCard.vue";
           object-left-bottom
           brightness-50
           blur
-          sm:object-center
+          md:object-center
         "
       />
       <h1
@@ -25,62 +25,72 @@ import AppFlipCard from "../../components/app/AppFlipCard.vue";
           text-center
           font-extrabold
           text-5xl
-          p-12
-          sm:text-7xl
+          py-10
+          2xl:text-7xl
         "
       >
         Full Service
       </h1>
 
-      <div class="p-7 mt-0 sm:p-20 sm:-mt-20 m-auto w-full sm:w-[1500px]">
-        <div class="grid overflow-hidden grid-row sm:grid-cols-3 gap-24 w-full">
+      <div class="p-5 mx-auto md:px-10 xl:w-fit 2xl:px-24">
+        <div
+          class="
+            grid
+            overflow-hidden
+            grid-row
+            gap-10
+            md:grid-cols-2
+            md:gap-12
+            xl:gap-20
+            xl:grid-cols-3
+          "
+        >
           <div class="box">
             <AppFlipCard
               title="konferenz"
               paragraph="konferenzP"
-              img= "../src/assets/images/FullService/conference.jpg"
-              class="-ml-20 sm:ml-0"
+              img="../src/assets/images/FullService/conference.jpg"
+              class="mx-auto"
             />
           </div>
           <div class="box">
             <AppFlipCard
               title="beleuchtung"
               paragraph="beleuchtungP"
-              img= "../src/assets/images/FullService/lighting.jpg"
-              class="-ml-20 sm:ml-0"
+              img="../src/assets/images/FullService/lighting.jpg"
+              class="mx-auto"
             />
           </div>
           <div class="box">
             <AppFlipCard
               title="edv"
               paragraph="edvP"
-              img= "../src/assets/images/FullService/it.jpg"
-              class="-ml-20 sm:ml-0"
+              img="../src/assets/images/FullService/it.jpg"
+              class="mx-auto"
             />
           </div>
           <div class="box">
             <AppFlipCard
-            title="beschallung"
-              paragraph="beschallungP" 
-              img= "../src/assets/images/FullService/sound.jpg"
-              class="-ml-20 sm:ml-0"
-              
+              title="beschallung"
+              paragraph="beschallungP"
+              img="../src/assets/images/FullService/sound.jpg"
+              class="mx-auto"
             />
           </div>
           <div class="box">
             <AppFlipCard
               title="dokumentation"
               paragraph="dokumentationP"
-              img= "../src/assets/images/FullService/documentation.jpg"
-              class="-ml-20 sm:ml-0"
+              img="../src/assets/images/FullService/documentation.jpg"
+              class="mx-auto"
             />
           </div>
           <div class="box">
             <AppFlipCard
               title="möblierung"
               paragraph="möblierungP"
-              img= "../src/assets/images/FullService/furniture.jpg"
-              class="-ml-20 sm:ml-0"
+              img="../src/assets/images/FullService/furniture.jpg"
+              class="mx-auto"
             />
           </div>
         </div>

@@ -1,36 +1,26 @@
 <template>
-  <div class="h-[750px] sm:h-[900px] bg-mst_construction">
+  <div class="w-full h-full bg-mst_construction">
     <div
-      class="
-        grid
-        overflow-hidden
-        grid-row-2
-        sm:grid-cols-2 sm:w-full sm:h-[800px]
-      "
+      class="grid w-full h-full mx-auto overflow-hidden xl:grid-cols-2 xl:w-fit"
     >
-      <div
-        class="
-          w-80
-          h-96
-          mt-5
-          sm:mt-28
-          ml-5
-          sm:ml-[450px] sm:w-[450px] sm:h-[700px]
-        "
-      >
-        <img src="../../assets/images/General/time.jpg" />
+      <div class="w-fit h-fit py-10 mx-auto my-auto">
+        <img
+          src="../../assets/images/General/time.jpg"
+          class="w-96 xl:w-[500px] 2xl:w-[560px]"
+        />
       </div>
-      <div class="w-80 ml-2 p-8 mt-5 sm:mt-64 sm:w-[600px] sm:h-[650px]">
+      <div class="w-full h-fit mx-auto my-auto pt-10 pb-20">
         <h1
           class="
-            mt-24
             mb-5
-            text-5xl
+            text-xl
             tracking-tight
             font-extrabold
             text-center
-            text-mst_white
+            mx-auto
             dark:text-white
+            md:text-4xl md:px-10
+            text-mst_white
           "
         >
           {{ $t("coomingSoon") }}

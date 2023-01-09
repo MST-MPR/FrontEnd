@@ -31,7 +31,7 @@ export default {
       type="text"
       id="name"
       v-model.trim="task.name"
-      class="shadow-2xl border text-sm rounded-lg block w-72 sm:w-full p-2.5"
+      class="shadow-2xl border text-sm rounded-lg block w-72 md:w-full p-2.5"
       required
     />
   </div>
@@ -49,7 +49,7 @@ export default {
         block
         p-3
         w-72
-        sm:w-full
+        md:w-full
         text-sm text-gray-900
         bg-gray-50
         rounded-lg
@@ -58,7 +58,7 @@ export default {
       "
     />
   </div>
-  <div class="sm:col-span-2">
+  <div class="md:col-span-2">
     <label
       for="message"
       class="block mb-2 text-sm font-medium text-mst_white"
@@ -73,11 +73,14 @@ export default {
         block
         p-2.5
         w-72
-        sm:w-full
+        md:w-full
         text-sm text-gray-900
         bg-gray-50
         rounded-lg
         shadow-sm
+        md:h-20
+        2xl:h-full
+
       "
     />
   </div>
@@ -105,7 +108,7 @@ export default {
       px-5
       py-2.5
       ml-[75px]
-      sm:ml-0
+      md:ml-0
       text-center
     "
   >

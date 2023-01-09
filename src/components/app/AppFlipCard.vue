@@ -3,7 +3,7 @@ defineProps(["title", "paragraph", "img"]);
 </script>
 
 <template>
-  <div class="flip-card bg-transparent w-[380px] h-[340px]">
+  <div class="flip-card bg-transparent w-full h-[340px] md:w-[320px] md:h-[280px] 2xl:w-[380px] 2xl:h-[340px]">
     <div
       class="
         flip-card-inner
@@ -18,9 +18,7 @@ defineProps(["title", "paragraph", "img"]);
         class="
           flip-card-front
           absolute
-          w-[380px]
-          h-72
-          sm:w-[380px] sm:h-[340px]
+          w-full h-full md:w-[320px] md:h-[280px] 2xl:w-[380px] 2xl:h-[340px]
         "
       >
         <img
@@ -32,19 +30,19 @@ defineProps(["title", "paragraph", "img"]);
         class="
           flip-card-back
           absolute
-          w-[300px]
+          w-full
           h-full
-          sm:w-full
           p-2
           text-mst_white
           border-4
           border-mst_bg
+          md:w-full
         "
       >
-        <h1 class="text-lg sm:text-xl text-center font-semibold mt-6 mb-5">
+        <h1 class="text-lg md:text-xl text-center font-semibold mt-6 mb-5">
           {{ $t(title) }}
         </h1>
-        <p class="text-base align-text-middle sm:text-lg">
+        <p class="text-base align-text-middle md:text-lg">
           {{ $t(paragraph) }}
         </p>
       </div>

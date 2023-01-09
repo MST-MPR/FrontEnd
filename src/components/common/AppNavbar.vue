@@ -11,7 +11,7 @@ const showMobileMenu = ref(true);
       <div class="max-w-1xl mx-auto">
         <div class="flex justify-around">
           <!--menu-->
-          <div class="flex space-x-4">
+          <div class="flex md:space-x-1 2xl:space-x-14">
             <!--logo-->
             <router-link
               to="/home"
@@ -19,15 +19,15 @@ const showMobileMenu = ref(true);
             >
               <img
                 src="../../assets/images/General/logo.svg"
-                class="h-20 w-20 ml-8 md:block"
+                class="h-14 w-14 md:block 2xl:h-20 2xl:w-20"
               />
-              <span class="text-mst_white text-sm sm:text-2xl"
+              <span class="text-mst_white text-sm md:text-base 2xl:text-2xl"
                 >medien <br />SYSTEMTECHNIK</span
               >
             </router-link>
-            <div class="w-40"></div>
+            <div class="md:w-12 2xl:w-40"></div>
             <!--menu-->
-            <div class="hidden md:flex items-center space-x-1">
+            <div class="hidden items-center space-x-1 xl:flex">
               <router-link
                 to="/home"
                 class="
@@ -40,7 +40,7 @@ const showMobileMenu = ref(true);
                   py-5
                   px-2
                 "
-                >Home</router-link
+                >HOME</router-link
               >
               <router-link
                 to="/fullService"
@@ -53,7 +53,7 @@ const showMobileMenu = ref(true);
                   py-5
                   px-2
                 "
-                >Full service</router-link
+                >FULL SERVICE</router-link
               >
               <router-link
                 to="/sale"
@@ -92,7 +92,7 @@ const showMobileMenu = ref(true);
                   py-5
                   px-2
                 "
-                >Smart home</router-link
+                >SMART HOME</router-link
               >
               <router-link
                 to="/streaming"
@@ -105,7 +105,7 @@ const showMobileMenu = ref(true);
                   py-5
                   px-2
                 "
-                >Streaming</router-link
+                >STREAMING</router-link
               >
               <router-link
                 to="/contact"
@@ -176,7 +176,7 @@ const showMobileMenu = ref(true);
             </div>
           </div>
           <!--show mobile menu-->
-          <div class="md:hidden flex items-center">
+          <div class="flex items-center xl:hidden">
             <button @click="showMobileMenu = !showMobileMenu" class="mr-12">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -200,7 +200,7 @@ const showMobileMenu = ref(true);
 
     <!--Mobile menu-->
     <div
-      class="md:hidden w-40 bg-mst_black absolute inset-y-30 right-0"
+      class="2xl:hidden w-40 bg-mst_black absolute inset-y-30 right-0"
       :class="{ hidden: showMobileMenu }"
     >
       <router-link
@@ -215,7 +215,7 @@ const showMobileMenu = ref(true);
           duration-300
           hover:text-mst_orange
         "
-        >Home</router-link
+        >HOME</router-link
       >
       <router-link
         to="/fullService"
@@ -229,7 +229,7 @@ const showMobileMenu = ref(true);
           duration-300
           hover:text-mst_orange
         "
-        >Full service</router-link
+        >FULL SERVICE</router-link
       >
       <router-link
         to="/sale"
@@ -271,7 +271,7 @@ const showMobileMenu = ref(true);
           duration-300
           hover:text-mst_orange
         "
-        >Smart home</router-link
+        >SMART HOME</router-link
       >
       <router-link
         to="/streaming"
@@ -285,7 +285,7 @@ const showMobileMenu = ref(true);
           duration-300
           hover:text-mst_orange
         "
-        >Streaming</router-link
+        >STREAMING</router-link
       >
       <router-link
         to="contact"

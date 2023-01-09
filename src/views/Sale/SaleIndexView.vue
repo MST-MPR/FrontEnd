@@ -1,5 +1,5 @@
 <template>
-  <div class="h-[900px]">
+  <div class="h-[700px] md:h-[710px] 2xl:h-[920px]">
     <div class="h-full w-full relative">
       <img
         src="../../assets/images/General/micro.jpg"
@@ -12,7 +12,7 @@
           object-left-bottom
           brightness-50
           blur-sm
-          sm:object-center
+          md:object-center
         "
       />
       <h1
@@ -23,7 +23,8 @@
           text-5xl
           p-12
           mb-2
-          sm:mb-20 sm:text-7xl
+  	      md:mb-5 
+          2xl:mb-20 md:text-7xl
         "
       >
         {{ $t("verkauf") }}
@@ -34,9 +35,9 @@
           border-4
           border-mst_construction
           w-full
-          sm:w-[650px]
+          md:w-[650px]
           h-[470px]
-          sm:h-[430px]
+          md:h-[430px]
           drop-shadow-2xl
           m-auto
         "
@@ -46,9 +47,9 @@
             p-6
             leading-normal
             tracking-wider
-            sm:p-10
+            md:p-10
             text-lg
-            sm:text-2xl
+            md:text-2xl
             text-mst_white
           "
         >

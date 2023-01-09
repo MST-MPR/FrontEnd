@@ -1,6 +1,6 @@
 <template>
   <footer class="bg-mst_black">
-    <div class="container mx-auto max-w-5xl px-4 py-16 sm:px-6 lg:px-8">
+    <div class="container mx-auto max-w-5xl px-4 py-16 md:px-6 2xl:px-8">
       <div class="container max-w-screen-lg mx-auto w-12">
         <img src="../../assets/images/General/logo_black.png" />
       </div>
@@ -19,13 +19,13 @@
       </p>
 
       <nav aria-label="Footer Nav" class="mt-12">
-        <ul class="flex flex-wrap justify-center gap-6 md:gap-8 lg:gap-12">
+        <ul class="flex flex-wrap justify-center gap-6 md:gap-8 2xl:gap-12">
           <li>
             <router-link
               to="/fullService"
               class="text-mst_white transition hover:text-mst_orange"
             >
-              Full Service
+              FULL SERVICE
             </router-link>
           </li>
 
@@ -43,7 +43,7 @@
               to="/smartHome"
               class="text-mst_white transition hover:text-mst_orange"
             >
-              Smart Home
+              SMART HOME
             </router-link>
           </li>
 
@@ -106,7 +106,7 @@
         </li>
       </ul>
     </div>
-    <div class="text-center sm:-mb-16 p-5 bg-mst_white">
+    <div class="text-center -mb-16 p-5 bg-mst_white">
       <span class="">© 2022 Copyright: </span>
       <a class="text-mst_black font-semibold" href="/"
         >MST Medien- Systemtechnik GmbH</a

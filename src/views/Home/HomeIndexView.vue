@@ -44,8 +44,8 @@ export default {
 <template>
   <div class="object-fit">
     <!--PRINCIPAL-->
-    <div class="bg-mst_construction h-screen">
-      <div class="basis-1/2 visible sm:hidden">
+    <div class="bg-mst_construction h-fit lg:h-screen">
+      <div class="basis-1/2 visible md:hidden">
         <img
           class="saturate-50 brightness-50 rounded-bl-[100px]"
           src="../../assets/images/General/kameras.jpg"
@@ -55,10 +55,10 @@ export default {
       <div
         class="
           flex flex-col
-          sm:flex-row
           text-center
           drop-shadow-2xl
           text-mst_white
+          sm:flex-row
         "
       >
         <div class="basis-1/2 flex flex-col tracking-wider">
@@ -70,17 +70,18 @@ export default {
               mt-10
               p-5
               mb-10
-              sm:text-6xl sm:p-20 sm:mt-40
+              md:text-5xl md:p-20
+              2xl:text-6xl 2xl:p-20 2xl:mt-40
             "
           >
             {{ $t("prof1") }} <br />
             {{ $t("prof2") }}
           </h1>
-          <h3 class="basis-1/2 ml-15 text-xl sm:text-2xl p-5">
+          <h3 class="basis-1/2 ml-15 text-xl md:text-2xl p-5">
             {{ $t("prof3") }}
           </h3>
         </div>
-        <div class="basis-1/2 hidden sm:block">
+        <div class="basis-1/2 hidden md:block">
           <img
             class="saturate-50 brightness-50 rounded-bl-[1200px]"
             src="../../assets/images/General/kameras.jpg"
@@ -91,18 +92,19 @@ export default {
     </div>
     <!--SLIDER-->
     <div>
-    <Slider />
+      <Slider />
     </div>
     <!--GRID-->
-    <div class="container mx-auto">
+    <div class="container w-full h-full mx-auto py-4 sm:py-10">
       <div
         class="
           grid grid-cols-1
+          h-fit
+          place-items-center
+          gap-10
           sm:grid-cols-2
-          lg:grid-cols-5
-          gap-2
-          p-10
-          sm:gap-36 sm:place-items-center
+          xl:grid-cols-5 xl:px-28 xl:gap-60
+          2xl:gap-72
         "
       >
         <div
@@ -112,13 +114,13 @@ export default {
             w-[200px]
             h-[200px]
             shadow-2xl
-            shadow-mst_black
             place-items-center
-            ml-10
-            sm:w-[300px] sm:h-[500px]
+            md:h-[400px] md:w-[220px]
+            2xl:w-[300px] 2xl:h-[500px]
+            shadow-mst_black
           "
         >
-          <div class="grid overflow-hidden cursor-pointer">
+          <div class="grid overflow-hidden">
             <div class="box">
               <div class="place-content-center">
                 <svg
@@ -130,9 +132,9 @@ export default {
                     h-10
                     stroke-2
                     stroke-mst_orange
-                    ml-14
                     mb-2
-                    sm:ml-32 sm:mb-10
+                    mx-auto
+                    2xl:mb-10
                   "
                 >
                   <path
@@ -148,8 +150,8 @@ export default {
                     tracking-wide
                     text-4xl
                     hidden
-                    lg:block
-                    sm:visible sm:mb-5
+                    md:block md:text-3xl
+                    2xl:text-4xl 2xl:visible 2xl:mb-5
                   "
                 >
                   Full service
@@ -161,11 +163,12 @@ export default {
                 class="
                   p-4
                   h-52
-                  text-center text-base
+                  text-center
                   tracking-wide
                   hidden
-                  lg:block
-                  sm:visible
+                  md:text-sm
+                  2xl:text-base
+                  md:block md:visible
                 "
               >
                 <p>
@@ -173,7 +176,7 @@ export default {
                 </p>
               </div>
             </div>
-            <div class="ml-2 mt-5 sm:ml-20">
+            <div class="mx-auto mt-5">
               <router-link
                 to="/fullService"
                 type="button"
@@ -187,7 +190,6 @@ export default {
                   focus:ring-2 focus:outline-none focus:ring-mst_orange
                   font-medium
                   rounded-lg
-                  text-sm
                   px-5
                   py-2.5
                   text-center
@@ -207,8 +209,8 @@ export default {
             shadow-2xl
             shadow-mst_black
             place-items-center
-            ml-10
-            sm:w-[300px] sm:h-[500px]
+            md:h-[400px] md:w-[220px]
+            2xl:w-[300px] 2xl:h-[500px]
           "
         >
           <div class="grid overflow-hidden">
@@ -223,9 +225,9 @@ export default {
                     h-10
                     stroke-2
                     stroke-mst_orange
-                    ml-14
                     mb-2
-                    sm:ml-32 sm:mb-10
+                    mx-auto
+                    2xl:mb-10
                   "
                 >
                   <path
@@ -242,11 +244,11 @@ export default {
                     tracking-wide
                     text-4xl
                     hidden
-                    lg:block
-                    sm:visible sm:mb-5
+                    md:block md:text-3xl
+                    2xl:text-4xl 2xl:visible 2xl:mb-5
                   "
                 >
-                  {{ $t("verkauf") }}
+                  {{ $t("verkaufH") }}
                 </h1>
               </div>
             </div>
@@ -255,11 +257,12 @@ export default {
                 class="
                   p-4
                   h-52
-                  text-center text-base
+                  text-center
                   tracking-wide
                   hidden
-                  lg:block
-                  sm:visible
+                  md:text-sm
+                  2xl:text-base
+                  md:block md:visible
                 "
               >
                 <p>
@@ -267,13 +270,12 @@ export default {
                 </p>
               </div>
             </div>
-            <div class="ml-2 mt-5 sm:ml-20">
+            <div class="mx-auto mt-5">
               <router-link
-                to="/sale"
+                to="/fullService"
                 type="button"
                 class="
                   w-36
-                  uppercase
                   text-mst_white
                   bg-gradient-to-br
                   from-mst_gray
@@ -282,7 +284,6 @@ export default {
                   focus:ring-2 focus:outline-none focus:ring-mst_orange
                   font-medium
                   rounded-lg
-                  text-sm
                   px-5
                   py-2.5
                   text-center
@@ -293,6 +294,7 @@ export default {
             </div>
           </div>
         </div>
+
         <div
           class="
             flex
@@ -300,10 +302,10 @@ export default {
             w-[200px]
             h-[200px]
             shadow-2xl
-            shadow-mst_black
             place-items-center
-            ml-10
-            sm:w-[300px] sm:h-[500px]
+            md:h-[400px] md:w-[220px]
+            2xl:w-[300px] 2xl:h-[500px]
+            shadow-mst_black
           "
         >
           <div class="grid overflow-hidden">
@@ -318,9 +320,9 @@ export default {
                     h-10
                     stroke-2
                     stroke-mst_orange
-                    ml-14
                     mb-2
-                    sm:ml-32 sm:mb-10
+                    mx-auto
+                    2xl:mb-10
                   "
                 >
                   <path
@@ -337,11 +339,11 @@ export default {
                     tracking-wide
                     text-4xl
                     hidden
-                    lg:block
-                    sm:visible sm:mb-5
+                    md:block md:text-3xl
+                    2xl:text-4xl 2xl:visible 2xl:mb-5
                   "
                 >
-                  {{ $t("vermietung") }}
+                  {{ $t("vermietungH") }}
                 </h1>
               </div>
             </div>
@@ -350,11 +352,11 @@ export default {
                 class="
                   p-4
                   h-52
-                  text-center text-base
+                  text-center
                   tracking-wide
                   hidden
-                  lg:block
-                  sm:visible
+                  md:text-sm md:block md:visible
+                  2xl:text-base
                 "
               >
                 <p>
@@ -362,13 +364,12 @@ export default {
                 </p>
               </div>
             </div>
-            <div class="ml-2 mt-5 sm:ml-20">
+            <div class="mx-auto mt-5">
               <router-link
-                to="/rental"
+                to="/fullService"
                 type="button"
                 class="
                   w-36
-                  uppercase
                   text-mst_white
                   bg-gradient-to-br
                   from-mst_gray
@@ -377,7 +378,6 @@ export default {
                   focus:ring-2 focus:outline-none focus:ring-mst_orange
                   font-medium
                   rounded-lg
-                  text-sm
                   px-5
                   py-2.5
                   text-center
@@ -395,10 +395,10 @@ export default {
             w-[200px]
             h-[200px]
             shadow-2xl
-            shadow-mst_black
             place-items-center
-            ml-10
-            sm:w-[300px] sm:h-[500px]
+            md:h-[400px] md:w-[220px]
+            2xl:w-[300px] 2xl:h-[500px]
+            shadow-mst_black
           "
         >
           <div class="grid overflow-hidden">
@@ -413,9 +413,9 @@ export default {
                     h-10
                     stroke-2
                     stroke-mst_orange
-                    ml-14
                     mb-2
-                    sm:ml-32 sm:mb-10
+                    mx-auto
+                    2xl:mb-10
                   "
                 >
                   <path
@@ -432,8 +432,8 @@ export default {
                     tracking-wide
                     text-4xl
                     hidden
-                    lg:block
-                    sm:visible sm:mb-5
+                    md:block md:text-3xl
+                    2xl:text-4xl 2xl:visible 2xl:mb-5
                   "
                 >
                   Streaming
@@ -445,11 +445,11 @@ export default {
                 class="
                   p-4
                   h-52
-                  text-center text-base
+                  text-center
                   tracking-wide
                   hidden
-                  lg:block
-                  sm:visible
+                  md:text-sm md:block md:visible
+                  2xl:text-base
                 "
               >
                 <p>
@@ -457,9 +457,9 @@ export default {
                 </p>
               </div>
             </div>
-            <div class="ml-2 mt-5 sm:ml-20">
+            <div class="mx-auto mt-5">
               <router-link
-                to="/streaming"
+                to="/fullService"
                 type="button"
                 class="
                   w-36
@@ -471,7 +471,6 @@ export default {
                   focus:ring-2 focus:outline-none focus:ring-mst_orange
                   font-medium
                   rounded-lg
-                  text-sm
                   px-5
                   py-2.5
                   text-center
@@ -484,15 +483,18 @@ export default {
         </div>
         <div
           class="
+            m-0
             flex
             justify-center
             w-[200px]
             h-[200px]
             shadow-2xl
-            shadow-mst_black
             place-items-center
-            ml-10
-            sm:w-[300px] sm:h-[500px]
+            sm sm:col-span-2
+            md:h-[400px] md:w-[220px]
+            xl:col-span-1
+            2xl:w-[300px] 2xl:h-[500px]
+            shadow-mst_black
           "
         >
           <div class="grid overflow-hidden">
@@ -507,9 +509,9 @@ export default {
                     h-10
                     stroke-2
                     stroke-mst_orange
-                    ml-14
                     mb-2
-                    sm:ml-32 sm:mb-10
+                    mx-auto
+                    2xl:mb-10
                   "
                 >
                   <path
@@ -526,8 +528,8 @@ export default {
                     tracking-wide
                     text-4xl
                     hidden
-                    lg:block
-                    sm:visible sm:mb-5
+                    md:block md:text-3xl
+                    2xl:text-4xl 2xl:visible 2xl:mb-5
                   "
                 >
                   Smart Home
@@ -539,11 +541,11 @@ export default {
                 class="
                   p-4
                   h-52
-                  text-center text-base
+                  text-center
                   tracking-wide
                   hidden
-                  lg:block
-                  sm:visible
+                  md:text-sm md:block md:visible
+                  2xl:text-base
                 "
               >
                 <p>
@@ -551,9 +553,9 @@ export default {
                 </p>
               </div>
             </div>
-            <div class="ml-2 mt-5 sm:ml-20">
+            <div class="mx-auto mt-5">
               <router-link
-                to="/smarthome"
+                to="/fullService"
                 type="button"
                 class="
                   w-36
@@ -565,7 +567,6 @@ export default {
                   focus:ring-2 focus:outline-none focus:ring-mst_orange
                   font-medium
                   rounded-lg
-                  text-sm
                   px-5
                   py-2.5
                   text-center
@@ -579,8 +580,8 @@ export default {
       </div>
     </div>
     <!--UBER UNS-->
-    <div class="h-fit mt-2">
-      <div class="h-full w-full relative">
+    <div class="h-full md:h-full 2xl:h-fit">
+      <div class="w-full h-full pb-5 relative">
         <img
           src="../../assets/images/General/esc.jpg"
           class="
@@ -592,7 +593,7 @@ export default {
             object-left-bottom
             brightness-50
             blur-sm
-            sm:object-center
+            md:object-center
           "
         />
         <h1
@@ -601,8 +602,8 @@ export default {
             text-center
             font-extrabold
             text-5xl
-            p-4
-            sm:text-7xl
+            p-10
+            md:text-7xl
           "
         >
           {{ $t("überUns1") }}
@@ -614,7 +615,7 @@ export default {
             p-4
             tracking-wider
             leading-relaxed
-            sm:p-40 sm:text-2xl
+            md:px-40 md:text-2xl
           "
         >
           {{ $t("überUns2") }}
@@ -622,32 +623,29 @@ export default {
       </div>
     </div>
     <!--TEAM-->
-    <div class="h-[4850px] sm:h-[1500px]">
+    <div class="h-full w-full">
       <h1
         class="
-          mt-10
-          text-mst_black
+          my-10
           text-center
           font-extrabold
           text-5xl
-          sm:text-7xl
+          md:text-7xl
+          text-mst_black
         "
       >
         {{ $t("team") }}
       </h1>
       <div
         class="
-          grid
-          overflow-hidden
-          grid-rows
+          w-fit
+          h-full
           space-y-10
-          sm:space-y-0 sm:grid-cols-4
-          mt-8
-          sm:mt-18
-          mb-20
-          sm:mb-10
-          ml-16
-          sm:ml-80 sm:p-20 sm:h-full sm:w-[1500px]
+          grid grid-rows
+          my-10
+          mx-auto
+          md:grid-cols-3 md:space-y-0 md:p-16 md:gap-10
+          2xl:grid-cols-4 2xl:gap-32 2xl:py-10
         "
       >
         <div
@@ -657,23 +655,26 @@ export default {
             shadow-inner
             shadow-mst_black
             rounded-2xl
-            sm:shadow-2xl sm:shadow-mst_black
             grayscale
             transition
             duration-300
             hover:grayscale-0
+            md:shadow-2xl md:shadow-mst_black
             cursor-pointer
           "
           @click="select('franz')"
           :class="[selected == 'franz' ? 'h-[400px]' : 'h-[350px]']"
         >
-          <img src="../../assets/images/Team/franz.png" class="p-2 h-52 ml-2" />
+          <img
+            src="../../assets/images/Team/franz.png"
+            class="p-2 h-52 mx-auto"
+          />
           <h1 class="text-center font-bold tracking-wide text-2xl mt-3">
             Ralf-Peter Franz
           </h1>
           <h2 class="text-center mt-4 text-lg">{{ $t("franz") }}</h2>
           <div class="text-center mt-4" v-if="selected == 'franz'">
-            <div class="relative flex items-center w-16 mb-4 ml-20">
+            <div class="relative flex items-center w-16 mb-4 mx-auto">
               <div class="flex-grow border-2 border-mst_orange"></div>
             </div>
             <p>
@@ -690,17 +691,20 @@ export default {
             shadow-inner
             shadow-mst_black
             rounded-2xl
-            sm:shadow-2xl sm:shadow-mst_black
             grayscale
             transition
             duration-300
             hover:grayscale-0
+            md:shadow-2xl md:shadow-mst_black
             cursor-pointer
           "
           @click="select('marco')"
           :class="[selected == 'marco' ? 'h-[430px]' : 'h-[350px]']"
         >
-          <img src="../../assets/images/Team/marco.jpg" class="p-2 h-52 ml-3" />
+          <img
+            src="../../assets/images/Team/marco.jpg"
+            class="p-2 h-52 mx-auto"
+          />
           <h1 class="text-center font-bold tracking-wide text-2xl mt-3">
             Marco Elsner
           </h1>
@@ -709,7 +713,7 @@ export default {
             {{ $t("marco2") }}
           </h2>
           <div class="text-center mt-2" v-if="selected == 'marco'">
-            <div class="relative flex items-center w-16 mb-4 ml-20">
+            <div class="relative flex items-center w-16 mb-4 mx-auto">
               <div class="flex-grow border-2 border-mst_orange"></div>
             </div>
             <p>
@@ -726,11 +730,11 @@ export default {
             shadow-inner
             shadow-mst_black
             rounded-2xl
-            sm:shadow-2xl sm:shadow-mst_black
             grayscale
             transition
             duration-300
             hover:grayscale-0
+            md:shadow-2xl md:shadow-mst_black
             cursor-pointer
           "
           @click="select('philipp')"
@@ -748,7 +752,7 @@ export default {
             {{ $t("philipp2") }}
           </h2>
           <div class="text-center mt-2" v-if="selected == 'philipp'">
-            <div class="relative flex items-center w-16 mb-4 ml-20">
+            <div class="relative flex items-center w-16 mb-4 mx-auto">
               <div class="flex-grow border-2 border-mst_orange"></div>
             </div>
             <p>
@@ -765,11 +769,11 @@ export default {
             shadow-inner
             shadow-mst_black
             rounded-2xl
-            sm:shadow-2xl sm:shadow-mst_black
             grayscale
             transition
             duration-300
             hover:grayscale-0
+            md:shadow-2xl md:shadow-mst_black
             cursor-pointer
           "
           @click="select('dagmar')"
@@ -784,7 +788,7 @@ export default {
           </h1>
           <h2 class="text-center mt-4 text-lg">{{ $t("sekretärin") }}</h2>
           <div class="text-center mt-4" v-if="selected == 'dagmar'">
-            <div class="relative flex items-center w-16 mb-4 ml-20">
+            <div class="relative flex items-center w-16 mb-4 mx-auto">
               <div class="flex-grow border-2 border-mst_orange"></div>
             </div>
             <p>
@@ -801,11 +805,11 @@ export default {
             shadow-inner
             shadow-mst_black
             rounded-2xl
-            sm:shadow-2xl sm:shadow-mst_black
             grayscale
             transition
             duration-300
             hover:grayscale-0
+            md:shadow-2xl md:shadow-mst_black
             cursor-pointer
           "
           @click="select('sophia')"
@@ -820,7 +824,7 @@ export default {
           </h1>
           <h2 class="text-center mt-4 text-lg">{{ $t("sekretärin") }}</h2>
           <div class="text-center mt-4" v-if="selected == 'sophia'">
-            <div class="relative flex items-center w-16 mb-4 ml-20">
+            <div class="relative flex items-center w-16 mb-4 mx-auto">
               <div class="flex-grow border-2 border-mst_orange"></div>
             </div>
             <p>
@@ -837,28 +841,31 @@ export default {
             shadow-inner
             shadow-mst_black
             rounded-2xl
-            sm:shadow-2xl sm:shadow-mst_black
             grayscale
             transition
             duration-300
             hover:grayscale-0
+            md:shadow-2xl md:shadow-mst_black
             cursor-pointer
           "
           @click="select('jan')"
-          :class="[selected == 'jan' ? 'h-[400px]' : 'h-[350px]']"
+          :class="[selected == 'jan' ? 'h-[420px]' : 'h-[350px]']"
         >
-          <img src="../../assets/images/Team/jan.png" class="p-2 h-52 ml-3" />
+          <img
+            src="../../assets/images/Team/jan.png"
+            class="p-2 h-52 my-auto mx-auto"
+          />
           <h1 class="text-center font-bold tracking-wide text-2xl mt-3">
             Jan Michalowski
           </h1>
           <h2 class="text-center mt-4 text-lg">{{ $t("techniker") }}</h2>
           <div class="text-center mt-4" v-if="selected == 'jan'">
-            <div class="relative flex items-center w-16 mb-4 ml-20">
+            <div class="relative flex items-center w-16 mb-4 mx-auto">
               <div class="flex-grow border-2 border-mst_orange"></div>
             </div>
             <p>
               <strong>{{ $t("telefon") }}</strong
-              >: +49 421 20 77 3 – 0
+              >: +49 421 20 77 3 – 33
             </p>
             <p><strong>Email:</strong> jmichalowski@mst-extra.net</p>
           </div>
@@ -870,11 +877,11 @@ export default {
             shadow-inner
             shadow-mst_black
             rounded-2xl
-            sm:shadow-2xl sm:shadow-mst_black
             grayscale
             transition
             duration-300
             hover:grayscale-0
+            md:shadow-2xl md:shadow-mst_black
             cursor-pointer
           "
           @click="select('andreas')"
@@ -889,7 +896,7 @@ export default {
           </h1>
           <h2 class="text-center mt-4 text-lg">{{ $t("techniker") }}</h2>
           <div class="text-center mt-4" v-if="selected == 'andreas'">
-            <div class="relative flex items-center w-16 mb-4 ml-20">
+            <div class="relative flex items-center w-16 mb-4 mx-auto">
               <div class="flex-grow border-2 border-mst_orange"></div>
             </div>
             <p>
@@ -906,7 +913,7 @@ export default {
             shadow-inner
             shadow-mst_black
             rounded-2xl
-            sm:shadow-2xl sm:shadow-mst_black
+            md:shadow-2xl md:shadow-mst_black
             grayscale
             transition
             duration-300
@@ -916,13 +923,16 @@ export default {
           @click="select('mika')"
           :class="[selected == 'mika' ? 'h-[400px]' : 'h-[350px]']"
         >
-          <img src="../../assets/images/Team/franz.png" class="p-2 h-52 ml-2" />
+          <img
+            src="../../assets/images/Team/franz.png"
+            class="p-2 h-52 mx-auto"
+          />
           <h1 class="text-center font-bold tracking-wide text-2xl mt-3">
             Mika Kind
           </h1>
-          <h2 class="text-center mt-4 text-lg">{{ $t("mika") }}</h2>
+          <h2 class="text-center mt-4 text-lg">{{ $t("techniker") }}</h2>
           <div class="text-center mt-4" v-if="selected == 'mika'">
-            <div class="relative flex items-center w-16 mb-4 ml-20">
+            <div class="relative flex items-center w-16 mb-4 mx-auto">
               <div class="flex-grow border-2 border-mst_orange"></div>
             </div>
             <p>
@@ -939,23 +949,27 @@ export default {
             shadow-inner
             shadow-mst_black
             rounded-2xl
-            sm:shadow-2xl sm:shadow-mst_black
             grayscale
             transition
             duration-300
             hover:grayscale-0
+            md:shadow-2xl md:shadow-mst_black
             cursor-pointer
           "
           @click="select('brüuggemann')"
-          :class="[selected == 'brüuggemann' ? 'h-[430px]' : 'h-[350px]']"
+          :class="[selected == 'brüuggemann' ? 'h-[450px]' : 'h-[350px]']"
         >
-          <img src="../../assets/images/Team/marco.jpg" class="p-2 h-52 ml-3" />
+          <img
+            src="../../assets/images/Team/marco.jpg"
+            class="p-2 h-52 mx-auto"
+          />
           <h1 class="text-center font-bold tracking-wide text-2xl mt-3">
-            M. Brüuggemann
+            Marlon <br />
+            Brüuggemann
           </h1>
-          <h2 class="text-center mt-2 p-2 text-lg">{{ $t("brüuggemann") }}</h2>
+          <h2 class="text-center mt-2 p-2 text-lg">{{ $t("techniker") }}</h2>
           <div class="text-center mt-2" v-if="selected == 'brüuggemann'">
-            <div class="relative flex items-center w-16 mb-4 ml-20">
+            <div class="relative flex items-center w-16 mb-4 mx-auto">
               <div class="flex-grow border-2 border-mst_orange"></div>
             </div>
             <p>
@@ -972,7 +986,7 @@ export default {
             shadow-inner
             shadow-mst_black
             rounded-2xl
-            sm:shadow-2xl sm:shadow-mst_black
+            md:shadow-2xl md:shadow-mst_black
             grayscale
             transition
             duration-300
@@ -980,7 +994,7 @@ export default {
             cursor-pointer
           "
           @click="select('fabian')"
-          :class="[selected == 'fabian' ? 'h-[430px]' : 'h-[350px]']"
+          :class="[selected == 'fabian' ? 'h-[390px]' : 'h-[350px]']"
         >
           <img
             src="../../assets/images/Team/philipp.jpg"
@@ -991,7 +1005,7 @@ export default {
           </h1>
           <h2 class="text-center mt-4 text-lg">{{ $t("fabian") }}</h2>
           <div class="text-center mt-2" v-if="selected == 'fabian'">
-            <div class="relative flex items-center w-16 mb-4 ml-20">
+            <div class="relative flex items-center w-16 mb-4 mx-auto">
               <div class="flex-grow border-2 border-mst_orange"></div>
             </div>
             <p>
@@ -1008,7 +1022,7 @@ export default {
             shadow-inner
             shadow-mst_black
             rounded-2xl
-            sm:shadow-2xl sm:shadow-mst_black
+            md:shadow-2xl md:shadow-mst_black
             grayscale
             transition
             duration-300
@@ -1025,14 +1039,14 @@ export default {
           <h1 class="text-center font-bold tracking-wide text-2xl mt-3">
             Miguel Portero
           </h1>
-          <h2 class="text-center mt-4 text-lg">{{ $t("sekretärin") }}</h2>
+          <h2 class="text-center mt-4 text-lg">{{ $t("miguel") }}</h2>
           <div class="text-center mt-4" v-if="selected == 'miguel'">
-            <div class="relative flex items-center w-16 mb-4 ml-20">
+            <div class="relative flex items-center w-16 mb-4 mx-auto">
               <div class="flex-grow border-2 border-mst_orange"></div>
             </div>
             <p>
               <strong>{{ $t("telefon") }}</strong
-              >: +49 421 20 77 3 – 0
+              >: +49 421 20 77 3 – 31
             </p>
             <p><strong>Email:</strong> mportero@mst-extra.net</p>
           </div>
@@ -1044,7 +1058,7 @@ export default {
             shadow-inner
             shadow-mst_black
             rounded-2xl
-            sm:shadow-2xl sm:shadow-mst_black
+            md:shadow-2xl md:shadow-mst_black
             grayscale
             transition
             duration-300
@@ -1056,14 +1070,14 @@ export default {
         >
           <img
             src="../../assets/images/General/logo_black.png"
-            class="p-2 ml-4 mt-4 h-48 object-cover"
+            class="p-2 mx-auto mt-4 h-48 object-cover"
           />
           <h1 class="text-center font-bold tracking-wide text-2xl mt-3">
             {{ $t("bewird") }}
           </h1>
           <h2 class="text-center mt-4 text-lg"></h2>
           <div class="text-center mt-4" v-if="selected == 'hier'">
-            <div class="relative flex items-center w-16 mb-4 ml-20">
+            <div class="relative flex items-center w-16 mb-4 mx-auto">
               <div class="flex-grow border-2 border-mst_orange"></div>
             </div>
             <p class="text-lg">
@@ -1077,7 +1091,7 @@ export default {
       </div>
     </div>
     <!--PARTNERS-->
-    <div class="hidden sm:block text-center bg-partners">
+    <div class="text-center bg-partners">
       <h1 class="text-mst_white text-center font-extrabold text-7xl p-4">
         {{ $t("partners") }}
       </h1>
@@ -1086,69 +1100,68 @@ export default {
           grid
           mt-10
           overflow-hidden
-          grid-cols-4
-          gap-x-10 gap-y-5
-          w-full
-          h-full
+          md:grid-cols-2
+          2xl:grid-cols-4
+          gap-y-2
           items-center
         "
       >
-        <div class="w-72 p-8 ml-28">
+        <div class="w-72 p-8 mx-auto">
           <a href="https://www.bremerbuehnenhaus.de/" target="_blank"
             ><img src="../../assets/images/Partners/bbh.png"
           /></a>
         </div>
-        <div class="w-72 p-8 ml-28">
+        <div class="w-72 p-8 mx-auto">
           <a href="https://www.bose.de" target="_blank"
             ><img src="../../assets/images/Partners/bose.png"
           /></a>
         </div>
-        <div class="w-72 p-8 ml-28">
+        <div class="w-72 p-8 mx-auto">
           <a href="https://elko.de/" target="_blank"
             ><img src="../../assets/images/Partners/elko.png"
           /></a>
         </div>
-        <div class="w-72 p-8 ml-28">
+        <div class="w-72 p-8 mx-auto">
           <a href="https://www.gotaque.de/" target="_blank"
             ><img src="../../assets/images/Partners/gotaque.png"
           /></a>
         </div>
-        <div class="w-72 p-8 ml-28">
+        <div class="w-72 p-8 mx-auto">
           <a href="https://www.highlite.com/de/" target="_blank"
             ><img src="../../assets/images/Partners/highlite.png"
           /></a>
         </div>
-        <div class="w-72 p-8 ml-28">
+        <div class="w-72 p-8 mx-auto">
           <a href="https://www.loxone.com/" target="_blank"
             ><img src="../../assets/images/Partners/loxone.png"
           /></a>
         </div>
-        <div class="w-72 p-8 ml-28">
+        <div class="w-72 p-8 mx-auto">
           <a href="https://de.nec.com/" target="_blank"
             ><img src="../../assets/images/Partners/nec.png"
           /></a>
         </div>
-        <div class="w-72 p-8 ml-28">
+        <div class="w-72 p-8 mx-auto">
           <a href="https://www.biamp.com/" target="_blank"
             ><img src="../../assets/images/Partners/neets.png"
           /></a>
         </div>
-        <div class="w-72 p-8 ml-28">
+        <div class="w-72 p-8 mx-auto">
           <a href="https://www.optoma.de/" target="_blank"
             ><img src="../../assets/images/Partners/optoma.png"
           /></a>
         </div>
-        <div class="w-72 p-8 ml-28">
+        <div class="w-72 p-8 mx-auto">
           <a href="https://www.relens.de/" target="_blank"
             ><img src="../../assets/images/Partners/relens.png"
           /></a>
         </div>
-        <div class="w-72 p-8 ml-28">
+        <div class="w-72 p-8 mx-auto">
           <a href="https://de-de.sennheiser.com/" target="_blank"
             ><img src="../../assets/images/Partners/sennheiser.png"
           /></a>
         </div>
-        <div class="w-72 p-8 ml-28">
+        <div class="w-72 p-8 mx-auto">
           <a href="https://www.sony.de/" target="_blank"
             ><img src="../../assets/images/Partners/sony.png"
           /></a>
@@ -1156,49 +1169,66 @@ export default {
       </div>
     </div>
     <!--CONTACT-->
-    <div>
+    <div
+      @click="select('hier')"
+      :class="[selected == 'hier' ? 'mt-16 md:mt-0' : 'mt-0']"
+    >
       <div
         class="
           grid
-          overflow-hidden
+          w-fit
+          h-full
           grid-row-2
-          sm:grid-cols-3 sm:ml-[550px] sm:w-fit sm:h-[800px] sm:mt-28
+          overflow-hidden
+          mx-auto
+          xl:grid-cols-2
+          2xl:my-10
         "
       >
-        <div class="w-80 h-96 mt-5 ml-5 sm:w-[450px] sm:h-[700px]">
+        <div
+          class="
+            mt-5
+            w-full
+            mx-auto
+            md:mt-14 md:w-[450px] md:h-[500px]
+            2xl:mt-5 2xl:h-[700px]
+          "
+        >
           <iframe
             src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d4800.1731102126205!2d8.789679!3d53.01880700000001!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x26d0285757006942!2sMST%20Medien-%20Systemtechnik%20GmbH!5e0!3m2!1ses!2sus!4v1669030223678!5m2!1ses!2sus"
-            class="w-full h-full"
+            class="w-full h-full mx-auto"
           ></iframe>
         </div>
-        <div class="w-96 sm:w-[450px] sm:h-[650px]">
-          <div class="p-8 m-auto">
+        <div class="w-fit mx-auto">
+          <div class="p-8">
             <h2
               class="
                 mb-4
                 mr-4
-                sm:mr-0
                 text-xl
-                sm:text-2xl
                 tracking-tight
                 font-extrabold
                 text-left text-gray-900
-                dark:text-white
+                md:mr-0 md:text-xl
+                2xl:text-2xl
               "
             >
               MST Medien- Systemtechnik GmbH
             </h2>
-            <p class="mb-1 font-light text-base sm:text-lg">
+            <p class="mb-1 font-light text-base md:text-sm 2xl:text-lg">
               Bremer Straße 63 <br />
               28816 Stuhr <br />
               event@mst-extra.net <br />
               +49 421 20 77 3 0
             </p>
-            <form @submit.prevent="processForm" class="space-y-4 mt-5">
+            <form
+              @submit.prevent="processForm"
+              class="space-y-4 mt-5 md:mt-0 2xl:mt-5"
+            >
               <div>
                 <label
                   for="email"
-                  class="block mb-2 text-sm font-bold text-mst_black"
+                  class="block mb-1 text-sm font-bold text-mst_black"
                   >Name</label
                 >
                 <input
@@ -1212,7 +1242,7 @@ export default {
                     rounded-lg
                     block
                     w-72
-                    sm:w-full
+                    md:w-full
                     p-2.5
                   "
                   required
@@ -1221,7 +1251,7 @@ export default {
               <div>
                 <label
                   for="subject"
-                  class="block mb-2 text-sm font-bold text-mst_black"
+                  class="block mb-1 text-sm font-bold text-mst_black"
                   >{{ $t("email") }}</label
                 >
                 <input
@@ -1232,20 +1262,20 @@ export default {
                     block
                     p-3
                     w-72
-                    sm:w-full
                     text-sm text-gray-900
                     bg-gray-50
                     rounded-lg
                     border border-gray-300
                     shadow-sm
+                    md:w-full
                   "
                   required
                 />
               </div>
-              <div class="sm:col-span-2">
+              <div class="md:col-span-2">
                 <label
                   for="message"
-                  class="block mb-2 text-sm font-bold text-mst_black"
+                  class="block mb-1 text-sm font-bold text-mst_black"
                   >{{ $t("message") }}</label
                 >
                 <textarea
@@ -1257,13 +1287,15 @@ export default {
                     block
                     p-2.5
                     w-72
-                    sm:w-full
                     text-sm
                     text-mst_black
                     bg-gray-50
                     rounded-lg
                     border border-gray-300
                     shadow-sm
+                    md:h-20
+                    2xl:h-full
+                    md:w-full
                   "
                 />
               </div>
@@ -1291,7 +1323,7 @@ export default {
                   py-2.5
                   text-center
                   ml-[70px]
-                  sm:ml-0
+                  md:ml-0
                 "
               >
                 {{ $t("send") }}
@@ -1302,8 +1334,8 @@ export default {
       </div>
     </div>
     <!--SPONSORING-->
-    <div class="h-[950px] sm:h-[700px] mt-2 mb-2">
-      <div class="h-full relative">
+    <div class="w-full h-full">
+      <div class="w-full h-full relative">
         <img
           src="../../assets/images/General/kirche.jpg"
           class="
@@ -1314,7 +1346,7 @@ export default {
             mix-blend-overlay
             brightness-50
             blur-sm
-            sm:object-center
+            md:object-center
           "
         />
         <h1
@@ -1323,31 +1355,23 @@ export default {
             text-center
             font-extrabold
             text-5xl
-            p-4
-            sm:text-7xl
+            py-5
+            md:text-7xl
           "
         >
           Sponsoring
         </h1>
-        <div
-          class="
-            flex flex-col
-            ml-11
-            sm:ml-[24%]
-            space-y-5
-            sm:space-x-52 sm:flex sm:flex-row
-          "
-        >
-          <div class="mt-6 sm:w-[500px]">
+        <div class="flex flex-col p-6 w-fit mx-auto xl:flex-row">
+          <div class="mt-6 mx-auto md:w-[400px] 2xl:w-[500px]">
             <img
               src="../../assets/images/General/sponsor1.png"
-              class="h-96 sm:h-[500px]"
+              class="h-96 mx-auto md:h-[460px] 2xl:h-[500px]"
             />
           </div>
-          <div class="mt-6 sm:w-[500px]">
+          <div class="mt-6 md:w-[500px]">
             <img
               src="../../assets/images/General/sponsor2.png"
-              class="h-96 sm:h-[500px]"
+              class="h-96 mx-auto md:h-[460px] 2xl:h-[500px]"
             />
           </div>
         </div>
