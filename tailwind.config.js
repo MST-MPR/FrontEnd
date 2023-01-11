@@ -18,7 +18,8 @@ module.exports = {
       mst_white: '#ffffff',
       mst_construction: '#cd7221',
       mst_gray: '#f7fafc',
-      mst_error: '#b34f2f'
+      mst_error: '#b34f2f',
+      mst_imprint: '#CBC9C7'
     },
   },
 }

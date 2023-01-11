@@ -22,7 +22,7 @@ const i18n = createI18n({
             philipp: "Projektleitung",
             philipp2: "Live und Hybrid",
             miguel: "Programmierer",
-            fabian: "Lagerist",
+            fabian: "Warendisposition",
             sekretärin: "Sachbearbeitung",
             techniker: "Veranstaltungstechnik",
             bewird: "Bewirb dich jetzt!",
@@ -48,8 +48,9 @@ const i18n = createI18n({
             möblierungP: "Als Fullservice-Dienstleister sorgen wir auch für den richtigen Sitz! Sie brauchen Tische, Stühle, Pulte oder ähnliches? Auch der Aufbau und/oder Verleih von passendem Mobiliar erfolgt durch uns.",
 
             /**VERKAUF*/
-            verkaufView: "Nutzen Sie unsere kostenlose, unverbindliche Bedarfsanalyse vor Ort. Wir erstellen Ihnen Ihre individuelle Lösung und machen Ihnen einen guten Preis. Bevorzugen Sie ein superaktuelles Neugerät oder tut es auch ein gepflegtes Gebrauchtes? Diese auch aus den Messe- und Demopools von Lenovo und HP mit voller Herstellergarantie und optionalen vor Ort-Service. Wir bieten ebenso Gebraucht- und Demogeräte von Kundengeräte in Kommision an.",
-
+            verkaufView: "Nutzen Sie unsere kostenlose, unverbindliche Bedarfsanalyse vor Ort. Wir erstellen Ihnen Ihre individuelle Lösung und machen Ihnen einen guten Preis. Bevorzugen Sie ein superaktuelles Neugerät oder tut es auch ein gepflegtes Gebrauchtes? ",
+            verkaufView2: "Diese auch aus den Messe- und Demopools von Lenovo und HP mit voller Herstellergarantie und optionalen vor Ort-Service. Wir bieten ebenso Gebraucht- und Demogeräte von Kundengeräte in Kommision an.",
+            
             /* VERMIETUNG */
             vermietungView: "Seien Sie gewiß, dass die zu leihenden Geräte immer in einwandfreiem Zustand sind. Alle Mietgegenstände werden regelmäßig gewartet.",
             vermietungView2: "Die Mietpreise verstehen sich zzgl. der gesetzlichen Mehrwertsteuer, ab unserem Lager. Sehen Sie hierzu auch unsere AGB.",
@@ -64,6 +65,13 @@ const i18n = createI18n({
             /* SMART HOME */
             smartHomeView: "Wir automatisieren ihr privat- oder Bürogebäude von der zentralen Lichtsteuerung bis hin zum voll smart aufgebautem Gebäude.",
             smartHomeView2: "Hierbei setzen wir primär auf LOXONE – Home Server und entsprechende Peripheriegeräte.",
+
+            /* STREAMING */
+            streamingView: "Streaming, Live Broadcasting oder Live-Übertragung ist eine Technologie, die es ermöglicht, audiovisuelle Inhalte über das Internet zu übertragen, ohne dass Dateien heruntergeladen werden müssen.",
+            streamingView2: "Streaming ermöglicht also die professionelle Übertragung einer Veranstaltung, eines Vortrags, einer Konferenz, einer Online-Schulung....",
+            streamingView3: "Heutzutage veranstalten Streaming-Unternehmen wie MST virtuelle Events, um Informationen auszutauschen und mit dem Publikum in Kontakt zu treten. Als Nächstes werden wir erklären, was Streaming ist und wie es für verschiedene Arten von Veranstaltungen funktioniert.",
+            streamingView4: "Live-Streaming ermöglicht den Konsum von Multimedia-Inhalten über das Internet. Diese Technologie ist in der Lage, Video- und Audiodaten zu empfangen und zu senden, die kontinuierlich durch das Netzwerk fließen. Das bedeutet, dass der Nutzer mit der Wiedergabe der Inhalte beginnen kann, sobald die ersten Daten empfangen werden. Im Falle eines Ereignisses kann der Nutzer dieses in Echtzeit verfolgen, da die Daten während des Geschehens übertragen werden.",
+            streamingView5: "Damit das Ereignis online gestreamt werden kann, bündelt der Live-Stream die Daten in Paketen, die über das Internet gesendet werden. Sie durchlaufen in der Regel einen Streaming-Server, der sie dann an den Nutzer weiterleitet. Diese Datenpakete werden dann an das Gerät des Nutzers geliefert und so sortiert, dass sie korrekt wiedergegeben werden. Wenn das Gerät alle Datenpakete erhalten hat, die für eine fortlaufende Übertragung erforderlich sind, beginnt das Streaming.",
 
             /* IMPRESSUM */
             anschrift: "Anschrift",
@@ -154,7 +162,7 @@ const i18n = createI18n({
             philipp: "Project management",
             philipp2: "Live and hybrid",
             miguel: "Programmer",
-            fabian: "Storekeeper",
+            fabian: "Merchandise planning",
             sekretärin: "Processing",
             techniker: "Event technology",
             bewird: "Apply now!",
@@ -180,7 +188,8 @@ const i18n = createI18n({
             möblierungP: "As a full-service provider, we also ensure the right seat! You need tables, chairs, desks or similar? We also take care of the assembly and/or rental of suitable furniture.",
 
             /*VERKAUF*/
-            verkaufView: "Take advantage of our free, no-obligation on-site needs analysis. We will create your individual solution and give you a good price. Do you prefer a brand new device or a well-maintained used one? These are also available from the Lenovo and HP trade fair and demo pools with full manufacturer's warranty and optional on-site service. We also offer used and demo devices from customer devices in commission.",
+            verkaufView: "Take advantage of our free, no-obligation on-site needs analysis. We will create your individual solution and give you a good price. Do you prefer a brand new device or a well-maintained used one?",
+            verkaufView2: "These also from the Lenovo and HP trade show and demo pools with full manufacturer warranty and optional on-site service. We also offer used and demo equipment from customer devices in commission.",
 
             /* VERMIETUNG */
             vermietungView: "Be assured that the equipment to be rented is always in perfect condition. All rental items are serviced regularly.",
@@ -196,6 +205,13 @@ const i18n = createI18n({
             /* SMART HOME */
             smartHomeView: "We automate your private or office building from the central lighting control to the fully smart building.",
             smartHomeView2: "Here we primarily rely on LOXONE - Home Server and corresponding peripheral devices.",
+
+            /* STREAMING */
+            streamingView: "Streaming, live broadcasting or live transmission is a technology that makes it possible to transmit audiovisual content over the Internet, without the need to download files.",
+            streamingView2: "Therefore, streaming makes possible the professional broadcasting of an event, a talk, a conference, an online training.....",
+            streamingView3: "Today, streaming companies such as MST are conducting virtual events to share information and connect with the audience. Next, we will explain what streaming is and how it works in different types of events.",
+            streamingView4: "Live streaming allows the consumption of multimedia content over the Internet. This technology is capable of receiving and sending video and audio data that flows continuously through the network. This allows the user to start viewing the content as soon as the first data is received. In the case of an event, the user can watch it in real time, as the data is transmitted as the event unfolds.",
+            streamingView5: "In order for the event to be transmitted online, the live broadcast bundles the data into packets that are sent over the Internet. They usually pass through a streaming server, which then distributes them to the user. These data packets are the ones that reach the device of the different users and are sorted so that they are played correctly. When the device obtains all the data packets necessary to guarantee a consecutive transmission, streaming begins.",
 
             /* IMPRESSUM */
             anschrift: "Address",

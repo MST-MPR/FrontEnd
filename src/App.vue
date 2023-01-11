@@ -16,16 +16,25 @@ import TopButton from "./components/common/TopButton.vue";
     <div>
       <Footer />
     </div>
-    <div class="sticky bottom-[60px] mr-16 collapse sm:visible">
+    <div
+      class="
+        sticky
+        bottom-[60px]
+        collapse
+        md:visible
+      "
+    >
       <TopButton />
     </div>
   </div>
 </template>
 
 <style>
-@import './assets/font-family/fonts.css';
+@import "./assets/font-family/fonts.css";
 
-  html, body, #app{
-    font-family: Frutiger;
-  }
+html,
+body,
+#app {
+  font-family: Frutiger;
+}
 </style>

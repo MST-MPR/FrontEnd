@@ -21,28 +21,27 @@ import AppFlipCard from "../../components/app/AppFlipCard.vue";
       />
       <h1
         class="
-          text-mst_white
           text-center
           font-extrabold
-          text-5xl
+          text-4xl
           py-10
+          md:text-5xl
           2xl:text-7xl
+          text-mst_white
         "
       >
-        Full Service
+        FULL SERVICE
       </h1>
 
-      <div class="p-5 mx-auto md:px-10 xl:w-fit 2xl:px-24">
+      <div class="p-5 mx-auto md:px-10 xl:pb-12 xl:w-fit 2xl:px-24">
         <div
           class="
             grid
             overflow-hidden
             grid-row
             gap-10
-            md:grid-cols-2
-            md:gap-12
-            xl:gap-20
-            xl:grid-cols-3
+            md:grid-cols-2 md:gap-12
+            xl:gap-20 xl:grid-cols-3
           "
         >
           <div class="box">

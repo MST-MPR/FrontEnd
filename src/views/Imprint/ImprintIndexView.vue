@@ -1,16 +1,17 @@
 <template>
-  <div class="h-full bg-imprint bg-cover">
+  <div class="h-full w-full">
     <div class="drop-shadow-2xl">
       <h1
         class="
           drop-shadow-2xl
-          text-mst_black
           text-center
           font-extrabold
-          text-5xl
+          text-4xl
           p-12
           mb-2
-          sm:text-7xl
+          md:text-5xl
+          2xl:text-7xl
+          text-mst_black
         "
       >
         {{ $t("impressum") }}
@@ -24,24 +25,24 @@
           -mb-15
           text-mst_black
           font-extrabold
-          text-lg text-center
-          sm:text-left sm:p-12 sm:mb-2 sm:text-xl
+          text-lg md:text-center
+          xl:text-left md:p-12 md:mb-2 md:text-xl
         "
       >
-        MST MEDIEN- SYSTEMTECHNIK GMBH
+        MST MEDIEN - SYSTEMTECHNIK GMBH
       </h2>
       <div
-        class="ml-10 sm:ml-20 tracking-wider leading-normal sm:leading-loose"
+        class="ml-10 tracking-wider leading-normal md:leading-loose md:ml-20"
       >
         <ul class="list-disc">
           <li class="mb-8">
-            <h2 class="text-xl sm:text-2xl font-semibold text-mst_orange">
+            <h2 class="text-xl font-semibold md:text-2xl text-mst_orange">
               {{ $t("anschrift") }}:
             </h2>
             <p>Bremer Straße 63, 28816 Stuhr</p>
           </li>
           <li class="mb-8">
-            <h2 class="text-xl sm:text-2xl font-semibold text-mst_orange">
+            <h2 class="text-xl font-semibold md:text-2xl text-mst_orange">
               {{ $t("kontaktdaten") }}:
             </h2>
 
@@ -53,87 +54,95 @@
             <p><strong>Web:</strong>www.mst-extra.net</p>
           </li>
           <li class="mb-8">
-            <h2 class="text-xl sm:text-2xl font-semibold text-mst_orange">
+            <h2 class="text-xl font-semibold md:text-2xl text-mst_orange">
               {{ $t("geschäftsführer") }}:
             </h2>
             <p>Ralf-Peter Franz</p>
           </li>
           <li class="mb-8">
-            <h2 class="text-xl sm:text-2xl font-semibold text-mst_orange">
+            <h2 class="text-xl font-semibold md:text-2xl text-mst_orange">
               {{ $t("umsatzsteuer") }}:
             </h2>
             <p>DE 2914 55354</p>
           </li>
           <li class="mb-8">
-            <h2 class="text-xl sm:text-2xl font-semibold text-mst_orange">
+            <h2 class="text-xl font-semibold md:text-2xl text-mst_orange">
               {{ $t("inhaltlich") }}:
             </h2>
             <p>Ralf-Peter Franz</p>
           </li>
         </ul>
       </div>
-      <div class="relative flex py-5 items-center w-52 sm:w-96 ml-10 sm:ml-20">
+      <div class="relative flex py-5 items-center w-52 ml-10 md:w-96 md:ml-20">
         <div class="flex-grow border-2 border-mst_orange"></div>
       </div>
       <div
-        class="ml-10 sm:ml-20 tracking-wider leading-normal sm:leading-loose"
+        class="ml-10 tracking-wider leading-normal md:ml-20 md:leading-loose"
       >
         <ul class="list-disc">
           <li class="mt-8 mb-8">
-            <h2 class="text-xl sm:text-2xl font-semibold text-mst_orange">
+            <h2 class="text-xl font-semibold md:text-2xl text-mst_orange">
               {{ $t("konzeption") }}:
             </h2>
             <p>MST Medien-Systemtechnik GmbH</p>
           </li>
         </ul>
       </div>
-      <div class="relative flex py-5 items-center w-52 sm:w-96 ml-10 sm:ml-20">
+      <div class="relative flex py-5 items-center w-52 ml-10 md:w-96 md:ml-20">
         <div class="flex-grow border-2 border-mst_orange"></div>
       </div>
       <div
-        class="tracking-wider leading-normal sm:leading-loose ml-10 sm:ml-20"
+        class="tracking-wider leading-normal ml-10 md:leading-loose md:ml-20"
       >
         <ul class="list-disc">
-          <li class="w-52 sm:w-[500px] mt-8 mb-8">
-            <h2 class="text-xl sm:text-2xl font-semibold text-mst_orange">
+          <li class="w-52 mt-8 mb-8 md:w-full">
+            <h2 class="text-xl font-semibold md:text-2xl text-mst_orange">
               {{ $t("streitschlichtung") }}:
             </h2>
-            <p>{{ $t("streitschlichtung2") }}</p>
-            <p>
-              {{ $t("streitschlichtung3") }}
-              <a
-                href="https://ec.europa.eu/consumers/odr/main/index.cfm?event=main.home.chooseLanguage"
-                class="font-bold text-mst_orange"
-                >https://ec.europa.eu</a
-              >
-            </p>
+            <div class="md:pr-12">
+              <p>{{ $t("streitschlichtung2") }}</p>
+              <p>
+                {{ $t("streitschlichtung3") }}
+                <a
+                  href="https://ec.europa.eu/consumers/odr/main/index.cfm?event=main.home.chooseLanguage"
+                  class="font-bold text-mst_orange"
+                  >https://ec.europa.eu</a
+                >
+              </p>
+            </div>
           </li>
 
-          <li class="w-52 sm:w-[500px] mt-8 mb-8">
-            <h2 class="text-xl sm:text-2xl font-semibold text-mst_orange">
+          <li class="w-52 mt-8 mb-8 md:w-full">
+            <h2 class="text-xl font-semibold md:text-2xl text-mst_orange">
               {{ $t("haftungInhalte") }}:
             </h2>
-            <p>{{ $t("haftungInhalte2") }}</p>
-            <br />
-            <p>{{ $t("haftungInhalte3") }}</p>
+            <div class="md:pr-12">
+              <p>{{ $t("haftungInhalte2") }}</p>
+              <br />
+              <p>{{ $t("haftungInhalte3") }}</p>
+            </div>
           </li>
 
-          <li class="w-52 sm:w-[500px] mt-8 mb-8">
-            <h2 class="text-xl sm:text-2xl font-semibold text-mst_orange">
+          <li class="w-52 mt-8 mb-8 md:w-full">
+            <h2 class="text-xl font-semibold md:text-2xl text-mst_orange">
               {{ $t("haftungLink") }}:
             </h2>
-            <p>{{ $t("haftungLink2") }}</p>
-            <br />
-            <p>{{ $t("haftungLink3") }}</p>
+            <div class="md:pr-12">
+              <p>{{ $t("haftungLink2") }}</p>
+              <br />
+              <p>{{ $t("haftungLink3") }}</p>
+            </div>
           </li>
 
-          <li class="w-52 sm:w-[500px] mt-8 mb-8">
-            <h2 class="text-xl sm:text-2xl font-semibold text-mst_orange">
+          <li class="w-52 mt-8 mb-8 md:w-full">
+            <h2 class="text-xl font-semibold md:text-2xl text-mst_orange">
               {{ $t("urheberrecht") }}:
             </h2>
-            <p>{{ $t("urheberrecht2") }}</p>
-            <br />
-            <p>{{ $t("urheberrecht3") }}</p>
+            <div class="md:pr-12">
+              <p>{{ $t("urheberrecht2") }}</p>
+              <br />
+              <p>{{ $t("urheberrecht3") }}</p>
+            </div>
           </li>
         </ul>
       </div>

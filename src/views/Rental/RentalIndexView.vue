@@ -1,5 +1,5 @@
 <template>
-  <div class="h-[1500px] md:h-[1800px]">
+  <div class="w-full h-full">
     <div class="h-full w-full relative">
       <img
         src="../../assets/images/General/cam.jpg"
@@ -17,60 +17,59 @@
       />
       <h1
         class="
-          text-mst_white
           text-center
           font-extrabold
-          text-5xl
-          p-12
-          mb-2
-  	      md:mb-5 
-          font-mono
-          md:text-7xl
+          text-4xl
+          py-12
+          md:text-5xl
+          2xl:text-7xl
+          text-mst_white
         "
       >
         {{ $t("vermietung") }}
       </h1>
-
-      <div
-        class="
-          border-4
-          border-mst_construction
-          w-full
-          md:w-[650px]
-          h-[1300px]
-          drop-shadow-2xl
-          m-auto
-        "
-      >
-        <ul class="list-disc p-6 md:p-12 text-lg md:text-2xl text-mst_white">
-          <li class="leading-normal tracking-wider mb-6">
-            {{ $t("vermietungView") }}
-          </li>
-          <li class="leading-normal tracking-wider mb-6">
-            {{ $t("vermietungView2") }}
-          </li>
-          <li class="leading-normal tracking-wider mb-6">
-            {{ $t("vermietungView3") }}
-          </li>
-          <li class="leading-normal tracking-wider mb-6">
-            {{ $t("vermietungView4") }}
-          </li>
-          <li class="leading-normal tracking-wider mb-6">
-            {{ $t("vermietungView5") }}
-          </li>
-          <li class="leading-normal tracking-wider mb-6">
-            {{ $t("vermietungView6") }}
-          </li>
-          <li class="leading-normal tracking-wider mb-6">
-            {{ $t("vermietungView7") }}
-          </li>
-          <li class="leading-normal tracking-wider mb-6">
-            {{ $t("vermietungView8") }}
-          </li>
-          <li class="leading-normal tracking-wider mb-6">
-            {{ $t("vermietungView9") }}
-          </li>
-        </ul>
+      <div class="pb-12 2xl:py-12">
+        <div
+          class="
+            border-4
+            border-mst_construction
+            w-full
+            h-full
+            drop-shadow-2xl
+            m-auto
+            md:w-[650px] md:h-full
+          "
+        >
+          <ul class="list-disc p-6 text-lg md:text-2xl md:p-12 text-mst_white">
+            <li class="leading-normal tracking-wider mb-6">
+              {{ $t("vermietungView") }}
+            </li>
+            <li class="leading-normal tracking-wider mb-6">
+              {{ $t("vermietungView2") }}
+            </li>
+            <li class="leading-normal tracking-wider mb-6">
+              {{ $t("vermietungView3") }}
+            </li>
+            <li class="leading-normal tracking-wider mb-6">
+              {{ $t("vermietungView4") }}
+            </li>
+            <li class="leading-normal tracking-wider mb-6">
+              {{ $t("vermietungView5") }}
+            </li>
+            <li class="leading-normal tracking-wider mb-6">
+              {{ $t("vermietungView6") }}
+            </li>
+            <li class="leading-normal tracking-wider mb-6">
+              {{ $t("vermietungView7") }}
+            </li>
+            <li class="leading-normal tracking-wider mb-6">
+              {{ $t("vermietungView8") }}
+            </li>
+            <li class="leading-normal tracking-wider mb-6">
+              {{ $t("vermietungView9") }}
+            </li>
+          </ul>
+        </div>
       </div>
     </div>
   </div>

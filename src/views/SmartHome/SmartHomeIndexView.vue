@@ -1,5 +1,5 @@
 <template>
-  <div class="h-[640px] md:h-[720px] 2xl:h-[920px]">
+  <div class="h-full w-full overflow-x-hidden 2xl:h-screen">
     <div class="h-full w-full relative">
       <img
         src="../../assets/images/General/home.jpg"
@@ -17,49 +17,46 @@
       />
       <h1
         class="
-          text-mst_white
           text-center
           font-extrabold
-          text-5xl
-          p-12
-          font-mono
-          md:text-7xl
+          text-4xl
+          py-12
+          md:text-5xl
+          2xl:text-7xl
+          text-mst_white
         "
       >
-        Smart Home
+        SMART HOME
       </h1>
-
-      <div
-        class="
-          border-4
-          border-mst_construction
-          mt-[30px]
-          w-full
-          h-[300px]
-          drop-shadow-2xl
-          m-auto
-          md:mt-[60px] md:w-[700px]
-          2xl:mt-[130px]
-        "
-      >
-        <ul
+      <div class="pb-24 md:pb-12 px-12 xl:px-96">
+        <div
           class="
-            list-none
-            p-6
-            md:p-12
-            text-lg
-            md:text-2xl
-            text-mst_white
-            text-center
+            border-4
+            w-full
+            h-full
+            drop-shadow-2xl
+            m-auto
+            2xl:mt-[130px]
+            border-mst_construction
           "
         >
-          <li class="leading-normal tracking-wider mb-6">
-            {{ $t("smartHomeView") }}
-          </li>
-          <li class="leading-normal tracking-wider mb-6">
-            {{ $t("smartHomeView2") }}
-          </li>
-        </ul>
+          <ul
+            class="
+              list-none
+              p-6
+              text-lg text-center
+              md:p-8 md:text-2xl
+              text-mst_white
+            "
+          >
+            <li class="leading-normal tracking-wider mb-6">
+              {{ $t("smartHomeView") }}
+            </li>
+            <li class="leading-normal tracking-wider">
+              {{ $t("smartHomeView2") }}
+            </li>
+          </ul>
+        </div>
       </div>
     </div>
   </div>

@@ -204,6 +204,7 @@ const showMobileMenu = ref(true);
       :class="{ hidden: showMobileMenu }"
     >
       <router-link
+        @click="showMobileMenu = !showMobileMenu"
         to="/home"
         class="
           block
@@ -218,6 +219,7 @@ const showMobileMenu = ref(true);
         >HOME</router-link
       >
       <router-link
+        @click="showMobileMenu = !showMobileMenu"
         to="/fullService"
         class="
           block
@@ -232,6 +234,7 @@ const showMobileMenu = ref(true);
         >FULL SERVICE</router-link
       >
       <router-link
+        @click="showMobileMenu = !showMobileMenu"
         to="/sale"
         class="
           block
@@ -246,6 +249,7 @@ const showMobileMenu = ref(true);
         >{{ $t("verkauf") }}</router-link
       >
       <router-link
+        @click="showMobileMenu = !showMobileMenu"
         to="/rental"
         class="
           block
@@ -260,6 +264,7 @@ const showMobileMenu = ref(true);
         >{{ $t("vermietung") }}</router-link
       >
       <router-link
+        @click="showMobileMenu = !showMobileMenu"
         to="/smartHome"
         class="
           block
@@ -274,6 +279,7 @@ const showMobileMenu = ref(true);
         >SMART HOME</router-link
       >
       <router-link
+        @click="showMobileMenu = !showMobileMenu"
         to="/streaming"
         class="
           block
@@ -288,6 +294,7 @@ const showMobileMenu = ref(true);
         >STREAMING</router-link
       >
       <router-link
+        @click="showMobileMenu = !showMobileMenu"
         to="contact"
         class="
           block
@@ -302,6 +309,7 @@ const showMobileMenu = ref(true);
         >{{ $t("kontakt") }}</router-link
       >
       <router-link
+        @click="showMobileMenu = !showMobileMenu"
         to="/imprint"
         class="
           block
@@ -316,6 +324,7 @@ const showMobileMenu = ref(true);
         >{{ $t("impressum") }}</router-link
       >
       <router-link
+        @click="showMobileMenu = !showMobileMenu"
         to="/cookiePolicy"
         class="
           block

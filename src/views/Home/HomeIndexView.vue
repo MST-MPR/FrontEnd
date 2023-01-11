@@ -1,15 +1,19 @@
 <script>
-import { VueRecaptcha } from "vue-recaptcha";
 import Slider from "../../components/app/Slider.vue";
+import InputHome from "../../components/inputs/InputHome.vue";
+import { mapActions } from "vuex";
+import { nanoid } from "nanoid";
+import axios from "axios";
 
 export default {
   components: {
-    VueRecaptcha,
     Slider,
+    InputHome,
   },
   data() {
     return {
       task: {
+        id: "",
         name: "",
         email: "",
         message: "",
@@ -18,8 +22,13 @@ export default {
     };
   },
   methods: {
+    //Recive an array
+    ...mapActions(["setTasks"]),
+
     processForm() {
-      console.log(this.task);
+      //Generate random id
+      this.task.id = nanoid();
+
       //Delete data
       this.task = {
         name: "",
@@ -27,8 +36,16 @@ export default {
         message: "",
       };
     },
-    reset() {
-      this.$refs.recaptcha.reset();
+    async submitForm() {
+      try {
+        const response = await axios.post(
+          "http://127.0.0.1:8000/contact-us-store",
+          this.task
+        );
+        console.log(response.data);
+      } catch (error) {
+        console.log(error);
+      }
     },
     select(name) {
       if (this.selected == name) {
@@ -44,7 +61,7 @@ export default {
 <template>
   <div class="object-fit">
     <!--PRINCIPAL-->
-    <div class="bg-mst_construction h-fit lg:h-screen">
+    <div class="bg-mst_construction h-fit lg:h-full xl:pb-56 2xl:pb-64">
       <div class="basis-1/2 visible md:hidden">
         <img
           class="saturate-50 brightness-50 rounded-bl-[100px]"
@@ -61,25 +78,33 @@ export default {
           sm:flex-row
         "
       >
-        <div class="basis-1/2 flex flex-col tracking-wider">
+        <div
+          class="
+            basis-1/2
+            flex flex-col
+            tracking-wider
+            md:py-10
+            xl:pt-44
+            2xl:my-auto
+          "
+        >
           <h1
             class="
               text-center
               font-bold
               text-3xl
-              mt-10
               p-5
-              mb-10
-              md:text-5xl md:p-20
-              2xl:text-6xl 2xl:p-20 2xl:mt-40
+              md:text-5xl
+              xl:pb-20
+              2xl:text-6xl
             "
           >
             {{ $t("prof1") }} <br />
             {{ $t("prof2") }}
           </h1>
-          <h3 class="basis-1/2 ml-15 text-xl md:text-2xl p-5">
+          <h2 class="basis-1/2 ml-15 text-xl py-5 px-16 md:text-2xl md:">
             {{ $t("prof3") }}
-          </h3>
+          </h2>
         </div>
         <div class="basis-1/2 hidden md:block">
           <img
@@ -644,14 +669,15 @@ export default {
           grid grid-rows
           my-10
           mx-auto
-          md:grid-cols-3 md:space-y-0 md:p-16 md:gap-10
+          md:grid-cols-2 md:space-y-0 md:p-16 md:gap-10
+          xl:grid-cols-3
           2xl:grid-cols-4 2xl:gap-32 2xl:py-10
         "
       >
         <div
           class="
             item
-            w-56
+            w-64
             shadow-inner
             shadow-mst_black
             rounded-2xl
@@ -663,7 +689,7 @@ export default {
             cursor-pointer
           "
           @click="select('franz')"
-          :class="[selected == 'franz' ? 'h-[400px]' : 'h-[350px]']"
+          :class="[selected == 'franz' ? 'h-[390px]' : 'h-[350px]']"
         >
           <img
             src="../../assets/images/Team/franz.png"
@@ -687,7 +713,7 @@ export default {
         <div
           class="
             item
-            w-56
+            w-64
             shadow-inner
             shadow-mst_black
             rounded-2xl
@@ -699,7 +725,7 @@ export default {
             cursor-pointer
           "
           @click="select('marco')"
-          :class="[selected == 'marco' ? 'h-[430px]' : 'h-[350px]']"
+          :class="[selected == 'marco' ? 'h-[420px]' : 'h-[350px]']"
         >
           <img
             src="../../assets/images/Team/marco.jpg"
@@ -726,7 +752,7 @@ export default {
         <div
           class="
             item
-            w-56
+            w-64
             shadow-inner
             shadow-mst_black
             rounded-2xl
@@ -738,7 +764,7 @@ export default {
             cursor-pointer
           "
           @click="select('philipp')"
-          :class="[selected == 'philipp' ? 'h-[430px]' : 'h-[350px]']"
+          :class="[selected == 'philipp' ? 'h-[410px]' : 'h-[350px]']"
         >
           <img
             src="../../assets/images/Team/philipp.jpg"
@@ -765,7 +791,7 @@ export default {
         <div
           class="
             item
-            w-56
+            w-64
             shadow-inner
             shadow-mst_black
             rounded-2xl
@@ -777,7 +803,7 @@ export default {
             cursor-pointer
           "
           @click="select('dagmar')"
-          :class="[selected == 'dagmar' ? 'h-[400px]' : 'h-[350px]']"
+          :class="[selected == 'dagmar' ? 'h-[390px]' : 'h-[350px]']"
         >
           <img
             src="../../assets/images/Team/dagmar.jpg"
@@ -801,7 +827,7 @@ export default {
         <div
           class="
             item
-            w-56
+            w-64
             shadow-inner
             shadow-mst_black
             rounded-2xl
@@ -813,7 +839,7 @@ export default {
             cursor-pointer
           "
           @click="select('sophia')"
-          :class="[selected == 'sophia' ? 'h-[400px]' : 'h-[350px]']"
+          :class="[selected == 'sophia' ? 'h-[390px]' : 'h-[350px]']"
         >
           <img
             src="../../assets/images/Team/sophia.jpg"
@@ -837,7 +863,7 @@ export default {
         <div
           class="
             item
-            w-56
+            w-64
             shadow-inner
             shadow-mst_black
             rounded-2xl
@@ -849,7 +875,7 @@ export default {
             cursor-pointer
           "
           @click="select('jan')"
-          :class="[selected == 'jan' ? 'h-[420px]' : 'h-[350px]']"
+          :class="[selected == 'jan' ? 'h-[390px]' : 'h-[350px]']"
         >
           <img
             src="../../assets/images/Team/jan.png"
@@ -873,7 +899,7 @@ export default {
         <div
           class="
             item
-            w-56
+            w-64
             shadow-inner
             shadow-mst_black
             rounded-2xl
@@ -885,7 +911,7 @@ export default {
             cursor-pointer
           "
           @click="select('andreas')"
-          :class="[selected == 'andreas' ? 'h-[400px]' : 'h-[350px]']"
+          :class="[selected == 'andreas' ? 'h-[390px]' : 'h-[350px]']"
         >
           <img
             src="../../assets/images/Team/andreas.jpg"
@@ -909,7 +935,7 @@ export default {
         <div
           class="
             item
-            w-56
+            w-64
             shadow-inner
             shadow-mst_black
             rounded-2xl
@@ -921,10 +947,10 @@ export default {
             cursor-pointer
           "
           @click="select('mika')"
-          :class="[selected == 'mika' ? 'h-[400px]' : 'h-[350px]']"
+          :class="[selected == 'mika' ? 'h-[390px]' : 'h-[350px]']"
         >
           <img
-            src="../../assets/images/Team/franz.png"
+            src="../../assets/images/Team/mika.jpg"
             class="p-2 h-52 mx-auto"
           />
           <h1 class="text-center font-bold tracking-wide text-2xl mt-3">
@@ -945,7 +971,7 @@ export default {
         <div
           class="
             item
-            w-56
+            w-64
             shadow-inner
             shadow-mst_black
             rounded-2xl
@@ -957,7 +983,7 @@ export default {
             cursor-pointer
           "
           @click="select('brüuggemann')"
-          :class="[selected == 'brüuggemann' ? 'h-[450px]' : 'h-[350px]']"
+          :class="[selected == 'brüuggemann' ? 'h-[425px]' : 'h-[350px] ']"
         >
           <img
             src="../../assets/images/Team/marco.jpg"
@@ -982,7 +1008,7 @@ export default {
         <div
           class="
             item
-            w-56
+            w-64
             shadow-inner
             shadow-mst_black
             rounded-2xl
@@ -994,7 +1020,7 @@ export default {
             cursor-pointer
           "
           @click="select('fabian')"
-          :class="[selected == 'fabian' ? 'h-[390px]' : 'h-[350px]']"
+          :class="[selected == 'fabian' ? 'h-[380px]' : 'h-[350px]']"
         >
           <img
             src="../../assets/images/Team/philipp.jpg"
@@ -1018,7 +1044,7 @@ export default {
         <div
           class="
             item
-            w-56
+            w-64
             shadow-inner
             shadow-mst_black
             rounded-2xl
@@ -1030,7 +1056,7 @@ export default {
             cursor-pointer
           "
           @click="select('miguel')"
-          :class="[selected == 'miguel' ? 'h-[400px]' : 'h-[350px]']"
+          :class="[selected == 'miguel' ? 'h-[390px]' : 'h-[350px]']"
         >
           <img
             src="../../assets/images/Team/dagmar.jpg"
@@ -1054,15 +1080,15 @@ export default {
         <div
           class="
             item
-            w-56
+            w-64
             shadow-inner
-            shadow-mst_black
             rounded-2xl
-            md:shadow-2xl md:shadow-mst_black
             grayscale
             transition
             duration-300
             hover:grayscale-0
+            shadow-mst_black
+            md:shadow-2xl md:shadow-mst_black
             cursor-pointer
           "
           @click="select('hier')"
@@ -1092,7 +1118,16 @@ export default {
     </div>
     <!--PARTNERS-->
     <div class="text-center bg-partners">
-      <h1 class="text-mst_white text-center font-extrabold text-7xl p-4">
+      <h1
+        class="
+          text-mst_white
+          text-center
+          font-extrabold
+          text-5xl
+          sm:text-7xl
+          p-4
+        "
+      >
         {{ $t("partners") }}
       </h1>
       <div
@@ -1101,7 +1136,7 @@ export default {
           mt-10
           overflow-hidden
           md:grid-cols-2
-          2xl:grid-cols-4
+          xl:grid-cols-4
           gap-y-2
           items-center
         "
@@ -1169,10 +1204,7 @@ export default {
       </div>
     </div>
     <!--CONTACT-->
-    <div
-      @click="select('hier')"
-      :class="[selected == 'hier' ? 'mt-16 md:mt-0' : 'mt-0']"
-    >
+    <div>
       <div
         class="
           grid
@@ -1189,8 +1221,9 @@ export default {
           class="
             mt-5
             w-full
+            h-96
             mx-auto
-            md:mt-14 md:w-[450px] md:h-[500px]
+            md:mt-14 md:w-[450px] md:h-[600px]
             2xl:mt-5 2xl:h-[700px]
           "
         >
@@ -1223,111 +1256,11 @@ export default {
             </p>
             <form
               @submit.prevent="processForm"
-              class="space-y-4 mt-5 md:mt-0 2xl:mt-5"
+              method="POST"
+              action="http://127.0.0.1:8000/contact-us/store"
+              class="space-y-4"
             >
-              <div>
-                <label
-                  for="email"
-                  class="block mb-1 text-sm font-bold text-mst_black"
-                  >Name</label
-                >
-                <input
-                  type="text"
-                  id="name"
-                  v-model.trim="task.name"
-                  class="
-                    shadow-2xl
-                    border
-                    text-sm
-                    rounded-lg
-                    block
-                    w-72
-                    md:w-full
-                    p-2.5
-                  "
-                  required
-                />
-              </div>
-              <div>
-                <label
-                  for="subject"
-                  class="block mb-1 text-sm font-bold text-mst_black"
-                  >{{ $t("email") }}</label
-                >
-                <input
-                  type="text"
-                  id="email"
-                  v-model.trim="task.email"
-                  class="
-                    block
-                    p-3
-                    w-72
-                    text-sm text-gray-900
-                    bg-gray-50
-                    rounded-lg
-                    border border-gray-300
-                    shadow-sm
-                    md:w-full
-                  "
-                  required
-                />
-              </div>
-              <div class="md:col-span-2">
-                <label
-                  for="message"
-                  class="block mb-1 text-sm font-bold text-mst_black"
-                  >{{ $t("message") }}</label
-                >
-                <textarea
-                  type="text"
-                  id="message"
-                  v-model.trim="task.message"
-                  rows="6"
-                  class="
-                    block
-                    p-2.5
-                    w-72
-                    text-sm
-                    text-mst_black
-                    bg-gray-50
-                    rounded-lg
-                    border border-gray-300
-                    shadow-sm
-                    md:h-20
-                    2xl:h-full
-                    md:w-full
-                  "
-                />
-              </div>
-              <div>
-                <vue-recaptcha
-                  ref="recaptcha"
-                  sitekey="6Lem_TIjAAAAAOmTwiskZDAWnkE81t8Y_jsXe_jG"
-                />
-              </div>
-              <button
-                @click="reset"
-                type="submit"
-                class="
-                  w-36
-                  text-mst_white
-                  bg-gradient-to-br
-                  from-mst_gray
-                  to-mst_orange
-                  hover:bg-gradient-to-bl
-                  focus:ring-2 focus:outline-none focus:ring-mst_orange
-                  font-medium
-                  rounded-lg
-                  text-sm
-                  px-5
-                  py-2.5
-                  text-center
-                  ml-[70px]
-                  md:ml-0
-                "
-              >
-                {{ $t("send") }}
-              </button>
+              <InputHome :task="task" />
             </form>
           </div>
         </div>
@@ -1335,7 +1268,7 @@ export default {
     </div>
     <!--SPONSORING-->
     <div class="w-full h-full">
-      <div class="w-full h-full relative">
+      <div class="w-full h-full xl:pb-12 relative">
         <img
           src="../../assets/images/General/kirche.jpg"
           class="
@@ -1361,14 +1294,14 @@ export default {
         >
           Sponsoring
         </h1>
-        <div class="flex flex-col p-6 w-fit mx-auto xl:flex-row">
-          <div class="mt-6 mx-auto md:w-[400px] 2xl:w-[500px]">
+        <div class="flex flex-col p-6 w-full mx-auto xl:flex-row">
+          <div class="mx-auto pb-5 md:w-fit 2xl:w-[500px]">
             <img
               src="../../assets/images/General/sponsor1.png"
               class="h-96 mx-auto md:h-[460px] 2xl:h-[500px]"
             />
           </div>
-          <div class="mt-6 md:w-[500px]">
+          <div class="mx-auto md:w-fit 2xl:w-[500px]">
             <img
               src="../../assets/images/General/sponsor2.png"
               class="h-96 mx-auto md:h-[460px] 2xl:h-[500px]"
