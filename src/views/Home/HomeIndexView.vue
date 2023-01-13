@@ -767,8 +767,8 @@ export default {
           :class="[selected == 'philipp' ? 'h-[410px]' : 'h-[350px]']"
         >
           <img
-            src="../../assets/images/Team/philipp.jpg"
-            class="p-2 h-52 object-cover"
+            src="../../assets/images/Team/philipp.png"
+            class="p-2 h-52 mx-auto"
           />
           <h1 class="text-center font-bold tracking-wide text-2xl mt-3">
             Philipp Voss
@@ -806,8 +806,8 @@ export default {
           :class="[selected == 'dagmar' ? 'h-[390px]' : 'h-[350px]']"
         >
           <img
-            src="../../assets/images/Team/dagmar.jpg"
-            class="p-2 h-52 object-cover"
+            src="../../assets/images/Team/dagmar.png"
+            class="p-2 h-52 mx-auto"
           />
           <h1 class="text-center font-bold tracking-wide text-2xl mt-3">
             Dagmar Stewener
@@ -842,8 +842,8 @@ export default {
           :class="[selected == 'sophia' ? 'h-[390px]' : 'h-[350px]']"
         >
           <img
-            src="../../assets/images/Team/sophia.jpg"
-            class="p-2 h-52 object-cover"
+            src="../../assets/images/Team/sophia.png"
+            class="p-2 h-52 mx-auto"
           />
           <h1 class="text-center font-bold tracking-wide text-2xl mt-3">
             Sophia Krutsch
@@ -915,7 +915,7 @@ export default {
         >
           <img
             src="../../assets/images/Team/andreas.jpg"
-            class="p-2 h-52 ml-11"
+            class="p-2 h-52 mx-auto"
           />
           <h1 class="text-center font-bold tracking-wide text-2xl mt-3">
             Andreas Garms
@@ -950,7 +950,7 @@ export default {
           :class="[selected == 'mika' ? 'h-[390px]' : 'h-[350px]']"
         >
           <img
-            src="../../assets/images/Team/mika.jpg"
+            src="../../assets/images/Team/mika.png"
             class="p-2 h-52 mx-auto"
           />
           <h1 class="text-center font-bold tracking-wide text-2xl mt-3">
@@ -1023,8 +1023,8 @@ export default {
           :class="[selected == 'fabian' ? 'h-[380px]' : 'h-[350px]']"
         >
           <img
-            src="../../assets/images/Team/philipp.jpg"
-            class="p-2 h-52 object-cover"
+            src="../../assets/images/Team/fabian.png"
+            class="p-2 h-52 mx-auto"
           />
           <h1 class="text-center font-bold tracking-wide text-2xl mt-3">
             Fabian Witt
@@ -1059,8 +1059,8 @@ export default {
           :class="[selected == 'miguel' ? 'h-[390px]' : 'h-[350px]']"
         >
           <img
-            src="../../assets/images/Team/dagmar.jpg"
-            class="p-2 h-52 object-cover"
+            src="../../assets/images/Team/miguel.png"
+            class="p-2 h-52 mx-auto"
           />
           <h1 class="text-center font-bold tracking-wide text-2xl mt-3">
             Miguel Portero
@@ -1223,7 +1223,7 @@ export default {
             w-full
             h-96
             mx-auto
-            md:mt-14 md:w-[450px] md:h-[600px]
+            md:mt-14 md:w-[450px] md:h-[500px]
             2xl:mt-5 2xl:h-[700px]
           "
         >
@@ -1295,7 +1295,7 @@ export default {
           Sponsoring
         </h1>
         <div class="flex flex-col p-6 w-full mx-auto xl:flex-row">
-          <div class="mx-auto pb-5 md:w-fit 2xl:w-[500px]">
+          <div class="mx-auto md:w-fit 2xl:w-[500px]">
             <img
               src="../../assets/images/General/sponsor1.png"
               class="h-96 mx-auto md:h-[460px] 2xl:h-[500px]"

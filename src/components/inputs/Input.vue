@@ -1,6 +1,6 @@
 <script>
 import { VueRecaptcha } from "vue-recaptcha";
-import axios from 'axios';
+import axios from "axios";
 
 export default {
   props: {
@@ -12,11 +12,15 @@ export default {
   methods: {
     async reset() {
       this.$refs.recaptcha.reset();
-      try{
-        axios.defaults.headers.common['X-CSRF-TOKEN'] = "ggURxwmVHVgDK5W3jLZ2uESkVrzEWSZ1jlwk7twG"; 
-        const response = await axios.post('http://localhost:8000/contact-us/store', this.task);  
+      try {
+        axios.defaults.headers.common["X-CSRF-TOKEN"] =
+          "ggURxwmVHVgDK5W3jLZ2uESkVrzEWSZ1jlwk7twG";
+        const response = await axios.post(
+          "http://localhost:8000/contact-us/store",
+          this.task
+        );
         console.log(response.data);
-      } catch (error){
+      } catch (error) {
         console.log(error);
       }
     },
@@ -26,7 +30,9 @@ export default {
 
 <template>
   <div>
-    <label for="email" class="block mb-2 text-sm font-medium text-mst_white">Name</label>
+    <label for="email" class="block mb-2 text-sm font-medium text-mst_white"
+      >Name</label
+    >
     <input
       type="text"
       id="name"
@@ -80,16 +86,14 @@ export default {
         shadow-sm
         md:h-20
         2xl:h-full
-
       "
     />
   </div>
   <div class="pt-3 pb-3">
-    <vue-recaptcha
+    <VueRecaptcha
       ref="recaptcha"
       sitekey="6Lf6husjAAAAADC6zdk_WB-qL-7I7QxEKR4ANx06"
-      required
-    />
+    ></VueRecaptcha>
   </div>
   <button
     @click="reset"
@@ -114,7 +118,6 @@ export default {
   >
     {{ $t("send") }}
   </button>
-
 </template>
 
 
