@@ -7,7 +7,7 @@
           text-center
           font-extrabold
           text-4xl
-          p-12
+          pt-12
           mb-2
           md:text-5xl
           2xl:text-7xl
@@ -21,12 +21,10 @@
       <h2
         class="
           p-5
-          -mt-16
-          -mb-15
           text-mst_black
           font-extrabold
-          text-lg md:text-center
-          xl:text-left md:p-12 md:mb-2 md:text-xl
+          text-lg md:text-center md:p-12 md:mb-2 md:text-xl
+          xl:text-left
         "
       >
         MST MEDIEN - SYSTEMTECHNIK GMBH

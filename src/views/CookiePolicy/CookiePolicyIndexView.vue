@@ -15,9 +15,9 @@
         {{ $t("cookieRichtline") }}
       </h1>
     </div>
-    <div class="px-8 mx-auto md:px-10">
+    <div class="mx-auto px-8 md:px-16 xl:px-32">
       <div class="mx-auto tracking-wider leading-normal md:leading-loose">
-        <p class="mb-10 font-semibold text-center">
+        <p class="font-semibold text-center 2xl:pb-8 2xl:text-xl">
           {{ $t("oktober") }}
         </p>
         <ul class="list-decimal">

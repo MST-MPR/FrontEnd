@@ -27,7 +27,7 @@ export default {
 
     processForm() {
       //Generate random id
-      this.task.id = nanoid();
+      //this.task.id = nanoid();
 
       //Delete data
       this.task = {
@@ -1257,7 +1257,6 @@ export default {
             <form
               @submit.prevent="processForm"
               method="POST"
-              action="http://127.0.0.1:8000/contact-us/store"
               class="space-y-4"
             >
               <InputHome :task="task" />
@@ -1295,7 +1294,7 @@ export default {
           Sponsoring
         </h1>
         <div class="flex flex-col p-6 w-full mx-auto xl:flex-row">
-          <div class="mx-auto md:w-fit 2xl:w-[500px]">
+          <div class="mx-auto md:w-fit md:mb-5 2xl:w-[500px]">
             <img
               src="../../assets/images/General/sponsor1.png"
               class="h-96 mx-auto md:h-[460px] 2xl:h-[500px]"

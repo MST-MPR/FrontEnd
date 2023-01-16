@@ -12,7 +12,7 @@ export default {
   data() {
     return {
       task: {
-        id: "",
+        //id: "",
         name: "",
         email: "",
         message: "",
@@ -25,7 +25,7 @@ export default {
 
     processForm() {
       //Generate random id
-      this.task.id = nanoid();
+      //this.task.id = nanoid();
 
       //Delete data
       this.task = {
@@ -37,7 +37,7 @@ export default {
     async submitForm() {
       try {
         const response = await axios.post(
-          "http://127.0.0.1:8000/contact-us-store",
+          "http://192.168.115.113:8000/contact-us-store",
           this.task
         );
         console.log(response.data);
@@ -92,7 +92,6 @@ export default {
           <form
             @submit.prevent="processForm"
             method="POST"
-            action="http://127.0.0.1:8000/contact-us/store"
             class="space-y-4"
           >
             <Input :task="task" />

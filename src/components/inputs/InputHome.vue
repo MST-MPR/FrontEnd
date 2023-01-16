@@ -3,6 +3,13 @@ import { VueRecaptcha } from "vue-recaptcha";
 import axios from "axios";
 
 export default {
+  data() {
+    return {
+      recaptchaVerified: false,
+      errorMessage: "",
+      formDisabled: true,
+    };
+  },
   props: {
     task: Object,
   },
@@ -10,18 +17,27 @@ export default {
     VueRecaptcha,
   },
   methods: {
+    handleSuccess() {
+      this.recaptchaVerified = true;
+      this.errorMessage = "";
+    },
     async reset() {
-      this.$refs.recaptcha.reset();
-      try {
-        axios.defaults.headers.common["X-CSRF-TOKEN"] =
-          "ggURxwmVHVgDK5W3jLZ2uESkVrzEWSZ1jlwk7twG";
-        const response = await axios.post(
-          "http://localhost:8000/contact-us/store",
-          this.task
-        );
-        console.log(response.data);
-      } catch (error) {
-        console.log(error);
+      if (this.recaptchaVerified) {
+        this.$refs.recaptcha.reset();
+        try {
+          /*axios.defaults.headers.common["X-CSRF-TOKEN"] =
+            "ggURxwmVHVgDK5W3jLZ2uESkVrzEWSZ1jlwk7twG";*/
+          const response = await axios.post(
+            "http://localhost:8000/contact-us/store",
+            this.task
+          );
+          console.log(response.data);
+        } catch (error) {
+          console.log(error);
+        }
+        this.recaptchaVerified = false;
+      } else {
+        this.errorMessage = "Alert message";
       }
     },
   },
@@ -30,7 +46,7 @@ export default {
 
 <template>
   <div>
-    <label for="email" class="block mb-2 text-sm font-medium text-mst_black"
+    <label for="name" class="block mb-2 text-sm font-medium text-mst_black"
       >Name</label
     >
     <input
@@ -42,11 +58,9 @@ export default {
     />
   </div>
   <div>
-    <label
-      for="subject"
-      class="block mb-2 text-sm font-medium text-mst_black"
-      >{{ $t("email") }}</label
-    >
+    <label for="email" class="block mb-2 text-sm font-medium text-mst_black">{{
+      $t("email")
+    }}</label>
     <input
       type="text"
       id="email"
@@ -89,11 +103,16 @@ export default {
     />
   </div>
   <div class="pt-3 pb-3">
-    <vue-recaptcha
+    <VueRecaptcha
       ref="recaptcha"
       sitekey="6Lf6husjAAAAADC6zdk_WB-qL-7I7QxEKR4ANx06"
-      required
+      :load-recaptcha-script="true"
+      @verify="handleSuccess"
+      @error="handleError"
     />
+    <p v-if="errorMessage" class="text-mst_red text-xl font-black">
+      {{ $t("r1") }}
+    </p>
   </div>
   <button
     @click="reset"

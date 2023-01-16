@@ -142,6 +142,9 @@ const i18n = createI18n({
             /* 404 */
             error: "Fehler 404 - Die Seite wurde nicht gefunden",
             errorB: "Zurück nach Home",
+
+            /* RECAPTCHA */
+            r1:"Bitte füllen Sie das reCaptcha aus."
         },
         English: {
             /* HOME*/
@@ -282,6 +285,9 @@ const i18n = createI18n({
             /* 404 */
             error: "Error 404 - The page was not found",
             errorB: "Back to the Home",
+
+            /* RECAPTCHA */
+            r1:"Please complete the reCaptcha."
 
         }
     }

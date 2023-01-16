@@ -3,6 +3,13 @@ import { VueRecaptcha } from "vue-recaptcha";
 import axios from "axios";
 
 export default {
+  data() {
+    return {
+      recaptchaVerified: false,
+      errorMessage: "",
+      formDisabled: true,
+    };
+  },
   props: {
     task: Object,
   },
@@ -10,27 +17,35 @@ export default {
     VueRecaptcha,
   },
   methods: {
+    handleSuccess() {
+      this.recaptchaVerified = true;
+      this.errorMessage = "";
+    },
     async reset() {
-      this.$refs.recaptcha.reset();
-      try {
-        axios.defaults.headers.common["X-CSRF-TOKEN"] =
-          "ggURxwmVHVgDK5W3jLZ2uESkVrzEWSZ1jlwk7twG";
-        const response = await axios.post(
-          "http://localhost:8000/contact-us/store",
-          this.task
-        );
-        console.log(response.data);
-      } catch (error) {
-        console.log(error);
+      if (this.recaptchaVerified) {
+        this.$refs.recaptcha.reset();
+        try {
+          /*axios.defaults.headers.common["X-CSRF-TOKEN"] =
+            "ggURxwmVHVgDK5W3jLZ2uESkVrzEWSZ1jlwk7twG";*/
+          const response = await axios.post(
+            "http://localhost:8000/contact-us/store",
+            this.task
+          );
+          console.log(response.data);
+        } catch (error) {
+          console.log(error);
+        }
+        this.recaptchaVerified = false;
+      } else {
+        this.errorMessage = "Alert message";
       }
     },
   },
 };
 </script>
-
 <template>
   <div>
-    <label for="email" class="block mb-2 text-sm font-medium text-mst_white"
+    <label for="name" class="block mb-2 text-sm font-medium text-mst_white"
       >Name</label
     >
     <input
@@ -42,11 +57,9 @@ export default {
     />
   </div>
   <div>
-    <label
-      for="subject"
-      class="block mb-2 text-sm font-medium text-mst_white"
-      >{{ $t("email") }}</label
-    >
+    <label for="email" class="block mb-2 text-sm font-medium text-mst_white">{{
+      $t("email")
+    }}</label>
     <input
       type="text"
       id="email"
@@ -93,31 +106,37 @@ export default {
     <VueRecaptcha
       ref="recaptcha"
       sitekey="6Lf6husjAAAAADC6zdk_WB-qL-7I7QxEKR4ANx06"
-    ></VueRecaptcha>
+      :load-recaptcha-script="true"
+      @verify="handleSuccess"
+      @error="handleError"
+    />
+    <p v-if="errorMessage" class="text-mst_red text-xl mx-auto font-black">
+      {{ $t("r1") }}
+    </p>
   </div>
-  <button
-    @click="reset"
-    type="submit"
-    class="
-      w-36
-      text-mst_white
-      bg-gradient-to-br
-      from-mst_gray
-      to-mst_orange
-      hover:bg-gradient-to-bl
-      focus:ring-2 focus:outline-none focus:ring-mst_orange
-      font-medium
-      rounded-lg
-      text-sm
-      px-5
-      py-2.5
-      ml-[75px]
-      md:ml-0
-      text-center
-    "
-  >
-    {{ $t("send") }}
-  </button>
+  <div class="pt-3 pb-3">
+    <button
+      @click="reset"
+      type="submit"
+      class="
+        w-36
+        text-mst_white
+        bg-gradient-to-br
+        from-mst_gray
+        to-mst_orange
+        hover:bg-gradient-to-bl
+        focus:ring-2 focus:outline-none focus:ring-mst_orange
+        font-medium
+        rounded-lg
+        text-sm
+        px-5
+        py-2.5
+        ml-[75px]
+        md:ml-0
+        text-center
+      "
+    >
+      {{ $t("send") }}
+    </button>
+  </div>
 </template>
-
-
