@@ -23,7 +23,7 @@
           p-5
           text-mst_black
           font-extrabold
-          text-lg md:text-center md:p-12 md:mb-2 md:text-xl
+          text-lg md:text-center md:pb-14 md:text-xl
           xl:text-left
         "
       >

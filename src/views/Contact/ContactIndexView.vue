@@ -58,7 +58,7 @@ export default {
           h-[600px]
           mx-auto
           md:w-[450px] md:h-[600px]
-          xl:block xl:h-[800px] xl:py-10
+          xl:block xl:h-[800px] xl:py-10 2xl:h-[850px]
         "
       >
         <iframe
@@ -89,11 +89,7 @@ export default {
           </p>
 
           <!--FORM-->
-          <form
-            @submit.prevent="processForm"
-            method="POST"
-            class="space-y-4"
-          >
+          <form @submit.prevent="processForm" method="POST" class="space-y-4">
             <Input :task="task" />
           </form>
           <div

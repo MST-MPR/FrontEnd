@@ -21,34 +21,34 @@
           {{ $t("oktober") }}
         </p>
         <ul class="list-decimal">
-          <li class="w-80 mt-8 mb-8 sm:w-[700px]">
+          <li class="w-80 my-8 sm:w-[700px]">
             <h2 class="text-2xl font-semibold text-mst_orange">
               {{ $t("einfürung") }}
             </h2>
             <p>{{ $t("einfürung2") }}</p>
           </li>
-          <li class="w-80 mt-8 mb-8 sm:w-[700px]">
+          <li class="w-80 my-8 sm:w-[700px]">
             <h2 class="text-2xl font-semibold text-mst_orange">
               {{ $t("was") }}
             </h2>
             <p>{{ $t("was2") }}</p>
           </li>
-          <li class="w-80 mt-8 mb-8 sm:w-[700px]">
+          <li class="w-80 my-8 sm:w-[700px]">
             <h2 class="text-2xl font-semibold text-mst_orange">
               {{ $t("skripte") }}
             </h2>
             <p>{{ $t("skripte2") }}</p>
           </li>
-          <li class="w-80 mt-8 mb-8 sm:w-[700px]">
+          <li class="w-80 my-8 sm:w-[700px]">
             <h2 class="text-2xl font-semibold text-mst_orange">Cookies</h2>
             <p>{{ $t("cookies") }}</p>
           </li>
-          <li class="w-80 mt-8 mb-8 sm:w-[700px]">
+          <li class="w-80 my-8 sm:w-[700px]">
             <h2 class="text-2xl font-semibold text-mst_orange">
               {{ $t("platzierte") }}
             </h2>
           </li>
-          <li class="w-80 mt-8 mb-8 sm:w-[700px]">
+          <li class="w-80 my-8 sm:w-[700px]">
             <h2 class="text-2xl font-semibold text-mst_orange">
               {{ $t("zustimmung") }}
             </h2>
@@ -56,14 +56,14 @@
             <br />
             <p>{{ $t("zustimmung3") }}</p>
           </li>
-          <li class="w-80 mt-8 mb-8 sm:w-[700px]">
+          <li class="w-80 my-8 sm:w-[700px]">
             <h2 class="text-2xl font-semibold text-mst_orange">
               {{ $t("aktivierung") }}
             </h2>
             <p>{{ $t("aktivierung2") }}</p>
             <p>{{ $t("aktivierung3") }}</p>
           </li>
-          <li class="w-80 mt-8 mb-8 sm:w-[700px]">
+          <li class="w-80 my-8 sm:w-[700px]">
             <h2 class="text-2xl font-semibold text-mst_orange">
               {{ $t("rechte") }}
             </h2>
@@ -91,7 +91,7 @@
             <br />
             <p>{{ $t("rechte9") }}</p>
           </li>
-          <li class="w-80 mt-8 mb-8 sm:w-[700px]">
+          <li class="w-80 my-8 sm:w-[700px]">
             <h2 class="text-2xl font-semibold text-mst_orange">
               {{ $t("kontakt") }}
             </h2>

@@ -1,5 +1,6 @@
 <script>
 import Slider from "../../components/app/Slider.vue";
+import SliderFacebook from "../../components/app/SliderFacebook.vue";
 import InputHome from "../../components/inputs/InputHome.vue";
 import { mapActions } from "vuex";
 import { nanoid } from "nanoid";
@@ -8,6 +9,7 @@ import axios from "axios";
 export default {
   components: {
     Slider,
+    SliderFacebook,
     InputHome,
   },
   data() {
@@ -61,7 +63,7 @@ export default {
 <template>
   <div class="object-fit">
     <!--PRINCIPAL-->
-    <div class="bg-mst_construction h-fit lg:h-full xl:pb-56 2xl:pb-64">
+    <div class="bg-mst_construction lg:h-full xl:h-fit xl:pb-56 2xl:pb-64">
       <div class="basis-1/2 visible md:hidden">
         <img
           class="saturate-50 brightness-50 rounded-bl-[100px]"
@@ -83,7 +85,7 @@ export default {
             basis-1/2
             flex flex-col
             tracking-wider
-            md:py-10
+            md:py-52 md:pl-20
             xl:pt-44
             2xl:my-auto
           "
@@ -93,16 +95,18 @@ export default {
               text-center
               font-bold
               text-3xl
-              p-5
+              py-5
               md:text-5xl
-              xl:pb-20
+              xl:text-center xl:pb-20
               2xl:text-6xl
             "
           >
             {{ $t("prof1") }} <br />
             {{ $t("prof2") }}
           </h1>
-          <h2 class="basis-1/2 ml-15 text-xl py-5 px-16 md:text-2xl md:">
+          <h2
+            class="basis-1/2 ml-15 text-xl py-5 px-16 md:text-2xl md:text-left"
+          >
             {{ $t("prof3") }}
           </h2>
         </div>
@@ -603,6 +607,10 @@ export default {
           </div>
         </div>
       </div>
+    </div>
+    <!--SLIDER FACEBOOK-->
+    <div>
+      <SliderFacebook />
     </div>
     <!--UBER UNS-->
     <div class="h-full md:h-full 2xl:h-fit">
@@ -1223,7 +1231,7 @@ export default {
             w-full
             h-96
             mx-auto
-            md:mt-14 md:w-[450px] md:h-[500px]
+            md:mt-14 md:w-[450px] md:h-[600px]
             2xl:mt-5 2xl:h-[700px]
           "
         >
@@ -1254,11 +1262,7 @@ export default {
               event@mst-extra.net <br />
               +49 421 20 77 3 0
             </p>
-            <form
-              @submit.prevent="processForm"
-              method="POST"
-              class="space-y-4"
-            >
+            <form @submit.prevent="processForm" method="POST" class="space-y-4">
               <InputHome :task="task" />
             </form>
           </div>
@@ -1294,7 +1298,7 @@ export default {
           Sponsoring
         </h1>
         <div class="flex flex-col p-6 w-full mx-auto xl:flex-row">
-          <div class="mx-auto md:w-fit md:mb-5 2xl:w-[500px]">
+          <div class="mx-auto mb-5 md:w-fit 2xl:w-[500px]">
             <img
               src="../../assets/images/General/sponsor1.png"
               class="h-96 mx-auto md:h-[460px] 2xl:h-[500px]"

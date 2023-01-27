@@ -132,8 +132,11 @@ export default {
         px-5
         py-2.5
         ml-[75px]
-        md:ml-0
         text-center
+        md:w-full
+        lg:w-36
+        md:mx-auto
+        xl:ml-0
       "
     >
       {{ $t("send") }}
