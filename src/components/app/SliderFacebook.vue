@@ -1,9 +1,45 @@
 <script>
-import "@splidejs/splide/dist/css/splide.min.css";
 import axios from "axios";
+// import Swiper core and required modules
+import {
+  Navigation,
+  Pagination,
+  Scrollbar,
+  A11y,
+  Autoplay,
+  EffectFade,
+} from "swiper";
 
+// Import Swiper Vue.js components
+import { Swiper, SwiperSlide } from "swiper/vue";
+
+// Import Swiper styles
+import "swiper/css";
+import "swiper/css/navigation";
+import "swiper/css/pagination";
+import "swiper/css/scrollbar";
+import "swiper/css/autoplay";
+import "swiper/css/effect-fade";
+
+// Import Swiper styles
 export default {
-  name: "SliderFacebook",
+  components: {
+    Swiper,
+    SwiperSlide,
+  },
+  setup() {
+    const onSwiper = (swiper) => {
+      console.log(swiper);
+    };
+    const onSlideChange = () => {
+      console.log("slide change");
+    };
+    return {
+      onSwiper,
+      onSlideChange,
+      modules: [Navigation, Pagination, Scrollbar, A11y, Autoplay, EffectFade],
+    };
+  },
   data() {
     return {
       posts: [],
@@ -23,38 +59,51 @@ export default {
 </script>
 
 <template>
-  <Splide
-    :options="{
-      rewind: true,
-      type: loop,
-      cover: true,
-      height: 450,
-      speed: 4000,
-      rewindSpeed: 1500,
-      wheel: false,
-      autoplay: true,
-      pauseOnHover: false,
-      dragMinThreshold: { mouse: 10, touch: 10 },
+  <Swiper
+    :modules="modules"
+    :slides-per-view="1"
+    @swiper="onSwiper"
+    @slideChange="onSlideChange"
+    :autoplay="{
+      delay: 4000,
+      disableOnInteraction: false,
     }"
+    effect="fade"
   >
-    <SplideSlide v-for="post in posts" :key="post.id">
-      <div>
+    <SwiperSlide v-for="post in posts" :key="post.id">
+      <!--<a v-bind:href="post.url" target="_blank">-->
+      <div class="text-mst_white h-[600px] md:h-[500px] xl:h-96">
+        <img
+          src="../../assets/images/General/kino.jpg"
+          class="
+            w-full
+            h-full
+            object-cover
+            absolute
+            mix-blend-overlay
+            object-left-bottom
+            brightness-50
+            blur-sm
+            md:object-center
+          "
+        />
         <h1 class="text-center text-5xl pt-20">{{ post.title }}</h1>
-        <h2 class="text-right pr-32 text-xl">{{ post.date }}</h2>
+        <h2 class="text-center text-xl md:pr-32 md:text-right md:text-2xl">
+          {{ post.date }}
+        </h2>
         <p
           class="
-            w-1/2
-            m-auto
             text-center text-base
-            py-24
+            p-8
             tracking-wider
             leading-relaxed
-            md:px-40 md:text-2xl
+            md:py-20 md:px-40 md:text-2xl
           "
         >
           {{ post.content }}
         </p>
       </div>
-    </SplideSlide>
-  </Splide>
+      <!--</a>-->
+    </SwiperSlide>
+  </Swiper>
 </template>

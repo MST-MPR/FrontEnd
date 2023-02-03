@@ -25,7 +25,7 @@
         </h1>
         <div class="w-fit mx-auto">
           <router-link
-            to="/home"
+            to="/"
             class="
               text-mst_white
               bg-gradient-to-br

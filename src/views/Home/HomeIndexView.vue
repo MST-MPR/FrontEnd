@@ -23,6 +23,7 @@ export default {
       selected: "",
     };
   },
+
   methods: {
     //Recive an array
     ...mapActions(["setTasks"]),
@@ -60,7 +61,7 @@ export default {
 };
 </script>
 
-<template>
+<template id="template">
   <div class="object-fit">
     <!--PRINCIPAL-->
     <div class="bg-mst_construction lg:h-full xl:h-fit xl:pb-56 2xl:pb-64">

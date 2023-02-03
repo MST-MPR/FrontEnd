@@ -107,7 +107,7 @@
       </ul>
     </div>
     <div class="text-center -mb-16 p-5 bg-mst_white">
-      <span class="">© 2022 Copyright: </span>
+      <span class="">© 2023 Copyright: </span>
       <a class="text-mst_black font-semibold" href="/"
         >MST Medien- Systemtechnik GmbH</a
       >

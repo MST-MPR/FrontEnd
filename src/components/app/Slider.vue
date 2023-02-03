@@ -15,7 +15,6 @@ import "@splidejs/splide/dist/css/splide.min.css";
       wheel: false,
       autoplay: true,
       pauseOnHover: false,
-      dragMinThreshold: { mouse: 10, touch: 10 },
     }"
   >
     <SplideSlide>

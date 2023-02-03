@@ -4,6 +4,7 @@ import router from "./router";
 import './assets/tailwind.css';
 import i18n from "./locales/i18n";
 import VueSplide from '@splidejs/vue-splide';
+import VueCookies from 'vue-cookies'
 
 
-createApp(App).use(router).use(i18n).use(VueSplide).mount('#app')
+createApp(App).use(router).use(i18n).use(VueSplide).use(VueCookies).mount('#app')

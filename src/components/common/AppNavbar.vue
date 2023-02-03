@@ -14,7 +14,7 @@ const showMobileMenu = ref(true);
           <div class="flex md:space-x-1 2xl:space-x-14">
             <!--logo-->
             <router-link
-              to="/home"
+              to="/"
               class="flex items-center space-x-2 py-5 px-2"
             >
               <img
@@ -29,7 +29,7 @@ const showMobileMenu = ref(true);
             <!--menu-->
             <div class="hidden items-center space-x-1 xl:flex">
               <router-link
-                to="/home"
+                to="/"
                 class="
                   text-mst_white
                   text-bold
@@ -205,7 +205,7 @@ const showMobileMenu = ref(true);
     >
       <router-link
         @click="showMobileMenu = !showMobileMenu"
-        to="/home"
+        to="/"
         class="
           block
           py-2

@@ -39,9 +39,9 @@ const i18n = createI18n({
             beleuchtung: "BELEUCHTUNG",
             beleuchtungP: "Ob für eine spektakuläre Show, für Messestände oder um Architektur prominent in Szene zu setzen, wir haben die passende Beleuchtung.",
             beschallung: "BESCHALLUNG",
-            beschallungP:"Wir sorgen dafür, dass Sie in Konferenzräumen, Außenanlagen oder Arenen den richtigen Ton treffen. Uns ist es wichtig, dass etwas weder zu laut noch zu leise ist, denn nur ein perfekt akustisch ausgerichteter Raum, kann die Zuhörer fesseln.",
+            beschallungP: "Wir sorgen dafür, dass Sie in Konferenzräumen, Außenanlagen oder Arenen den richtigen Ton treffen. Uns ist es wichtig, dass etwas weder zu laut noch zu leise ist, denn nur ein perfekt akustisch ausgerichteter Raum, kann die Zuhörer fesseln.",
             edv: "EDV",
-            edvP: "Wir sind mit den neuesten technischen Standards bestens vertraut, beraten und installieren, was benötigt wird. Audio-Video-Bearbeitung sowie alle Schritte der Film-Postproduktion gehören zu unseren Dienstleistungen.", 
+            edvP: "Wir sind mit den neuesten technischen Standards bestens vertraut, beraten und installieren, was benötigt wird. Audio-Video-Bearbeitung sowie alle Schritte der Film-Postproduktion gehören zu unseren Dienstleistungen.",
             dokumentation: "DOKUMENTATION",
             dokumentationP: "Die Veranstaltung war perfekt, doch keiner hat auch nur ein Foto oder eine Videoaufzeichnung davon gemacht? Damit das nicht passiert, bieten wir eine komplette Dokumentation an.",
             möblierung: "VERANSTALATUNGSMÖBLIERUNG",
@@ -50,7 +50,7 @@ const i18n = createI18n({
             /**VERKAUF*/
             verkaufView: "Nutzen Sie unsere kostenlose, unverbindliche Bedarfsanalyse vor Ort. Wir erstellen Ihnen Ihre individuelle Lösung und machen Ihnen einen guten Preis. Bevorzugen Sie ein superaktuelles Neugerät oder tut es auch ein gepflegtes Gebrauchtes? ",
             verkaufView2: "Diese auch aus den Messe- und Demopools von Lenovo und HP mit voller Herstellergarantie und optionalen vor Ort-Service. Wir bieten ebenso Gebraucht- und Demogeräte von Kundengeräte in Kommision an.",
-            
+
             /* VERMIETUNG */
             vermietungView: "Seien Sie gewiß, dass die zu leihenden Geräte immer in einwandfreiem Zustand sind. Alle Mietgegenstände werden regelmäßig gewartet.",
             vermietungView2: "Die Mietpreise verstehen sich zzgl. der gesetzlichen Mehrwertsteuer, ab unserem Lager. Sehen Sie hierzu auch unsere AGB.",
@@ -144,7 +144,14 @@ const i18n = createI18n({
             errorB: "Zurück nach Home",
 
             /* RECAPTCHA */
-            r1:"Bitte füllen Sie das reCaptcha aus."
+            r1: "Bitte füllen Sie das reCaptcha aus.",
+
+            /* COOKIES */
+            ver: "Cookie-Zustimmung verwalten",
+            pCoo: "Um dir ein optimales Erlebnis zu bieten, verwenden wir Technologien wie Cookies, um Geräteinformationen zu speichern und/oder darauf zuzugreifen. Wenn du diesen Technologien zustimmst, können wir Daten wie das Surfverhalten oder eindeutige IDs auf dieser Website verarbeiten. Wenn du deine Zustimmung nicht erteilst oder zurückziehst, können bestimmte Merkmale und Funktionen beeinträchtigt werden.",
+            ak: "Akceptieren",
+            ab: "Ablehnen",
+            richt: "Cookie-Richtlinie"
         },
         English: {
             /* HOME*/
@@ -287,7 +294,14 @@ const i18n = createI18n({
             errorB: "Back to the Home",
 
             /* RECAPTCHA */
-            r1:"Please complete the reCaptcha."
+            r1: "Please complete the reCaptcha.",
+
+            /* COOKIES */
+            ver: "Manage Cookie Consent",
+            pCoo: "In order to provide you with an optimal experience, we use technologies such as cookies to store and/or access device information. If you consent to these technologies, we may process data such as browsing behavior or unique IDs on this website. If you do not give or withdraw your consent, certain features and functions may be affected.",
+            ak: "Accept",
+            ab: "Reject",
+            richt: "Cookie Policy"
 
         }
     }
