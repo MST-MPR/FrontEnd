@@ -7,9 +7,8 @@ module.exports = {
   theme: {
     extend: {
       backgroundImage: {
-        imprint: "url('./src/assets/images/General/imprint.jpg')",
-        partners: "url('./src/assets/images/General/klaviatur-dark.jpg')",
-        contact: "url('./src/assets/images/General/contact.jpg')"
+        partners: "url('././public/images/General/klaviatur-dark.jpg')",
+        contact: "url('././public/images/General/contact.jpg')"
       }
     },
     colors: {

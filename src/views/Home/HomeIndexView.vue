@@ -68,7 +68,7 @@ export default {
       <div class="basis-1/2 visible md:hidden">
         <img
           class="saturate-50 brightness-50 rounded-bl-[100px]"
-          src="../../assets/images/General/kameras.jpg"
+          src="../../../public/images/General/kameras.jpg"
           alt="kameras-medien-systemtechnik"
         />
       </div>
@@ -114,7 +114,7 @@ export default {
         <div class="basis-1/2 hidden md:block">
           <img
             class="saturate-50 brightness-50 rounded-bl-[1200px]"
-            src="../../assets/images/General/kameras.jpg"
+            src="../../../public/images/General/kameras.jpg"
             alt="kameras-medien-systemtechnik"
           />
         </div>
@@ -617,7 +617,7 @@ export default {
     <div class="h-full md:h-full 2xl:h-fit">
       <div class="w-full h-full pb-5 relative">
         <img
-          src="../../assets/images/General/esc.jpg"
+          src="../../../public/images/General/esc.jpg"
           class="
             w-full
             h-full
@@ -701,7 +701,7 @@ export default {
           :class="[selected == 'franz' ? 'h-[390px]' : 'h-[350px]']"
         >
           <img
-            src="../../assets/images/Team/franz.png"
+            src="../../../public/images/Team/franz.png"
             class="p-2 h-52 mx-auto"
           />
           <h1 class="text-center font-bold tracking-wide text-2xl mt-3">
@@ -737,7 +737,7 @@ export default {
           :class="[selected == 'marco' ? 'h-[420px]' : 'h-[350px]']"
         >
           <img
-            src="../../assets/images/Team/marco.jpg"
+            src="../../../public/images/Team/marco.jpg"
             class="p-2 h-52 mx-auto"
           />
           <h1 class="text-center font-bold tracking-wide text-2xl mt-3">
@@ -776,7 +776,7 @@ export default {
           :class="[selected == 'philipp' ? 'h-[410px]' : 'h-[350px]']"
         >
           <img
-            src="../../assets/images/Team/philipp.png"
+            src="../../../public/images/Team/philipp.png"
             class="p-2 h-52 mx-auto"
           />
           <h1 class="text-center font-bold tracking-wide text-2xl mt-3">
@@ -815,7 +815,7 @@ export default {
           :class="[selected == 'dagmar' ? 'h-[390px]' : 'h-[350px]']"
         >
           <img
-            src="../../assets/images/Team/dagmar.png"
+            src="../../../public/images/Team/dagmar.png"
             class="p-2 h-52 mx-auto"
           />
           <h1 class="text-center font-bold tracking-wide text-2xl mt-3">
@@ -851,7 +851,7 @@ export default {
           :class="[selected == 'sophia' ? 'h-[390px]' : 'h-[350px]']"
         >
           <img
-            src="../../assets/images/Team/sophia.png"
+            src="../../../public/images/Team/sophia.png"
             class="p-2 h-52 mx-auto"
           />
           <h1 class="text-center font-bold tracking-wide text-2xl mt-3">
@@ -887,7 +887,7 @@ export default {
           :class="[selected == 'jan' ? 'h-[390px]' : 'h-[350px]']"
         >
           <img
-            src="../../assets/images/Team/jan.png"
+            src="../../../public/images/Team/jan.png"
             class="p-2 h-52 my-auto mx-auto"
           />
           <h1 class="text-center font-bold tracking-wide text-2xl mt-3">
@@ -923,7 +923,7 @@ export default {
           :class="[selected == 'andreas' ? 'h-[390px]' : 'h-[350px]']"
         >
           <img
-            src="../../assets/images/Team/andreas.jpg"
+            src="../../../public/images/Team/andreas.jpg"
             class="p-2 h-52 mx-auto"
           />
           <h1 class="text-center font-bold tracking-wide text-2xl mt-3">
@@ -959,7 +959,7 @@ export default {
           :class="[selected == 'mika' ? 'h-[390px]' : 'h-[350px]']"
         >
           <img
-            src="../../assets/images/Team/mika.png"
+            src="../../../public/images/Team/mika.png"
             class="p-2 h-52 mx-auto"
           />
           <h1 class="text-center font-bold tracking-wide text-2xl mt-3">
@@ -995,7 +995,7 @@ export default {
           :class="[selected == 'brüuggemann' ? 'h-[425px]' : 'h-[350px] ']"
         >
           <img
-            src="../../assets/images/Team/marco.jpg"
+            src="../../../public/images/Team/marco.jpg"
             class="p-2 h-52 mx-auto"
           />
           <h1 class="text-center font-bold tracking-wide text-2xl mt-3">
@@ -1032,7 +1032,7 @@ export default {
           :class="[selected == 'fabian' ? 'h-[380px]' : 'h-[350px]']"
         >
           <img
-            src="../../assets/images/Team/fabian.png"
+            src="../../../public/images/Team/fabian.png"
             class="p-2 h-52 mx-auto"
           />
           <h1 class="text-center font-bold tracking-wide text-2xl mt-3">
@@ -1068,7 +1068,7 @@ export default {
           :class="[selected == 'miguel' ? 'h-[390px]' : 'h-[350px]']"
         >
           <img
-            src="../../assets/images/Team/miguel.png"
+            src="../../../public/images/Team/miguel.png"
             class="p-2 h-52 mx-auto"
           />
           <h1 class="text-center font-bold tracking-wide text-2xl mt-3">
@@ -1104,7 +1104,7 @@ export default {
           :class="[selected == 'hier' ? 'h-[440px]' : 'h-[350px]']"
         >
           <img
-            src="../../assets/images/General/logo_black.png"
+            src="../../../public/images/General/logo_black.png"
             class="p-2 mx-auto mt-4 h-48 object-cover"
           />
           <h1 class="text-center font-bold tracking-wide text-2xl mt-3">
@@ -1152,62 +1152,62 @@ export default {
       >
         <div class="w-72 p-8 mx-auto">
           <a href="https://www.bremerbuehnenhaus.de/" target="_blank"
-            ><img src="../../assets/images/Partners/bbh.png"
+            ><img src="../../../public/images/Partners/bbh.png"
           /></a>
         </div>
         <div class="w-72 p-8 mx-auto">
           <a href="https://www.bose.de" target="_blank"
-            ><img src="../../assets/images/Partners/bose.png"
+            ><img src="../../../public/images/Partners/bose.png"
           /></a>
         </div>
         <div class="w-72 p-8 mx-auto">
           <a href="https://elko.de/" target="_blank"
-            ><img src="../../assets/images/Partners/elko.png"
+            ><img src="../../../public/images/Partners/elko.png"
           /></a>
         </div>
         <div class="w-72 p-8 mx-auto">
           <a href="https://www.gotaque.de/" target="_blank"
-            ><img src="../../assets/images/Partners/gotaque.png"
+            ><img src="../../../public/images/Partners/gotaque.png"
           /></a>
         </div>
         <div class="w-72 p-8 mx-auto">
           <a href="https://www.highlite.com/de/" target="_blank"
-            ><img src="../../assets/images/Partners/highlite.png"
+            ><img src="../../../public/images/Partners/highlite.png"
           /></a>
         </div>
         <div class="w-72 p-8 mx-auto">
           <a href="https://www.loxone.com/" target="_blank"
-            ><img src="../../assets/images/Partners/loxone.png"
+            ><img src="../../../public/images/Partners/loxone.png"
           /></a>
         </div>
         <div class="w-72 p-8 mx-auto">
           <a href="https://de.nec.com/" target="_blank"
-            ><img src="../../assets/images/Partners/nec.png"
+            ><img src="../../../public/images/Partners/nec.png"
           /></a>
         </div>
         <div class="w-72 p-8 mx-auto">
           <a href="https://www.biamp.com/" target="_blank"
-            ><img src="../../assets/images/Partners/neets.png"
+            ><img src="../../../public/images/Partners/neets.png"
           /></a>
         </div>
         <div class="w-72 p-8 mx-auto">
           <a href="https://www.optoma.de/" target="_blank"
-            ><img src="../../assets/images/Partners/optoma.png"
+            ><img src="../../../public/images/Partners/optoma.png"
           /></a>
         </div>
         <div class="w-72 p-8 mx-auto">
           <a href="https://www.relens.de/" target="_blank"
-            ><img src="../../assets/images/Partners/relens.png"
+            ><img src="../../../public/images/Partners/relens.png"
           /></a>
         </div>
         <div class="w-72 p-8 mx-auto">
           <a href="https://de-de.sennheiser.com/" target="_blank"
-            ><img src="../../assets/images/Partners/sennheiser.png"
+            ><img src="../../../public/images/Partners/sennheiser.png"
           /></a>
         </div>
         <div class="w-72 p-8 mx-auto">
           <a href="https://www.sony.de/" target="_blank"
-            ><img src="../../assets/images/Partners/sony.png"
+            ><img src="../../../public/images/Partners/sony.png"
           /></a>
         </div>
       </div>
@@ -1274,7 +1274,7 @@ export default {
     <div class="w-full h-full">
       <div class="w-full h-full xl:pb-12 relative">
         <img
-          src="../../assets/images/General/kirche.jpg"
+          src="../../../public/images/General/kirche.jpg"
           class="
             w-full
             h-full
@@ -1301,13 +1301,13 @@ export default {
         <div class="flex flex-col p-6 w-full mx-auto xl:flex-row">
           <div class="mx-auto mb-5 md:w-fit 2xl:w-[500px]">
             <img
-              src="../../assets/images/General/sponsor1.png"
+              src="../../../public/images/General/sponsor1.png"
               class="h-96 mx-auto md:h-[460px] 2xl:h-[500px]"
             />
           </div>
           <div class="mx-auto md:w-fit 2xl:w-[500px]">
             <img
-              src="../../assets/images/General/sponsor2.png"
+              src="../../../public/images/General/sponsor2.png"
               class="h-96 mx-auto md:h-[460px] 2xl:h-[500px]"
             />
           </div>

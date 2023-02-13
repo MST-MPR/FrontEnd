@@ -1,4 +1,6 @@
 <script>
+import axios from "axios";
+
 export default {
   data() {
     return {
@@ -6,9 +8,42 @@ export default {
     };
   },
   methods: {
-    closePopUp() {
+    async closePopUp(value) {
+      //Mandar petición post a modo de resguardo
       this.showPopUp = false;
+      if (value == 1) {
+        this.$cookies.set("acceptCookie", value);
+      }
+      try {
+        const response = await axios.post("http://localhost:8000/api/cookies", {
+          cookie: this.$cookies.get("acceptCookie"),
+        });
+        console.log(response.data);
+      } catch (error) {
+        console.error(error);
+      }
     },
+    checkCookie() {
+      this.showPopUp = !this.$cookies.isKey("acceptCookie");
+      return this.$cookies.isKey("acceptCookie");
+    },
+  },
+  mounted() {
+    if (this.checkCookie()) {
+      const keys = [
+        "cmplz_banner-status",
+        "cmplz_functional",
+        "cmplz_consented_services",
+        "cmplz_marketing",
+        "cmplz_preferences",
+        "cmplz_policy_id",
+        "cmplz_stadistics",
+      ];
+
+      keys.forEach((key) => {
+        this.$cookies.set(key, "allow", "30d", "/", "", "true", "Lax");
+      });
+    }
   },
 };
 </script>
@@ -18,12 +53,15 @@ export default {
     <div id="pop-up" class="w-full h-auto rounded-3xl md:w-5/12">
       <div class="flex items-center justify-between">
         <router-link to="/cookiePolicy" class="md:pl-5">
-          <img src="../../assets/images/General/logo_black.png" class="w-10" />
+          <img
+            src="../../../public/images/General/logo_black.png"
+            class="w-10"
+          />
         </router-link>
         <router-link to="/cookiePolicy">{{ $t("ver") }}</router-link>
         <button @click="closePopUp" class="md:pr-5">
           <img
-            src="../../assets/images/General/cancel-icon.png"
+            src="../../../public/images/General/cancel-icon.png"
             class="w-6 h-auto"
           />
         </button>
@@ -35,7 +73,7 @@ export default {
       <div class="flex flex-col md:flex-row md:ml-10 2xl:ml-32">
         <div class="w-full pb-4 md:w-3/12 md:mx-14">
           <button
-            @click="closePopUp"
+            @click="closePopUp(1)"
             class="
               w-full
               text-mst_white
@@ -57,7 +95,7 @@ export default {
         </div>
         <div class="w-full pb-4 md:w-3/12 md:mx-14">
           <button
-            @click="closePopUp"
+            @click="closePopUp(0)"
             class="
               w-full
               text-mst_white

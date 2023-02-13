@@ -2,7 +2,7 @@
   <div class="h-full w-full overflow-x-hidden 2xl:h-screen">
     <div class="h-full w-full relative">
       <img
-        src="../../assets/images/General/home.jpg"
+        src="../../../public/images/General/home.jpg"
         class="
           w-full
           h-full

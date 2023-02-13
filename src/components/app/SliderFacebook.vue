@@ -65,7 +65,7 @@ export default {
     @swiper="onSwiper"
     @slideChange="onSlideChange"
     :autoplay="{
-      delay: 4000,
+      delay: 5000,
       disableOnInteraction: false,
     }"
     effect="fade"
@@ -74,7 +74,7 @@ export default {
       <!--<a v-bind:href="post.url" target="_blank">-->
       <div class="text-mst_white h-[600px] md:h-[500px] xl:h-96">
         <img
-          src="../../assets/images/General/kino.jpg"
+          src="../../../public/images/General/kino.jpg"
           class="
             w-full
             h-full

@@ -2,7 +2,7 @@
   <footer class="bg-mst_black">
     <div class="container mx-auto max-w-5xl px-4 py-16 md:px-6 2xl:px-8">
       <div class="container max-w-screen-lg mx-auto w-12">
-        <img src="../../assets/images/General/logo_black.png" />
+        <img src="../../../public/images/General/logo_black.png" />
       </div>
       <p
         class="

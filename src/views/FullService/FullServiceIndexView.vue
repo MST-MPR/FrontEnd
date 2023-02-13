@@ -6,7 +6,7 @@ import AppFlipCard from "../../components/app/AppFlipCard.vue";
   <div class="h-full">
     <div class="h-full w-full relative">
       <img
-        src="../../assets/images/General/veranstaltung.jpg"
+        src="../../../public/images/General/veranstaltung.jpg"
         class="
           w-full
           h-full
@@ -48,7 +48,7 @@ import AppFlipCard from "../../components/app/AppFlipCard.vue";
             <AppFlipCard
               title="konferenz"
               paragraph="konferenzP"
-              img="../src/assets/images/FullService/conference.jpg"
+              img="../../../public/images/FullService/conference.jpg"
               class="mx-auto"
             />
           </div>
@@ -56,7 +56,7 @@ import AppFlipCard from "../../components/app/AppFlipCard.vue";
             <AppFlipCard
               title="beleuchtung"
               paragraph="beleuchtungP"
-              img="../src/assets/images/FullService/lighting.jpg"
+              img="../../../public/images/FullService/lighting.jpg"
               class="mx-auto"
             />
           </div>
@@ -64,7 +64,7 @@ import AppFlipCard from "../../components/app/AppFlipCard.vue";
             <AppFlipCard
               title="edv"
               paragraph="edvP"
-              img="../src/assets/images/FullService/it.jpg"
+              img="../../../public/images/FullService/it.jpg"
               class="mx-auto"
             />
           </div>
@@ -72,7 +72,7 @@ import AppFlipCard from "../../components/app/AppFlipCard.vue";
             <AppFlipCard
               title="beschallung"
               paragraph="beschallungP"
-              img="../src/assets/images/FullService/sound.jpg"
+              img="../../../public/images/FullService/sound.jpg"
               class="mx-auto"
             />
           </div>
@@ -80,7 +80,7 @@ import AppFlipCard from "../../components/app/AppFlipCard.vue";
             <AppFlipCard
               title="dokumentation"
               paragraph="dokumentationP"
-              img="../src/assets/images/FullService/documentation.jpg"
+              img="../../../public/images/FullService/documentation.jpg"
               class="mx-auto"
             />
           </div>
@@ -88,7 +88,7 @@ import AppFlipCard from "../../components/app/AppFlipCard.vue";
             <AppFlipCard
               title="möblierung"
               paragraph="möblierungP"
-              img="../src/assets/images/FullService/furniture.jpg"
+              img="../../../public/images/FullService/furniture.jpg"
               class="mx-auto"
             />
           </div>

@@ -18,7 +18,7 @@ const showMobileMenu = ref(true);
               class="flex items-center space-x-2 py-5 px-2"
             >
               <img
-                src="../../assets/images/General/logo.svg"
+                src="../../../public/images/General/logo.svg"
                 class="h-14 w-14 md:block 2xl:h-20 2xl:w-20"
               />
               <span class="text-mst_white text-sm md:text-base 2xl:text-2xl"

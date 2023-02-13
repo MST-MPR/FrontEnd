@@ -93,7 +93,7 @@
           </li>
           <li class="w-80 my-8 sm:w-[700px]">
             <h2 class="text-2xl font-semibold text-mst_orange">
-              {{ $t("kontakt") }}
+              {{ $t("cookieKontakt") }}
             </h2>
             <p>{{ $t("cookieKontaktdaten") }}</p>
             <br />

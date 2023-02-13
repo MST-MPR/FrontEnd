@@ -4,6 +4,7 @@ import Navbar from "./components/common/AppNavbar.vue";
 import Footer from "./components/common/AppFooter.vue";
 import TopButton from "./components/common/TopButton.vue";
 import Cookies from "./components/app/Cookies.vue";
+import VueCookies from 'vue-cookies'
 
 export default {
   components: {
@@ -13,21 +14,7 @@ export default {
     RouterLink,
     RouterView,
     Cookies,
-  },
-  mounted() {
-    const keys = [
-      "cmplz_banner-status",
-      "cmplz_functional",
-      "cmplz_consented_services",
-      "cmplz_marketing",
-      "cmplz_preferences",
-      "cmplz_policy_id",
-      "cmplz_stadistics",
-    ];
-
-    keys.forEach((key) => {
-      this.$cookies.set(key, "", "7d", "/");
-    });
+    VueCookies
   },
 };
 </script>

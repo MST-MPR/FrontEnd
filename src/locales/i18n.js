@@ -119,6 +119,7 @@ const i18n = createI18n({
             rechte7: "Recht auf Datentransfer deiner Daten: Du hast das Recht, alle deine persönlichen Daten von einem Kontrolleur anzufordern und in ihrer Gesamtheit zu einem anderen Kontrolleur zu transferieren.",
             rechte8: "Widerspruchsrecht: Du kannst der Verarbeitung deiner Daten widersprechen. Wir entsprechen dem, es sei denn es gibt berechtigte Gründe für die Verarbeitung.",
             rechte9: "Um diese Rechte auszuüben kontaktiere uns bitte. Bitte beziehe dich auf die Kontaktdaten am Ende dieser Cookie-Erklärung. Wenn du eine Beschwerde darüber hast, wie wir deine Daten behandeln, würden wir diese gerne hören, aber du hast auch das Recht diese an die Aufsichtsbehörde (der Datenschutzbehörde) zu richten.",
+            cookieKontakt: "Kontakt",
             cookieKontaktdaten: "Für Fragen und/oder Kommentare über unsere Cookie-Richtlinien und diese Aussage kontaktiere uns bitte mittels der folgenden Kontaktdaten:",
 
             /* BUTTONS*/
@@ -269,6 +270,7 @@ const i18n = createI18n({
             rechte7: "Right to transfer your data: You have the right to request all of your personal data from one controller and transfer it in its entirety to another controller.",
             rechte8: "Right to object: You can object to the processing of your data. We will comply with this unless there are legitimate grounds for the processing.",
             rechte9: "To exercise these rights, please contact us. Please refer to the contact details at the end of this Cookie Policy. If you have a complaint about how we handle your data, we would like to hear it, but you also have the right to address it to the supervisory authority (the Data Protection Authority).",
+            cookieKontakt: "Contact",
             cookieKontaktdaten: "For questions and/or comments about our cookie policy and this statement, please contact us using the contact information below:",
 
             /* BUTTONS */

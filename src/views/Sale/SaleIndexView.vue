@@ -2,7 +2,7 @@
   <div class="h-full md:h-[710px] xl:h-[780px] 2xl:h-screen">
     <div class="h-full w-full relative">
       <img
-        src="../../assets/images/General/micro.jpg"
+        src="../../../public/images/General/micro.jpg"
         class="
           w-full
           h-full

@@ -2,7 +2,7 @@
   <div class="w-full h-full">
     <div class="h-full w-full relative">
       <img
-        src="../../assets/images/General/streaming.jpg"
+        src="../../../public/images/General/streaming.jpg"
         class="
           w-full
           h-full

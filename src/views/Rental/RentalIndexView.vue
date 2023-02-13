@@ -2,7 +2,7 @@
   <div class="w-full h-full">
     <div class="h-full w-full relative">
       <img
-        src="../../assets/images/General/cam.jpg"
+        src="../../../public/images/General/cam.jpg"
         class="
           w-full
           h-full

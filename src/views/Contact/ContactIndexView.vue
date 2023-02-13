@@ -1,7 +1,7 @@
 <script>
 import Input from "../../components/inputs/Input.vue";
 import { mapActions } from "vuex";
-import { nanoid } from "nanoid";
+//import { nanoid } from "nanoid";
 import axios from "axios";
 
 export default {
@@ -37,7 +37,7 @@ export default {
     async submitForm() {
       try {
         const response = await axios.post(
-          "http://192.168.115.113:8000/contact-us-store",
+          "http://localhost:8000/contact-us-store",
           this.task
         );
         console.log(response.data);
