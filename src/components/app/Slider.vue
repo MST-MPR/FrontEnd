@@ -38,7 +38,7 @@ export default {
 </script>
 
 <template>
-  <div class="swiper-container">
+  <div class="">
     <Swiper
       :modules="modules"
       :slides-per-view="1"
@@ -51,64 +51,49 @@ export default {
       effect="fade"
     >
       <SwiperSlide>
-        <img src="../../../public/images/Slider/1.jpg" />
+        <img src="../../../public/images/Slider/1.jpg" class="w-full h-96 sm:h-[800px] md:h-[900px] object-cover" />  
       </SwiperSlide>
       <SwiperSlide>
-        <img src="../../../public/images/Slider/2.jpg" />
+        <img src="../../../public/images/Slider/2.jpg" class="w-full h-96 sm:h-[800px] md:h-[900px] object-cover" /> 
       </SwiperSlide>
       <SwiperSlide>
-        <img src="../../../public/images/Slider/3.jpg" />
+        <img src="../../../public/images/Slider/3.jpg" class="w-full h-96 sm:h-[800px] md:h-[900px] object-cover" />
       </SwiperSlide>
       <SwiperSlide>
-        <img src="../../../public/images/Slider/4.jpg" />
+        <img src="../../../public/images/Slider/4.jpg" class="w-full h-96 sm:h-[800px] md:h-[900px] object-cover" />
       </SwiperSlide>
       <SwiperSlide>
-        <img src="../../../public/images/Slider/5.jpg" />
+        <img src="../../../public/images/Slider/5.jpg" class="w-full h-96 sm:h-[800px] md:h-[900px] object-cover" />
       </SwiperSlide>
       <SwiperSlide>
-        <img src="../../../public/images/Slider/6.jpg" />
+        <img src="../../../public/images/Slider/6.jpg" class="w-full h-96 sm:h-[800px] md:h-[900px] object-cover" />
       </SwiperSlide>
       <SwiperSlide>
-        <img src="../../../public/images/Slider/7.jpg" />
+        <img src="../../../public/images/Slider/7.jpg" class="w-full h-96 sm:h-[800px] md:h-[900px] object-cover" />
       </SwiperSlide>
       <SwiperSlide>
-        <img src="../../../public/images/Slider/8.jpg" />
+        <img src="../../../public/images/Slider/8.jpg" class="w-full h-96 sm:h-[800px] md:h-[900px] object-cover" />
       </SwiperSlide>
       <SwiperSlide>
-        <img src="../../../public/images/Slider/9.jpg" />
+        <img src="../../../public/images/Slider/9.jpg" class="w-full h-96 sm:h-[800px] md:h-[900px] object-cover" />
       </SwiperSlide>
       <SwiperSlide>
-        <img src="../../../public/images/Slider/10.jpg" />
+        <img src="../../../public/images/Slider/10.jpg" class="w-full h-96 sm:h-[800px] md:h-[900px] object-cover" />
       </SwiperSlide>
       <SwiperSlide>
-        <img src="../../../public/images/Slider/11.jpg" />
+        <img src="../../../public/images/Slider/11.jpg" class="w-full h-96 sm:h-[800px] md:h-[900px] object-cover" />
       </SwiperSlide>
       <SwiperSlide>
-        <img src="../../../public/images/Slider/12.jpg" />
+        <img src="../../../public/images/Slider/12.jpg" class="w-full h-96 sm:h-[800px] md:h-[900px] object-cover" />
       </SwiperSlide>
       <SwiperSlide>
-        <img src="../../../public/images/Slider/13.jpg" />
+        <img src="../../../public/images/Slider/13.jpg" class="w-full h-96 sm:h-[800px] md:h-[900px] object-cover" />
       </SwiperSlide>
       <SwiperSlide>
-        <img src="../../../public/images/Slider/14.jpg" />
+        <img src="../../../public/images/Slider/14.jpg" class="w-full h-96 sm:h-[800px] md:h-[900px] object-cover" />
       </SwiperSlide>
     </Swiper>
   </div>
 </template>
 
-<style>
-.swiper-wrapper {
-  height: 800px;
-}
-.swiper-slide img {
-  display: block;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-@media (max-width: 768px) {
-  .swiper-wrapper {
-    height: 60vh;
-  }
-}
-</style>
+

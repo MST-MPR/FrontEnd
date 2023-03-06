@@ -995,12 +995,11 @@ export default {
           :class="[selected == 'brüuggemann' ? 'h-[425px]' : 'h-[350px] ']"
         >
           <img
-            src="../../../public/images/Team/marco.jpg"
+            src="../../../public/images/Team/marlon.png"
             class="p-2 h-52 mx-auto"
           />
           <h1 class="text-center font-bold tracking-wide text-2xl mt-3">
-            Marlon <br />
-            Brüuggemann
+            Marlon Brüuggemann
           </h1>
           <h2 class="text-center mt-2 p-2 text-lg">{{ $t("techniker") }}</h2>
           <div class="text-center mt-2" v-if="selected == 'brüuggemann'">
