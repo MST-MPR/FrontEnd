@@ -3,7 +3,7 @@ import Slider from "../../components/app/Slider.vue";
 import SliderFacebook from "../../components/app/SliderFacebook.vue";
 import InputHome from "../../components/inputs/InputHome.vue";
 import { mapActions } from "vuex";
-import { nanoid } from "nanoid";
+//import { nanoid } from "nanoid";
 import axios from "axios";
 
 export default {
@@ -302,7 +302,7 @@ export default {
             </div>
             <div class="mx-auto mt-5">
               <router-link
-                to="/fullService"
+                to="/sale"
                 type="button"
                 class="
                   w-36
@@ -396,7 +396,7 @@ export default {
             </div>
             <div class="mx-auto mt-5">
               <router-link
-                to="/fullService"
+                to="/rental"
                 type="button"
                 class="
                   w-36
@@ -489,7 +489,7 @@ export default {
             </div>
             <div class="mx-auto mt-5">
               <router-link
-                to="/fullService"
+                to="/streaming"
                 type="button"
                 class="
                   w-36
@@ -585,7 +585,7 @@ export default {
             </div>
             <div class="mx-auto mt-5">
               <router-link
-                to="/fullService"
+                to="/smartHome"
                 type="button"
                 class="
                   w-36
@@ -1235,10 +1235,8 @@ export default {
             2xl:mt-5 2xl:h-[700px]
           "
         >
-          <iframe
-            src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d4800.1731102126205!2d8.789679!3d53.01880700000001!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x26d0285757006942!2sMST%20Medien-%20Systemtechnik%20GmbH!5e0!3m2!1ses!2sus!4v1669030223678!5m2!1ses!2sus"
-            class="w-full h-full mx-auto"
-          ></iframe>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d19202.23207521861!2d8.788377599999995!3d53.01534720000001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47b0d68d4200bf6b%3A0x26d0285757006942!2sMST%20Medien-%20Systemtechnik%20GmbH!5e0!3m2!1sde!2sde!4v1678183789083!5m2!1sde!2sde" width="800" height="600" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" class="w-full h-full
+      "></iframe>
         </div>
         <div class="w-fit mx-auto">
           <div class="p-8">

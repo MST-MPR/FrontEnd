@@ -12,7 +12,7 @@ export default {
   data() {
     return {
       task: {
-        //id: "",
+        id: "",
         name: "",
         email: "",
         message: "",
@@ -37,7 +37,7 @@ export default {
     async submitForm() {
       try {
         const response = await axios.post(
-          "http://localhost:8000/contact-us-store",
+          "http://127.0.0.1:8000/contact-us-store",
           this.task
         );
         console.log(response.data);
@@ -61,10 +61,8 @@ export default {
           xl:block xl:h-[800px] xl:py-10 2xl:h-[850px]
         "
       >
-        <iframe
-          src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d4800.1731102126205!2d8.789679!3d53.01880700000001!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x26d0285757006942!2sMST%20Medien-%20Systemtechnik%20GmbH!5e0!3m2!1ses!2sus!4v1669030223678!5m2!1ses!2sus"
-          class="w-full h-full"
-        ></iframe>
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d19202.23207521861!2d8.788377599999995!3d53.01534720000001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47b0d68d4200bf6b%3A0x26d0285757006942!2sMST%20Medien-%20Systemtechnik%20GmbH!5e0!3m2!1sde!2sde!4v1678183789083!5m2!1sde!2sde" width="800" height="600" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" class="w-full h-full
+      "></iframe>
       </div>
       <div class="w-full mx-auto py-10 md:w-[450px]">
         <div class="p-8 m-auto">

@@ -53,65 +53,55 @@ export default {
     <div id="pop-up" class="w-full h-auto rounded-3xl md:w-5/12">
       <div class="flex items-center justify-between">
         <router-link to="/cookiePolicy" class="md:pl-5">
-          <img
-            src="../../../public/images/General/logo_black.png"
-            class="w-10"
-          />
+          <img src="../../../public/images/General/logo_black.png" class="w-10" />
         </router-link>
         <router-link to="/cookiePolicy">{{ $t("ver") }}</router-link>
         <button @click="closePopUp" class="md:pr-5">
-          <img
-            src="../../../public/images/General/cancel-icon.png"
-            class="w-6 h-auto"
-          />
+          <img src="../../../public/images/General/cancel-icon.png" class="w-6 h-auto" />
         </button>
       </div>
 
       <p class="p-5 py-10 text-sm">
         {{ $t("pCoo") }}
       </p>
-      <div class="flex flex-col md:flex-row md:ml-10 2xl:ml-32">
-        <div class="w-full pb-4 md:w-3/12 md:mx-14">
-          <button
-            @click="closePopUp(1)"
-            class="
-              w-full
-              text-mst_white
-              bg-gradient-to-br
-              from-mst_error
-              to-mst_white
-              hover:bg-gradient-to-bl
-              focus:ring-2 focus:outline-none focus:ring-mst_error
-              font-medium
-              rounded-md
-              text-md text-bold
-              px-5
-              py-2.5
-              text-center
-            "
-          >
+      <div class="flex flex-col md:flex-row md:justify-center md:space-x-4">
+        <div class="w-auto pb-4 md:w-3/12">
+          <button @click="closePopUp(1)" class="
+          w-full
+          text-mst_white
+          bg-gradient-to-br
+          from-mst_error
+          to-mst_white
+          hover:bg-gradient-to-bl
+          focus:ring-2 focus:outline-none focus:ring-mst_error
+          font-medium
+          rounded-md
+          text-md text-bold
+          px-5
+          py-2
+          text-center
+          h-auto
+        ">
             {{ $t("ak") }}
           </button>
         </div>
-        <div class="w-full pb-4 md:w-3/12 md:mx-14">
-          <button
-            @click="closePopUp(0)"
-            class="
-              w-full
-              text-mst_white
-              bg-gradient-to-br
-              from-mst_error
-              to-mst_white
-              hover:bg-gradient-to-bl
-              focus:ring-2 focus:outline-none focus:ring-mst_error
-              font-medium
-              rounded-md
-              text-md text-bold
-              px-5
-              py-2.5
-              text-center
-            "
-          >
+        <div class="w-auto pb-4 md:w-3/12">
+          <button @click="closePopUp(0)" class="
+          w-full
+          text-mst_white
+          bg-gradient-to-br
+          from-mst_error
+          to-mst_white
+          hover:bg-gradient-to-bl
+          focus:ring-2 focus:outline-none focus:ring-mst_error
+          font-medium
+          rounded-md
+          text-md text-bold
+          px-5
+          py-2
+          text-center
+          h-auto
+        ">
             {{ $t("ab") }}
           </button>
         </div>

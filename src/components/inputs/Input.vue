@@ -28,7 +28,7 @@ export default {
           /*axios.defaults.headers.common["X-CSRF-TOKEN"] =
             "ggURxwmVHVgDK5W3jLZ2uESkVrzEWSZ1jlwk7twG";*/
           const response = await axios.post(
-            "http://localhost:5173/contact-us/store",
+            "http://localhost:8000/contact-us/store",
             this.task
           );
           console.log(response.data);
@@ -43,6 +43,7 @@ export default {
   },
 };
 </script>
+
 <template>
   <div>
     <label for="name" class="block mb-2 text-sm font-medium text-mst_white"
