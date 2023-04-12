@@ -59,44 +59,37 @@ export default {
 </script>
 
 <template>
-  <Swiper 
-    :modules="modules" 
-    :slides-per-view="1" 
-    @swiper="onSwiper" 
-    @slideChange="onSlideChange" 
-    :autoplay="{
-      delay: 5000,
-      disableOnInteraction: false,
-    }" 
-    effect="fade">
+  <Swiper :modules="modules" :slides-per-view="1" @swiper="onSwiper" @slideChange="onSlideChange" :autoplay="{
+    delay: 5000,
+    disableOnInteraction: false,
+  }" effect="fade">
     <SwiperSlide v-for="post in posts" :key="post.id">
       <!--<a v-bind:href="post.url" target="_blank">-->
       <div class="text-mst_white h-[600px] md:h-[500px] xl:h-96 flex justify-center items-center">
-        <img src="../../../public/images/General/kino.jpg" 
-        class="
-          w-full
-          h-full
-          object-cover
-          absolute
-          mix-blend-overlay
-          object-left-bottom
-          brightness-50
-          blur-sm
-          md:object-center
-        " />
+        <img src="../../../public/images/General/kino.jpg" class="
+            w-full
+            h-full
+            object-cover
+            absolute
+            mix-blend-overlay
+            object-left-bottom
+            brightness-50
+            blur-sm
+            md:object-center
+          " />
         <div class="text-center">
           <h1 class="text-5xl">{{ post.title }}</h1>
           <h2 class="text-xl h-7 md:pr-40 md:text-right md:text-2xl">
             {{ post.date }}
           </h2>
           <p class="
-          text-base
-          p-8
-          tracking-wider
-          leading-relaxed
-          md:px-40 md:text-2xl
-          flex-grow
-        ">
+            text-base
+            p-8
+            tracking-wider
+            leading-relaxed
+            md:px-40 md:text-2xl
+            flex-grow
+          ">
             {{ post.content }}
           </p>
         </div>

@@ -1,5 +1,7 @@
 <script setup>
 import { ref } from "vue";
+const pdf = 'mst-agb.pdf';
+const route = '../../public/documents/mst-agb.pdf';
 
 const showMobileMenu = ref(true);
 </script>
@@ -15,16 +17,14 @@ const showMobileMenu = ref(true);
             <!--logo-->
             <router-link to="/" class="flex items-center space-x-2 py-5 px-2">
               <img src="../../../public/images/General/logo.svg" class="h-14 w-14 md:block 2xl:h-20 2xl:w-20" />
-
               <div>
                 <p class="text-mst_white tracking-widest text-2xl md:text-3xl 2xl:text-4xl">medien</p>
                 <p class="text-mst_white tracking-widest text-xs md:text-sm 2xl:text-lg">SYSTEMTECHNIK</p>
               </div>
-
             </router-link>
-            <div class="md:w-12 2xl:w-40"></div>
+            <div class="md:w-10 2xl:w-52"></div>
             <!--menu-->
-            <div class="hidden items-center space-x-1 xl:flex">
+            <div class="hidden items-center 2xl:space-x-1 xl:flex">
               <router-link to="/" class="
                     text-mst_white
                     text-bold
@@ -107,6 +107,16 @@ const showMobileMenu = ref(true);
                     py-5
                     px-2
                   ">{{ $t("cookieRichtline") }}</router-link>
+                  <a :href="route" :download="pdf" class="
+                    text-mst_white
+                    transform
+                    transition
+                    duration-300
+                    hover:text-mst_orange
+                    py-5
+                    px-2
+                    cursor-pointer	
+                  ">AGB</a>
               <div>
                 <select v-model="$i18n.locale" class="
                       relative
@@ -234,6 +244,16 @@ const showMobileMenu = ref(true);
             duration-300
             hover:text-mst_orange
           ">{{ $t("cookieRichtline") }}</router-link>
+          <a :href="route" :download="pdf" class="
+          block
+            py-2
+            px-4
+            text-mst_white
+            transform
+            transition
+            duration-300
+            hover:text-mst_orange
+                  ">AGB</a>
       <div class="
             relative
             inline-flex

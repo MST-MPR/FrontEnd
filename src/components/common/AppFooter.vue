@@ -8,7 +8,6 @@
         class="
           mx-auto
           mt-6
-          max-w-md
           text-center
           leading-relaxed
           text-mst_white

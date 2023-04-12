@@ -57,9 +57,6 @@ export default {
         <img src="../../../public/images/Slider/2.jpg" class="w-full h-96 sm:h-[800px] md:h-[900px] object-cover" /> 
       </SwiperSlide>
       <SwiperSlide>
-        <img src="../../../public/images/Slider/3.jpg" class="w-full h-96 sm:h-[800px] md:h-[900px] object-cover" />
-      </SwiperSlide>
-      <SwiperSlide>
         <img src="../../../public/images/Slider/4.jpg" class="w-full h-96 sm:h-[800px] md:h-[900px] object-cover" />
       </SwiperSlide>
       <SwiperSlide>

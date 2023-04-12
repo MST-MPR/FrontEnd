@@ -15,7 +15,7 @@ export default {
         this.$cookies.set("acceptCookie", value);
       }
       try {
-        const response = await axios.post("http://localhost:8000/api/cookies", {
+        const response = await axios.post("http://localhost:8000/api/cookies/", {
           cookie: this.$cookies.get("acceptCookie"),
         });
         console.log(response.data);
