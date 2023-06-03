@@ -68,7 +68,7 @@ export default {
     <!--PRINCIPAL-->
     <div class="bg-mst_construction pb-8 lg:h-full xl:h-fit 2xl:pb-48">
       <div class="basis-1/2 visible md:hidden">
-        <img class="saturate-50 brightness-50 rounded-bl-[100px]" src="../../../public/images/General/kameras.jpg"
+        <img class="saturate-50 brightness-50 rounded-bl-[100px]" src="/images/General/kameras.jpg"
           alt="kameras-medien-systemtechnik" />
       </div>
       <div class="
@@ -94,7 +94,7 @@ export default {
                 md:text-5xl
                 xl:text-center xl:pb-20
                 2xl:text-6xl
-              ">
+              " >
             {{ $t("prof1") }} <br />
             {{ $t("prof2") }}
           </h1>
@@ -103,14 +103,57 @@ export default {
           </h2>
         </div>
         <div class="basis-1/2 hidden md:block">
-          <img class="saturate-50 brightness-50 rounded-bl-[1200px]" src="../../../public/images/General/kameras.jpg"
+          <img class="saturate-50 brightness-50 rounded-bl-[1200px]" src="/images/General/kameras.jpg"
             alt="kameras-medien-systemtechnik" />
         </div>
       </div>
     </div>
     <!--SLIDER-->
     <div>
-      <Slider />
+      <Slider 
+      :items="[
+        {
+          'src': '/images/Slider/1.jpg',
+        }, 
+        {
+          'src': '/images/Slider/2.jpg',
+        }, 
+        {
+          'src': '/images/Slider/3.jpg',
+        }, 
+        {
+          'src': '/images/Slider/4.jpg',
+        }, 
+        {
+          'src': '/images/Slider/5.jpg',
+        }, 
+        {
+          'src': '/images/Slider/7.jpg',
+        }, 
+        {
+          'src': '/images/Slider/8.jpg',
+        }, 
+        {
+          'src': '/images/Slider/9.jpg',
+        }, 
+        {
+          'src': '/images/Slider/10.jpg',
+        }, 
+        {
+          'src': '/images/Slider/11.jpg',
+        }, 
+        {
+          'src': '/images/Slider/12.jpg',
+        }, 
+        {
+          'src': '/images/Slider/13.jpg',
+        }, 
+        {
+          'src': '/images/Slider/13.jpg',
+        }, 
+      ]" />
+
+
     </div>
     <!--GRID-->
     <div class="w-full h-full border-y-4 border-mst_orange py-20 sm:p-32">
@@ -512,7 +555,7 @@ export default {
     <!--UBER UNS-->
     <div class="h-full md:h-full 2xl:h-fit">
       <div class="w-full h-full pb-5 relative">
-        <img src="../../../public/images/General/esc.jpg" class="
+        <img src="/images/General/esc.jpg" class="
               w-full
               h-full
               object-cover
@@ -581,7 +624,7 @@ export default {
               md:shadow-2xl md:shadow-mst_black
               cursor-pointer
             " @click="select('franz')" :class="[selected == 'franz' ? 'h-[390px]' : 'h-[350px]']">
-          <img src="../../../public/images/Team/franz.png" class="p-2 h-52 mx-auto" />
+          <img src="/images/Team/franz.png" class="p-2 h-52 mx-auto" />
           <h1 class="text-center font-bold tracking-wide text-2xl mt-3">
             Ralf-Peter Franz
           </h1>
@@ -609,7 +652,7 @@ export default {
               md:shadow-2xl md:shadow-mst_black
               cursor-pointer
             " @click="select('marco')" :class="[selected == 'marco' ? 'h-[420px]' : 'h-[350px]']">
-          <img src="../../../public/images/Team/marco.jpg" class="p-2 h-52 mx-auto" />
+          <img src="/images/Team/marco.jpg" class="p-2 h-52 mx-auto" />
           <h1 class="text-center font-bold tracking-wide text-2xl mt-3">
             Marco Elsner
           </h1>
@@ -640,7 +683,7 @@ export default {
               md:shadow-2xl md:shadow-mst_black
               cursor-pointer
             " @click="select('philipp')" :class="[selected == 'philipp' ? 'h-[410px]' : 'h-[350px]']">
-          <img src="../../../public/images/Team/philipp.png" class="p-2 h-52 mx-auto" />
+          <img src="/images/Team/philipp.png" class="p-2 h-52 mx-auto" />
           <h1 class="text-center font-bold tracking-wide text-2xl mt-3">
             Philipp Voss
           </h1>
@@ -671,7 +714,7 @@ export default {
               md:shadow-2xl md:shadow-mst_black
               cursor-pointer
             " @click="select('dagmar')" :class="[selected == 'dagmar' ? 'h-[390px]' : 'h-[350px]']">
-          <img src="../../../public/images/Team/dagmar.png" class="p-2 h-52 mx-auto" />
+          <img src="/images/Team/dagmar.png" class="p-2 h-52 mx-auto" />
           <h1 class="text-center font-bold tracking-wide text-2xl mt-3">
             Dagmar Stewener
           </h1>
@@ -699,7 +742,7 @@ export default {
               md:shadow-2xl md:shadow-mst_black
               cursor-pointer
             " @click="select('sophia')" :class="[selected == 'sophia' ? 'h-[390px]' : 'h-[350px]']">
-          <img src="../../../public/images/Team/sophia.png" class="p-2 h-52 mx-auto" />
+          <img src="/images/Team/sophia.png" class="p-2 h-52 mx-auto" />
           <h1 class="text-center font-bold tracking-wide text-2xl mt-3">
             Sophia Krutsch
           </h1>
@@ -727,7 +770,7 @@ export default {
               md:shadow-2xl md:shadow-mst_black
               cursor-pointer
             " @click="select('jan')" :class="[selected == 'jan' ? 'h-[390px]' : 'h-[350px]']">
-          <img src="../../../public/images/Team/jan.png" class="p-2 h-52 my-auto mx-auto" />
+          <img src="/images/Team/jan.png" class="p-2 h-52 my-auto mx-auto" />
           <h1 class="text-center font-bold tracking-wide text-2xl mt-3">
             Jan Michalowski
           </h1>
@@ -755,7 +798,7 @@ export default {
               md:shadow-2xl md:shadow-mst_black
               cursor-pointer
             " @click="select('andreas')" :class="[selected == 'andreas' ? 'h-[390px]' : 'h-[350px]']">
-          <img src="../../../public/images/Team/andreas.jpg" class="p-2 h-52 mx-auto" />
+          <img src="/images/Team/andreas.jpg" class="p-2 h-52 mx-auto" />
           <h1 class="text-center font-bold tracking-wide text-2xl mt-3">
             Andreas Garms
           </h1>
@@ -783,7 +826,7 @@ export default {
               hover:grayscale-0
               cursor-pointer
             " @click="select('mika')" :class="[selected == 'mika' ? 'h-[390px]' : 'h-[350px]']">
-          <img src="../../../public/images/Team/mika.png" class="p-2 h-52 mx-auto" />
+          <img src="/images/Team/mika.png" class="p-2 h-52 mx-auto" />
           <h1 class="text-center font-bold tracking-wide text-2xl mt-3">
             Mika Kind
           </h1>
@@ -811,7 +854,7 @@ export default {
               md:shadow-2xl md:shadow-mst_black
               cursor-pointer
             " @click="select('brüuggemann')" :class="[selected == 'brüuggemann' ? 'h-[390px]' : 'h-[350px] ']">
-          <img src="../../../public/images/Team/marlon.png" class="p-2 h-52 mx-auto" />
+          <img src="/images/Team/marlon.png" class="p-2 h-52 mx-auto" />
           <h1 class="text-center font-bold tracking-wide text-2xl mt-3">
             Marlon Brüuggemann
           </h1>
@@ -839,7 +882,7 @@ export default {
               hover:grayscale-0
               cursor-pointer
             " @click="select('fabian')" :class="[selected == 'fabian' ? 'h-[390px]' : 'h-[350px]']">
-          <img src="../../../public/images/Team/fabian.png" class="p-2 h-52 mx-auto" />
+          <img src="/images/Team/fabian.png" class="p-2 h-52 mx-auto" />
           <h1 class="text-center font-bold tracking-wide text-2xl mt-3">
             Fabian Witt
           </h1>
@@ -867,7 +910,7 @@ export default {
               hover:grayscale-0
               cursor-pointer
             " @click="select('miguel')" :class="[selected == 'miguel' ? 'h-[390px]' : 'h-[350px]']">
-          <img src="../../../public/images/Team/miguel.png" class="p-2 h-52 mx-auto" />
+          <img src="/images/Team/miguel.png" class="p-2 h-52 mx-auto" />
           <h1 class="text-center font-bold tracking-wide text-2xl mt-3">
             Miguel Portero
           </h1>
@@ -895,7 +938,7 @@ export default {
               md:shadow-2xl md:shadow-mst_black
               cursor-pointer
             " @click="select('hier')" :class="[selected == 'hier' ? 'h-[440px]' : 'h-[350px]']">
-          <img src="../../../public/images/General/logo_black.png" class="p-2 mx-auto mt-4 h-48 object-cover" />
+          <img src="/images/General/logo_black.png" class="p-2 mx-auto mt-4 h-48 object-cover" />
           <h1 class="text-center font-bold tracking-wide text-2xl mt-3">
             {{ $t("bewird") }}
           </h1>
@@ -937,36 +980,36 @@ export default {
       ">
         <div class="w-72 p-8 mx-auto">
           <a href="https://www.bremerbuehnenhaus.de/" target="_blank"><img
-              src="../../../public/images/Partners/bbh.png" /></a>
+              src="/images/Partners/bbh.png" /></a>
         </div>
         <div class="w-72 p-8 mx-auto">
-          <a href="https://www.bose.de" target="_blank"><img src="../../../public/images/Partners/bose.png" /></a>
+          <a href="https://www.bose.de" target="_blank"><img src="/images/Partners/bose.png" /></a>
         </div>
         <div class="w-72 p-8 mx-auto">
-          <a href="https://elko.de/" target="_blank"><img src="../../../public/images/Partners/elko.png" /></a>
+          <a href="https://elko.de/" target="_blank"><img src="/images/Partners/elko.png" /></a>
         </div>
         <div class="w-72 p-8 mx-auto">
-          <a href="https://www.gotaque.de/" target="_blank"><img src="../../../public/images/Partners/gotaque.png" /></a>
+          <a href="https://www.gotaque.de/" target="_blank"><img src="/images/Partners/gotaque.png" /></a>
         </div>
         <div class="w-72 p-8 mx-auto">
           <a href="https://www.highlite.com/de/" target="_blank"><img
-              src="../../../public/images/Partners/highlite.png" /></a>
+              src="/images/Partners/highlite.png" /></a>
         </div>
         <div class="w-72 p-8 mx-auto">
-          <a href="https://www.loxone.com/" target="_blank"><img src="../../../public/images/Partners/loxone.png" /></a>
+          <a href="https://www.loxone.com/" target="_blank"><img src="/images/Partners/loxone.png" /></a>
         </div>
         <div class="w-72 p-8 mx-auto">
-          <a href="https://www.biamp.com/" target="_blank"><img src="../../../public/images/Partners/neets.png" /></a>
+          <a href="https://www.biamp.com/" target="_blank"><img src="/images/Partners/neets.png" /></a>
         </div>
         <div class="w-72 p-8 mx-auto">
-          <a href="https://www.optoma.de/" target="_blank"><img src="../../../public/images/Partners/optoma.png" /></a>
+          <a href="https://www.optoma.de/" target="_blank"><img src="/images/Partners/optoma.png" /></a>
         </div>
         <div class="w-72 p-8 mx-auto">
-          <a href="https://www.relens.de/" target="_blank"><img src="../../../public/images/Partners/relens.png" /></a>
+          <a href="https://www.relens.de/" target="_blank"><img src="/images/Partners/relens.png" /></a>
         </div>
         <div class="w-72 p-8 mx-auto justify-center xl:col-end-4 xl:col-span-3">
           <a href="https://de-de.sennheiser.com/" target="_blank"><img
-              src="../../../public/images/Partners/sennheiser.png" /></a>
+              src="/images/Partners/sennheiser.png" /></a>
         </div>
       </div>
     </div>
@@ -1023,7 +1066,7 @@ export default {
     <!--SPONSORING-->
     <div class="w-full h-full border-y-4 border-mst_orange">
       <div class="w-full h-full relative">
-        <img src="../../../public/images/General/kirche.jpg" class="
+        <img src="/images/General/kirche.jpg" class="
               w-full
               h-full
               object-cover
@@ -1045,10 +1088,10 @@ export default {
         </h1>
         <div class="flex flex-col py-14 w-full mx-auto xl:flex-row">
           <div class="mx-auto mb-5 md:w-fit 2xl:w-[500px]">
-            <img src="../../../public/images/General/sponsor1.png" class="h-96 mx-auto md:h-[460px] 2xl:h-[500px]" />
+            <img src="/images/General/sponsor1.png" class="h-96 mx-auto md:h-[460px] 2xl:h-[500px]" />
           </div>
           <div class="mx-auto md:w-fit 2xl:w-[500px]">
-            <img src="../../../public/images/General/sponsor2.png" class="h-96 mx-auto md:h-[460px] 2xl:h-[500px]" />
+            <img src="/images/General/sponsor2.png" class="h-96 mx-auto md:h-[460px] 2xl:h-[500px]" />
           </div>
         </div>
       </div>

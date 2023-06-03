@@ -53,11 +53,11 @@ export default {
     <div id="pop-up" class="w-full h-auto rounded-3xl md:w-5/12">
       <div class="flex items-center justify-between">
         <router-link to="/cookiePolicy" class="md:pl-5">
-          <img src="../../../public/images/General/logo_black.png" class="w-10" />
+          <img src="/images/General/logo_black.png" class="w-10" />
         </router-link>
         <router-link to="/cookiePolicy">{{ $t("ver") }}</router-link>
         <button @click="closePopUp" class="md:pr-5">
-          <img src="../../../public/images/General/cancel-icon.png" class="w-6 h-auto" />
+          <img src="/images/General/cancel-icon.png" class="w-6 h-auto" />
         </button>
       </div>
 

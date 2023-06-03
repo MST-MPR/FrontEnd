@@ -4,14 +4,14 @@ const route = '../../public/documents/mst-agb.pdf';
 </script>
 
 <template>
-  <div class="h-full w-full">
+  <div class="h-full container mx-auto">
     <div class="drop-shadow-2xl">
       <h1 class="
             drop-shadow-2xl
             text-center
             font-extrabold
             text-4xl
-            pt-12
+            py-10
             mb-2
             md:text-5xl
             2xl:text-7xl
@@ -20,12 +20,13 @@ const route = '../../public/documents/mst-agb.pdf';
         {{ $t("impressum") }}
       </h1>
     </div>
-    <div class="p-10">
+    <div class="p-10 w-2/3 mx-auto">
       <h2 class="
             p-5
             text-mst_black
             font-extrabold
-            text-lg md:text-center md:pb-14 md:text-xl
+            text-lg md:text-center 
+            md:pb-14 md:text-xl
             xl:text-left
           ">
         MST MEDIEN - SYSTEMTECHNIK GMBH
@@ -81,7 +82,7 @@ const route = '../../public/documents/mst-agb.pdf';
           </li>
         </ul>
       </div>
-      <div class="relative flex py-5 items-center w-52 ml-10 md:w-96 md:ml-20">
+      <div class="relative flex py-5 items-center  ml-10 md:w-96 md:ml-20">
         <div class="flex-grow border-2 border-mst_orange"></div>
       </div>
       <div class="ml-10 tracking-wider leading-normal md:ml-20 md:leading-loose">
@@ -94,7 +95,7 @@ const route = '../../public/documents/mst-agb.pdf';
           </li>
         </ul>
       </div>
-      <div class="relative flex py-5 items-center w-52 ml-10 md:w-96 md:ml-20">
+      <div class="relative flex py-5 items-center  ml-10 md:w-96 md:ml-20">
         <div class="flex-grow border-2 border-mst_orange"></div>
       </div>
       <div class="ml-10 tracking-wider leading-normal md:ml-20 md:leading-loose">
@@ -107,12 +108,12 @@ const route = '../../public/documents/mst-agb.pdf';
           </li>
         </ul>
       </div>
-      <div class="relative flex py-5 items-center w-52 ml-10 md:w-96 md:ml-20">
+      <div class="relative flex py-5 items-center  ml-10 md:w-96 md:ml-20">
         <div class="flex-grow border-2 border-mst_orange"></div>
       </div>
       <div class="tracking-wider leading-normal ml-10 md:leading-loose md:ml-20">
         <ul class="list-disc">
-          <li class="w-52 mt-8 mb-8 md:w-full">
+          <li class=" mt-8 mb-8 md:w-full">
             <h2 class="text-xl font-semibold md:text-2xl text-mst_orange">
               {{ $t("streitschlichtung") }}:
             </h2>
@@ -128,7 +129,7 @@ const route = '../../public/documents/mst-agb.pdf';
             </div>
           </li>
 
-          <li class="w-52 mt-8 mb-8 md:w-full">
+          <li class=" mt-8 mb-8 md:w-full">
             <h2 class="text-xl font-semibold md:text-2xl text-mst_orange">
               {{ $t("haftungInhalte") }}:
             </h2>
@@ -139,7 +140,7 @@ const route = '../../public/documents/mst-agb.pdf';
             </div>
           </li>
 
-          <li class="w-52 mt-8 mb-8 md:w-full">
+          <li class=" mt-8 mb-8 md:w-full">
             <h2 class="text-xl font-semibold md:text-2xl text-mst_orange">
               {{ $t("haftungLink") }}:
             </h2>
@@ -150,7 +151,7 @@ const route = '../../public/documents/mst-agb.pdf';
             </div>
           </li>
 
-          <li class="w-52 mt-8 mb-8 md:w-full">
+          <li class=" mt-8 mb-8 md:w-full">
             <h2 class="text-xl font-semibold md:text-2xl text-mst_orange">
               {{ $t("urheberrecht") }}:
             </h2>

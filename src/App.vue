@@ -21,22 +21,18 @@ export default {
 
 <template>
   <div class="overflow-hidden sm:overflow-visible">
-    <div class="sticky top-0 z-50">
       <Navbar />
-    </div>
+
     <div>
       <RouterView />
     </div>
-    <div>
-      <Footer />
-    </div>
+
+    <Footer />
     <div class="sticky bottom-[60px] collapse md:visible">
       <TopButton />
     </div>
     <!--Cookies-->
-    <div>
-      <Cookies />
-    </div>
+    <Cookies />
   </div>
 </template>
 
