@@ -46,9 +46,10 @@ export default {
     };
   },
   mounted() {
-    axios.get('http://127.0.0.1:8000/api/facebookImages/list')
+    axios.get('http://127.0.0.1:8000/api/facebookPosts/list')
       .then(response => {
         this.posts = response.data;
+        console.log(response.data)
       })
       .catch(error => {
         console.error(error);
@@ -60,13 +61,13 @@ export default {
 
 <template>
   <Swiper :modules="modules" :slides-per-view="1" @swiper="onSwiper" @slideChange="onSlideChange" :autoplay="{
-    delay: 5000,
-    disableOnInteraction: false,
-  }" effect="fade">
+      delay: 5000,
+      disableOnInteraction: false,
+    }" effect="fade">
     <SwiperSlide v-for="post in posts" :key="post.id">
       <!--<a v-bind:href="post.url" target="_blank">-->
-      <div class="text-mst_white h-[600px] md:h-[500px] xl:h-96 flex justify-center items-center">
-        <img :src="post.url" class="
+      <div :src="post.urlFacebook" class="text-mst_black h-[600px] md:h-[500px] xl:h-96 flex justify-center items-center">
+        <img class="
                     w-full
                     h-full
                     object-cover

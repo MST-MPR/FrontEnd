@@ -119,9 +119,6 @@ export default {
           'src': '/images/Slider/2.jpg',
         }, 
         {
-          'src': '/images/Slider/3.jpg',
-        }, 
-        {
           'src': '/images/Slider/4.jpg',
         }, 
         {
@@ -152,8 +149,6 @@ export default {
           'src': '/images/Slider/13.jpg',
         }, 
       ]" />
-
-
     </div>
     <!--GRID-->
     <div class="w-full h-full border-y-4 border-mst_orange py-20 sm:p-32">
