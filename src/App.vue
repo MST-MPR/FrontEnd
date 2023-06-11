@@ -28,7 +28,7 @@ export default {
     </div>
 
     <Footer />
-    <div class="sticky bottom-[60px] collapse md:visible">
+    <div class="arrowTop sticky bottom-[60px] collapse md:visible">
       <TopButton />
     </div>
     <!--Cookies-->
@@ -43,5 +43,8 @@ html,
 body,
 #app {
   font-family: Frutiger;
+}
+.arrowTop{
+  z-index: 100;
 }
 </style>

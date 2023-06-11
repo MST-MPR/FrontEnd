@@ -65,7 +65,7 @@ export default {
     disableOnInteraction: false,
   }" effect="fade">
     <SwiperSlide v-for="post in posts" :key="post.id">
-      <!--<a v-bind:href="post.url" target="_blank">-->
+      <a v-bind:href="post.url" target="_blank">
       <div class="text-mst_black h-[600px] md:h-[500px] xl:h-96 flex justify-center items-center">
         <img :src="post.urlFacebook" class="
                     w-full
@@ -95,7 +95,7 @@ export default {
           </p>
         </div>
       </div>
-      <!--</a>-->
+      </a>
     </SwiperSlide>
   </Swiper>
 </template>
