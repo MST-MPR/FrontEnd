@@ -61,40 +61,41 @@ export default {
 
 <template>
   <Swiper :modules="modules" :slides-per-view="1" @swiper="onSwiper" @slideChange="onSlideChange" :autoplay="{
-    delay: 5000,
-    disableOnInteraction: false,
-  }" effect="fade">
+      delay: 5000,
+      disableOnInteraction: false,
+    }" effect="fade">
     <SwiperSlide v-for="post in posts" :key="post.id">
       <a v-bind:href="post.url" target="_blank">
-      <div class="text-mst_black h-[600px] md:h-[500px] xl:h-96 flex justify-center items-center">
-        <img :src="post.urlFacebook" class="
+        <div class="text-mst_black h-[400px] flex items-center justify-center md:h-[500px] xl:h-96">
+          <img :src="post.urlFacebook" class="
                     w-full
                     h-full
-                    object-cover
                     absolute
                     mix-blend-overlay
-                    object-left-bottom
-                    brightness-50
-                    blur-sm
-                    md:object-center
+                    contrast-[0.23]
+                    object-cover
+                    xl:object-center
                   " />
-        <div class="text-center">
-          <h1 class="text-5xl">{{ post.tittle }}</h1>
-          <h2 class="text-xl h-7 md:pr-40 md:text-right md:text-2xl">
-            {{ post.date }}
-          </h2>
-          <p class="
-                    text-base
-                    p-8
+          <div>
+            <h1 class="text-5xl text-center">{{ post.tittle }}</h1>
+            <h2 class="text-xl text-right mr-10 mb-5 md:text-2xl">
+              {{ post.date }}
+            </h2>
+            <p class="
+                    text-center
+                    text-bs
+                    font-bold
                     tracking-wider
                     leading-relaxed
-                    md:px-40 md:text-2xl
-                    flex-grow
+                    px-4
+                    md:text-2xl
+                    xl:text-lg
+                    xl:px-96
                   ">
-            {{ post.content }}
-          </p>
+              {{ post.content }}
+            </p>
+          </div>
         </div>
-      </div>
       </a>
     </SwiperSlide>
   </Swiper>
