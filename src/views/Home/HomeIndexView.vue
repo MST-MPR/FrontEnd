@@ -1,7 +1,6 @@
 <script>
 import Slider from "../../components/app/Slider.vue";
 import SliderFacebook from "../../components/app/SliderFacebook.vue";
-//import InputHome from "../../components/inputs/InputHome.vue";
 import Input from "../../components/inputs/Input.vue";
 import { mapActions } from "vuex";
 //import { nanoid } from "nanoid";
@@ -53,9 +52,12 @@ export default {
       }
     },
     select(name) {
+      //Comprueba si el valor de this.selected es igual a name.
       if (this.selected == name) {
+        //Si son iguales, establece this.selected como una cadena vacía, es decir, borra su valor actual.
         this.selected = "";
       } else {
+        //Si no son iguales, asigna el valor de name a this.selected.
         this.selected = name;
       }
     },

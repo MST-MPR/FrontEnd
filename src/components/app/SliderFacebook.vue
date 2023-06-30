@@ -83,13 +83,12 @@ export default {
             </h2>
             <p class="
                     text-center
-                    text-bs
-                    font-bold
+                    text-lg
+                    font-extrabold
                     tracking-wider
                     leading-relaxed
                     px-4
                     md:text-2xl
-                    xl:text-lg
                     xl:px-96
                   ">
               {{ post.content }}
