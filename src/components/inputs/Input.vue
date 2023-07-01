@@ -21,12 +21,12 @@ export default {
       this.recaptchaVerified = true;
       this.errorMessage = "";
     },
-    async reset() {
+    async submitForm() {
       if (this.recaptchaVerified) {
         this.$refs.recaptcha.reset();
         try {
           const response = await axios.post(
-            "http://localhost:8000/contact-us/store",
+            "http://localhost:8000/api/contact-us/store",
             this.task
           );
           console.log(response.data);
@@ -115,7 +115,7 @@ export default {
   </div>
   <div class="pt-3 pb-3">
     <button
-      @click="reset"
+      @click="submitForm"
       type="submit"
       class="
         w-36
