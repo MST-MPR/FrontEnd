@@ -8,3 +8,7 @@ import VueCookies from 'vue-cookies'
 
 
 createApp(App).use(router).use(i18n).use(VueSplide).use(VueCookies).mount('#app')
+
+
+// url-base
+export const BASE_URL = 'http://localhost:8000';

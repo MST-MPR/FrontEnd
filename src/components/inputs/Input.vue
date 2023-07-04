@@ -1,6 +1,7 @@
 <script>
 import { VueRecaptcha } from "vue-recaptcha";
 import axios from "axios";
+import { BASE_URL } from '@/main.js'; 
 
 export default {
   data() {
@@ -26,7 +27,7 @@ export default {
         this.$refs.recaptcha.reset();
         try {
           const response = await axios.post(
-            "http://localhost:8000/api/contact-us/store",
+            `${BASE_URL}/api/contact-us/store`,
             this.task
           );
           console.log(response.data);

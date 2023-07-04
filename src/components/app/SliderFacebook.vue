@@ -1,5 +1,6 @@
 <script>
 import axios from "axios";
+import { BASE_URL } from '@/main.js'
 // import Swiper core and required modules
 import {
   Navigation,
@@ -46,7 +47,7 @@ export default {
     };
   },
   mounted() {
-    axios.get('http://127.0.0.1:8000/api/facebookPosts/list')
+    axios.get(`${BASE_URL}/api/facebookPosts/list`)
       .then(response => {
         this.posts = response.data;
         console.log(response.data)

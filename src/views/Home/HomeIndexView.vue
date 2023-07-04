@@ -4,6 +4,7 @@ import SliderFacebook from "../../components/app/SliderFacebook.vue";
 import Input from "../../components/inputs/Input.vue";
 import { mapActions } from "vuex";
 //import { nanoid } from "nanoid";
+import { BASE_URL } from '@/main.js'
 import axios from "axios";
 
 export default {
@@ -43,7 +44,7 @@ export default {
     async submitForm() {
       try {
         const response = await axios.post(
-          "http://127.0.0.1:8000/contact-us-store",
+          `${BASE_URL}/contact-us-store`,
           this.task
         );
         console.log(response.data);
