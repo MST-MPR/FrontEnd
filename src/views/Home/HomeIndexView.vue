@@ -97,7 +97,7 @@ export default {
                 md:text-5xl
                 xl:text-center xl:pb-20
                 2xl:text-6xl
-              " >
+              ">
             {{ $t("prof1") }} <br />
             {{ $t("prof2") }}
           </h1>
@@ -113,44 +113,43 @@ export default {
     </div>
     <!--SLIDER-->
     <div>
-      <Slider 
-      :items="[
+      <Slider :items="[
         {
           'src': '/images/Slider/1.jpg',
-        }, 
+        },
         {
           'src': '/images/Slider/2.jpg',
-        }, 
+        },
         {
           'src': '/images/Slider/4.jpg',
-        }, 
+        },
         {
           'src': '/images/Slider/5.jpg',
-        }, 
+        },
         {
           'src': '/images/Slider/7.jpg',
-        }, 
+        },
         {
           'src': '/images/Slider/8.jpg',
-        }, 
+        },
         {
           'src': '/images/Slider/9.jpg',
-        }, 
+        },
         {
           'src': '/images/Slider/10.jpg',
-        }, 
+        },
         {
           'src': '/images/Slider/11.jpg',
-        }, 
+        },
         {
           'src': '/images/Slider/12.jpg',
-        }, 
+        },
         {
           'src': '/images/Slider/13.jpg',
-        }, 
+        },
         {
           'src': '/images/Slider/13.jpg',
-        }, 
+        },
       ]" />
     </div>
     <!--GRID-->
@@ -587,7 +586,7 @@ export default {
       </div>
     </div>
     <!--TEAM-->
-    <div class="h-full w-full  border-y-4 border-mst_orange">
+    <div class="h-full w-full border-y-4 border-mst_orange">
       <h1 class="
             my-10
             text-center
@@ -599,15 +598,14 @@ export default {
         {{ $t("team") }}
       </h1>
       <div class="
-            w-fit
-            h-full
-            space-y-10
-            grid grid-rows
-            my-10
+            w-4/6
+            flex flex-col-4
+            flex-wrap
+            justify-center
+            gap-x-20
+            gap-y-16
             mx-auto
-            md:grid-cols-2 md:space-y-0 md:p-16 md:gap-10
-            xl:grid-cols-3
-            2xl:grid-cols-4 2xl:gap-32 2xl:py-10
+            pb-20
           ">
         <div class="
               item
@@ -621,8 +619,8 @@ export default {
               hover:grayscale-0
               md:shadow-2xl md:shadow-mst_black
               cursor-pointer
-            " @click="select('franz')" :class="[selected == 'franz' ? 'h-[390px]' : 'h-[350px]']">
-          <img src="/images/Team/franz.png" class="p-2 h-52 mx-auto" />
+            " @click="select('franz')" :class="[selected == 'franz' ? 'h-[420px]' : 'h-[390px]']">
+          <img src="/images/Team/franz.png" class="mt-8 pb-2 h-52 mx-auto">
           <h1 class="text-center font-bold tracking-wide text-2xl mt-3">
             Ralf-Peter Franz
           </h1>
@@ -649,8 +647,8 @@ export default {
               hover:grayscale-0
               md:shadow-2xl md:shadow-mst_black
               cursor-pointer
-            " @click="select('marco')" :class="[selected == 'marco' ? 'h-[420px]' : 'h-[350px]']">
-          <img src="/images/Team/marco.jpg" class="p-2 h-52 mx-auto" />
+            " @click="select('marco')" :class="[selected == 'marco' ? 'h-[450px]' : 'h-[390px]']">
+          <img src="/images/Team/marco.jpg" class="mt-8 pb-2 h-52 mx-auto">
           <h1 class="text-center font-bold tracking-wide text-2xl mt-3">
             Marco Elsner
           </h1>
@@ -680,8 +678,8 @@ export default {
               hover:grayscale-0
               md:shadow-2xl md:shadow-mst_black
               cursor-pointer
-            " @click="select('philipp')" :class="[selected == 'philipp' ? 'h-[410px]' : 'h-[350px]']">
-          <img src="/images/Team/philipp.png" class="p-2 h-52 mx-auto" />
+            " @click="select('philipp')" :class="[selected == 'philipp' ? 'h-[450px]' : 'h-[390px]']">
+          <img src="/images/Team/philipp.jpg" class="mt-8 pb-2 h-52 mx-auto" />
           <h1 class="text-center font-bold tracking-wide text-2xl mt-3">
             Philipp Voss
           </h1>
@@ -711,8 +709,8 @@ export default {
               hover:grayscale-0
               md:shadow-2xl md:shadow-mst_black
               cursor-pointer
-            " @click="select('dagmar')" :class="[selected == 'dagmar' ? 'h-[390px]' : 'h-[350px]']">
-          <img src="/images/Team/dagmar.png" class="p-2 h-52 mx-auto" />
+            " @click="select('dagmar')" :class="[selected == 'dagmar' ? 'h-[420px]' : 'h-[390px]']">
+          <img src="/images/Team/dagmar.jpg" class="mt-8 pb-2 h-52 mx-auto">
           <h1 class="text-center font-bold tracking-wide text-2xl mt-3">
             Dagmar Stewener
           </h1>
@@ -739,8 +737,8 @@ export default {
               hover:grayscale-0
               md:shadow-2xl md:shadow-mst_black
               cursor-pointer
-            " @click="select('sophia')" :class="[selected == 'sophia' ? 'h-[390px]' : 'h-[350px]']">
-          <img src="/images/Team/sophia.png" class="p-2 h-52 mx-auto" />
+            " @click="select('sophia')" :class="[selected == 'sophia' ? 'h-[420px]' : 'h-[390px]']">
+          <img src="/images/Team/sophia.jpg" class="mt-8 pb-2 h-52 mx-auto">
           <h1 class="text-center font-bold tracking-wide text-2xl mt-3">
             Sophia Krutsch
           </h1>
@@ -767,8 +765,8 @@ export default {
               hover:grayscale-0
               md:shadow-2xl md:shadow-mst_black
               cursor-pointer
-            " @click="select('jan')" :class="[selected == 'jan' ? 'h-[390px]' : 'h-[350px]']">
-          <img src="/images/Team/jan.png" class="p-2 h-52 my-auto mx-auto" />
+            " @click="select('jan')" :class="[selected == 'jan' ? 'h-[420px]' : 'h-[390px]']">
+          <img src="/images/Team/jan.jpg" class="mt-8 pb-2 h-52 mx-auto" />
           <h1 class="text-center font-bold tracking-wide text-2xl mt-3">
             Jan Michalowski
           </h1>
@@ -795,8 +793,8 @@ export default {
               hover:grayscale-0
               md:shadow-2xl md:shadow-mst_black
               cursor-pointer
-            " @click="select('andreas')" :class="[selected == 'andreas' ? 'h-[390px]' : 'h-[350px]']">
-          <img src="/images/Team/andreas.jpg" class="p-2 h-52 mx-auto" />
+            " @click="select('andreas')" :class="[selected == 'andreas' ? 'h-[420px]' : 'h-[390px]']">
+          <img src="/images/Team/andreas.jpg" class="mt-8 pb-2 h-52 mx-auto">
           <h1 class="text-center font-bold tracking-wide text-2xl mt-3">
             Andreas Garms
           </h1>
@@ -811,7 +809,7 @@ export default {
             <p><strong>Email:</strong> agarms@mst-extra.net</p>
           </div>
         </div>
-        <div class="
+        <!--<div class="
               item
               w-64
               shadow-inner
@@ -823,8 +821,8 @@ export default {
               duration-300
               hover:grayscale-0
               cursor-pointer
-            " @click="select('mika')" :class="[selected == 'mika' ? 'h-[390px]' : 'h-[350px]']">
-          <img src="/images/Team/mika.png" class="p-2 h-52 mx-auto" />
+            " @click="select('mika')" :class="[selected == 'mika' ? 'h-[420px]' : 'h-[390px]']">
+          <img src="/images/Team/mika.png" class="mt-8 pb-2 h-52 mx-auto">
           <h1 class="text-center font-bold tracking-wide text-2xl mt-3">
             Mika Kind
           </h1>
@@ -838,7 +836,7 @@ export default {
             </p>
             <p><strong>Email:</strong> mkind@mst-extra.net</p>
           </div>
-        </div>
+        </div>-->
         <div class="
               item
               w-64
@@ -851,8 +849,8 @@ export default {
               hover:grayscale-0
               md:shadow-2xl md:shadow-mst_black
               cursor-pointer
-            " @click="select('brüuggemann')" :class="[selected == 'brüuggemann' ? 'h-[390px]' : 'h-[350px] ']">
-          <img src="/images/Team/marlon.png" class="p-2 h-52 mx-auto" />
+            " @click="select('brüuggemann')" :class="[selected == 'brüuggemann' ? 'h-[420px]' : 'h-[390px] ']">
+          <img src="/images/Team/marlon.jpg" class="mt-8 pb-2 h-52 mx-auto">
           <h1 class="text-center font-bold tracking-wide text-2xl mt-3">
             Marlon Brüuggemann
           </h1>
@@ -879,8 +877,8 @@ export default {
               duration-300
               hover:grayscale-0
               cursor-pointer
-            " @click="select('fabian')" :class="[selected == 'fabian' ? 'h-[390px]' : 'h-[350px]']">
-          <img src="/images/Team/fabian.png" class="p-2 h-52 mx-auto" />
+            " @click="select('fabian')" :class="[selected == 'fabian' ? 'h-[420px]' : 'h-[390px]']">
+          <img src="/images/Team/fabian.png" class="mt-8 pb-2 h-52 mx-auto">
           <h1 class="text-center font-bold tracking-wide text-2xl mt-3">
             Fabian Witt
           </h1>
@@ -907,8 +905,8 @@ export default {
               duration-300
               hover:grayscale-0
               cursor-pointer
-            " @click="select('miguel')" :class="[selected == 'miguel' ? 'h-[390px]' : 'h-[350px]']">
-          <img src="/images/Team/miguel.png" class="p-2 h-52 mx-auto" />
+            " @click="select('miguel')" :class="[selected == 'miguel' ? 'h-[420px]' : 'h-[390px]']">
+          <img src="/images/Team/miguel.jpg" class="mt-8 pb-2 h-52 mx-auto">
           <h1 class="text-center font-bold tracking-wide text-2xl mt-3">
             Miguel Portero
           </h1>
@@ -935,9 +933,9 @@ export default {
               shadow-mst_black
               md:shadow-2xl md:shadow-mst_black
               cursor-pointer
-            " @click="select('hier')" :class="[selected == 'hier' ? 'h-[440px]' : 'h-[350px]']">
-          <img src="/images/General/logo_black.png" class="p-2 mx-auto mt-4 h-48 object-cover" />
-          <h1 class="text-center font-bold tracking-wide text-2xl mt-3">
+            " @click="select('hier')" :class="[selected == 'hier' ? 'h-[460px]' : 'h-[390px]']">
+          <img src="/images/General/logo_black.png" class="p-2 mx-auto mt-8 h-48 object-cover" />
+          <h1 class="text-center font-bold tracking-wide text-2xl mt-6">
             {{ $t("bewird") }}
           </h1>
           <h2 class="text-center mt-4 text-lg"></h2>
@@ -977,8 +975,7 @@ export default {
         xl:grid-cols-3
       ">
         <div class="w-72 p-8 mx-auto">
-          <a href="https://www.bremerbuehnenhaus.de/" target="_blank"><img
-              src="/images/Partners/bbh.png" /></a>
+          <a href="https://www.bremerbuehnenhaus.de/" target="_blank"><img src="/images/Partners/bbh.png" /></a>
         </div>
         <div class="w-72 p-8 mx-auto">
           <a href="https://www.bose.de" target="_blank"><img src="/images/Partners/bose.png" /></a>
@@ -990,8 +987,7 @@ export default {
           <a href="https://www.gotaque.de/" target="_blank"><img src="/images/Partners/gotaque.png" /></a>
         </div>
         <div class="w-72 p-8 mx-auto">
-          <a href="https://www.highlite.com/de/" target="_blank"><img
-              src="/images/Partners/highlite.png" /></a>
+          <a href="https://www.highlite.com/de/" target="_blank"><img src="/images/Partners/highlite.png" /></a>
         </div>
         <div class="w-72 p-8 mx-auto">
           <a href="https://www.loxone.com/" target="_blank"><img src="/images/Partners/loxone.png" /></a>
@@ -1006,8 +1002,7 @@ export default {
           <a href="https://www.relens.de/" target="_blank"><img src="/images/Partners/relens.png" /></a>
         </div>
         <div class="w-72 p-8 mx-auto justify-center xl:col-end-4 xl:col-span-3">
-          <a href="https://de-de.sennheiser.com/" target="_blank"><img
-              src="/images/Partners/sennheiser.png" /></a>
+          <a href="https://de-de.sennheiser.com/" target="_blank"><img src="/images/Partners/sennheiser.png" /></a>
         </div>
       </div>
     </div>
