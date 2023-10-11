@@ -1,5 +1,6 @@
 <script>
 import axios from "axios";
+import { BASE_URL } from '@/main.js'
 // import Swiper core and required modules
 import {
   Navigation,
@@ -43,30 +44,18 @@ export default {
   data() {
     return {
       posts: [],
-      images: [],
     };
   },
   mounted() {
-
-    axios.all([
-      axios.get('http://127.0.0.1:8000/api/facebookPosts/list'),
-      axios.get('http://127.0.0.1:8000/api/facebookImages/list', { responseType: 'blob' })
-    ])
-      // Se utiliza la función spread de axios para manejar ambas respuestas de forma separada.
-      .then(axios.spread((facebookPosts, facebookImages) => {
-        console.log(facebookPosts);
-        // Se asigna la respuesta de la petición de los posts a la propiedad "posts" del objeto de datos.
-        this.posts = facebookPosts.data;
-
-        // Se crea una URL temporal para la imagen obtenida en la petición y se asigna a la propiedad "images" del objeto de datos.
-        const imageUrl = URL.createObjectURL(facebookImages.data);
-        this.images = imageUrl;
-        console.log(this.images);
-
-      }))
+    axios.get(`${BASE_URL}/api/facebookPosts/list`)
+      .then(response => {
+        this.posts = response.data;
+        console.log(response.data)
+      })
       .catch(error => {
-        console.log(error);
+        console.error(error);
       });
+
   }
 };
 </script>
@@ -77,37 +66,37 @@ export default {
       disableOnInteraction: false,
     }" effect="fade">
     <SwiperSlide v-for="post in posts" :key="post.id">
-      <!--<a v-bind:href="post.url" target="_blank">-->
-      <div class="text-mst_white h-[600px] md:h-[500px] xl:h-96 flex justify-center items-center">
-        <img :src="images" class="
+      <a v-bind:href="post.url" target="_blank">
+        <div class="text-mst_black h-[400px] flex items-center justify-center md:h-[500px] xl:h-96">
+          <img :src="post.urlFacebook" class="
                     w-full
                     h-full
-                    object-cover
                     absolute
                     mix-blend-overlay
-                    object-left-bottom
-                    brightness-50
-                    blur-sm
-                    md:object-center
+                    contrast-[0.23]
+                    object-cover
+                    xl:object-center
                   " />
-        <div class="text-center">
-          <h1 class="text-5xl">{{ post.title }}</h1>
-          <h2 class="text-xl h-7 md:pr-40 md:text-right md:text-2xl">
-            {{ post.date }}
-          </h2>
-          <p class="
-                    text-base
-                    p-8
+          <div>
+            <h1 class="text-5xl text-center">{{ post.tittle }}</h1>
+            <h2 class="text-xl text-right mr-10 mb-5 md:text-2xl">
+              {{ post.date }}
+            </h2>
+            <p class="
+                    text-center
+                    text-lg
+                    font-extrabold
                     tracking-wider
                     leading-relaxed
-                    md:px-40 md:text-2xl
-                    flex-grow
+                    px-4
+                    md:text-2xl
+                    xl:px-96
                   ">
-            {{ post.content }}
-          </p>
+              {{ post.content }}
+            </p>
+          </div>
         </div>
-      </div>
-      <!--</a>-->
+      </a>
     </SwiperSlide>
   </Swiper>
 </template>

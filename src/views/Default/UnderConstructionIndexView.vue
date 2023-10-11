@@ -5,7 +5,7 @@
     >
       <div class="w-fit h-fit py-10 mx-auto my-auto">
         <img
-          src="../../../public/images/General/time.jpg"
+          src="/images/General/time.jpg"
           class="w-96 xl:w-[500px] 2xl:w-[560px]"
         />
       </div>

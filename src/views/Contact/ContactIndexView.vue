@@ -12,7 +12,7 @@ export default {
   data() {
     return {
       task: {
-        id: "",
+        //id: "",
         name: "",
         email: "",
         message: "",
@@ -34,7 +34,7 @@ export default {
         message: "",
       };
     },
-    async submitForm() {
+    /*async submitForm() {
       try {
         const response = await axios.post(
           "http://127.0.0.1:8000/contact-us-store",
@@ -44,7 +44,7 @@ export default {
       } catch (error) {
         console.log(error);
       }
-    },
+    },*/
   },
 };
 </script>

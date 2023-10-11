@@ -2,12 +2,51 @@
 import { ref } from "vue";
 const pdf = 'mst-agb.pdf';
 const route = '../../public/documents/mst-agb.pdf';
+const navigation = 
+  [
+    {
+      name: "Home",
+      route: "/",
+    },
+    {
+      name: "Full Service",
+      route: "/fullService",
+    },
+    {
+      name: "Verkauf",
+      route: "/sale",
+    },
+    {
+      name: "Vermietung",
+      route: "/rental",
+    },
+    {
+      name: "Streaming",
+      route: "/streaming",
+    },
+    {
+      name: "Smart Home",
+      route: "/smartHome",
+    },
+    {
+      name: "Kontakt",
+      route: "/contact",
+    },
+    {
+      name: "Impressum",
+      route: "/imprint",
+    },
+    {
+      name: "Cookie Richtlinie",
+      route: "/cookiePolicy",
+    }
+  ];
 
 const showMobileMenu = ref(true);
 </script>
 
 <template>
-  <div>
+  <header class="sticky top-0 z-50">
     <!--desktop menu-->
     <div class="bg-mst_black">
       <div class="max-w-1xl mx-auto">
@@ -16,7 +55,7 @@ const showMobileMenu = ref(true);
           <div class="flex md:space-x-1 2xl:space-x-14">
             <!--logo-->
             <router-link to="/" class="flex items-center space-x-2 py-5 px-2">
-              <img src="../../../public/images/General/logo.svg" class="h-14 w-14 md:block 2xl:h-20 2xl:w-20" />
+              <img src="/images/General/logo.svg" class="h-14 w-14 md:block 2xl:h-20 2xl:w-20" />
               <div>
                 <p class="text-mst_white tracking-widest text-2xl md:text-3xl 2xl:text-4xl">medien</p>
                 <p class="text-mst_white tracking-widest text-xs md:text-sm 2xl:text-lg">SYSTEMTECHNIK</p>
@@ -24,90 +63,21 @@ const showMobileMenu = ref(true);
             </router-link>
             <div class="md:w-10 2xl:w-52"></div>
             <!--menu-->
-            <div class="hidden items-center 2xl:space-x-1 xl:flex">
-              <router-link to="/" class="
-                    text-mst_white
-                    text-bold
-                    transform
-                    transition
-                    duration-300
-                    hover:text-mst_orange
-                    py-5
-                    px-2
-                  ">HOME</router-link>
-              <router-link to="/fullService" class="
-                    text-mst_white
-                    transform
-                    transition
-                    duration-300
-                    hover:text-mst_orange
-                    py-5
-                    px-2
-                  ">FULL SERVICE</router-link>
-              <router-link to="/sale" class="
-                    text-mst_white
-                    transform
-                    transition
-                    duration-300
-                    hover:text-mst_orange
-                    py-5
-                    px-2
-                  ">{{ $t("verkauf") }}</router-link>
-              <router-link to="/rental" class="
-                    text-mst_white
-                    transform
-                    transition
-                    duration-300
-                    hover:text-mst_orange
-                    py-5
-                    px-2
-                  ">{{ $t("vermietung") }}</router-link>
-              <router-link to="/streaming" class="
-                    text-mst_white
-                    transform
-                    transition
-                    duration-300
-                    hover:text-mst_orange
-                    py-5
-                    px-2
-                  ">STREAMING</router-link>
-              <router-link to="/smartHome" class="
-                    text-mst_white
-                    transform
-                    transition
-                    duration-300
-                    hover:text-mst_orange
-                    py-5
-                    px-2
-                  ">SMART HOME</router-link>
-              <router-link to="/contact" class="
-                    text-mst_white
-                    transform
-                    transition
-                    duration-300
-                    hover:text-mst_orange
-                    py-5
-                    px-2
-                  ">{{ $t("kontakt") }}</router-link>
-              <router-link to="/imprint" class="
-                    text-mst_white
-                    transform
-                    transition
-                    duration-300
-                    hover:text-mst_orange
-                    py-5
-                    px-2
-                  ">{{ $t("impressum") }}</router-link>
-              <router-link to="/cookiePolicy" class="
-                    text-mst_white
-                    transform
-                    transition
-                    duration-300
-                    hover:text-mst_orange
-                    py-5
-                    px-2
-                  ">{{ $t("cookieRichtline") }}</router-link>
-                  <a :href="route" :download="pdf" class="
+            <nav class="hidden items-center 2xl:space-x-1 xl:flex">
+              <div v-for="item in navigation"  class="
+                  text-mst_white
+                  text-bold
+                  transform
+                  transition
+                  duration-300
+                  hover:text-mst_orange
+                  py-5
+                  px-2
+                ">
+                <router-link :to="item.route">{{ item.name }}</router-link>
+              </div>
+
+                 <a :href="route" :download="pdf" class="
                     text-mst_white
                     transform
                     transition
@@ -137,7 +107,7 @@ const showMobileMenu = ref(true);
                   </option>
                 </select>
               </div>
-            </div>
+            </nav>
           </div>
           <!--show mobile menu-->
           <div class="flex items-center xl:hidden">
@@ -277,5 +247,5 @@ const showMobileMenu = ref(true);
         </select>
       </div>
     </div>
-  </div>
+  </header>
 </template>
