@@ -1,5 +1,6 @@
 <script>
 import axios from "axios";
+import { BASE_URL } from '@/main.js'
 
 export default {
   data() {
@@ -15,7 +16,7 @@ export default {
         this.$cookies.set("acceptCookie", value);
       }
       try {
-        const response = await axios.post("http://localhost:8000/api/cookies/", {
+        const response = await axios.post(`${BASE_URL}/api/cookies/`, {
           cookie: this.$cookies.get("acceptCookie"),
         });
         console.log(response.data);
@@ -53,11 +54,11 @@ export default {
     <div id="pop-up" class="w-full h-auto rounded-3xl md:w-5/12">
       <div class="flex items-center justify-between">
         <router-link to="/cookiePolicy" class="md:pl-5">
-          <img src="../../../public/images/General/logo_black.png" class="w-10" />
+          <img src="/images/General/logo_black.png" class="w-10" />
         </router-link>
         <router-link to="/cookiePolicy">{{ $t("ver") }}</router-link>
         <button @click="closePopUp" class="md:pr-5">
-          <img src="../../../public/images/General/cancel-icon.png" class="w-6 h-auto" />
+          <img src="/images/General/cancel-icon.png" class="w-6 h-auto" />
         </button>
       </div>
 
