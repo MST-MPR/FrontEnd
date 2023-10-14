@@ -68,7 +68,7 @@ export default {
     <SwiperSlide v-for="opinion in opinions" :key="opinion.id">
       <a v-bind:href="opinion.url" target="_blank">
         <div class="text-mst_black h-[400px] flex items-center justify-center md:h-[500px] xl:h-96">
-          <img :src="opinion.image" class="
+          <img :src="opinion.urlImage" class="
                     w-full
                     h-full
                     absolute
