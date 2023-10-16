@@ -113,44 +113,7 @@ export default {
     </div>
     <!--SLIDER-->
     <div>
-      <Slider :items="[
-        {
-          'src': '/images/Slider/1.jpg',
-        },
-        {
-          'src': '/images/Slider/2.jpg',
-        },
-        {
-          'src': '/images/Slider/4.jpg',
-        },
-        {
-          'src': '/images/Slider/5.jpg',
-        },
-        {
-          'src': '/images/Slider/7.jpg',
-        },
-        {
-          'src': '/images/Slider/8.jpg',
-        },
-        {
-          'src': '/images/Slider/9.jpg',
-        },
-        {
-          'src': '/images/Slider/10.jpg',
-        },
-        {
-          'src': '/images/Slider/11.jpg',
-        },
-        {
-          'src': '/images/Slider/12.jpg',
-        },
-        {
-          'src': '/images/Slider/13.jpg',
-        },
-        {
-          'src': '/images/Slider/13.jpg',
-        },
-      ]" />
+      <Slider />
     </div>
     <!--GRID-->
     <div class="w-full h-full border-y-4 border-mst_orange py-20 sm:p-32">

@@ -43,13 +43,13 @@ export default {
   },
   data() {
     return {
-      posts: [],
+      opinions: [],
     };
   },
   mounted() {
-    axios.get(`${BASE_URL}/api/facebookPosts/list`)
+    axios.get(`${BASE_URL}/api/opinionFacebook/list`)
       .then(response => {
-        this.posts = response.data;
+        this.opinions = response.data;
         console.log(response.data)
       })
       .catch(error => {
@@ -65,10 +65,10 @@ export default {
       delay: 5000,
       disableOnInteraction: false,
     }" effect="fade">
-    <SwiperSlide v-for="post in posts" :key="post.id">
-      <a v-bind:href="post.url" target="_blank">
+    <SwiperSlide v-for="opinion in opinions" :key="opinion.id">
+      <a v-bind:href="opinion.url" target="_blank">
         <div class="text-mst_black h-[400px] flex items-center justify-center md:h-[500px] xl:h-96">
-          <img :src="post.urlFacebook" class="
+          <img :src="opinion.urlImage" class="
                     w-full
                     h-full
                     absolute
@@ -78,9 +78,9 @@ export default {
                     xl:object-center
                   " />
           <div>
-            <h1 class="text-5xl text-center">{{ post.tittle }}</h1>
+            <h1 class="text-5xl text-center">{{ opinion.tittle }}</h1>
             <h2 class="text-xl text-right mr-10 mb-5 md:text-2xl">
-              {{ post.date }}
+              {{ opinion.date }}
             </h2>
             <p class="
                     text-center
@@ -92,7 +92,7 @@ export default {
                     md:text-2xl
                     xl:px-96
                   ">
-              {{ post.content }}
+              {{ opinion.content }}
             </p>
           </div>
         </div>

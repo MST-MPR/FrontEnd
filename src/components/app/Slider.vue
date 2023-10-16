@@ -1,4 +1,7 @@
 <script>
+import axios from "axios";
+import { BASE_URL } from '@/main.js'
+
 import {
   Navigation,
   Pagination,
@@ -38,11 +41,26 @@ export default {
       modules: [Navigation, Pagination, Scrollbar, A11y, Autoplay, EffectFade],
     };
   },
+  data() {
+    return {
+      images: [],
+    };
+  },
+  mounted() {
+    axios.get(`${BASE_URL}/api/imagesSlider/list`)
+      .then(response => {
+        this.images = response.data;
+        console.log(response.data)
+      })
+      .catch(error => {
+        console.error(error);
+      });
+
+  }
 };
 </script>
 
 <template>
-  <div class="">
     <Swiper
       :modules="modules"
       :slides-per-view="1"
@@ -54,11 +72,10 @@ export default {
       }"
       effect="fade"
     >
-      <SwiperSlide v-for="item in items">
-        <img :src="item.src" class="w-full h-96 sm:h-[800px] md:h-[900px] object-cover" />  
+      <SwiperSlide v-for="image in images" :key="image.id">
+        <img :src="image.urlImage" class="w-full h-96 sm:h-[800px] md:h-[900px] object-cover" />  
       </SwiperSlide>
     </Swiper>
-  </div>
 </template>
 
 
