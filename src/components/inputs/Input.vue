@@ -27,7 +27,7 @@ export default {
         this.$refs.recaptcha.reset();
         try {
           const response = await axios.post(
-            `${BASE_URL}/api/contact-us/store`,
+            `${BASE_URL}/api/contact`,
             this.task
           );
           console.log(response.data);
@@ -61,7 +61,7 @@ export default {
       $t("email")
     }}</label>
     <input
-      type="text"
+      type="email"
       id="email"
       v-model.trim="task.email"
       class="
@@ -75,6 +75,7 @@ export default {
         border border-gray-300
         shadow-sm
       "
+      required
     />
   </div>
   <div class="md:col-span-2">
@@ -100,6 +101,7 @@ export default {
         md:h-20
         2xl:h-full
       "
+      required
     />
   </div>
   <div class="pt-3 pb-3">

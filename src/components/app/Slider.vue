@@ -32,8 +32,8 @@ export default {
     'items'
   ],
   setup() {
-    const onSwiper = () => {};
-    const onSlideChange = () => {};
+    const onSwiper = () => { };
+    const onSlideChange = () => { };
 
     return {
       onSwiper,
@@ -61,21 +61,22 @@ export default {
 </script>
 
 <template>
-    <Swiper
-      :modules="modules"
-      :slides-per-view="1"
-      @swiper="onSwiper"
-      @slideChange="onSlideChange"
-      :autoplay="{
-        delay: 5000,
-        disableOnInteraction: false,
-      }"
-      effect="fade"
-    >
-      <SwiperSlide v-for="image in images" :key="image.id">
-        <img :src="image.urlImage" class="w-full h-96 sm:h-[800px] md:h-[900px] object-cover" />  
-      </SwiperSlide>
-    </Swiper>
+  <Swiper 
+    :modules="modules" 
+    :slides-per-view="1" 
+    @swiper="onSwiper" 
+    @slideChange="onSlideChange" 
+    :autoplay="{
+      delay: 5000,
+      disableOnInteraction: false,
+    }" 
+    effect="fade">
+    <SwiperSlide v-for="image in images" :key="image.id">
+      <a :href="image.url" target="_blank">
+        <img :src="image.urlImage" class="w-full h-96 sm:h-[800px] md:h-[900px] object-cover" />
+      </a>
+    </SwiperSlide>
+  </Swiper>
 </template>
 
 

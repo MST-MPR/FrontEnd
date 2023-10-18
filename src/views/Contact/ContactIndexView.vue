@@ -1,8 +1,6 @@
 <script>
 import Input from "../../components/inputs/Input.vue";
 import { mapActions } from "vuex";
-//import { nanoid } from "nanoid";
-import axios from "axios";
 
 export default {
   name: "ContactIndexView",
@@ -12,7 +10,6 @@ export default {
   data() {
     return {
       task: {
-        //id: "",
         name: "",
         email: "",
         message: "",
@@ -24,9 +21,6 @@ export default {
     ...mapActions(["setTasks"]),
 
     processForm() {
-      //Generate random id
-      //this.task.id = nanoid();
-
       //Delete data
       this.task = {
         name: "",
@@ -34,17 +28,6 @@ export default {
         message: "",
       };
     },
-    /*async submitForm() {
-      try {
-        const response = await axios.post(
-          "http://127.0.0.1:8000/contact-us-store",
-          this.task
-        );
-        console.log(response.data);
-      } catch (error) {
-        console.log(error);
-      }
-    },*/
   },
 };
 </script>

@@ -10,7 +10,7 @@ export default {
   },
   methods: {
     async closePopUp(value) {
-      //Mandar petición post a modo de resguardo
+      //Send request post by way of a receipt
       this.showPopUp = false;
       if (value == 1) {
         this.$cookies.set("acceptCookie", value);

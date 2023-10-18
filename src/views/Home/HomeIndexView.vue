@@ -1,18 +1,16 @@
 <script>
+import Input from "../../components/inputs/Input.vue";
 import Slider from "../../components/app/Slider.vue";
 import SliderFacebook from "../../components/app/SliderFacebook.vue";
-import Input from "../../components/inputs/Input.vue";
 import { mapActions } from "vuex";
-//import { nanoid } from "nanoid";
 import { BASE_URL } from '@/main.js'
 import axios from "axios";
 
 export default {
   components: {
+    Input,
     Slider,
-    SliderFacebook,
-    //InputHome,
-    Input
+    SliderFacebook
   },
   data() {
     return {
@@ -31,9 +29,6 @@ export default {
     ...mapActions(["setTasks"]),
 
     processForm() {
-      //Generate random id
-      //this.task.id = nanoid();
-
       //Delete data
       this.task = {
         name: "",
@@ -44,7 +39,7 @@ export default {
     async submitForm() {
       try {
         const response = await axios.post(
-          `${BASE_URL}/contact-us-store`,
+          `${BASE_URL}/api/contact`,
           this.task
         );
         console.log(response.data);
