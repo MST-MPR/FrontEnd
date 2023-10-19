@@ -50,48 +50,47 @@ export default {
     axios.get(`${BASE_URL}/api/opinionFacebook/list`)
       .then(response => {
         this.opinions = response.data;
-        console.log(response.data)
+        //console.log(response.data)
       })
       .catch(error => {
         console.error(error);
       });
-
   }
 };
 </script>
 
 <template>
   <Swiper :modules="modules" :slides-per-view="1" @swiper="onSwiper" @slideChange="onSlideChange" :autoplay="{
-      delay: 5000,
-      disableOnInteraction: false,
-    }" effect="fade">
+    delay: 5000,
+    disableOnInteraction: false,
+  }" effect="fade">
     <SwiperSlide v-for="opinion in opinions" :key="opinion.id">
       <a v-bind:href="opinion.url" target="_blank">
         <div class="text-mst_black h-[400px] flex items-center justify-center md:h-[500px] xl:h-96">
           <img :src="opinion.urlImage" class="
-                    w-full
-                    h-full
-                    absolute
-                    mix-blend-overlay
-                    contrast-[0.23]
-                    object-cover
-                    xl:object-center
-                  " />
+            w-full
+            h-full
+            absolute
+            mix-blend-overlay
+            contrast-[0.23]
+            object-cover
+            xl:object-center
+          " />
           <div>
             <h1 class="text-5xl text-center">{{ opinion.tittle }}</h1>
             <h2 class="text-xl text-right mr-10 mb-5 md:text-2xl">
               {{ opinion.date }}
             </h2>
             <p class="
-                    text-center
-                    text-lg
-                    font-extrabold
-                    tracking-wider
-                    leading-relaxed
-                    px-4
-                    md:text-2xl
-                    xl:px-96
-                  ">
+            text-center
+            text-lg
+            font-extrabold
+            tracking-wider
+            leading-relaxed
+            px-4
+            md:text-2xl
+            xl:px-96
+          ">
               {{ opinion.content }}
             </p>
           </div>
