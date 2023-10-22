@@ -5,10 +5,6 @@ const route = '../../public/documents/mst-agb.pdf';
 const navigation = 
   [
     {
-      name: "Home",
-      route: "/",
-    },
-    {
       name: "Full Service",
       route: "/fullService",
     },

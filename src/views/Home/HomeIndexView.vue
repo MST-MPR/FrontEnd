@@ -22,7 +22,7 @@ export default {
         email: "",
         message: "",
       },
-      members: []
+
     };
   },
 
@@ -49,16 +49,6 @@ export default {
         console.log(error);
       }
     },
-  },
-  mounted() {
-    axios.get(`${BASE_URL}/api/members/list`)
-      .then(response => {
-        this.members = response.data;
-        console.log(this.members)
-      })
-      .catch(error => {
-        console.error(error);
-      });
   }
 };
 </script>
@@ -568,12 +558,9 @@ export default {
       mx-auto
       pb-20
     ">
-        <div v-for="member in members" :key="member.id">
-          <Team :member="member" />
-        </div>
+        <Team />
       </div>
     </div>
-
     <!--PARTNERS-->
     <div class="text-center bg-partners">
       <h1 class="
