@@ -56,14 +56,14 @@ export default {
         <router-link to="/cookiePolicy" class="md:pl-5">
           <img src="/images/General/logo_black.png" class="w-10" />
         </router-link>
-        <router-link to="/cookiePolicy">{{ $t("ver") }}</router-link>
+        <router-link to="/cookiePolicy">{{ $t("cookiesModal.ver") }}</router-link>
         <button @click="closePopUp" class="md:pr-5">
           <img src="/images/General/cancel-icon.png" class="w-6 h-auto" />
         </button>
       </div>
 
       <p class="p-5 py-10 text-sm">
-        {{ $t("pCoo") }}
+        {{ $t("cookiesModal.pCoo") }}
       </p>
       <div class="flex flex-col md:flex-row md:justify-center md:space-x-4">
         <div class="w-auto pb-4 md:w-3/12">
@@ -83,7 +83,7 @@ export default {
           text-center
           h-auto
         ">
-            {{ $t("ak") }}
+            {{ $t("cookiesModal.ak") }}
           </button>
         </div>
         <div class="w-auto pb-4 md:w-3/12">
@@ -103,7 +103,7 @@ export default {
           text-center
           h-auto
         ">
-            {{ $t("ab") }}
+            {{ $t("cookiesModal.ab") }}
           </button>
         </div>
       </div>

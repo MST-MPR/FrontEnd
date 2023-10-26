@@ -58,7 +58,7 @@ export default {
   </div>
   <div>
     <label for="email" class="block mb-2 text-sm font-medium text-mst_white">{{
-      $t("email")
+      $t("home.email")
     }}</label>
     <input
       type="email"
@@ -82,7 +82,7 @@ export default {
     <label
       for="message"
       class="block mb-2 text-sm font-medium text-mst_white"
-      >{{ $t("message") }}</label
+      >{{ $t("home.message") }}</label
     >
     <textarea
       type="text"
@@ -113,7 +113,7 @@ export default {
       @error="handleError"
     />
     <p v-if="errorMessage" class="text-mst_red text-xl mx-auto font-black">
-      {{ $t("r1") }}
+      {{ $t("recaptcha.r1") }}
     </p>
   </div>
   <div class="pt-3 pb-3">
@@ -141,7 +141,7 @@ export default {
         xl:ml-0
       "
     >
-      {{ $t("send") }}
+      {{ $t("home.send") }}
     </button>
   </div>
 </template>

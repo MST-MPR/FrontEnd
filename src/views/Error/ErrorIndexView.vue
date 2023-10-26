@@ -21,7 +21,7 @@
             text-mst_white
           "
         >
-          {{ $t("error") }}
+          {{ $t("404.error") }}
         </h1>
         <div class="w-fit mx-auto">
           <router-link
@@ -40,7 +40,7 @@
               py-2.5
               text-center
             "
-            >{{ $t("errorB") }}</router-link
+            >{{ $t("404.errorB") }}</router-link
           >
         </div>
       </div>

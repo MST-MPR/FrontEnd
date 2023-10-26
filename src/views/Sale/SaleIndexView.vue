@@ -26,7 +26,7 @@
           text-mst_white
         "
       >
-        {{ $t("verkauf") }}
+        {{ $t("buttons.verkauf") }}
       </h1>
       <div class="py-12 md:px-12 xl:pt-24 2xl:px-96 2xl:pt-28">
         <div
@@ -50,10 +50,10 @@
             "
           >
             <li class="leading-normal tracking-wider mb-6">
-              {{ $t("verkaufView") }}
+              {{ $t("verkauf.verkaufView") }}
             </li>
             <li class="leading-normal tracking-wider">
-              {{ $t("verkaufView2") }}
+              {{ $t("verkauf.verkaufView2") }}
             </li>
           </ul>
         </div>

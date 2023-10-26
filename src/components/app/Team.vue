@@ -62,7 +62,7 @@ export default {
           <div class="flex-grow border-2 border-mst_orange"></div>
         </div>
         <p>
-          <strong>{{ $t("telefon") }}</strong>: {{ member.telefon }}
+          <strong>{{ $t("impressum.telefon") }}</strong>: {{ member.telefon }}
         </p>
         <p><strong>Email:</strong> {{ member.email }}</p>
       </div>

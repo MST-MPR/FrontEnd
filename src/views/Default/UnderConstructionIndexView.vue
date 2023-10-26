@@ -23,10 +23,10 @@
             text-mst_white
           "
         >
-          {{ $t("coomingSoon") }}
+          {{ $t("underConstruction.coomingSoon") }}
         </h1>
         <p class="font-light text-mst_white text-center ml-6 sm:text-xl">
-          {{ $t("working") }}
+          {{ $t("underConstruction.working") }}
         </p>
       </div>
     </div>

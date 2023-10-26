@@ -9,11 +9,11 @@ const navigation =
       route: "/fullService",
     },
     {
-      name: "Verkauf",
+      name: "buttons.verkauf",
       route: "/sale",
     },
     {
-      name: "Vermietung",
+      name: "buttons.vermietung",
       route: "/rental",
     },
     {
@@ -25,15 +25,15 @@ const navigation =
       route: "/smartHome",
     },
     {
-      name: "Kontakt",
+      name: "buttons.kontakt",
       route: "/contact",
     },
     {
-      name: "Impressum",
+      name: "buttons.impressum",
       route: "/imprint",
     },
     {
-      name: "Cookie Richtlinie",
+      name: "buttons.cookieRichtline",
       route: "/cookiePolicy",
     }
   ];
@@ -70,7 +70,7 @@ const showMobileMenu = ref(true);
                   py-5
                   px-2
                 ">
-                <router-link :to="item.route">{{ item.name }}</router-link>
+                <router-link :to="item.route">{{ this.$t(item.name) }}</router-link>
               </div>
 
                  <a :href="route" :download="pdf" class="
@@ -149,7 +149,7 @@ const showMobileMenu = ref(true);
             transition
             duration-300
             hover:text-mst_orange
-          ">{{ $t("verkauf") }}</router-link>
+          ">{{ $t("buttons.verkauf") }}</router-link>
       <router-link @click="showMobileMenu = !showMobileMenu" to="/rental" class="
             block
             py-2
@@ -159,7 +159,7 @@ const showMobileMenu = ref(true);
             transition
             duration-300
             hover:text-mst_orange
-          ">{{ $t("vermietung") }}</router-link>
+          ">{{ $t("buttons.vermietung") }}</router-link>
       <router-link @click="showMobileMenu = !showMobileMenu" to="/smartHome" class="
             block
             py-2
@@ -189,7 +189,7 @@ const showMobileMenu = ref(true);
             transition
             duration-300
             hover:text-mst_orange
-          ">{{ $t("kontakt") }}</router-link>
+          ">{{ $t("buttons.kontakt") }}</router-link>
       <router-link @click="showMobileMenu = !showMobileMenu" to="/imprint" class="
             block
             py-2
@@ -199,7 +199,7 @@ const showMobileMenu = ref(true);
             transition
             duration-300
             hover:text-mst_orange
-          ">{{ $t("impressum") }}</router-link>
+          ">{{ $t("buttons.impressum") }}</router-link>
       <router-link @click="showMobileMenu = !showMobileMenu" to="/cookiePolicy" class="
             block
             py-2
@@ -209,7 +209,7 @@ const showMobileMenu = ref(true);
             transition
             duration-300
             hover:text-mst_orange
-          ">{{ $t("cookieRichtline") }}</router-link>
+          ">{{ $t("buttons.cookieRichtline") }}</router-link>
           <a :href="route" :download="pdf" class="
           block
             py-2

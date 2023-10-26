@@ -17,7 +17,7 @@ const route = '../../public/documents/mst-agb.pdf';
             2xl:text-7xl
             text-mst_black
           ">
-        {{ $t("impressum") }}
+        {{ $t("buttons.impressum") }}
       </h1>
     </div>
     <div class="p-10 w-2/3 mx-auto">
@@ -35,17 +35,17 @@ const route = '../../public/documents/mst-agb.pdf';
         <ul class="list-disc">
           <li class="mb-8">
             <h2 class="text-xl font-semibold md:text-2xl text-mst_orange">
-              {{ $t("anschrift") }}:
+              {{ $t("impressum.anschrift") }}:
             </h2>
             <p>Bremer Straße 63, 28816 Stuhr</p>
           </li>
           <li class="mb-8">
             <h2 class="text-xl font-semibold md:text-2xl text-mst_orange">
-              {{ $t("kontaktdaten") }}:
+              {{ $t("impressum.kontaktdaten") }}:
             </h2>
             <table>
               <tr>
-                <td class="pr-4 "><strong>{{ $t("telefon") }}:</strong></td>
+                <td class="pr-4 "><strong>{{ $t("impressum.telefon") }}:</strong></td>
                 <td>+49 421 2077 3 0</td>
               </tr>
               <tr>
@@ -64,19 +64,19 @@ const route = '../../public/documents/mst-agb.pdf';
           </li>
           <li class="mb-8">
             <h2 class="text-xl font-semibold md:text-2xl text-mst_orange">
-              {{ $t("geschäftsführer") }}:
+              {{ $t("impressum.geschäftsführer") }}:
             </h2>
             <p>Ralf-Peter Franz</p>
           </li>
           <li class="mb-8">
             <h2 class="text-xl font-semibold md:text-2xl text-mst_orange">
-              {{ $t("umsatzsteuer") }}:
+              {{ $t("impressum.umsatzsteuer") }}:
             </h2>
             <p>DE 2914 55354</p>
           </li>
           <li class="mb-8">
             <h2 class="text-xl font-semibold md:text-2xl text-mst_orange">
-              {{ $t("inhaltlich") }}:
+              {{ $t("impressum.inhaltlich") }}:
             </h2>
             <p>Ralf-Peter Franz</p>
           </li>
@@ -89,7 +89,7 @@ const route = '../../public/documents/mst-agb.pdf';
         <ul class="list-disc">
           <li class="mt-8 mb-8">
             <h2 class="text-xl font-semibold md:text-2xl text-mst_orange">
-              {{ $t("konzeption") }}:
+              {{ $t("impressum.konzeption") }}:
             </h2>
             <p>MST Medien-Systemtechnik GmbH</p>
           </li>
@@ -115,12 +115,12 @@ const route = '../../public/documents/mst-agb.pdf';
         <ul class="list-disc">
           <li class=" mt-8 mb-8 md:w-full">
             <h2 class="text-xl font-semibold md:text-2xl text-mst_orange">
-              {{ $t("streitschlichtung") }}:
+              {{ $t("impressum.streitschlichtung") }}:
             </h2>
             <div class="md:pr-12">
-              <p>{{ $t("streitschlichtung2") }} <router-link to="/imprint" class="font-bold text-mst_orange">{{
-                $t("streitschlichtung3") }}</router-link>.</p>
-              <p>{{ $t("streitschlichtung4") }}</p>
+              <p>{{ $t("impressum.streitschlichtung2") }} <router-link to="/imprint" class="font-bold text-mst_orange">{{
+                $t("impressum.streitschlichtung3") }}</router-link>.</p>
+              <p>{{ $t("impressum.streitschlichtung4") }}</p>
               <p>
                 {{ $t("streitschlichtung5") }}
                 <a href="https://ec.europa.eu/consumers/odr/main/index.cfm?event=main.home.chooseLanguage"
@@ -131,34 +131,34 @@ const route = '../../public/documents/mst-agb.pdf';
 
           <li class=" mt-8 mb-8 md:w-full">
             <h2 class="text-xl font-semibold md:text-2xl text-mst_orange">
-              {{ $t("haftungInhalte") }}:
+              {{ $t("impressum.haftungInhalte") }}:
             </h2>
             <div class="md:pr-12">
-              <p>{{ $t("haftungInhalte2") }}</p>
+              <p>{{ $t("impressum.haftungInhalte2") }}</p>
               <br />
-              <p>{{ $t("haftungInhalte3") }}</p>
+              <p>{{ $t("impressum.haftungInhalte3") }}</p>
             </div>
           </li>
 
           <li class=" mt-8 mb-8 md:w-full">
             <h2 class="text-xl font-semibold md:text-2xl text-mst_orange">
-              {{ $t("haftungLink") }}:
+              {{ $t("impressum.haftungLink") }}:
             </h2>
             <div class="md:pr-12">
-              <p>{{ $t("haftungLink2") }}</p>
+              <p>{{ $t("impressum.haftungLink2") }}</p>
               <br />
-              <p>{{ $t("haftungLink3") }}</p>
+              <p>{{ $t("impressum.haftungLink3") }}</p>
             </div>
           </li>
 
           <li class=" mt-8 mb-8 md:w-full">
             <h2 class="text-xl font-semibold md:text-2xl text-mst_orange">
-              {{ $t("urheberrecht") }}:
+              {{ $t("impressum.urheberrecht") }}:
             </h2>
             <div class="md:pr-12">
-              <p>{{ $t("urheberrecht2") }}</p>
+              <p>{{ $t("impressum.urheberrecht2") }}</p>
               <br />
-              <p>{{ $t("urheberrecht3") }}</p>
+              <p>{{ $t("impressum.urheberrecht3") }}</p>
             </div>
           </li>
         </ul>

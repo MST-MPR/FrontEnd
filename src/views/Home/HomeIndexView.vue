@@ -85,11 +85,11 @@ export default {
                 xl:text-center xl:pb-20
                 2xl:text-6xl
               ">
-            {{ $t("prof1") }} <br />
-            {{ $t("prof2") }}
+            {{ $t("home.prof1") }} <br />
+            {{ $t("home.prof2") }}
           </h1>
           <h2 class="basis-1/2 ml-15 text-xl py-5 px-16 md:text-2xl md:text-left">
-            {{ $t("prof3") }}
+            {{ $t("home.prof3") }}
           </h2>
         </div>
         <div class="basis-1/2 hidden md:block">
@@ -164,7 +164,7 @@ export default {
                     md:block md:visible
                   ">
                 <p>
-                  {{ $t("fullServiceGrid") }}
+                  {{ $t("home.fullServiceGrid") }}
                 </p>
               </div>
             </div>
@@ -224,7 +224,7 @@ export default {
                       md:block md:text-3xl
                       2xl:text-4xl 2xl:visible 2xl:mb-5
                     ">
-                  {{ $t("verkaufH") }}
+                  {{ $t("header.verkaufH") }}
                 </h1>
               </div>
             </div>
@@ -240,7 +240,7 @@ export default {
                     md:block md:visible
                   ">
                 <p>
-                  {{ $t("verkaufGrid") }}
+                  {{ $t("home.verkaufGrid") }}
                 </p>
               </div>
             </div>
@@ -259,7 +259,7 @@ export default {
                     py-2.5
                     text-center
                   ">
-                {{ $t("verkauf") }}
+                {{ $t("buttons.verkauf") }}
               </router-link>
             </div>
           </div>
@@ -301,7 +301,7 @@ export default {
                       md:block md:text-3xl
                       2xl:text-4xl 2xl:visible 2xl:mb-5
                     ">
-                  {{ $t("vermietungH") }}
+                  {{ $t("header.vermietungH") }}
                 </h1>
               </div>
             </div>
@@ -316,7 +316,7 @@ export default {
                     2xl:text-base
                   ">
                 <p>
-                  {{ $t("vermietungGrid") }}
+                  {{ $t("home.vermietungGrid") }}
                 </p>
               </div>
             </div>
@@ -335,7 +335,7 @@ export default {
                     py-2.5
                     text-center
                   ">
-                {{ $t("vermietung") }}
+                {{ $t("buttons.vermietung") }}
               </router-link>
             </div>
           </div>
@@ -391,7 +391,7 @@ export default {
                     2xl:text-base
                   ">
                 <p>
-                  {{ $t("streamingGrid") }}
+                  {{ $t("home.streamingGrid") }}
                 </p>
               </div>
             </div>
@@ -469,7 +469,7 @@ export default {
                     2xl:text-base
                   ">
                 <p>
-                  {{ $t("smartHomeGrid") }}
+                  {{ $t("home.smartHomeGrid") }}
                 </p>
               </div>
             </div>
@@ -521,7 +521,7 @@ export default {
               p-10
               md:text-7xl
             ">
-          {{ $t("überUns1") }}
+          {{ $t("home.überUns1") }}
         </h1>
         <p class="
               text-mst_white
@@ -531,7 +531,7 @@ export default {
               leading-relaxed
               md:px-40 md:text-2xl
             ">
-          {{ $t("überUns2") }}
+          {{ $t("home.überUns2") }}
         </p>
       </div>
     </div>
@@ -545,7 +545,7 @@ export default {
       md:text-7xl
       text-mst_black
       ">
-        {{ $t("team") }}
+        {{ $t("home.team") }}
       </h1>
       <div class="
       w-4/6
@@ -571,7 +571,7 @@ export default {
         sm:text-7xl
         pt-14
       ">
-        {{ $t("partners") }}
+        {{ $t("home.partners") }}
       </h1>
       <div class="
         grid

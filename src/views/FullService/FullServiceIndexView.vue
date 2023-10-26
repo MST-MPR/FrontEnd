@@ -46,48 +46,48 @@ import AppFlipCard from "../../components/app/AppFlipCard.vue";
         >
           <div class="box">
             <AppFlipCard
-              title="konferenz"
-              paragraph="konferenzP"
+              title="fullService.konferenz"
+              paragraph="fullService.konferenzP"
               img="/images/FullService/conference.jpg"
               class="mx-auto"
             />
           </div>
           <div class="box">
             <AppFlipCard
-              title="beleuchtung"
-              paragraph="beleuchtungP"
+              title="fullService.beleuchtung"
+              paragraph="fullService.beleuchtungP"
               img="/images/FullService/lighting.jpg"
               class="mx-auto"
             />
           </div>
           <div class="box">
             <AppFlipCard
-              title="edv"
-              paragraph="edvP"
+              title="fullService.edv"
+              paragraph="fullService.edvP"
               img="/images/FullService/it.jpg"
               class="mx-auto"
             />
           </div>
           <div class="box">
             <AppFlipCard
-              title="beschallung"
-              paragraph="beschallungP"
+              title="fullService.beschallung"
+              paragraph="fullService.beschallungP"
               img="/images/FullService/sound.jpg"
               class="mx-auto"
             />
           </div>
           <div class="box">
             <AppFlipCard
-              title="dokumentation"
-              paragraph="dokumentationP"
+              title="fullService.dokumentation"
+              paragraph="fullService.dokumentationP"
               img="/images/FullService/documentation.jpg"
               class="mx-auto"
             />
           </div>
           <div class="box">
             <AppFlipCard
-              title="möblierung"
-              paragraph="möblierungP"
+              title="fullService.möblierung"
+              paragraph="fullService.möblierungP"
               img="/images/FullService/furniture.jpg"
               class="mx-auto"
             />

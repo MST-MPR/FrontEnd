@@ -42,19 +42,19 @@
         >
           <ul class="list-none p-6 text-lg md:text-2xl md:p-12 text-mst_white">
             <li class="leading-normal tracking-wider mb-6">
-              {{ $t("streamingView") }}
+              {{ $t("streaming.streamingView") }}
             </li>
             <li class="leading-normal tracking-wider mb-6">
-              {{ $t("streamingView2") }}
+              {{ $t("streaming.streamingView2") }}
             </li>
             <li class="leading-normal tracking-wider mb-6">
-              {{ $t("streamingView3") }}
+              {{ $t("streaming.streamingView3") }}
             </li>
             <li class="leading-normal tracking-wider mb-6">
-              {{ $t("streamingView4") }}
+              {{ $t("streaming.streamingView4") }}
             </li>
             <li class="leading-normal tracking-wider mb-6">
-              {{ $t("streamingView5") }}
+              {{ $t("streaming.streamingView5") }}
             </li>
           </ul>
         </div>

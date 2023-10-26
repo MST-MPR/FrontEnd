@@ -14,7 +14,7 @@
           font-semibold
         "
       >
-        {{ $t("philosophy") }}
+        {{ $t("footer.philosophy") }}
       </p>
 
       <nav aria-label="Footer Nav" class="mt-12">
@@ -33,7 +33,7 @@
               to="/sale"
               class="text-mst_white transition hover:text-mst_orange"
             >
-              {{ $t("verkauf") }}
+              {{ $t("buttons.verkauf") }}
             </router-link>
           </li>
 
@@ -51,7 +51,7 @@
               to="/contact"
               class="text-mst_white transition hover:text-mst_orange"
             >
-              {{ $t("kontakt") }}
+              {{ $t("buttons.kontakt") }}
             </router-link>
           </li>
         </ul>

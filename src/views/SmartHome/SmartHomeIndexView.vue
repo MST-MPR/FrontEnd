@@ -50,10 +50,10 @@
             "
           >
             <li class="leading-normal tracking-wider mb-6">
-              {{ $t("smartHomeView") }}
+              {{ $t("smartHome.smartHomeView") }}
             </li>
             <li class="leading-normal tracking-wider">
-              {{ $t("smartHomeView2") }}
+              {{ $t("smartHome.smartHomeView2") }}
             </li>
           </ul>
         </div>
