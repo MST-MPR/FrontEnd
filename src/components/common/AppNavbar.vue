@@ -2,7 +2,7 @@
 import { ref } from "vue";
 const pdf = 'mst-agb.pdf';
 const route = '../../public/documents/mst-agb.pdf';
-const navigation = 
+const navigation =
   [
     {
       name: "Full Service",
@@ -37,7 +37,6 @@ const navigation =
       route: "/cookiePolicy",
     }
   ];
-
 const showMobileMenu = ref(true);
 </script>
 
@@ -50,7 +49,7 @@ const showMobileMenu = ref(true);
           <!--menu-->
           <div class="flex md:space-x-1 2xl:space-x-14">
             <!--logo-->
-            <router-link to="/" class="flex items-center space-x-2 py-5 px-2">
+            <router-link to="/" @click="showMobileMenu = !showMobileMenu" class="flex items-center space-x-2 py-5 px-2">
               <img src="/images/General/logo.svg" class="h-14 w-14 md:block 2xl:h-20 2xl:w-20" />
               <div>
                 <p class="text-mst_white tracking-widest text-2xl md:text-3xl 2xl:text-4xl">medien</p>
@@ -60,7 +59,7 @@ const showMobileMenu = ref(true);
             <div class="md:w-10 2xl:w-52"></div>
             <!--menu-->
             <nav class="hidden items-center 2xl:space-x-1 xl:flex">
-              <div v-for="item in navigation"  class="
+              <div v-for="item in navigation" class="
                   text-mst_white
                   text-bold
                   transform
@@ -73,7 +72,7 @@ const showMobileMenu = ref(true);
                 <router-link :to="item.route">{{ this.$t(item.name) }}</router-link>
               </div>
 
-                 <a :href="route" :download="pdf" class="
+              <a :href="route" :download="pdf" class="
                     text-mst_white
                     transform
                     transition
@@ -120,8 +119,8 @@ const showMobileMenu = ref(true);
 
     <!--Mobile menu-->
     <div class="2xl:hidden w-40 bg-mst_black absolute inset-y-30 right-0" :class="{ hidden: showMobileMenu }">
-      <router-link @click="showMobileMenu = !showMobileMenu" to="/" class="
-            block
+      <div v-for="item in navigation" class="
+          block
             py-2
             px-4
             text-mst_white
@@ -129,88 +128,10 @@ const showMobileMenu = ref(true);
             transition
             duration-300
             hover:text-mst_orange
-          ">HOME</router-link>
-      <router-link @click="showMobileMenu = !showMobileMenu" to="/fullService" class="
-            block
-            py-2
-            px-4
-            text-mst_white
-            transform
-            transition
-            duration-300
-            hover:text-mst_orange
-          ">FULL SERVICE</router-link>
-      <router-link @click="showMobileMenu = !showMobileMenu" to="/sale" class="
-            block
-            py-2
-            px-4
-            text-mst_white
-            transform
-            transition
-            duration-300
-            hover:text-mst_orange
-          ">{{ $t("buttons.verkauf") }}</router-link>
-      <router-link @click="showMobileMenu = !showMobileMenu" to="/rental" class="
-            block
-            py-2
-            px-4
-            text-mst_white
-            transform
-            transition
-            duration-300
-            hover:text-mst_orange
-          ">{{ $t("buttons.vermietung") }}</router-link>
-      <router-link @click="showMobileMenu = !showMobileMenu" to="/smartHome" class="
-            block
-            py-2
-            px-4
-            text-mst_white
-            transform
-            transition
-            duration-300
-            hover:text-mst_orange
-          ">SMART HOME</router-link>
-      <router-link @click="showMobileMenu = !showMobileMenu" to="/streaming" class="
-            block
-            py-2
-            px-4
-            text-mst_white
-            transform
-            transition
-            duration-300
-            hover:text-mst_orange
-          ">STREAMING</router-link>
-      <router-link @click="showMobileMenu = !showMobileMenu" to="contact" class="
-            block
-            py-2
-            px-4
-            text-mst_white
-            transform
-            transition
-            duration-300
-            hover:text-mst_orange
-          ">{{ $t("buttons.kontakt") }}</router-link>
-      <router-link @click="showMobileMenu = !showMobileMenu" to="/imprint" class="
-            block
-            py-2
-            px-4
-            text-mst_white
-            transform
-            transition
-            duration-300
-            hover:text-mst_orange
-          ">{{ $t("buttons.impressum") }}</router-link>
-      <router-link @click="showMobileMenu = !showMobileMenu" to="/cookiePolicy" class="
-            block
-            py-2
-            px-4
-            text-mst_white
-            transform
-            transition
-            duration-300
-            hover:text-mst_orange
-          ">{{ $t("buttons.cookieRichtline") }}</router-link>
-          <a :href="route" :download="pdf" class="
+                ">
+        <router-link @click="showMobileMenu = !showMobileMenu" :to="item.route">{{ this.$t(item.name) }}</router-link>
+      </div>
+      <a :href="route" :download="pdf" class="
           block
             py-2
             px-4
@@ -236,7 +157,15 @@ const showMobileMenu = ref(true);
             shadow-md
             group
           ">
-        <select v-model="$i18n.locale">
+        <select v-model="$i18n.locale" class="
+            p-1
+            font-medium
+             bg-mst_black
+             text-mst_white
+            border-2
+             border-mst_orange
+            rounded-full
+          ">
           <option v-for="locale in $i18n.availableLocales" :key="`locale-${locale}`" :value="locale">
             {{ locale }}
           </option>

@@ -35,8 +35,30 @@ export default {
 </script>
 
 <template>
-  <div v-for="member in members" :key="member.id">
+  <div class="h-full w-full border-y-4 border-mst_orange">
+    <h1 class="
+      my-10
+      text-center
+      font-extrabold
+      text-5xl
+      md:text-7xl
+      text-mst_black
+      ">
+      {{ $t("home.team") }}
+    </h1>
     <div class="
+      w-4/6
+      flex
+      flex-wrap
+      justify-center
+      items-start
+      gap-x-20
+      gap-y-16
+      mx-auto
+      pb-20
+    ">
+      <div v-for="member in members" :key="member.id">
+        <div class="
   item
   w-64
   shadow-inner
@@ -48,23 +70,25 @@ export default {
   hover:grayscale-0
   md:shadow-2xl md:shadow-mst_black
   cursor-pointer" @click="select(member.id)" :class="[selected == member.id ? 'h-[420px]' : 'h-[390px]']">
-      <img :src="member.urlImage" class="pt-4 pb-2 h-52 mx-auto">
-      <h1 class="text-center font-bold tracking-wide text-2xl mt-3">
-        {{ member.name }}
-      </h1>
-      <h2 class="text-center mt-4 text-lg">
-        {{ member.position1 }} <br>
-        {{ member.position2 }}
-      </h2>
-      <h2 class="text-center mt-4 text-lg"></h2>
-      <div class="text-center mt-4" v-if="selected == member.id">
-        <div class="relative flex items-center w-16 mb-4 mx-auto">
-          <div class="flex-grow border-2 border-mst_orange"></div>
+          <img :src="member.urlImage" class="pt-4 pb-2 h-52 mx-auto">
+          <h1 class="text-center font-bold tracking-wide text-2xl mt-3">
+            {{ member.name }}
+          </h1>
+          <h2 class="text-center mt-4 text-lg">
+            {{ member.position1 }} <br>
+            {{ member.position2 }}
+          </h2>
+          <h2 class="text-center mt-4 text-lg"></h2>
+          <div class="text-center mt-4" v-if="selected == member.id">
+            <div class="relative flex items-center w-16 mb-4 mx-auto">
+              <div class="flex-grow border-2 border-mst_orange"></div>
+            </div>
+            <p>
+              <strong>{{ $t("impressum.telefon") }}</strong>: {{ member.telefon }}
+            </p>
+            <p><strong>Email:</strong> {{ member.email }}</p>
+          </div>
         </div>
-        <p>
-          <strong>{{ $t("impressum.telefon") }}</strong>: {{ member.telefon }}
-        </p>
-        <p><strong>Email:</strong> {{ member.email }}</p>
       </div>
     </div>
   </div>
