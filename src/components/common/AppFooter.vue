@@ -31,7 +31,7 @@
           <li>
             <router-link
               to="/sale"
-              class="text-mst_white transition hover:text-mst_orange"
+              class="text-mst_white uppercase transition hover:text-mst_orange"
             >
               {{ $t("buttons.verkauf") }}
             </router-link>
@@ -49,7 +49,7 @@
           <li>
             <router-link
               to="/contact"
-              class="text-mst_white transition hover:text-mst_orange"
+              class="text-mst_white uppercase transition hover:text-mst_orange"
             >
               {{ $t("buttons.kontakt") }}
             </router-link>
