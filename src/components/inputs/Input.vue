@@ -18,9 +18,11 @@ export default {
     VueRecaptcha,
   },
   methods: {
-    handleSuccess() {
+    handleSuccess(code) {
       this.recaptchaVerified = true;
       this.errorMessage = "";
+      let recaptchaCode = code;
+      console.log(recaptchaCode)
     },
     async submitForm() {
       if (this.recaptchaVerified) {
