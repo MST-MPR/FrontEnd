@@ -21,20 +21,21 @@ export default {
     handleSuccess(code) {
       this.recaptchaVerified = true;
       this.errorMessage = "";
-      let recaptchaCode = code;
-      console.log(recaptchaCode)
+
+      this.task['g-recaptcha-response'] = code;
     },
     async submitForm() {
-      if (this.recaptchaVerified) {
+      if (this.recaptchaVerified) {        
         this.$refs.recaptcha.reset();
         try {
           const response = await axios.post(
             `${BASE_URL}/api/contact`,
             this.task
           );
-          console.log(response.data);
+          // console.log(response.data);
+
         } catch (error) {
-          console.log(error);
+          // console.log(error);
         }
         this.recaptchaVerified = false;
       } else {
@@ -109,7 +110,7 @@ export default {
   <div class="pt-3 pb-3">
     <VueRecaptcha
       ref="recaptcha"
-      sitekey="6Lf6husjAAAAADC6zdk_WB-qL-7I7QxEKR4ANx06"
+      sitekey="6Lem_TIjAAAAAOmTwiskZDAWnkE81t8Y_jsXe_jG"
       :load-recaptcha-script="true"
       @verify="handleSuccess"
       @error="handleError"
