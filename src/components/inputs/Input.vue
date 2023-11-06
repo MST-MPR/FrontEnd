@@ -22,6 +22,7 @@ export default {
       this.recaptchaVerified = true;
       this.errorMessage = "";
 
+      //add response code to the object of email
       this.task['g-recaptcha-response'] = code;
     },
     async submitForm() {
@@ -39,7 +40,8 @@ export default {
         }
         this.recaptchaVerified = false;
       } else {
-        this.errorMessage = "Alert message";
+        this.errorMessage = alert(this.$t("recaptcha.r1"));
+
       }
     },
   },
@@ -115,9 +117,6 @@ export default {
       @verify="handleSuccess"
       @error="handleError"
     />
-    <p v-if="errorMessage" class="text-mst_red text-xl mx-auto font-black">
-      {{ $t("recaptcha.r1") }}
-    </p>
   </div>
   <div class="pt-3 pb-3">
     <button
