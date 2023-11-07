@@ -59,17 +59,17 @@ export default {
     ">
       <div v-for="member in members" :key="member.id">
         <div class="
-  item
-  w-64
-  shadow-inner
-  shadow-mst_black
-  rounded-2xl
-  grayscale
-  transition
-  duration-300
-  hover:grayscale-0
-  md:shadow-2xl md:shadow-mst_black
-  cursor-pointer" @click="select(member.id)" :class="[selected == member.id ? 'h-[420px]' : 'h-[390px]']">
+          item
+          w-64
+          shadow-inner
+          shadow-mst_black
+          rounded-2xl
+          grayscale
+          transition
+          duration-300
+          hover:grayscale-0
+          md:shadow-2xl md:shadow-mst_black
+          cursor-pointer" @click="select(member.id)" :class="[selected == member.id ? 'h-[420px]' : 'h-[390px]']">
           <img :src="member.urlImage" class="pt-4 pb-2 h-52 mx-auto">
           <h1 class="text-center font-bold tracking-wide text-2xl mt-3">
             {{ member.name }}
@@ -88,6 +88,35 @@ export default {
             </p>
             <p><strong>Email:</strong> {{ member.email }}</p>
           </div>
+        </div>
+      </div>
+      <div class="item 
+        w-64
+        h-[390px]
+        shadow-inner
+        shadow-mst_black
+        rounded-2xl
+        grayscale
+        transition
+        duration-300
+        hover:grayscale-0
+        md:shadow-2xl md:shadow-mst_black
+        cursor-pointer">
+        <img src="images/General/logo_black.png" class="pt-4 pb-2 h-52 mx-auto">
+        <h1 class="text-center font-bold tracking-wide text-2xl mt-3">
+          {{ $t("home.bewird") }}
+        </h1>
+        <h2 class="text-center mt-4 text-lg"></h2>
+        <div class="text-center mt-4">
+          <div class="relative flex items-center w-16 mb-4 mx-auto">
+            <div class="flex-grow border-2 border-mst_orange"></div>
+          </div>
+          <p class="text-lg">
+            {{ $t("home.freuen") }}<strong>jobs@mst-extra.net</strong>
+          </p>
+          <p class="text-lg">
+            {{ $t("home.oder") }}<strong>+49 421 20 77 30</strong>
+          </p>
         </div>
       </div>
     </div>

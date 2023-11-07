@@ -112,7 +112,7 @@ export default {
   <div class="pt-3 pb-3">
     <VueRecaptcha
       ref="recaptcha"
-      sitekey="6Lem_TIjAAAAAOmTwiskZDAWnkE81t8Y_jsXe_jG"
+      sitekey="6LdRxAApAAAAAF2raE_s11j7WiaRjSeGyJlISCf1"
       :load-recaptcha-script="true"
       @verify="handleSuccess"
       @error="handleError"
